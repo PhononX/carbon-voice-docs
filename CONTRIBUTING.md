@@ -128,6 +128,12 @@ npm run typecheck  # type-check the TypeScript config
 
 `npm run build` regenerates `static/llms.txt` and `static/llms-full.txt` first.
 
+Re-run `npm install` after pulling, not just on first setup. When a pull brings in a
+new dependency, the build fails with a resolve error pointing at the file that
+imports it rather than at the missing package — for example, a change to
+`src/css/custom.css` reporting `Can't resolve '@fontsource-variable/wix-madefor-text'`
+means the webfont package has not been installed yet.
+
 ## Repository layout
 
 ```
