@@ -1,5 +1,1 @@
-{
-  "label": "Integrations",
-  "position": 5,
-  "customProps": {"description": "Connect Carbon Voice to other tools and agents."}
-}
+{"label":"Integrations","position":8,"customProps":{"description":"Connecting Carbon Voice to your other tools and AI assistants."}}

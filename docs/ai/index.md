@@ -1,29 +1,14 @@
 ---
 title: AI
-description: How Carbon Voice turns conversations into insight, action, and knowledge.
-sidebar_position: 0
+description: Summaries, catch-up, transformation, voice cloning, and translation.
+sidebar_position: 5
 ---
 
 # AI
 
-Carbon Voice is built on the idea that voice plus AI is the future of how teams work:
-every conversation should become insight, action, and knowledge rather than audio that
-disappears once it has been heard.
+Carbon Voice turns conversations into insight, action, and knowledge — summarizing what
+was said, catching you up on what you missed, and reshaping recordings into something
+you can use.
 
-## In this section
-
-- [AI summaries](ai-summaries.md) — condensing a conversation into what was decided
-  and what happens next.
-
-## What AI does here
-
-Transcription is the foundation — see [Transcripts](../messages/transcripts.md). Once a
-conversation is text, it can be summarized, searched, and acted on.
-
-> **Placeholder.** The full set of AI features, including anything that runs
-> automatically versus on request, has not been documented yet. This section will cover
-> each one as it is confirmed.
-
-## Related
-
-- [Integrations](../integrations/index.md) — bringing AI agents into a conversation.
+> **Being ported.** These articles are moving over from the Carbon Voice Help Center in
+> Notion. This page will list them as they land.

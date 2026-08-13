@@ -1,5 +1,1 @@
-{
-  "label": "AI",
-  "position": 4,
-  "customProps": {"description": "Summaries, transcription, and AI features."}
-}
+{"label":"AI","position":5,"customProps":{"description":"Summaries, catch-up, transformation, cloning, and translation."}}
