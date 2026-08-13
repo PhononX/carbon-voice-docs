@@ -1,10 +1,209 @@
 # Carbon Voice Docs
 
-Help and documentation for [Carbon Voice](https://getcarbon.app) — voice messaging
-for your whole team, people and agents alike. Async, transcribed, always on.
+The canonical public documentation for [Carbon Voice](https://getcarbon.app) — voice
+messaging for your whole team, people and agents alike. Async, transcribed, always on.
 
-Carbon Voice is available on iOS and Android. This repository holds the source of
-its help content so it can be read, corrected, and reused in the open.
+This repository serves two audiences equally:
+
+1. **People**, who read it as a help center at
+   [help.carbonvoice.app](https://help.carbonvoice.app).
+2. **AI agents and search engines**, which read the plain Markdown in
+   [`docs/`](docs/) directly — no rendering required.
+
+## Architectural principle
+
+**Markdown is the product; Docusaurus is the renderer.**
+
+Everything canonical lives in `docs/` as portable Markdown with simple frontmatter.
+You should be able to browse this repository on GitHub and understand the entire
+Carbon Voice documentation without running anything. Docusaurus turns that content
+into a website, and could be replaced with a different renderer without rewriting a
+single article.
+
+Practical consequences of that principle, and why the setup looks the way it does:
+
+- `.md` files are parsed as **CommonMark, not MDX** (`markdown.format: 'detect'` in
+  `docusaurus.config.ts`), so what renders here also renders on GitHub. A page that
+  genuinely needs JSX can be named `.mdx`, but content should not depend on it.
+- Cross-references are **relative Markdown links** (`../ai/ai-summaries.md`), which
+  work as clickable links on GitHub and are rewritten to clean URLs by Docusaurus.
+- Navigation is **generated from the filesystem**, so adding a file is enough to add
+  a page.
+- Placeholders are plain blockquotes, not custom components.
+
+## Repository layout
+
+```
+carbon-voice-docs/
+├── docs/                     canonical content — the source of truth
+│   ├── index.md              help center landing page (served at /)
+│   ├── getting-started/
+│   ├── conversations/
+│   ├── messages/
+│   ├── ai/
+│   ├── integrations/
+│   └── troubleshooting/
+├── src/css/custom.css        theme variables; the place to apply branding
+├── static/                   files copied verbatim to the site root
+│   ├── robots.txt
+│   ├── CNAME                 custom domain for GitHub Pages
+│   └── img/                  logo, favicon, social card (to be supplied)
+├── scripts/
+│   └── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
+├── .github/workflows/        build (PRs) and deploy (main)
+├── docusaurus.config.ts
+├── sidebars.ts
+└── package.json
+```
+
+## Running locally
+
+Requires Node.js 20 or newer.
+
+```bash
+npm install
+npm start          # dev server with hot reload at http://localhost:3000
+npm run build      # production build into build/
+npm run serve      # serve the production build locally
+npm run typecheck  # type-check the TypeScript config files
+```
+
+`npm run build` regenerates `static/llms.txt` and `static/llms-full.txt` first, via
+the `prebuild` script.
+
+## Adding an article
+
+1. Create a Markdown file in the right category directory, named for its URL:
+   `docs/ai/ai-summaries.md` is served at `/ai/ai-summaries`.
+2. Give it frontmatter:
+
+   ```markdown
+   ---
+   title: AI Summaries
+   description: Learn how Carbon Voice automatically summarizes voice conversations.
+   sidebar_position: 1
+   ---
+
+   # AI Summaries
+
+   ...
+   ```
+
+   `title` and `description` are required — the description becomes the page's meta
+   description, its Open Graph description, and its entry in `llms.txt`, so it should
+   read as a real sentence rather than a keyword list. `sidebar_position` orders the
+   page within its category.
+3. Link it from related pages using relative Markdown links, and link outward from it
+   in return. Internal links are what let both readers and crawlers discover the page.
+
+That is the whole process. No configuration file needs updating.
+
+### Filenames
+
+Filenames are URLs, so they are semantic and stable: lowercase, hyphenated, and
+descriptive of the topic rather than of where it sits in a hierarchy
+(`ai-summaries.md`, not `feature-2.md`). Renaming a file changes a public URL, so
+treat it as a breaking change.
+
+### Marking unfinished content
+
+Where product behavior has not been confirmed, say so explicitly rather than inventing
+it, using a blockquote:
+
+```markdown
+> **Placeholder.** How a summary is requested has not been documented yet.
+```
+
+This renders on GitHub and on the site, and makes gaps greppable:
+`grep -r "Placeholder" docs/`.
+
+## How categories and navigation work
+
+Each directory under `docs/` is a category. Its `_category_.json` sets the label and
+the order it appears in the sidebar:
+
+```json
+{
+  "label": "AI",
+  "position": 4,
+  "customProps": {"description": "Summaries, transcription, and AI features."}
+}
+```
+
+The `index.md` inside a directory is automatically that category's landing page, and
+`customProps.description` is used as the category blurb in `llms.txt`.
+
+`sidebars.ts` contains a single autogenerated entry pointing at `docs/`, so the
+sidebar, breadcrumbs, and previous/next links all follow from the directory structure.
+The right-hand table of contents comes from each page's heading hierarchy — which is
+why headings should nest properly (`##` before `###`) rather than being chosen for
+their size.
+
+## Agent and LLM discoverability
+
+Making this documentation easy for machines to consume is a first-class goal, not an
+afterthought. The decisions:
+
+| Decision | Why |
+| --- | --- |
+| Public repository of plain Markdown | Agents can fetch raw source from `raw.githubusercontent.com` without rendering or scraping HTML. |
+| CommonMark rather than MDX | Content stays parseable by any Markdown tool. |
+| `llms.txt` | A short index of every page with its description, following the [llms.txt convention](https://llmstxt.org/). Points agents at the important sections and states that this is canonical. |
+| `llms-full.txt` | The entire documentation in one file, for agents that would rather take one request than thirty. |
+| Both generated, not maintained | `scripts/generate-llms-txt.mjs` builds them from `docs/` at build time, so they cannot drift. They are gitignored for that reason. |
+| `sitemap.xml` | Generated by Docusaurus for every page. |
+| `robots.txt` | Allows all crawlers, points at the sitemap, and names the machine-readable entry points. |
+| Canonical URLs | Every page emits `<link rel="canonical">`, so syndicated copies point back here. |
+| Descriptive frontmatter | `description` feeds the meta description, Open Graph tags, and `llms.txt` from one place. |
+| Semantic filenames and clean URLs | `/ai/ai-summaries` is legible to a model and stable to link to. |
+| Dense internal linking | Related-article links give crawlers and agents a path through the content. |
+
+To regenerate the discovery files by hand: `npm run generate:llms`.
+
+## Deployment
+
+GitHub Actions builds and publishes to GitHub Pages — no paid hosting required.
+
+- **`.github/workflows/build.yml`** runs on every pull request: installs, type-checks,
+  builds, and asserts that the discovery files were produced. Because
+  `onBrokenLinks` and `onBrokenMarkdownLinks` are set to `throw`, a broken internal
+  link fails the PR rather than reaching the site.
+- **`.github/workflows/deploy.yml`** runs on every push to `main` and publishes the
+  built site to GitHub Pages.
+
+### One-time setup
+
+These steps have to be done by a repository admin, and are not something the code can
+do for itself:
+
+1. **Enable Pages.** Repository → Settings → Pages → Source: **GitHub Actions**.
+2. **Add the DNS record** at whatever hosts `carbonvoice.app`:
+
+   | Type | Name | Value |
+   | --- | --- | --- |
+   | `CNAME` | `help` | `phononx.github.io` |
+
+   The value is the organization's Pages host — note the trailing dot if your DNS
+   provider requires one, and do not point it at the repository name.
+3. **Set the custom domain.** Settings → Pages → Custom domain: `help.carbonvoice.app`.
+   The `static/CNAME` file already carries this value, so Pages should pick it up on
+   the first deploy; the settings field is where to confirm it.
+4. **Enable HTTPS.** Settings → Pages → Enforce HTTPS, once GitHub has issued the
+   certificate (this can take up to an hour after DNS propagates).
+
+Until DNS is in place the site is still reachable at
+`https://phononx.github.io/carbon-voice-docs`, though internal links assume the custom
+domain, so that URL is for smoke-testing only.
+
+### Still to be supplied
+
+- **Branding assets.** `static/img/` is empty. Adding `logo.svg`, `favicon.ico`, and a
+  social-card image, then referencing them in `docusaurus.config.ts`, is the next step
+  toward a branded help center.
+- **Search.** The content is structured for search but no provider is wired up.
+  [Algolia DocSearch](https://docsearch.algolia.com/) is free for public documentation
+  sites; a local search plugin is the alternative if you would rather not depend on a
+  service.
 
 ## Contributing
 
@@ -13,10 +212,11 @@ Corrections and improvements are welcome:
 - **Found something wrong or unclear?** Open an issue describing the page and the
   problem.
 - **Have a fix?** Open a pull request. Small edits — typos, broken links, stale
-  screenshots — need no discussion first.
+  screenshots — need no discussion first. Every page on the site has an
+  **Edit this page** link that takes you to its source.
 
-By contributing, you agree that your contributions are licensed under CC BY 4.0,
-the same license as the rest of this repository.
+By contributing, you agree that your contributions are licensed under CC BY 4.0, the
+same license as the rest of this repository.
 
 ## License
 
@@ -26,15 +226,15 @@ The documentation in this repository is licensed under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 (CC BY 4.0). See [LICENSE](LICENSE) for the full text.
 
-You are free to share and adapt this material for any purpose, including
-commercially, as long as you give appropriate credit, link to the license, and
-indicate whether changes were made. Suggested attribution:
+You are free to share and adapt this material for any purpose, including commercially,
+as long as you give appropriate credit, link to the license, and indicate whether
+changes were made. Suggested attribution:
 
 > "Carbon Voice Docs" by Phonon X, Inc., licensed under
 > [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-The Carbon Voice and Phonon X names and logos are trademarks of Phonon X, Inc.
-and are not covered by the CC BY 4.0 license.
+The Carbon Voice and Phonon X names and logos are trademarks of Phonon X, Inc. and are
+not covered by the CC BY 4.0 license.
 
 ---
 

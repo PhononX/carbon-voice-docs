@@ -1,0 +1,153 @@
+import type * as Preset from '@docusaurus/preset-classic';
+import type {Config} from '@docusaurus/types';
+
+/**
+ * Carbon Voice Help — https://help.carbonvoice.app
+ *
+ * The canonical content lives in `docs/` as plain Markdown. Docusaurus is only
+ * the renderer, so this config deliberately stays close to the defaults.
+ */
+
+const SITE_URL = 'https://help.carbonvoice.app';
+const REPO_URL = 'https://github.com/PhononX/carbon-voice-docs';
+const PRODUCT_URL = 'https://getcarbon.app';
+
+const config: Config = {
+  title: 'Carbon Voice Help',
+  tagline: 'Documentation for Carbon Voice — voice messaging for your whole team, people and agents alike.',
+
+  url: SITE_URL,
+  baseUrl: '/',
+  trailingSlash: false,
+
+  // GitHub Pages deployment target.
+  organizationName: 'PhononX',
+  projectName: 'carbon-voice-docs',
+
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  onDuplicateRoutes: 'throw',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  markdown: {
+    // `.md` files are parsed as CommonMark rather than MDX, so the canonical
+    // content stays portable: what renders here also renders on GitHub and in
+    // any other Markdown tool. Use `.mdx` explicitly if a page ever needs JSX.
+    format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+      onBrokenMarkdownImages: 'throw',
+    },
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          path: 'docs',
+          // Serve the docs at the site root: docs/ai/ai-summaries.md -> /ai/ai-summaries
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          editUrl: `${REPO_URL}/edit/main/`,
+          showLastUpdateTime: true,
+          breadcrumbs: true,
+        },
+        blog: false,
+        pages: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    metadata: [
+      {name: 'author', content: 'Phonon X, Inc.'},
+      {
+        name: 'keywords',
+        content: 'carbon voice, voice messaging, voice notes, transcription, ai summaries, async communication',
+      },
+      {property: 'og:site_name', content: 'Carbon Voice Help'},
+      {property: 'og:type', content: 'website'},
+      {name: 'twitter:card', content: 'summary'},
+    ],
+    colorMode: {
+      defaultMode: 'light',
+      respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
+    navbar: {
+      title: 'Carbon Voice Help',
+      // Add `logo: {src: 'img/logo.svg', alt: 'Carbon Voice'}` once branding
+      // assets land in static/img/.
+      hideOnScroll: false,
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {href: PRODUCT_URL, label: 'Carbon Voice', position: 'right'},
+        {href: REPO_URL, label: 'GitHub', position: 'right'},
+      ],
+    },
+    footer: {
+      style: 'light',
+      links: [
+        {
+          title: 'Documentation',
+          items: [
+            {label: 'Getting Started', to: '/getting-started'},
+            {label: 'AI', to: '/ai'},
+            {label: 'Troubleshooting', to: '/troubleshooting'},
+          ],
+        },
+        {
+          title: 'Carbon Voice',
+          items: [
+            {label: 'Product site', href: PRODUCT_URL},
+            {label: 'Phonon X', href: 'https://phononx.com'},
+          ],
+        },
+        {
+          title: 'For agents and machines',
+          items: [
+            // pathname:// keeps these out of the SPA router: they are static
+            // files generated into static/, not Docusaurus routes.
+            {label: 'llms.txt', href: 'pathname:///llms.txt'},
+            {label: 'llms-full.txt', href: 'pathname:///llms-full.txt'},
+            {label: 'Markdown source', href: REPO_URL},
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Phonon X, Inc. Documentation licensed under CC BY 4.0.`,
+    },
+    prism: {
+      additionalLanguages: ['bash', 'json'],
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;

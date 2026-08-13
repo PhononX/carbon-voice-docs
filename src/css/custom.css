@@ -1,0 +1,50 @@
+/**
+ * Carbon Voice Help — site styling.
+ *
+ * This stays deliberately close to stock Docusaurus. Branding is applied by
+ * overriding the Infima CSS variables below, so a future visual pass should
+ * mostly mean changing these values rather than writing new components.
+ */
+
+:root {
+  /* Placeholder brand color — Docusaurus green until Carbon Voice brand values
+     are supplied. Replace this ramp and the dark-mode ramp below to rebrand. */
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Help-center reading comfort: a slightly roomier line height and a content
+     column that does not run the full width of a large display. */
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 600;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Keep prose readable on wide screens without a custom layout component. */
+.markdown {
+  max-width: 46rem;
+}
+
+/* The placeholder convention used throughout the docs is a plain Markdown
+   blockquote, so it renders on GitHub too. Give it a little emphasis here. */
+.markdown blockquote {
+  border-left-color: var(--ifm-color-primary);
+}

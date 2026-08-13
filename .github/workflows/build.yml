@@ -1,0 +1,40 @@
+name: Build
+
+# Verifies that the documentation site builds. Docusaurus is configured with
+# onBrokenLinks/onBrokenAnchors set to "throw", so a broken internal link fails
+# this check rather than shipping to the site.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches-ignore: [main]
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type-check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Check discovery files were generated
+        run: |
+          set -e
+          for f in build/llms.txt build/llms-full.txt build/sitemap.xml build/robots.txt build/CNAME; do
+            test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
+          done
+          echo "All discovery files present."

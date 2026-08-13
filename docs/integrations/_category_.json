@@ -1,0 +1,5 @@
+{
+  "label": "Integrations",
+  "position": 5,
+  "customProps": {"description": "Connect Carbon Voice to other tools and agents."}
+}

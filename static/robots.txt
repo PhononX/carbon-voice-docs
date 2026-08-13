@@ -1,0 +1,13 @@
+# Carbon Voice Help — https://help.carbonvoice.app
+# This documentation is published under CC BY 4.0. Crawling, indexing, and
+# training on it are all permitted; attribution is required.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://help.carbonvoice.app/sitemap.xml
+
+# Machine-readable entry points:
+#   https://help.carbonvoice.app/llms.txt       index of every page
+#   https://help.carbonvoice.app/llms-full.txt  complete documentation text
+#   https://github.com/PhononX/carbon-voice-docs  canonical Markdown source
