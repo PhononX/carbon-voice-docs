@@ -1,7 +1,7 @@
 # Carbon Voice Docs
 
-Help and documentation for [Carbon Voice](https://getcarbon.app), a voice-first
-messaging app from Phonon X, Inc.
+Help and documentation for [Carbon Voice](https://getcarbon.app) — voice messaging
+for your whole team, people and agents alike. Async, transcribed, always on.
 
 Carbon Voice is available on iOS and Android. This repository holds the source of
 its help content so it can be read, corrected, and reused in the open.
@@ -38,5 +38,6 @@ and are not covered by the CC BY 4.0 license.
 
 ---
 
-Carbon Voice is built by [Phonon X](https://phononx.com), a team working to make
-voice the fastest way to communicate.
+Carbon Voice is built by [Phonon X](https://phononx.com), a team betting that voice
+plus AI is the future of how we work — where every conversation becomes insight,
+action, and knowledge, right from your pocket.
