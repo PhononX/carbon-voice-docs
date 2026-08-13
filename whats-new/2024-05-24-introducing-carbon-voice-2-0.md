@@ -36,7 +36,11 @@ Some of the ways early testers are already using them:
 ## A streamlined messaging experience
 
 The interface is more familiar and more intuitive, without giving up what makes audio
-powerful. A few pointers on where things are:
+powerful.
+
+![The redesigned Carbon Voice home screen with the record button front and center](/img/whats-new/carbon-voice-2-home.webp)
+
+A few pointers on where things are:
 
 - Start a **voice memo** with the big mic button in the bottom center.
 - **Pull down** to search.
@@ -50,6 +54,8 @@ Inside a conversation:
 
 - **Swipe right to left** on a message for the full transcript, labels, and more.
 - **Swipe left to right** to reply as a thread.
+
+![Swipe actions on a message inside a conversation](/img/whats-new/carbon-voice-2-conversation.webp)
 
 ## Faster playback on low-network connections
 

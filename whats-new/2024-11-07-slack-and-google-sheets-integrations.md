@@ -32,6 +32,8 @@ People often want to pull parts of a conversation out for notes or to build some
 else, which until now meant selecting messages, copying the transcript, and pasting it
 elsewhere. The add-on imports memos and messages from inside Google Sheets instead.
 
+![The Carbon Voice add-on importing messages into a Google Sheet](/img/whats-new/google-sheets-import.webp)
+
 1. [Install the extension](https://www.getcarbon.app/google-add-on/sheets), or in Google
    Sheets go to **Extensions → Add-ons → Get Add-ons** and search for "Carbon Voice".
 2. Select a conversation, or your voice memos.

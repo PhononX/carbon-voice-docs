@@ -22,6 +22,8 @@ both. Open message information by pressing and holding a message card and select
 **Message Info**, by tapping the message's timestamp, or by tapping **⋯** from the
 in-line player.
 
+![Message information showing engagement, notes, labels, and transcription](/img/whats-new/detailed-message-info.webp)
+
 Someone is **Caught Up** on a message once they've either cleared its notification or
 listened to it. A solid purple check mark appears next to their name when they are.
 
@@ -29,6 +31,8 @@ In the conversation feed:
 
 - A **gray check mark** means at least one person is caught up.
 - A **solid purple check mark** means everyone in the conversation is.
+
+![Gray and purple check marks beside messages in a conversation](/img/whats-new/caught-up-check-marks.webp)
 
 ## One-tap AI summaries
 
@@ -46,6 +50,8 @@ on each one. The same icon collapses them all again.
 
 Conversation cards now show a preview of the most recent message sent, so you can get a
 snapshot of what's waiting without opening anything.
+
+![Conversation cards on the home screen showing message previews](/img/whats-new/home-screen-message-preview.webp)
 
 ## In-line playback
 
@@ -71,6 +77,8 @@ To get in, tap **Play Notified** on any conversation card from the home screen, 
 the Distracted Mode icon at the top of a conversation. While you're there, tap **⋯** for
 message details, or apply a **Follow-up** label with the label icon beside it so you can
 find the message again later.
+
+![Applying a follow-up label from the Distracted Mode player](/img/whats-new/follow-up-label-distracted-mode.webp)
 
 To get out, tap **✕** to exit and stop playback, or tap the Distracted Mode icon to
 return to the in-line player with the message still playing.

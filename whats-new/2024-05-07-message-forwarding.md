@@ -21,6 +21,8 @@ A forwarded message can be read or heard by its recipients even if they weren't 
 original conversation. If they do have access to that conversation, they'll see a link
 back to the original message — so context and flow survive the trip.
 
+![Forwarding a message to another conversation](/img/messages/forward-message.webp)
+
 1. Press and hold the message you'd like to forward.
 2. Select **Forward**.
 3. Choose the conversation to forward it to.
@@ -31,6 +33,8 @@ You can also send a message you've already sent as a brand new one, in several p
 without saving it as a pre-recorded message first. When forwarding your own message,
 choose **Use my audio as new message instead**. It goes out with the original audio and
 text, but without a link back to where it first appeared.
+
+![The option to use your audio as a new message instead of forwarding it](/img/messages/send-as-new-message.webp)
 
 Pre-recorded messages are still the better choice for things you say often.
 

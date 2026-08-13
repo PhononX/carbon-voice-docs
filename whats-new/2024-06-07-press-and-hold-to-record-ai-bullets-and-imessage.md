@@ -24,6 +24,8 @@ preference to turn it off: **Profile Menu → Settings → Recording**.
 Turn a longer voice message into clear, concise bullet points — useful for summarizing
 information or organizing spoken content into something easier to scan.
 
+![A voice message converted into bullet points](/img/whats-new/ai-bullets.webp)
+
 1. **Swipe right to left** on any message card to open message info.
 2. Toggle **Bullet Off** to convert the message into bullet points.
 

@@ -16,11 +16,15 @@ essence of a long message without reading the whole thing first.
 
 > Available in version 1.2.14914 and later. Update the app to get it.
 
+![A conversation with AI summaries shown on each message](/img/whats-new/ai-summaries-default.webp)
+
 ## Seeing full transcripts
 
 To see one message in full, tap the expanding arrows in the top-right of its message
 card. That reveals the complete transcript alongside the AI summary for that message
 only.
+
+![The expanding arrows on a message card revealing its full transcript](/img/whats-new/expand-full-transcript.webp)
 
 To expand every message in a conversation, tap the expander arrows in the top-right of
 the conversation screen.

@@ -13,6 +13,8 @@ with AI.
 
 <!-- truncate -->
 
+![Turning a voice memo into an email, to-do list, or blog post](/img/whats-new/ai-actions-overview.webp)
+
 📺 [Watch: AI Actions in Carbon Voice](https://youtu.be/V3PABGygqDQ)
 
 ## Easy as 1, 2, 3
@@ -20,6 +22,8 @@ with AI.
 1. Select any voice memo or message.
 2. Choose your output.
 3. See the result, then copy or share it.
+
+![Choosing an output and seeing the structured result](/img/whats-new/ai-actions-results.webp)
 
 Update your app to make sure you have it.
 

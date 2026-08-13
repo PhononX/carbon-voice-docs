@@ -12,6 +12,8 @@ on real usage data — what they're good for, and what each actually does.
 
 <!-- truncate -->
 
+![The AI Actions picker showing the available prompts](/img/whats-new/popular-ai-actions.webp)
+
 ## 1. Bulleted Summary
 
 Most popular by a distance.

@@ -17,3 +17,5 @@ Every push notification now carries a short preview of the message, along with:
 - ✍️ whether it's a **text message**
 - 🎙️ whether it's a **voice message**
 - ✨ an **AI summary**, for longer messages
+
+![Push notifications showing message previews on a lock screen](/img/whats-new/push-notification-preview.webp)

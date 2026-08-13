@@ -30,6 +30,8 @@ latest version.
    the timestamp instead.
 3. **The currently playing message** is highlighted with a gradient behind it.
 
+![The redesigned conversation view with sent messages shaded purple on the right](/img/whats-new/familiar-chat-window.webp)
+
 ## Turn discussions into first-draft documents
 
 This update also makes it quicker to get a document out of a discussion:
@@ -37,3 +39,5 @@ This update also makes it quicker to get a document out of a discussion:
 1. Tap the AI icon.
 2. Select the time range and output type.
 3. Get ready-to-go documentation back.
+
+![Selecting a time range and output type to turn a discussion into a document](/img/whats-new/discussion-to-document.webp)

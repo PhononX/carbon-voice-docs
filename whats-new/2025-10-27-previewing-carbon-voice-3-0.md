@@ -25,6 +25,8 @@ interface. Things like:
 - *"Is the team blocked by anything?"*
 - *"Create a marketing plan from this conversation."*
 
+![AI Chat answering a question about a conversation](/img/whats-new/ai-chat.webp)
+
 Your conversations become a knowledge base you can query.
 
 You reach AI Chat with the multi-color chat icon in the lower right of a conversation, a
@@ -47,6 +49,8 @@ doesn't match what you expected.
 AI finds the key takeaways in conversations and voice memos and turns them into a trackable
 to-do list. Assign them, mark them complete, or push them to Asana, Notion, or whatever
 project manager you already use with the [Zapier integration](/integrations/zapier).
+
+![A trackable list of action items pulled out of a conversation](/img/whats-new/action-items.webp)
 
 - **Find them** by asking AI Chat to pull action items out of your conversations.
 - **Conversation action items** live behind AI Chat or Conversation Settings.

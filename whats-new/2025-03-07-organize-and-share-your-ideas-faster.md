@@ -21,6 +21,8 @@ The voice memo **ready** screen now gives you one-tap access to:
 - ✨ Use AI to transform the transcript into bullets, an email, a presentation outline, or
   more.
 
+![The voice memo ready screen with one-tap sharing options](/img/whats-new/voice-memo-ready-screen.webp)
+
 ## Labels
 
 Ever scroll a long list of memos looking for one? Labels help you keep track of the

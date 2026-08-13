@@ -14,6 +14,8 @@ investment memo."
 
 <!-- truncate -->
 
+![ChatGPT answering a question using Carbon Voice conversations](/img/whats-new/chatgpt-connection.webp)
+
 📺 [Watch: ChatGPT and Carbon Voice](https://www.youtube.com/watch?v=69UKDMW_Sy4)
 
 ## Setting up the connection

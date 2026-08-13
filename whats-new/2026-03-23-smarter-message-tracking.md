@@ -24,6 +24,8 @@ Open a conversation and it scrolls to where you left off, with a line marking wh
 Everything above the line is read; everything below it is unread. When you leave, the line
 moves automatically based on what you've seen.
 
+![A conversation with a line marking where the new messages start](/img/whats-new/whats-new-line.webp)
+
 - **Move it yourself** by pressing and holding a message and selecting **mark as unread**.
 - **Play everything unread** with the play button in the lower left — the line moves when it
   finishes.
@@ -34,8 +36,12 @@ moves automatically based on what you've seen.
 You can't always listen to a long voice message the moment it arrives. A long swipe from
 right to left labels a message **Listen Later** so it's easy to find again.
 
+![Long-swiping a message to label it Listen Later](/img/whats-new/listen-later.webp)
+
 An indicator at the top of the conversation shows when you have messages saved for later.
 Tap **Listen Later** and you get arrows to move between them.
+
+![The Listen Later indicator at the top of a conversation](/img/whats-new/listen-later-indicator.webp)
 
 ## Catch up on a walk
 
@@ -45,6 +51,8 @@ plays new messages only.
 
 Tap the filter button above the conversation list to see the conversations that need your
 attention.
+
+![Filtering the conversation list down to what needs attention](/img/whats-new/catch-up-filter.webp)
 
 ## Send from voice memos
 

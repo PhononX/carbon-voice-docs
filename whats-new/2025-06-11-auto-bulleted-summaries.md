@@ -20,6 +20,8 @@ displays as a clean, structured bulleted summary. It's noticeably faster in long
 
 As you scroll, summaries generate automatically.
 
+![A conversation with every message displayed as a bulleted summary](/img/whats-new/auto-bulleted-summary.webp)
+
 > This requires a premium account and uses your plan's AI credits.
 
 Don't want to wait for summaries to generate as you scroll? Premium workspaces can be set

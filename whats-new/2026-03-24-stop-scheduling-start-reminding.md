@@ -26,9 +26,13 @@ A reminder posts a scheduled message into any conversation automatically. Your t
 notified, everyone responds when it suits them, and the update happens without anyone having
 to remember to start it.
 
+![A reminder posting a scheduled prompt into a conversation](/img/whats-new/reminders-how-it-works.webp)
+
 ## How to set one up
 
 It takes a few taps.
+
+![Creating a reminder from conversation settings](/img/whats-new/reminders-setup.webp)
 
 - **New conversations** — tap **Reminders** at the top of the conversation information block.
 - **Existing conversations** — tap the conversation name to open Settings, scroll to

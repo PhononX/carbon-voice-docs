@@ -18,6 +18,8 @@ Stuck in a meeting, or waking up to a busy conversation? Swipe right to left on 
 conversation from Home and **Catch-up** summarizes the discussion, with links to play the
 source messages. You can mark everything read from there too.
 
+![A Catch-up summary of a conversation with links to the source messages](/img/whats-new/catch-up.webp)
+
 ## A history of your AI Actions
 
 Tap the AI icon in the bottom right of a conversation to find every AI Action result from
@@ -32,6 +34,8 @@ action on all of them at once.
 1. Press and hold any voice memo or message in a conversation.
 2. Tap **Select** to choose multiple messages.
 3. Pick your AI Action.
+
+![Selecting several messages to run one AI Action across them](/img/whats-new/ai-actions-multi-select.webp)
 
 ## Raise your phone to your ear to play new messages
 
@@ -49,6 +53,8 @@ rename them yourself:
 2. Each memo has an auto-generated title — very short memos won't.
 3. Tap the title to edit it.
 
+![A list of voice memos with auto-generated titles](/img/whats-new/named-voice-memos.webp)
+
 ## Convert a DM into a named conversation
 
 You asked for this: a direct message can become a named conversation, so you can add and
@@ -60,6 +66,8 @@ control options.
 3. Tap **Convert DM into Named Conversation**.
 4. Name it and tap **Convert**.
 
+![The Convert DM into Named Conversation option in member settings](/img/whats-new/convert-dm-to-named.webp)
+
 ## Start a new conversation with the same members
 
 New topic, same group of people? You no longer have to rebuild the member list.
@@ -68,6 +76,8 @@ New topic, same group of people? You no longer have to rebuild the member list.
 2. Tap **Members**.
 3. Tap **⋯** in the top-right.
 4. Select **New Conversation +**.
+
+![Creating a new conversation from an existing conversation's member list](/img/whats-new/new-conversation-same-members.webp)
 
 Haven't tried voice with AI Actions yet? See
 [nine ways to be more productive with AI Actions](./2024-09-20-nine-ways-to-be-more-productive-with-ai-actions.md).

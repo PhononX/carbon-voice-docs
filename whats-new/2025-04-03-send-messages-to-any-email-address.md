@@ -12,6 +12,8 @@ for a while — this makes it much better for the person receiving it.
 
 <!-- truncate -->
 
+![A Carbon Voice message as it arrives in an email inbox](/img/whats-new/voice-message-as-email.webp)
+
 **Full transcript, right up top.** The transcript is now in the body of the email, so the
 recipient can read your message instantly. It's like sending an email by speaking.
 

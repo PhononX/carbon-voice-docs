@@ -22,6 +22,8 @@ matching email domain is told the workspace exists. You choose what happens next
 - They see **custom instructions** you've written — internal process notes, or links for
   joining.
 
+![Workspace discovery settings for a connected company domain](/img/whats-new/workspace-discovery.webp)
+
 ## Setting it up for a new workspace
 
 [Create a workspace](/workspaces/create-a-workspace). Step 2 of creation walks you through

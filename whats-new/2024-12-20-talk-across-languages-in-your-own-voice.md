@@ -17,6 +17,8 @@ cloned voice.
 
 > At launch, Global Voice is available on iOS only. Android is coming.
 
+![A message translated and played back in the sender's own cloned voice](/img/whats-new/global-voice.webp)
+
 📺 [See a demo](https://youtu.be/d1VLDRJLHxo)
 
 ## Automatic translation

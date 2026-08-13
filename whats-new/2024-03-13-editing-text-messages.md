@@ -13,6 +13,8 @@ You asked for this one: text messages you've already sent can now be edited.
 
 > Available in version 1.2.14914 and later. Update the app to get it.
 
+![The Edit Text Message option in the press-and-hold menu](/img/whats-new/edit-text-message.webp)
+
 1. Press and hold the sent text message you want to change.
 2. Tap **Edit Text Message**.
 3. Make your edit and tap **Done**.

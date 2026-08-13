@@ -34,3 +34,7 @@ You can now decide what tapping a message card does:
   the message, or tap the play button in the lower left to play audio.
 
 Change it in **Settings → Conversation History → Message Tap Action**.
+
+![The Message Tap Action setting](/img/whats-new/message-tap-action-setting.webp)
+
+![The play button in the lower left of an audio message card](/img/whats-new/message-play-button.webp)
