@@ -35,3 +35,8 @@ indicate whether changes were made. Suggested attribution:
 
 The Carbon Voice and Phonon X names and logos are trademarks of Phonon X, Inc.
 and are not covered by the CC BY 4.0 license.
+
+---
+
+Carbon Voice is built by [Phonon X](https://phononx.com), a team working to make
+voice the fastest way to communicate.
