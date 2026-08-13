@@ -15,6 +15,7 @@ const PRODUCT_URL = 'https://getcarbon.app';
 const config: Config = {
   title: 'Carbon Voice Help',
   tagline: 'Documentation for Carbon Voice — voice messaging for your whole team, people and agents alike.',
+  favicon: 'img/logo.svg',
 
   url: SITE_URL,
   baseUrl: '/',
@@ -138,8 +139,13 @@ const config: Config = {
     },
     navbar: {
       title: 'Carbon Voice Help',
-      // Add `logo: {src: 'img/logo.svg', alt: 'Carbon Voice'}` once branding
-      // assets land in static/img/.
+      logo: {
+        alt: 'Carbon Voice',
+        src: 'img/logo.svg',
+        // Same mark in the lighter brand violet, which the #5E4CCE version is
+        // too dim to hold against the indigo navbar in dark mode.
+        srcDark: 'img/logo-dark.svg',
+      },
       hideOnScroll: false,
       items: [
         {
