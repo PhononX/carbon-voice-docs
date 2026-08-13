@@ -43,3 +43,5 @@ Pre-recorded messages are still the better choice for things you say often.
 Forwarding is useful, and being forwarded can feel surprising. So Carbon Voice notifies
 the owner of a message whenever it's forwarded — you always know how your messages are
 being shared.
+
+![A notification telling the message owner that their message was forwarded](/img/whats-new/forward-transparency-alert.webp)
