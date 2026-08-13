@@ -14,7 +14,7 @@ Make a conversation a Quick Send for faster access from Home.
 2. Select **Add to Quick Sends**.
 3. The conversation appears in the **Quick Sends** section on Home.
 
-<!-- image: quick-send.png — screenshot to re-export from Notion -->
+![Quick send](/img/conversations/quick-send.webp)
 
 ## Using Quick Sends
 

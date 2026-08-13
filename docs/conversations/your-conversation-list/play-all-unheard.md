@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Tap the play button with the unheard count, on the right side of the message card.
 
-<!-- image: play-all-unheard.gif — animation to re-export from Notion -->
+![Play all unheard](/img/conversations/play-all-unheard.webp)
 
 ## Related
 

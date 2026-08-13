@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Press and hold on a conversation to get quick options without opening it.
 
-<!-- image: press-and-hold.png — screenshot to re-export from Notion -->
+![Press and hold](/img/conversations/press-and-hold.webp)
 
 ## Related
 

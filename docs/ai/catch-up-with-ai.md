@@ -14,7 +14,7 @@ of what you missed.
 Swipe from right to left on a conversation — from Home or in your conversation list —
 and Catch-up summarizes the discussion, with links to play the source messages.
 
-<!-- image: catch-up-with-ai.gif — animation to re-export from Notion -->
+![Catch up with ai](/img/ai/catch-up-with-ai.webp)
 
 ## The full catch-up summary
 

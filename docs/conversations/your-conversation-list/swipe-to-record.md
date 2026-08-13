@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Swipe from left to right on a conversation to start recording to that conversation.
 
-<!-- image: swipe-to-record.gif — animation to re-export from Notion -->
+![Swipe to record](/img/conversations/swipe-to-record.webp)
 
 ## Related
 

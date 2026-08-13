@@ -19,7 +19,7 @@ As a conversation owner or admin, you can manage access from Conversation Settin
 
 ## Add people
 
-<!-- image: add-people.png — screenshot to re-export from Notion -->
+![Add people](/img/conversations/add-people.webp)
 
 1. Tap the conversation name at the top of the conversation screen.
 2. Tap the **People** tab.

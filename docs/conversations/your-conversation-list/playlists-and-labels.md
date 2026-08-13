@@ -15,7 +15,7 @@ can label a message simply to find it in Notebook.
 Press and hold on a message, select **Labels**, then choose the labels you want to
 apply.
 
-<!-- image: labels.png — screenshot to re-export from Notion -->
+![Labels](/img/conversations/labels.webp)
 
 ## Manage labels and playlists
 

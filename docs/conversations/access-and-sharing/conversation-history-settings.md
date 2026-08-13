@@ -9,7 +9,7 @@ sidebar_position: 4
 These settings control how messages appear in your conversation feed. All of them live
 under **Profile Menu → Settings → Conversation History**.
 
-<!-- image: conversation-history-settings.jpeg — screenshot to re-export from Notion -->
+![Conversation history settings](/img/conversations/conversation-history-settings.webp)
 
 ## Managing longer messages
 
