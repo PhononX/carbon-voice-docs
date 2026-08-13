@@ -57,7 +57,27 @@ const config: Config = {
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
-        blog: false,
+        // Product updates and announcements. These are dated and superseded
+        // over time, unlike the evergreen help articles in docs/, so they use
+        // the blog plugin: chronological, archived, and with an RSS feed.
+        blog: {
+          path: 'whats-new',
+          routeBasePath: 'whats-new',
+          blogTitle: "What's New in Carbon Voice",
+          blogDescription: 'Product updates, new features, and announcements for Carbon Voice.',
+          blogSidebarTitle: 'Recent updates',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
+          postsPerPage: 20,
+          onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
+          feedOptions: {
+            type: 'all',
+            title: "Carbon Voice — What's New",
+            description: 'Product updates and announcements for Carbon Voice.',
+            copyright: `Copyright © ${new Date().getFullYear()} Phonon X, Inc.`,
+          },
+        },
         pages: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -109,6 +129,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
+        {to: '/whats-new', label: "What's New", position: 'left'},
         {href: PRODUCT_URL, label: 'Carbon Voice', position: 'right'},
         {href: REPO_URL, label: 'GitHub', position: 'right'},
       ],
