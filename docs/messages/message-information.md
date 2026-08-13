@@ -15,7 +15,7 @@ transcript and everything you can do with it.
 - From the in-line player, tap the **"..."**.
 - In distracted mode, tap **See Transcript**.
 
-<!-- image: message-info.jpeg — screenshot to re-export from Notion -->
+![Message info](/img/messages/message-info.webp)
 
 ## What's in it
 
@@ -32,7 +32,7 @@ playlists. See
 **Transcription** — read the full transcript, tap a word to jump to that point during
 playback, and copy or share the text.
 
-<!-- image: transcript-actions.jpg — screenshot to re-export from Notion -->
+![Transcript actions](/img/messages/transcript-actions.webp)
 
 **Message actions** — download the message, save it as a pre-recorded message, or
 delete it. The last two are available on your own messages only.

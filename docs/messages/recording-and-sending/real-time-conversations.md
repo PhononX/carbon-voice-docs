@@ -12,14 +12,14 @@ If recipients are around when you start speaking, they can listen live and reply
 like a normal phone conversation. If they aren't available, or anyone loses their
 network connection, they can catch up on your messages and reply later.
 
-<!-- image: real-time-listening.png — screenshot to re-export from Notion -->
+![Real time listening](/img/messages/real-time-listening.webp)
 
 ## Seeing who's engaged
 
 When you tap the mic button to start speaking, you can see who is listening or speaking
 at the same time.
 
-<!-- image: who-is-listening.png — screenshot to re-export from Notion -->
+![Who is listening](/img/messages/who-is-listening.webp)
 
 ## Related
 

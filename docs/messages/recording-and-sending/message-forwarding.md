@@ -17,7 +17,7 @@ When you forward a message, recipients can read or listen to it even if they wer
 the original conversation. If they do have access to that conversation, a link back is
 shown so they can jump to the original message and see its context.
 
-<!-- image: forward-message.png — screenshot to re-export from Notion -->
+![Forward message](/img/messages/forward-message.webp)
 
 1. Press and hold on the message you want to forward.
 2. Select **Forward**.
@@ -33,7 +33,7 @@ audio and text, but without a link back to where it was first sent.
 
 Pre-recorded messages are still the better choice for something you send often.
 
-<!-- image: send-as-new-message.png — screenshot to re-export from Notion -->
+![Send as new message](/img/messages/send-as-new-message.webp)
 
 ## Transparency alerts
 

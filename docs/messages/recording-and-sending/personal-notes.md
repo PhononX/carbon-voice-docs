@@ -16,11 +16,11 @@ them as you record your reply.
 2. Scroll down to **Private notes** and tap to add your note.
 3. Tap **Done**, and the note is attached to the message.
 
-<!-- image: private-notes.png — screenshot to re-export from Notion -->
+![Private notes](/img/messages/private-notes.webp)
 
 ## Finding your notes again
 
 Notes appear in the conversation and while you reply to the message. You can also find
 them later in the **Notebook** tab.
 
-<!-- image: notebook-notes.png — screenshot to re-export from Notion -->
+![Notebook notes](/img/messages/notebook-notes.webp)

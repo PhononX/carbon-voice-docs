@@ -35,7 +35,7 @@ At the top of message info is the **Engagement Status** card:
 - **Some caught up** — only some participants have engaged.
 - **None caught up** — nobody has read or listened yet.
 
-<!-- image: engagement-status.jpeg — screenshot to re-export from Notion -->
+![Engagement status](/img/messages/engagement-status.webp)
 
 ## Per-person detail
 
@@ -45,7 +45,7 @@ Tap the engagement bar to expand it for a breakdown of each person:
 - **Notified cleared** — they cleared the notification, which counts as a read.
 - **Unread** — they haven't read or listened yet.
 
-<!-- image: engagement-detail.jpeg — screenshot to re-export from Notion -->
+![Engagement detail](/img/messages/engagement-detail.webp)
 
 So "Notified Cleared · 80% heard" means they listened to most of it and cleared the
 notification, while "Unread · 0% heard" means they haven't engaged at all.
