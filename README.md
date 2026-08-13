@@ -1,6 +1,6 @@
 # Carbon Voice Docs
 
-Help and documentation for [Carbon Voice](https://carbonvoice.app), a voice-first
+Help and documentation for [Carbon Voice](https://getcarbon.app), a voice-first
 messaging app from Phonon X, Inc.
 
 Carbon Voice is available on iOS and Android. This repository holds the source of
