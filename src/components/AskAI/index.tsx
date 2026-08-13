@@ -45,20 +45,19 @@ const ASSISTANTS: readonly Assistant[] = [
   },
 ];
 
-function buildPrompt(siteUrl: string, pathname: string): string {
-  const lines = [
-    `Read ${siteUrl}/llms-full.txt — the complete Carbon Voice help center — and`,
-    'answer using only what it says. Cite the page each answer comes from.',
-  ];
-
-  // On an article, name it: most questions are about the page in front of the
-  // reader, and the full text stays available for everything else.
-  if (pathname && pathname !== '/') {
-    lines.push(`I am reading ${siteUrl}${pathname}.`);
-  }
-
-  lines.push('', 'My question: ');
-  return lines.join(' ').replace(/ {2,}/g, ' ');
+/**
+ * Deliberately says nothing about the page the reader is on. Someone opens
+ * this menu because the page in front of them did not answer their question,
+ * so that page is more likely to be the wrong context than the right one —
+ * naming it would bias the answer toward it, and invite the assistant to read
+ * that one page instead of the whole help center.
+ */
+function buildPrompt(siteUrl: string): string {
+  return (
+    `Read ${siteUrl}/llms-full.txt — the complete Carbon Voice help center — ` +
+    'and answer my questions about Carbon Voice using only what it says. Cite ' +
+    'the page each answer comes from.\n\nMy question: '
+  );
 }
 
 function SparkleIcon(): React.JSX.Element {
@@ -112,9 +111,7 @@ export default function AskAI(): React.JSX.Element {
   // Close when navigating, so the menu does not linger over the next page.
   useEffect(close, [pathname, close]);
 
-  const encodedPrompt = encodeURIComponent(
-    buildPrompt(siteConfig.url, pathname),
-  );
+  const encodedPrompt = encodeURIComponent(buildPrompt(siteConfig.url));
 
   return (
     <div
