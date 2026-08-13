@@ -16,7 +16,7 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
 
 <div class="cardGrid">
 
-- <span class="cardIcon">🎙️</span> **[Record your first voice message](record-a-voice-message.md)**<br />
+- <span class="cardIcon">🎙️</span> **[Record your first voice message](messages/recording-and-sending/record-a-voice-message.md)**<br />
   Hold the button, talk, send.
 - <span class="cardIcon">💬</span> **[Start a conversation with someone](conversations/creating/start-with-a-phone-number-or-email.md)**<br />
   Reach anyone with a phone number or email, whether or not they have the app.
