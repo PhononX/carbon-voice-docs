@@ -184,6 +184,7 @@ const config: Config = {
           items: [
             // pathname:// keeps these out of the SPA router: they are static
             // files generated into static/, not Docusaurus routes.
+            {label: 'About this documentation', to: '/about'},
             {label: 'llms.txt', href: 'pathname:///llms.txt'},
             {label: 'llms-full.txt', href: 'pathname:///llms-full.txt'},
             {label: 'Markdown source', href: REPO_URL},
