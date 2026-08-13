@@ -128,6 +128,14 @@ npm run typecheck  # type-check the TypeScript config
 
 `npm run build` regenerates `static/llms.txt` and `static/llms-full.txt` first.
 
+Search does not work under `npm start`. The index is built in a `postBuild` hook,
+which the dev server never runs, so the search box answers every query with "⚠️ The
+search index is only available when you run docusaurus build!" — a notice shown
+whenever the site is not a production build, not a report that something is missing.
+Running `npm run build` beforehand does not change it either, since the dev server
+serves from memory rather than from `build/`. To try search locally, use `npm run
+build && npm run serve`.
+
 Re-run `npm install` after pulling, not just on first setup. When a pull brings in a
 new dependency, the build fails with a resolve error pointing at the file that
 imports it rather than at the missing package — for example, a change to
