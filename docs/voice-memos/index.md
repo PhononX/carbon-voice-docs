@@ -7,7 +7,9 @@ sidebar_position: 4
 # Voice Memos
 
 Voice memos are the recordings you make for yourself — captured in the moment, kept
-until you decide what to do with them.
+until you decide what to do with them. You can share one as a link, turn it into a
+document with AI, or send it into a conversation.
 
-> **Being ported.** These articles are moving over from the Carbon Voice Help Center in
-> Notion. This page will list them as they land.
+- [Organizing voice memos](organizing-voice-memos.md)
+- [Sharing voice memos](sharing-voice-memos.md)
+- [Share a link to a voice memo](share-a-link.md)

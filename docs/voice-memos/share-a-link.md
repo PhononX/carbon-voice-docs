@@ -1,0 +1,20 @@
+---
+title: Share a link to a voice memo
+description: Send someone a link they can use to listen to a memo and reply, without an account.
+sidebar_position: 3
+---
+
+# Share a link to a voice memo
+
+You can share a link to a voice memo that lets someone listen to it and reply.
+
+1. Record a voice memo using the mic button on Home.
+2. Tap **Share Voice Memo**.
+3. Tap **Copy Link**.
+
+📺 [Watch: sharing a voice memo link](https://www.youtube.com/watch?v=rk3YgSnx4vU)
+
+## Related
+
+- [Sharing voice memos](sharing-voice-memos.md)
+- [Record and share](../messages/recording-and-sending/record-and-share.md)
