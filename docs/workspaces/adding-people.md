@@ -14,7 +14,7 @@ You can add someone directly, or share a link they can use to join.
 3. Tap the **gear icon** on the right side of the workspace you want to invite to.
 4. Tap **Add People**.
 
-<!-- image: workspace-add-people.jpeg — screenshot to re-export from Notion -->
+![Workspace add people](/img/workspaces/workspace-add-people.webp)
 
 From there you can either add a contact or create a link to share.
 
@@ -25,7 +25,7 @@ contact list.
 
 ## Generating a link
 
-<!-- image: workspace-invite-link.jpeg — screenshot to re-export from Notion -->
+![Workspace invite link](/img/workspaces/workspace-invite-link.webp)
 
 A link can be shared directly, posted on an intranet, or put on a website — whoever
 receives it can tap it to join the workspace. Two settings control how it behaves:

@@ -31,11 +31,11 @@ personal space or another workspace. You'll need to provide:
 On the **home screen**, the conversation list shows the color as a stripe down the left
 and as a hue on the card, with the watermark across the background.
 
-<!-- image: workspace-color-home.png — screenshot to re-export from Notion -->
+![Workspace color home](/img/workspaces/workspace-color-home.webp)
 
 In **conversation history**, the color and watermark appear at the top.
 
-<!-- image: workspace-color-history.png — screenshot to re-export from Notion -->
+![Workspace color history](/img/workspaces/workspace-color-history.webp)
 
 ## Retention policies
 

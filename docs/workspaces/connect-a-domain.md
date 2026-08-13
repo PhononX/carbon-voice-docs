@@ -10,7 +10,7 @@ Connecting a domain makes it easier for teammates to find and join your workspac
 someone logs in with an email address matching your connected domain, they see joining
 options based on the rules you set.
 
-<!-- image: workspace-discovery.png — screenshot to re-export from Notion -->
+![Workspace discovery](/img/workspaces/workspace-discovery.webp)
 
 ## Join preferences
 

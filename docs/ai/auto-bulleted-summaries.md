@@ -10,7 +10,7 @@ Auto bulleted summaries turn each message in a conversation into clean bullet po
 automatically, so you don't have to open message details one by one. They're most
 useful for catching up on longer conversations.
 
-<!-- image: auto-bulleted-summaries.gif — animation to re-export from Notion -->
+![Auto bulleted summaries](/img/ai/auto-bulleted-summaries.webp)
 
 ## What it does
 

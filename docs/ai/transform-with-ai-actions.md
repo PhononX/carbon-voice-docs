@@ -16,7 +16,7 @@ The shape of it is always the same:
 2. **Structure with AI** — turn those thoughts into a first draft.
 3. **Share with anyone** — send the structured content wherever it needs to go.
 
-<!-- image: ai-actions.png — screenshot to re-export from Notion -->
+![Ai actions](/img/ai/ai-actions.webp)
 
 ## Transforming a single voice memo
 

@@ -26,7 +26,7 @@ translated when needed, and everyone follows along in the language they prefer.
 Anyone can add their languages, whether or not they have Carbon Voice Translate
 enabled.
 
-<!-- image: global-voice-languages.png — screenshot to re-export from Notion -->
+![Global voice languages](/img/ai/global-voice-languages.webp)
 
 Ordering your languages tells the system your preferences. A message that arrives in
 any language on your list isn't translated, wherever it sits in the order — you'll hear
@@ -52,7 +52,7 @@ that language benefit as a side effect.
 
 A translated message is marked with a translation icon and note below the message card.
 
-<!-- image: translated-message.png — screenshot to re-export from Notion -->
+![Translated message](/img/ai/translated-message.webp)
 
 ### Seeing the original
 
