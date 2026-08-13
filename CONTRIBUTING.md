@@ -76,6 +76,23 @@ This renders on GitHub and on the site, and keeps gaps greppable:
 - Screenshots are the highest-maintenance content here; use them where they answer
   "which button," and skip them where a sentence does the job.
 
+## What's New (announcements)
+
+Release notes and announcements live in `whats-new/`, not `docs/`. They are dated and
+superseded over time, where help articles are evergreen and get updated in place.
+
+Name the file with its publication date, which becomes the URL:
+
+```
+whats-new/2026-05-12-carbon-voice-for-mac.md   →   /whats-new/2026/05/12/carbon-voice-for-mac
+```
+
+Frontmatter takes `title`, `description`, `date`, and `tags`. Add a
+`<!-- truncate -->` comment after the opening paragraph so the listing page shows a
+summary rather than the whole post.
+
+The section generates an archive, tag pages, and RSS and Atom feeds automatically.
+
 ## Categories and navigation
 
 Each directory under `docs/` is a category. Its `_category_.json` sets the label and
