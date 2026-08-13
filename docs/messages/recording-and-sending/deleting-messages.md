@@ -20,4 +20,4 @@ Press and hold on the message and select **Delete**.
 
 ## Related
 
-- [How to record a voice message](../../getting-started/record-a-voice-message.md)
+- [How to record a voice message](../../record-a-voice-message.md)

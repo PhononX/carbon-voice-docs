@@ -4,5 +4,5 @@
   "customProps": {
     "description": "Recording, listening, transcripts, and message actions."
   },
-  "className": "navIcon navIcon--mic"
+  "className": "navIcon navIcon--message-circle"
 }

@@ -602,6 +602,18 @@ h4 {
   --nav-icon: url('/img/nav/info.svg');
 }
 
+.navIcon--message-circle {
+  --nav-icon: url('/img/nav/message-circle.svg');
+}
+
+.navIcon--send {
+  --nav-icon: url('/img/nav/send.svg');
+}
+
+.navIcon--compass {
+  --nav-icon: url('/img/nav/compass.svg');
+}
+
 /* "Ask AI" navbar dropdown (src/components/AskAI). Styled as a quieter sibling
    of the search box: search is how you find a page, this is how you ask a
    question about one. */

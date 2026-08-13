@@ -22,5 +22,5 @@ it, you can share the finished audio file into Carbon Voice.
 
 ## Related
 
-- [How to record a voice message](../../getting-started/record-a-voice-message.md)
+- [How to record a voice message](../../record-a-voice-message.md)
 - [Pre-recorded messages](pre-recorded-messages.md)

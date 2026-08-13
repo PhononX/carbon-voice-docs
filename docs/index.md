@@ -16,11 +16,11 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
 
 <div class="cardGrid">
 
-- <span class="cardIcon">🎙️</span> **[Record your first voice message](getting-started/record-a-voice-message.md)**<br />
+- <span class="cardIcon">🎙️</span> **[Record your first voice message](record-a-voice-message.md)**<br />
   Hold the button, talk, send.
 - <span class="cardIcon">💬</span> **[Start a conversation with someone](conversations/creating/start-with-a-phone-number-or-email.md)**<br />
   Reach anyone with a phone number or email, whether or not they have the app.
-- <span class="cardIcon">🧭</span> **[Find your way around the app](getting-started/a-tour-of-the-app.md)**<br />
+- <span class="cardIcon">🧭</span> **[Find your way around the app](a-tour-of-the-app.md)**<br />
   What each part of the home screen does.
 - <span class="cardIcon">✨</span> **[Catch up on what you missed](ai/catch-up-with-ai.md)**<br />
   Let AI summarize everything said while you were away.
@@ -35,8 +35,6 @@ Prefer to watch? Start with the [video guides](videos.md).
 
 ## Browse by topic
 
-- **[Getting Started](getting-started/index.md)** — record your first message and find
-  your way around the app.
 - **[Conversations](conversations/index.md)** — creating conversations, organizing your
   list, and controlling access.
 - **[Messages](messages/index.md)** — recording, sending, listening, and transcripts.

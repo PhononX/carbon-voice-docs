@@ -26,4 +26,4 @@ See [Creating conversations](../../conversations/creating/index.md) to set one u
 ## Related
 
 - [Voice Memos](../../voice-memos/index.md)
-- [How to record a voice message](../../getting-started/record-a-voice-message.md)
+- [How to record a voice message](../../record-a-voice-message.md)

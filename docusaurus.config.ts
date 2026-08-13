@@ -238,7 +238,7 @@ const config: Config = {
         {
           title: 'Documentation',
           items: [
-            {label: 'Getting Started', to: '/getting-started'},
+            {label: 'Record your first message', to: '/record-a-voice-message'},
             {label: 'AI', to: '/ai'},
             {label: 'Troubleshooting', to: '/troubleshooting'},
           ],

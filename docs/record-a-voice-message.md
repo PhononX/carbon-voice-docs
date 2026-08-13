@@ -2,6 +2,7 @@
 title: How to record a voice message
 description: Start, pause, restart, and finish a recording in Carbon Voice.
 sidebar_position: 1
+sidebar_class_name: navIcon navIcon--mic
 ---
 
 # How to record a voice message
@@ -29,7 +30,7 @@ Tap the **big purple check mark** in the center to complete your recording.
 
 > On the web, make sure your browser allows microphone access. On mobile, check the
 > app's permissions in your phone settings if you get an error reaching your mic. See
-> [Microphone access](../troubleshooting/microphone-access.md).
+> [Microphone access](troubleshooting/microphone-access.md).
 
 ## Next
 

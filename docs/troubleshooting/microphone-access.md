@@ -14,4 +14,4 @@ If you can't start a recording because of a mic error:
 
 ## Related
 
-- [How to record a voice message](../getting-started/record-a-voice-message.md)
+- [How to record a voice message](../record-a-voice-message.md)

@@ -25,4 +25,4 @@ Make a conversation a Quick Send for faster access from Home.
 ## Related
 
 - [Press and hold actions](press-and-hold-actions.md)
-- [A tour of the app](../../getting-started/a-tour-of-the-app.md)
+- [A tour of the app](../../a-tour-of-the-app.md)
