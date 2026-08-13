@@ -592,8 +592,21 @@ AI still finds it; the concept lives where the intent lives.
 
 That page should also say **what lands in the vault**, because that's what makes it queryable
 later: transcripts, AI summaries, and participant and workspace wiki links — not just audio
-files. And it closes a loop worth naming once: **Carbon Voice captures the voice, the vault
-holds it, an assistant reads it — and through agents and MCP, writes back into Carbon Voice.**
+files.
+
+And it should say why anyone runs this at all, because that's the part the docs have never
+articulated. **AI is only as personalized as the context it can reach** — and most of anyone's
+best thinking happens in conversation, which is exactly the material that never gets written
+down. Three steps, linear:
+
+1. **Carbon Voice captures your ideas** as you talk, as a byproduct of communicating — no
+   separate note-taking discipline to keep up.
+2. **Obsidian Sync pulls them in**, as Markdown you own.
+3. **Your agents query that second brain**, and answer with fuller context of you.
+
+Step 3 is only ever as good as step 1 — which is the argument for capturing by voice in the
+first place, and the reason this page belongs in the AI section rather than reading as an
+Obsidian footnote.
 
 ### 4.7 The proposed sidebar
 
