@@ -148,8 +148,9 @@ export default function AskAI(): React.JSX.Element {
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}>
-              {/* The label already names the service, so the mark is
-                  decorative to a screen reader. */}
+              {/* Inlined rather than loaded as an image so the OpenAI mark can
+                  follow the menu's text colour; the label already names the
+                  service, so the mark is decorative to a screen reader. */}
               <assistant.Icon className="askAI__vendorIcon" aria-hidden="true" />
               {assistant.name}
             </a>

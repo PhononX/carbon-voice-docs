@@ -364,17 +364,14 @@ h4 {
   gap: 0.6em;
 }
 
-/* The vendor marks are monochrome, so they take the menu's text colour and
-   need no dark-mode variant. */
+/* The marks carry their own brand colours, so they are left undimmed. The
+   OpenAI one is the exception: it has no colour variant and inherits the menu
+   text colour, which puts it black on light and near-white on dark — the
+   treatment its own guidelines describe. */
 .askAI__vendorIcon {
   flex: none;
   height: 1.05em;
-  opacity: 0.85;
   width: 1.05em;
-}
-
-.askAI__link:hover .askAI__vendorIcon {
-  opacity: 1;
 }
 
 .askAI__intro {
