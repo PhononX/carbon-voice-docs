@@ -23,7 +23,7 @@ address or phone number that isn't registered to your Carbon Voice account.
 3. Go to **Settings → Directory Services**.
 4. Add the email addresses or phone numbers people might use to reach you.
 
-<!-- image: directory-services.png — screenshot to re-export from Notion -->
+![Directory services](/img/troubleshooting/directory-services.webp)
 
 ## Related
 

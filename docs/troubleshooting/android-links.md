@@ -18,8 +18,8 @@ default handler for those links.
 6. **Set the link types** Carbon Voice should handle, such as HTTP and HTTPS.
 7. **Confirm**, and those links will open in the app from then on.
 
-<!-- image: android-app-settings.png — screenshot to re-export from Notion -->
-<!-- image: android-link-defaults.png — screenshot to re-export from Notion -->
+![Android app settings](/img/troubleshooting/android-app-settings.webp)
+![Android link defaults](/img/troubleshooting/android-link-defaults.webp)
 
 > Exact wording and menu locations vary by Android version and manufacturer. If you
 > can't find the setting, check your device's own documentation.

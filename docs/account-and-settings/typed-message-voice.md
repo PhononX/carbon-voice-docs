@@ -13,7 +13,7 @@ rather than read it. You can personalize how that sounds:
 - Choose the premium TTS engine, which sounds better.
 - Clone your voice, so typed messages sound like you said them.
 
-<!-- image: text-to-speech-settings.png — screenshot to re-export from Notion -->
+![Text to speech settings](/img/account-and-settings/text-to-speech-settings.webp)
 
 ## Changing the setting
 

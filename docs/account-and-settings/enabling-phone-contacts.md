@@ -12,7 +12,7 @@ You can connect with your existing contacts who are already on Carbon Voice.
 2. Tap **Find Carbon Voice Contacts**.
 3. Tap **Say Hi!** to start a conversation.
 
-<!-- image: people-you-know.png — screenshot to re-export from Notion -->
+![People you know](/img/account-and-settings/people-you-know.webp)
 
 ## Related
 

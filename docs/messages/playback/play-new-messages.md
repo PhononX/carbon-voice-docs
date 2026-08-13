@@ -9,7 +9,7 @@ sidebar_position: 4
 **Play New Messages** is a one-tap way to catch up on the messages that need your
 attention.
 
-<!-- image: play-new-messages.png — screenshot to re-export from Notion -->
+![Play new messages](/img/messages/play-new-messages.webp)
 
 ## From the Home screen
 

@@ -27,7 +27,7 @@ as flags, indicating that action or acknowledgment is needed from you.
 
 ### Playing your notified messages
 
-<!-- image: notified-playlist.png — screenshot to re-export from Notion -->
+![Notified playlist](/img/messages/notified-playlist.webp)
 
 1. Use the **Notified playlist** on Home.
 2. Filter for conversations that have notified messages.

@@ -16,7 +16,7 @@ Voice memos are meant to be shared. You can share:
 To share, tap the three dots in the voice memo details, or press and hold the memo in
 your list.
 
-<!-- image: share-voice-memo.png — screenshot to re-export from Notion -->
+![Share voice memo](/img/voice-memos/share-voice-memo.webp)
 
 ## Related
 
