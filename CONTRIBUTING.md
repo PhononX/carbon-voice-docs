@@ -130,6 +130,12 @@ npm run typecheck  # type-check the TypeScript config
 
 `npm run build` regenerates `static/llms.txt` and `static/llms-full.txt` first.
 
+`npm run fetch:videos` refreshes the playlist strips on the Video guides page from
+YouTube, rewriting the marked blocks in `docs/videos.md` and downloading any new
+thumbnails into `static/img/videos/`. It is deliberately not part of the build: the
+generated Markdown and images are committed, so a deploy never depends on YouTube
+being reachable. Run it when the playlists change, and commit what it produces.
+
 Search does not work under `npm start`. The index is built in a `postBuild` hook,
 which the dev server never runs, so the search box answers every query with "⚠️ The
 search index is only available when you run docusaurus build!" — a notice shown
@@ -155,7 +161,8 @@ carbon-voice-docs/
 │   ├── CNAME                 custom domain for GitHub Pages
 │   └── img/                  logo marks, social card, screenshots
 ├── scripts/
-│   └── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
+│   ├── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
+│   └── fetch-video-playlists.mjs  refreshes the strips in docs/videos.md
 ├── .github/workflows/        build (PRs) and deploy (main)
 ├── docusaurus.config.ts
 └── sidebars.ts
