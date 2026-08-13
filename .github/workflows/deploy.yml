@@ -25,7 +25,11 @@ jobs:
     name: Build site
     runs-on: ubuntu-latest
     steps:
+      # Full history: the "Last updated" stamp on each page comes from that
+      # file's last commit, which a shallow clone does not carry.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
