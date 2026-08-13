@@ -1,1 +1,8 @@
-{"label":"Account & Settings","position":7,"customProps":{"description":"Your profile, notifications, devices, and plan."}}
+{
+  "label": "Account & Settings",
+  "position": 7,
+  "customProps": {
+    "description": "Your profile, notifications, devices, and plan."
+  },
+  "className": "navIcon navIcon--settings"
+}

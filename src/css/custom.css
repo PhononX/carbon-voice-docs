@@ -528,6 +528,80 @@ h4 {
   border-radius: 0.5rem;
 }
 
+/* Icons on the top-level sidebar sections. Each item carries a `navIcon
+   navIcon--<name>` class, set in its `_category_.json` or `sidebar_class_name`
+   frontmatter; the pair below turns that into a mask, so the glyph is painted
+   in the menu's own colour and follows the hover and active states rather than
+   sitting there as a second, fixed palette. Lucide, ISC licensed. */
+/* The class sits on the `<li>`. A plain page holds its link as a direct child;
+   a category wraps it in `.menu__list-item-collapsible`. Both are matched by
+   child combinator rather than descendant, so the items nested inside an open
+   category do not each pick up their parent's icon. */
+.navIcon > .menu__link::before,
+.navIcon > .menu__list-item-collapsible > .menu__link::before {
+  background-color: currentColor;
+  content: '';
+  flex: none;
+  height: 1.05em;
+  margin-right: 0.55rem;
+  mask: var(--nav-icon) center / contain no-repeat;
+  opacity: 0.75;
+  width: 1.05em;
+}
+
+.navIcon > .menu__link--active::before,
+.navIcon > .menu__list-item-collapsible > .menu__link--active::before {
+  opacity: 1;
+}
+
+.navIcon--house {
+  --nav-icon: url('/img/nav/house.svg');
+}
+
+.navIcon--rocket {
+  --nav-icon: url('/img/nav/rocket.svg');
+}
+
+.navIcon--circle-play {
+  --nav-icon: url('/img/nav/circle-play.svg');
+}
+
+.navIcon--messages-square {
+  --nav-icon: url('/img/nav/messages-square.svg');
+}
+
+.navIcon--mic {
+  --nav-icon: url('/img/nav/mic.svg');
+}
+
+.navIcon--audio-lines {
+  --nav-icon: url('/img/nav/audio-lines.svg');
+}
+
+.navIcon--sparkles {
+  --nav-icon: url('/img/nav/sparkles.svg');
+}
+
+.navIcon--users {
+  --nav-icon: url('/img/nav/users.svg');
+}
+
+.navIcon--settings {
+  --nav-icon: url('/img/nav/settings.svg');
+}
+
+.navIcon--plug {
+  --nav-icon: url('/img/nav/plug.svg');
+}
+
+.navIcon--life-buoy {
+  --nav-icon: url('/img/nav/life-buoy.svg');
+}
+
+.navIcon--info {
+  --nav-icon: url('/img/nav/info.svg');
+}
+
 /* "Ask AI" navbar dropdown (src/components/AskAI). Styled as a quieter sibling
    of the search box: search is how you find a page, this is how you ask a
    question about one. */

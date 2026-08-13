@@ -1,1 +1,8 @@
-{"label":"Voice Memos","position":4,"customProps":{"description":"Capturing, organizing, and sharing your own recordings."}}
+{
+  "label": "Voice Memos",
+  "position": 4,
+  "customProps": {
+    "description": "Capturing, organizing, and sharing your own recordings."
+  },
+  "className": "navIcon navIcon--audio-lines"
+}

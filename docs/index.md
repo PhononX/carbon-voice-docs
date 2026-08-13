@@ -4,6 +4,7 @@ description: The official help center for Carbon Voice — voice messaging for y
 slug: /
 sidebar_position: 0
 sidebar_label: Home
+sidebar_class_name: navIcon navIcon--house
 ---
 
 # Carbon Voice Help

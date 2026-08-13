@@ -3,6 +3,7 @@ title: Video guides
 description: Watch Carbon Voice walkthroughs — recording, conversations, AI, automation, and settings.
 sidebar_position: 1.5
 sidebar_label: Video guides
+sidebar_class_name: navIcon navIcon--circle-play
 ---
 
 # Video guides

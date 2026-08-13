@@ -1,1 +1,8 @@
-{"label":"Troubleshooting","position":9,"customProps":{"description":"Fixes for common problems."}}
+{
+  "label": "Troubleshooting",
+  "position": 9,
+  "customProps": {
+    "description": "Fixes for common problems."
+  },
+  "className": "navIcon navIcon--life-buoy"
+}
