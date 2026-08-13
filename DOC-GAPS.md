@@ -414,12 +414,120 @@ pages whose steps differ.
 
 ---
 
-## Suggested priority
+---
+
+## 4. Proposed structure
+
+Today's sidebar is organized by **app object** — Conversations, Messages, Voice Memos.
+Everything shipped since 2025-08 is organized by two different axes: **who is doing the
+work** (you, an AI, an agent) and **how fast you need to get to it**. Forcing that into the
+object taxonomy is what's causing the pressure. Three new sections resolve it.
+
+### 4.1 "AI" now means three different directions of travel
+
+One section can't hold them, because a reader arrives wanting exactly one. Split by which
+way the content is moving:
+
+| Direction | Section | Holds |
+|---|---|---|
+| **AI works on your content, inside Carbon Voice** | AI | Summaries, catch-up, bulleted summaries, AI Chat, action items, AI actions, AI Outputs history |
+| **Your AI tools reach into Carbon Voice** | AI assistants & MCP | Claude, ChatGPT, Cursor, Windsurf, Obsidian, tips — promoted out of Integrations |
+| **AI lives in Carbon Voice as a participant** | Agents | Agent accounts, connecting a platform (Hermes, OpenClaw, Claude Code…), agents in conversations, agents on speed dial |
+
+Two notes on the split:
+
+- **Voice cloning, TTS and Global Voice belong together and apart.** They're AI that
+  *speaks*, not AI that *understands*, and they currently sit oddly beside summarization.
+  Group them as "Voice & language" inside the AI section.
+- **The agent platform catalogue is server-driven** — the app fetches it from a remote
+  endpoint with per-platform setup steps (`http_remote_agent_integration_data_source.dart`,
+  `AgentIntegration` with `live` / `comingSoon` status). Document the in-app "Pick your
+  platform" flow; don't hard-code a list that will drift.
+
+**The highest-value new page: "Turn a discussion into notes."** A note-taker records a
+meeting you had; Carbon Voice gives you the notes without the meeting. That story chains
+five undocumented features into one arc — async meeting → full transcript → catch-up summary
+→ action items → AI action output → share or export — and it lands against the comparison
+readers already have in their heads (Otter, Granola, Fireflies). It's a positioning page
+that doubles as the entry point for async meetings, action items and AI outputs.
+
+### 4.2 Quick capture — name the section for the job, not the platform
+
+Desktop global hotkeys and iOS widgets look like different topics but answer the same
+question: *get to the thing fast without opening the app.* A section named for that job
+collects eight undocumented features under one banner and gives the shortcut story the
+billing it deserves — where a per-platform split would bury it in two places.
+
+- **Desktop** — global hotkeys (record voice memo, quick send), the Speed Dial panel
+  (`⌥\``, 10 slots bound to conversations, folders or agents), the macOS menu-bar app,
+  hold-spacebar-to-record.
+- **iPhone** — Recents and Quick Sends widgets, **Siri**, the **share extension**, the
+  **iMessage extension**, listen-and-reply from a push notification.
+- **Apple Watch** — record from the wrist, offline, with sync.
+
+**Siri and the iMessage extension are shipped iOS targets with no documentation at all** —
+neither appears in the help center or in §2 above. `ios/Siri/IntentHandler.swift` handles
+`INSendMessageIntent` and `INSearchForMessagesIntent`; `ios/MessageExtension/` is a full
+iMessage app with its own conversation list.
+
+Also undocumented: an **App Clip** (`ios/AppClip/`) with CarbonLink, discussion, magic-link
+and player/recorder flows. That App Clip is the mechanism behind the CarbonLink promise that
+people can listen and reply "without downloading an app" — worth saying out loud on the
+CarbonLink pages.
+
+### 4.3 Integrations: sort by how much you have to build
+
+The current section mixes a no-code tool, an AI protocol and a REST API at the same level.
+Readers self-select by effort, so tier by effort — and note that the middle tier, the one
+that's missing entirely, is the bridge that makes the other two usable.
+
+| Tier | Holds | State |
+|---|---|---|
+| **1 · No code** | Zapier, n8n, and the trigger patterns (label a message, post into a named conversation) | Zapier documented; n8n absent; per-workflow steps still a placeholder |
+| **2 · Your account's plumbing** | The in-app Integrations panel: credentials and personal access tokens, webhooks and Automations, Connected Apps | **Entirely absent** |
+| **3 · Build on it** | Developer portal, OAuth apps, agent identities | Documented as a pointer |
+
+**File tools by the mechanism the reader follows, not by what the tool is.** Obsidian is the
+test case: if it's reached over MCP it belongs in AI assistants beside Claude and Cursor; if
+it's a sync or export path it belongs in tier 1. Same tool, different page, depending on
+which set of steps someone has to carry out — worth confirming which before it gets written.
+
+### 4.4 The proposed sidebar
+
+New in bold. Desktop stays a *single page* rather than a mirrored tree — it's the same app,
+so document the delta, not a parallel universe.
+
+| Section | Change |
+|---|---|
+| Getting Started | Add **Carbon Voice on desktop** — layout, navigation map, sheet-vs-sidebar, inline recording |
+| Conversations | Add **async meetings** and **Business conversations** as types; expand filtering |
+| Messages | Add threads, Listen Later, typed messages, mentions, reply privately |
+| Voice Memos | Largely as-is |
+| **Quick capture** | **New.** Desktop hotkeys · Speed Dial · menu bar · widgets · Siri · share extension · iMessage · Apple Watch |
+| AI | Reframed: summaries & catch-up · AI Chat · action items · **turn a discussion into notes** · AI actions · voice & language |
+| **Agents** | **New.** What an agent is · create one · connect a platform · agents in conversations · agents on speed dial |
+| **AI assistants & MCP** | **Promoted** out of Integrations. Add **what your assistant can actually do** — the MCP tool surface, in plain language |
+| Workspaces | Largely as-is |
+| Integrations | Retiered per 4.3; gains the whole account-plumbing tier |
+| Account & Settings | Add Appearance, Language, Recording & Playback; fix Directory Services |
+| Troubleshooting | Largely as-is |
+
+That's four AI-adjacent top-level entries (AI, Agents, AI assistants, plus AI inside Quick
+capture via agent speed dials). If that reads as too many in the rail, the fallback is one
+**AI** parent with three children — but keep the three groups distinct whichever nesting
+wins, because the reader's question differs in each.
+
+---
+
+## 5. Suggested priority
 
 1. **Fix the wrong instructions first** — 1.1 (profile menu, 8 pages), 1.5 (AI controls,
    4 pages), 1.7 (Directory Services), 1.9 (pre-recorded messages). These actively misdirect.
 2. **Terminology pass** — 1.2 / 1.3 / 1.4, which are one coherent rewrite of the
    notified/unread model across five pages.
-3. **New sections for the big absences** — Desktop (§3), Agents (2.1), Action Items (2.2),
-   AI Chat (2.3), Async meetings (2.4), Keyboard shortcuts & Speed Dial (2.5).
-4. **Backfill** — §2.6 onwards, and restart `whats-new/` from 2025-08.
+3. **Land the new structure before writing into it** — agree §4 first. Six new pages written
+   into today's taxonomy is six pages that get moved again.
+4. **Fill the new sections** — Desktop (§3), Agents (2.1), Action Items (2.2), AI Chat (2.3),
+   async meetings (2.4), Speed Dial and shortcuts (2.5), the account-plumbing tier (2.6), and
+   "turn a discussion into notes" (4.1).
+5. **Backfill** — §2.7 onwards, and restart `whats-new/` from 2025-08.
