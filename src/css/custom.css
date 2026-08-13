@@ -277,6 +277,73 @@ h4 {
   border-radius: var(--ifm-global-radius);
 }
 
+/* Card grid, used for the tasks on the home page.
+
+   The Markdown inside stays an ordinary bulleted list — a `<div>` wrapper is
+   the whole of the markup, so the source still reads as a list on GitHub,
+   where the class is stripped. Everything below is layout applied to that
+   list. */
+.cardGrid ul {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  list-style: none;
+  margin: 0 0 var(--ifm-leading);
+  padding: 0;
+}
+
+.cardGrid li {
+  background-color: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  padding: 1rem 1.15rem;
+  position: relative;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.cardGrid li:hover {
+  background-color: var(--cv-violet-100);
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .cardGrid li:hover {
+  background-color: rgba(186, 169, 255, 0.08);
+}
+
+.cardGrid li strong {
+  color: var(--ifm-heading-color);
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+/* The source keeps a `<br />` after each title so the two parts stay separate
+   on GitHub, where none of this CSS applies. Here the title is already a
+   block, so the break would only add an empty line. */
+.cardGrid li br {
+  display: none;
+}
+
+/* The title's link covers the whole card, so the description is part of the
+   click target rather than dead space beside it. */
+.cardGrid li strong a::after {
+  content: '';
+  inset: 0;
+  position: absolute;
+}
+
+.markdown .cardGrid a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown .cardGrid li:hover a {
+  color: var(--ifm-link-color);
+}
+
 /* YouTube embeds on the Video guides page. The wrapper holds the 16:9 box so
    the iframe scales with the column instead of overflowing on a phone. */
 .video-embed {
