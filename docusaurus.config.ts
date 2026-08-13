@@ -178,6 +178,10 @@ const config: Config = {
         {to: '/whats-new', label: "What's New", position: 'left'},
         {href: PRODUCT_URL, label: 'Carbon Voice', position: 'right'},
         {href: REPO_URL, label: 'GitHub', position: 'right'},
+        // Registered in src/theme/NavbarItem/ComponentTypes.tsx. Sits last on
+        // the right so it lands beside the search box, which stays the primary
+        // way to find a page.
+        {type: 'custom-askAI', position: 'right'},
       ],
     },
     footer: {

@@ -1,6 +1,6 @@
 ---
 title: Video guides
-description: Short walkthroughs of Carbon Voice — recording, conversations, AI, and settings.
+description: Watch Carbon Voice walkthroughs — recording, conversations, AI, automation, and settings.
 sidebar_position: 1.5
 sidebar_label: Video guides
 ---
@@ -8,8 +8,22 @@ sidebar_label: Video guides
 # Video guides
 
 Short walkthroughs, if you would rather watch than read. Everything here is on the
-[Carbon Voice YouTube playlist](https://www.youtube.com/playlist?list=PLM_p2mhoTkcApu2QYJODXJK8w9-PUiCVh),
-which has more than is listed below.
+[Carbon Voice YouTube channel](https://www.youtube.com/@carbonvoice).
+
+## How-to guides
+
+The support playlist: how each part of Carbon Voice works, one feature at a time.
+
+<div class="video-embed">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLM_p2mhoTkcApu2QYJODXJK8w9-PUiCVh"
+    title="Support: How-To Guides for Carbon Voice"
+    loading="lazy"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
+
+[Open the how-to playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcApu2QYJODXJK8w9-PUiCVh)
 
 ## Start here
 
@@ -35,16 +49,53 @@ which has more than is listed below.
 - 📺 [Clearing notify settings](https://www.youtube.com/watch?v=ign41BKfS5E) — see
   [Clearing notified messages](messages/playback/clearing-notified-messages.md).
 
-## AI
+## Voice and AI
+
+Turning what you say into documents, summaries, and workflows.
+
+<div class="video-embed">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF"
+    title="Voice + AI: Turn Voice into Docs &amp; Workflows"
+    loading="lazy"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
 
 - 📺 [Catching up with AI](https://www.youtube.com/watch?v=q2v4J9obJlk) — see
   [Catch up with AI](ai/catch-up-with-ai.md).
 - 📺 [Connecting company knowledge to Carbon Voice](https://www.youtube.com/watch?v=kxpbtK68RwM)
   — see [ChatGPT](integrations/mcp/chatgpt.md).
 
+[Open the Voice + AI playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF)
+
+## Automating with Zapier
+
+<div class="video-embed">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLM_p2mhoTkcA0Zb-S1Mta0jdf0tHZ2mEF"
+    title="Zapier: Automate workflows with Carbon Voice"
+    loading="lazy"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
+
+See [Zapier](integrations/zapier.md) and
+[Automate workflows](integrations/automate-workflows.md), or
+[open the Zapier playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcA0Zb-S1Mta0jdf0tHZ2mEF).
+
 ## On your phone
 
 - 📺 [iPhone widgets](https://youtube.com/shorts/2o-fajim-wI) — see
   [iPhone widgets](account-and-settings/iphone-widgets.md).
+
+## More from Carbon Voice
+
+Less about how the app works, more about why teams use it:
+
+- 📺 [Overview: Carbon Voice — less calls and meetings, just talk](https://www.youtube.com/playlist?list=PLM_p2mhoTkcCvmrK1rp_RQyrbrvwz45p-)
+- 📺 [Power of voice: embracing voice-first communication](https://www.youtube.com/playlist?list=PLM_p2mhoTkcDVr7lXsUozWXbWlNqM6vBg)
+- 📺 [Customer stories: eliminating calls and meetings](https://www.youtube.com/playlist?list=PLM_p2mhoTkcCnF9L7UttvTPg5robrbdnT)
+- 📺 [Webinar: scaling a coaching practice with async coaching](https://www.youtube.com/playlist?list=PLM_p2mhoTkcCE7JK1UmNL5kdmK4f_zNra)
 
 Articles that have a video link it inline too, next to the steps it demonstrates.
