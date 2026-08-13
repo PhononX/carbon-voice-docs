@@ -25,7 +25,7 @@ That's it — faster than opening a calendar, faster than typing it out.
 
 ## Talk to your team quickly
 
-![Carbon Voice running on macOS](/img/whats-new/mac-desktop.png)
+![Carbon Voice running on macOS](/img/whats-new/mac-desktop.webp)
 
 Press **Option + C** from anywhere on your Mac to message or talk to any existing
 conversation, and use the cutter to quickly attach screenshots.

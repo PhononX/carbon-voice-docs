@@ -10,13 +10,13 @@ sidebar_position: 8
 
 Tap the **"x"** in the top left corner, then select **Yes, delete**.
 
-<!-- image: delete-while-recording.png — screenshot to re-export from Notion -->
+![Delete while recording](/img/messages/delete-while-recording.webp)
 
 ## After sending
 
 Press and hold on the message and select **Delete**.
 
-<!-- image: delete-sent-message.png — screenshot to re-export from Notion -->
+![Delete sent message](/img/messages/delete-sent-message.webp)
 
 ## Related
 

@@ -15,7 +15,7 @@ differently.
 Use a direct message to reach a defined set of people that will not change over time.
 Direct messages are always private.
 
-<!-- image: direct-message.png — screenshot to re-export from Notion -->
+![Direct message](/img/conversations/direct-message.webp)
 
 ## Named conversations
 
@@ -23,7 +23,7 @@ Use a named conversation to organize around a topic, where the members may chang
 time. A named conversation can be made public or findable within a workspace, so new
 people can find it and join.
 
-<!-- image: named-conversation.png — screenshot to re-export from Notion -->
+![Named conversation](/img/conversations/named-conversation.webp)
 
 ## Related
 
