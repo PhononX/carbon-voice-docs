@@ -176,11 +176,16 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/whats-new', label: "What's New", position: 'left'},
-        {href: PRODUCT_URL, label: 'Carbon Voice', position: 'right'},
-        {href: REPO_URL, label: 'GitHub', position: 'right'},
-        // Registered in src/theme/NavbarItem/ComponentTypes.tsx. Sits last on
-        // the right so it lands beside the search box, which stays the primary
-        // way to find a page.
+        // The right side is for finding an answer, so it holds only search and
+        // Ask AI. Links out to the product site and the repository live in the
+        // footer, where someone looks once rather than on every page.
+        //
+        // Declaring `search` explicitly is what lets it be sequenced at all:
+        // without it the theme appends the search box after everything else.
+        // The color-mode toggle is always rendered last by the theme, which
+        // gives <search> <ask ai> <dark mode>.
+        {type: 'search', position: 'right'},
+        // Registered in src/theme/NavbarItem/ComponentTypes.tsx.
         {type: 'custom-askAI', position: 'right'},
       ],
     },

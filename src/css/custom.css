@@ -321,14 +321,17 @@ h4 {
    of the search box: search is how you find a page, this is how you ask a
    question about one. */
 .askAI__button {
+  align-items: center;
   background: none;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 999px;
   color: var(--ifm-navbar-link-color);
   cursor: pointer;
+  display: inline-flex;
   font-family: inherit;
   font-size: inherit;
   font-weight: var(--ifm-font-weight-semibold);
+  gap: 0.4em;
   line-height: inherit;
   padding: 0.25rem 0.85rem;
 }
@@ -336,6 +339,19 @@ h4 {
 .askAI__button:hover {
   border-color: var(--ifm-color-primary);
   color: var(--ifm-color-primary);
+}
+
+/* The sparkle carries the brand violet at rest and follows the label on hover,
+   so the button reads as one object rather than an icon beside some text. */
+.askAI__icon {
+  color: var(--ifm-color-primary);
+  flex: none;
+  height: 1em;
+  width: 1em;
+}
+
+.askAI__button:hover .askAI__icon {
+  color: inherit;
 }
 
 .askAI__menu {

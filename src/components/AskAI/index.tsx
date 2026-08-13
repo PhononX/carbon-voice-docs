@@ -47,6 +47,22 @@ function buildPrompt(siteUrl: string, pathname: string): string {
   return lines.join(' ').replace(/ {2,}/g, ' ');
 }
 
+function SparkleIcon(): React.JSX.Element {
+  return (
+    <svg
+      className="askAI__icon"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true">
+      <path d="M10 5c0 4.418 3.582 8 8 8-4.418 0-8 3.582-8 8 0-4.418-3.582-8-8-8 4.418 0 8-3.582 8-8Z" />
+      <path
+        d="M18.5 1.5c0 1.657 1.343 3 3 3-1.657 0-3 1.343-3 3 0-1.657-1.343-3-3-3 1.657 0 3-1.343 3-3Z"
+        opacity="0.65"
+      />
+    </svg>
+  );
+}
+
 export default function AskAI(): React.JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   const {pathname} = useLocation();
@@ -102,6 +118,7 @@ export default function AskAI(): React.JSX.Element {
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((wasOpen) => !wasOpen)}>
+        <SparkleIcon />
         Ask AI
       </button>
       <ul className="dropdown__menu askAI__menu" role="menu">
