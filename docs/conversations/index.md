@@ -6,8 +6,12 @@ sidebar_position: 2
 
 # Conversations
 
-All your conversations show up in the Chat tab, on the far left of the navigation bar.
-They are sorted with the most recent on top.
+All your conversations show up in the Chat tab, on the far left of the navigation bar,
+sorted with the most recent on top.
 
-> **Being ported.** These articles are moving over from the Carbon Voice Help Center in
-> Notion. This page will list them as they land.
+- **[Creating conversations](creating/index.md)** — direct messages, named
+  conversations, and who is in them.
+- **[Your conversation list](your-conversation-list/index.md)** — playing, recording,
+  filtering, and labeling without opening a conversation.
+- **[Access & sharing](access-and-sharing/index.md)** — who can join, sharing links,
+  and history settings.
