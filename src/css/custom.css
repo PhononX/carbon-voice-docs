@@ -267,10 +267,13 @@ h4 {
 }
 
 /* Most screenshots in docs/ are transparent WebP exported against white, so
-   they need a plate of their own to stay legible in dark mode. */
+   they need a plate of their own to stay legible in dark mode.
+
+   No border: on an `img`, a border and a radius clip to different boxes, which
+   leaves a hairline of plate showing through at each corner of a full-bleed
+   screenshot. The radius alone is the house style. */
 .markdown img {
   background-color: #ffffff;
-  border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: var(--ifm-global-radius);
 }
 
