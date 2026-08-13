@@ -66,8 +66,18 @@ const config: Config = {
           // Serve the docs at the site root: docs/ai/ai-summaries.md -> /ai/ai-summaries
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          editUrl: `${REPO_URL}/edit/main/`,
-          showLastUpdateTime: true,
+          // No editUrl on purpose: readers here are Carbon Voice customers, and
+          // an "Edit this page" link into GitHub reads as noise to them. The
+          // Markdown source stays public in the repository for anyone who does
+          // want to suggest a fix.
+          //
+          // showLastUpdateTime is off for the same reason it would be wrong:
+          // the date comes from each file's last git commit, and the whole
+          // library landed in one migration, so every page would claim the same
+          // "last updated" day regardless of when the content was really
+          // reviewed. Re-enabling it needs `fetch-depth: 0` on the checkout
+          // steps in .github/workflows — a shallow clone gives every page the
+          // deploy date instead.
           breadcrumbs: true,
         },
         // Product updates and announcements. These are dated and superseded

@@ -15,8 +15,9 @@ Both of these help, and neither needs permission:
 
 - **Tell us.** [Open an issue](https://github.com/PhononX/carbon-voice-docs/issues)
   saying which page and what's wrong. A sentence is plenty.
-- **Fix it yourself.** Every page on the site has an **Edit this page** link at the
-  bottom that opens the source right here on GitHub. Edit, describe the change, submit.
+- **Fix it yourself.** Find the page under [`docs/`](docs/) — the file layout matches
+  the site's URLs — and edit the Markdown right here on GitHub. Describe the change,
+  submit.
 
 You do not need to know how any of the rest of this works to do either one.
 
