@@ -87,9 +87,11 @@ Name the file with its publication date, which becomes the URL:
 whats-new/2026-05-12-carbon-voice-for-mac.md   →   /whats-new/2026/05/12/carbon-voice-for-mac
 ```
 
-Frontmatter takes `title`, `description`, `date`, and `tags`. Add a
+Frontmatter takes `title`, `description`, `date`, `authors`, and `tags`. Add a
 `<!-- truncate -->` comment after the opening paragraph so the listing page shows a
-summary rather than the whole post.
+summary rather than the whole post. `authors: [carbonvoice]` attributes the post to
+the shared team author defined in `whats-new/authors.yml`, which also gives the post an
+`author` in its structured data.
 
 The section generates an archive, tag pages, and RSS and Atom feeds automatically.
 
@@ -143,7 +145,7 @@ carbon-voice-docs/
 ├── static/                   copied verbatim to the site root
 │   ├── robots.txt
 │   ├── CNAME                 custom domain for GitHub Pages
-│   └── img/                  logo, favicon, social card
+│   └── img/                  logo marks, social card, screenshots
 ├── scripts/
 │   └── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
 ├── .github/workflows/        build (PRs) and deploy (main)
@@ -166,6 +168,8 @@ decisions behind that:
 | `sitemap.xml` | Generated for every page. |
 | `robots.txt` | Allows all crawlers, points at the sitemap, names the machine-readable entry points. |
 | Canonical URLs | Every page emits `<link rel="canonical">`, so copies point back here. |
+| Structured data | Every page carries `Organization` and `WebSite` JSON-LD (`headTags` in the config), and the theme emits `BreadcrumbList` JSON-LD per page. Search and answer engines use these to attribute the content. |
+| Social card | `themeConfig.image` sets a default Open Graph / Twitter card, so shared links unfurl with a branded preview. |
 | Descriptive frontmatter | One `description` feeds the meta description, Open Graph tags, and `llms.txt`. |
 | Semantic filenames | `/ai/ai-summaries` is legible to a model and stable to link to. |
 
@@ -202,15 +206,6 @@ These need a repository admin:
 Until DNS is in place the site is reachable at
 `https://phononx.github.io/carbon-voice-docs`, though internal links assume the custom
 domain, so treat that URL as smoke-testing only.
-
-### Still to be supplied
-
-- **Branding assets.** `static/img/` is empty. Adding `logo.svg`, `favicon.ico`, and a
-  social-card image, then referencing them in `docusaurus.config.ts`, is the next step
-  toward a branded help center.
-- **Search.** The content is structured for it but no provider is wired up.
-  [Algolia DocSearch](https://docsearch.algolia.com/) is free for public documentation;
-  a local search plugin is the alternative.
 
 ## Licensing of contributions
 

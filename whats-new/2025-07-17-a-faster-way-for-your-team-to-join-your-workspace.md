@@ -2,6 +2,7 @@
 title: A faster way for your team to join your workspace
 description: Connect your company domain to a workspace so anyone logging in with a matching email address discovers it — and choose whether they join automatically, request access, or follow your own instructions.
 date: 2025-07-17
+authors: [carbonvoice]
 tags: [release, workspaces, admin]
 ---
 

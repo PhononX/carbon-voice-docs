@@ -2,6 +2,7 @@
 title: AI summaries are on by default in every conversation
 description: AI summaries are now enabled by default across all conversations, with controls for expanding full transcripts or turning summaries back off.
 date: 2024-03-12
+authors: [carbonvoice]
 tags: [release, ai, transcripts]
 ---
 

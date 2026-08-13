@@ -2,6 +2,7 @@
 title: More reactions, dark mode, faster sharing
 description: A batch of improvements — 1,400+ emoji reactions, dark mode, transcript selection on desktop, Obsidian sync, and moving conversations between workspaces.
 date: 2026-07-31
+authors: [carbonvoice]
 tags: [release, reactions, dark-mode, voice-memos]
 ---
 

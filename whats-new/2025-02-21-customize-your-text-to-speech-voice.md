@@ -2,6 +2,7 @@
 title: Customize your text-to-speech voice
 description: Set your preferred text-to-speech engine voice so messages read aloud sound the way you want them to.
 date: 2025-02-21
+authors: [carbonvoice]
 tags: [release, ai, settings]
 ---
 

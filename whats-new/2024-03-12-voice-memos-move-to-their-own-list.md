@@ -2,6 +2,7 @@
 title: Voice memos move to their own list
 description: Voice memos now live in a simple list under the Profile Menu rather than in a conversation, making room for improvements to come.
 date: 2024-03-12
+authors: [carbonvoice]
 tags: [release, voice-memos]
 ---
 

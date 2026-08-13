@@ -1,0 +1,8 @@
+# Authors for the What's New announcements. Referenced from each post's
+# frontmatter as `authors: [carbonvoice]`. Defining the author here rather than
+# inline keeps the byline consistent and gives Docusaurus the data it needs to
+# emit an `author` in each post's BlogPosting structured data.
+carbonvoice:
+  name: The Carbon Voice Team
+  title: Phonon X, Inc.
+  url: https://getcarbon.app

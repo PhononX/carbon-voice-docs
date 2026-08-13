@@ -2,6 +2,7 @@
 title: Create your own AI prompts
 description: Write and save your own AI prompts to transform conversations and voice memos, and use them as Zapier triggers alongside the built-in ones.
 date: 2025-10-01
+authors: [carbonvoice]
 tags: [release, ai, zapier]
 ---
 

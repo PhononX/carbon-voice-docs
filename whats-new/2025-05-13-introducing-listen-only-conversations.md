@@ -2,6 +2,7 @@
 title: Introducing listen-only conversations
 description: Let people listen in on a conversation without being able to post or reply — for team broadcasts and private communities.
 date: 2025-05-13
+authors: [carbonvoice]
 tags: [release, conversations, access]
 ---
 

@@ -2,6 +2,7 @@
 title: Web attachments and performance improvements
 description: File attachments on web, a lighter and faster mobile app, personal notes while you listen, and a quicker way to start a new message.
 date: 2025-12-23
+authors: [carbonvoice]
 tags: [release, attachments, performance, web]
 ---
 

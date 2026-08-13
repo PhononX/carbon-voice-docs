@@ -2,6 +2,7 @@
 title: Previewing Carbon Voice 3.0
 description: Our biggest update yet, in preview — AI Chat for querying your conversations, Action Items that track what was decided, and Notebook as a home for everything discussed.
 date: 2025-10-27
+authors: [carbonvoice]
 tags: [release, ai, action-items, notebook]
 ---
 

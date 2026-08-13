@@ -2,6 +2,7 @@
 title: Introducing Carbon Voice 2.0
 description: Voice memos with shareable links, a streamlined messaging interface, and faster playback on low-network connections.
 date: 2024-05-24
+authors: [carbonvoice]
 tags: [release, voice-memos, playback]
 ---
 

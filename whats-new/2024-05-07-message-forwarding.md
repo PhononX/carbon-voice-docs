@@ -2,6 +2,7 @@
 title: Message forwarding
 description: Forward a message to another conversation, send your own audio as a brand new message, and get notified whenever one of your messages is forwarded.
 date: 2024-05-07
+authors: [carbonvoice]
 tags: [release, messages, sharing]
 ---
 

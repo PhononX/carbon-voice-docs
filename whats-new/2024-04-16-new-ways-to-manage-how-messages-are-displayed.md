@@ -2,6 +2,7 @@
 title: New ways to manage how messages are displayed
 description: New display preferences let you choose whether to show AI summaries, transcripts, or both, along with a cleaner conversation feed.
 date: 2024-04-16
+authors: [carbonvoice]
 tags: [release, ai, transcripts]
 ---
 

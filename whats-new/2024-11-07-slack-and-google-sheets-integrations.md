@@ -2,6 +2,7 @@
 title: Slack and Google Sheets integrations
 description: Two new ways to reach your voice memos and conversations from other tools — a Slack app and a Google Sheets add-on.
 date: 2024-11-07
+authors: [carbonvoice]
 tags: [release, integrations, slack]
 ---
 
