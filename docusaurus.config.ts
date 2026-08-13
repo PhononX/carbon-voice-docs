@@ -174,7 +174,10 @@ const config: Config = {
         },
         {
           title: 'Carbon Voice',
-          items: [{label: 'About Carbon Voice', href: PRODUCT_URL}],
+          items: [
+            {label: 'About Carbon Voice', href: PRODUCT_URL},
+            {label: 'Developer Portal', href: 'https://developer.carbonvoice.app'},
+          ],
         },
         {
           title: 'For agents and machines',
@@ -187,7 +190,9 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Phonon X, Inc. Documentation licensed under CC BY 4.0.`,
+      // The licence is now only stated here, so it links out: the home page no
+      // longer carries an "About this documentation" section.
+      copyright: `Copyright © ${new Date().getFullYear()} Phonon X, Inc. Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.`,
     },
     prism: {
       additionalLanguages: ['bash', 'json'],
