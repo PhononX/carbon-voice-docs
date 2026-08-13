@@ -174,10 +174,7 @@ const config: Config = {
         },
         {
           title: 'Carbon Voice',
-          items: [
-            {label: 'Product site', href: PRODUCT_URL},
-            {label: 'Phonon X', href: 'https://phononx.com'},
-          ],
+          items: [{label: 'About Carbon Voice', href: PRODUCT_URL}],
         },
         {
           title: 'For agents and machines',
