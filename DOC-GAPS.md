@@ -540,16 +540,62 @@ that's missing entirely, is the bridge that makes the other two usable.
 
 | Tier | Holds | State |
 |---|---|---|
-| **1 · No code** | Zapier, n8n, and the trigger patterns (label a message, post into a named conversation) | Zapier documented; n8n absent; per-workflow steps still a placeholder |
+| **1 · No code — push**<br>"when X happens, do Y elsewhere" | Zapier, n8n, and the trigger patterns (label a message, post into a named conversation) | Zapier documented; n8n absent; per-workflow steps still a placeholder |
+| **1 · No code — pull**<br>"keep my content where I already read" | The **Obsidian sync plugin**; any future sync or export path | **Entirely absent** |
 | **2 · Your account's plumbing** | The in-app Integrations panel: credentials and personal access tokens, webhooks and Automations, Connected Apps | **Entirely absent** |
 | **3 · Build on it** | Developer portal, OAuth apps, agent identities | Documented as a pointer |
 
-**File tools by the mechanism the reader follows, not by what the tool is.** Obsidian is the
-test case: if it's reached over MCP it belongs in AI assistants beside Claude and Cursor; if
-it's a sync or export path it belongs in tier 1. Same tool, different page, depending on
-which set of steps someone has to carry out — worth confirming which before it gets written.
+**Obsidian resolves as tier 1, pull — not MCP.** It's a community sync plugin
+([carbon-voice-sync](https://community.obsidian.md/plugins/carbon-voice-sync)): one-way,
+Carbon Voice into the vault, importing conversations with transcripts, voice memos with their
+AI summaries, and participant and workspace metadata as Markdown, with embedded audio and
+auto-generated wiki links. Configurable scope, history window and background interval. So it
+sits beside Zapier by effort, but answers a different question — which is why the two shapes
+are worth naming separately: push sends an event somewhere, pull brings your content home.
 
-### 4.6 The proposed sidebar
+**The missing tier is blocking a shipped integration.** The Obsidian plugin authenticates with
+a **personal access token generated in the Carbon Voice app's integration settings** — tier 2,
+the tier with no documentation at all. Step one of a shipped, public integration currently
+points at a screen the help center has never described. That moves "document the Integrations
+panel" from a backlog item to a prerequisite: write the credentials page first, and have the
+Obsidian page open by linking to it.
+
+Obsidian also belongs in the **Meeting Notes** cross-links. "Share the notes" is exactly what
+it does — a discussion becomes a transcript and an AI summary, and lands in the vault you
+already write in. But the mechanism isn't why people use it — see 4.6.
+
+### 4.6 Two paths to get your content to an AI — and the page that routes between them
+
+The second-brain pattern — fill a vault from voice, then let Claude or ChatGPT read it — is a
+case where 4.2's rule ("file by the reader's question") and 4.5's rule ("file by the
+mechanism") point at different sections. Worth resolving in the open, because it recurs.
+
+The reader's question is *"how do I get my Carbon Voice content within reach of my AI?"* — an
+AI assistants question. The steps are *install an Obsidian plugin and paste a token* — an
+Integrations answer. Filing purely by mechanism means someone reading the MCP pages never
+learns the vault path exists.
+
+**There are genuinely two architectures here, and nobody has written the comparison:**
+
+| | Direct, over MCP | Via your vault |
+|---|---|---|
+| **How** | The assistant queries Carbon Voice at question time | Content syncs into Obsidian as Markdown; any tool that reads the vault can use it |
+| **Freshness** | Always current | A snapshot, on your sync interval |
+| **Reach** | Only MCP-capable clients, only what the tools expose | Anything that reads files — and it composes with the rest of your notes |
+| **You keep** | Nothing stored | Files you own, annotatable, linkable, yours if you leave |
+
+**The fix is a routing page, not a move.** Add **"Getting your content to an AI"** to AI
+assistants & MCP: it explains the two architectures, then hands off — to the MCP setup pages
+for the direct path, and to the Obsidian page in Integrations for the vault path. The how-to
+stays where its steps live, so someone who uses Obsidian as an archive and doesn't care about
+AI still finds it; the concept lives where the intent lives.
+
+That page should also say **what lands in the vault**, because that's what makes it queryable
+later: transcripts, AI summaries, and participant and workspace wiki links — not just audio
+files. And it closes a loop worth naming once: **Carbon Voice captures the voice, the vault
+holds it, an assistant reads it — and through agents and MCP, writes back into Carbon Voice.**
+
+### 4.7 The proposed sidebar
 
 New in bold. Desktop stays a *single page* rather than a mirrored tree — it's the same app,
 so document the delta, not a parallel universe.
@@ -565,9 +611,9 @@ so document the delta, not a parallel universe.
 | **Quick capture** | **New.** Desktop hotkeys · Speed Dial · menu bar · widgets · Siri · share extension · iMessage · Apple Watch |
 | AI | Narrowed to AI you invoke: summaries & catch-up · AI Chat · AI actions · AI Outputs |
 | **Agents** | **New.** What an agent is · create one · connect a platform · agents in conversations · agents on speed dial |
-| **AI assistants & MCP** | **Promoted** out of Integrations. Add **what your assistant can actually do** — the MCP tool surface, in plain language |
+| **AI assistants & MCP** | **Promoted** out of Integrations. Add **getting your content to an AI** (the routing page, 4.6) and **what your assistant can actually do** — the MCP tool surface, in plain language |
 | Workspaces | Largely as-is |
-| Integrations | Retiered per 4.5; gains the whole account-plumbing tier |
+| Integrations | Retiered per 4.5; gains the account-plumbing tier and the **Obsidian sync** page |
 | Account & Settings | Add Appearance, Language, Recording & Playback; fix Directory Services |
 | Troubleshooting | Largely as-is |
 
@@ -589,7 +635,8 @@ first landing page from search.
 3. **Land the new structure before writing into it** — agree §4 first. Six new pages written
    into today's taxonomy is six pages that get moved again.
 4. **Fill the new sections** — Meeting Notes (4.3) first: it's the highest-intent landing page
-   and it absorbs async meetings (2.4) and action items (2.2) on the way. Then Desktop (§3),
-   Agents (2.1), AI Chat (2.3), Quick capture (4.4), the account-plumbing tier (2.6), and the
-   Voice & language consolidation (4.2).
+   and it absorbs async meetings (2.4) and action items (2.2) on the way. Then the
+   **credentials page** (2.6), which a shipped integration already depends on (4.5). Then
+   Desktop (§3), Agents (2.1), AI Chat (2.3), Quick capture (4.4), Obsidian sync with its
+   routing page (4.6), and the Voice & language consolidation (4.2).
 5. **Backfill** — §2.7 onwards, and restart `whats-new/` from 2025-08.
