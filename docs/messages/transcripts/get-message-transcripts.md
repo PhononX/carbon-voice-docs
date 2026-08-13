@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Press and hold on the message and tap **Copy text**.
 
-<!-- image: copy-text.png — screenshot to re-export from Notion -->
+![Copy text](/img/messages/copy-text.webp)
 
 ## Several messages at once
 
@@ -20,7 +20,7 @@ Press and hold on the message and tap **Copy text**.
 
 You can copy the result to your clipboard or share it into another app.
 
-<!-- image: get-transcript.gif — animation to re-export from Notion -->
+![Get transcript](/img/messages/get-transcript.webp)
 
 ## Related
 

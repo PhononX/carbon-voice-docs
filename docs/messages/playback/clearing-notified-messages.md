@@ -16,7 +16,7 @@ or have it clear automatically as you read.
   card on Home, or tap the header in the conversation feed, then choose **Clear
   Notifications**. The same menu has **Set Notifications** to add them back.
 
-<!-- image: clear-notifications-conversation.png — screenshot to re-export from Notion -->
+![Clear notifications conversation](/img/messages/clear-notifications-conversation.webp)
 
 ## On a single message
 
@@ -26,7 +26,7 @@ or have it clear automatically as you read.
 - **Swipe right to left to reply** — replying also clears the notification.
 - **Tap "Clear Notify"** underneath the message in a conversation.
 
-<!-- image: swipe-to-clear-notify.gif — animation to re-export from Notion -->
+![Swipe to clear notify](/img/messages/swipe-to-clear-notify.webp)
 
 ## Clearing automatically
 
