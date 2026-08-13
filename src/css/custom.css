@@ -358,6 +358,25 @@ h4 {
   min-width: 12rem;
 }
 
+.askAI__link {
+  align-items: center;
+  display: flex;
+  gap: 0.6em;
+}
+
+/* The vendor marks are monochrome, so they take the menu's text colour and
+   need no dark-mode variant. */
+.askAI__vendorIcon {
+  flex: none;
+  height: 1.05em;
+  opacity: 0.85;
+  width: 1.05em;
+}
+
+.askAI__link:hover .askAI__vendorIcon {
+  opacity: 1;
+}
+
 .askAI__intro {
   color: var(--ifm-color-content-secondary);
   font-size: 0.8125rem;

@@ -3,6 +3,11 @@ import {useLocation} from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx';
 
+import ClaudeIcon from './icons/claude.svg';
+import GeminiIcon from './icons/gemini.svg';
+import OpenAIIcon from './icons/openai.svg';
+import PerplexityIcon from './icons/perplexity.svg';
+
 /**
  * "Ask AI" — a navbar dropdown that hands the reader's question to the
  * assistant of their choice, framed against this site's content.
@@ -18,6 +23,7 @@ import clsx from 'clsx';
 
 type Assistant = {
   readonly name: string;
+  readonly Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   readonly href: (encodedPrompt: string) => string;
 };
 
@@ -25,10 +31,18 @@ type Assistant = {
 // pre-filling, the link still opens that assistant with an empty composer, so
 // the failure is mild.
 const ASSISTANTS: readonly Assistant[] = [
-  {name: 'Claude', href: (q) => `https://claude.ai/new?q=${q}`},
-  {name: 'ChatGPT', href: (q) => `https://chatgpt.com/?q=${q}`},
-  {name: 'Gemini', href: (q) => `https://gemini.google.com/app?q=${q}`},
-  {name: 'Perplexity', href: (q) => `https://www.perplexity.ai/search?q=${q}`},
+  {name: 'Claude', Icon: ClaudeIcon, href: (q) => `https://claude.ai/new?q=${q}`},
+  {name: 'ChatGPT', Icon: OpenAIIcon, href: (q) => `https://chatgpt.com/?q=${q}`},
+  {
+    name: 'Gemini',
+    Icon: GeminiIcon,
+    href: (q) => `https://gemini.google.com/app?q=${q}`,
+  },
+  {
+    name: 'Perplexity',
+    Icon: PerplexityIcon,
+    href: (q) => `https://www.perplexity.ai/search?q=${q}`,
+  },
 ];
 
 function buildPrompt(siteUrl: string, pathname: string): string {
@@ -128,12 +142,15 @@ export default function AskAI(): React.JSX.Element {
         {ASSISTANTS.map((assistant) => (
           <li key={assistant.name} role="none">
             <a
-              className="dropdown__link"
+              className="dropdown__link askAI__link"
               role="menuitem"
               href={assistant.href(encodedPrompt)}
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}>
+              {/* The label already names the service, so the mark is
+                  decorative to a screen reader. */}
+              <assistant.Icon className="askAI__vendorIcon" aria-hidden="true" />
               {assistant.name}
             </a>
           </li>
