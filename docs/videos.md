@@ -11,11 +11,39 @@ sidebar_class_name: navIcon navIcon--circle-play
 Short walkthroughs, if you would rather watch than read. Everything here is on the
 [Carbon Voice YouTube channel](https://www.youtube.com/@carbonvoice).
 
+## Start here
+
+<!-- videos:
+-9mJe7W-g-M | Talking in Carbon Voice
+ghff427YvrU | Staying up to date
+TSYxSj_Ma10 | Using voice memos
+-->
+
+<div class="videoStrip">
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=-9mJe7W-g-M"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/-9mJe7W-g-M.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Talking in Carbon Voice</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=ghff427YvrU"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/ghff427YvrU.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Staying up to date</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=TSYxSj_Ma10"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/TSYxSj_Ma10.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Using voice memos</span>
+  </a>
+</div>
+
+<!-- /videos -->
+
 ## How-to guides
 
 The support playlist: how each part of Carbon Voice works, one feature at a time.
 
-<!-- playlist:how-to:start -->
+<!-- videos: PLM_p2mhoTkcApu2QYJODXJK8w9-PUiCVh -->
 
 <div class="videoStrip">
   <a class="videoStrip__item" href="https://www.youtube.com/watch?v=ic2KTqhA-5M"
@@ -95,39 +123,79 @@ The support playlist: how each part of Carbon Voice works, one feature at a time
   </a>
 </div>
 
-<!-- playlist:how-to:end -->
+<!-- /videos -->
 
 [Open the how-to playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcApu2QYJODXJK8w9-PUiCVh)
 
-## Start here
-
-- 📺 [Talking in Carbon Voice](https://www.youtube.com/watch?v=-9mJe7W-g-M)
-- 📺 [Staying up to date](https://www.youtube.com/watch?v=ghff427YvrU)
-- 📺 [Using voice memos](https://www.youtube.com/watch?v=TSYxSj_Ma10)
-
 ## Recording and sharing
 
-- 📺 [Recording and sharing a voice memo](https://www.youtube.com/watch?v=rk3YgSnx4vU)
-  — see [Record and share](messages/recording-and-sending/record-and-share.md).
-- 📺 [Sharing an audio file](https://www.youtube.com/watch?v=AerJ7r_mtbg) — see
-  [Share an audio file](messages/recording-and-sending/share-an-audio-file.md).
+<!-- videos:
+rk3YgSnx4vU | Recording and sharing a voice memo
+AerJ7r_mtbg | Sharing an audio file
+-->
+
+<div class="videoStrip">
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=rk3YgSnx4vU"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/rk3YgSnx4vU.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Recording and sharing a voice memo</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=AerJ7r_mtbg"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/AerJ7r_mtbg.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Sharing an audio file</span>
+  </a>
+</div>
+
+<!-- /videos -->
+
+Read instead: [Record and share](messages/recording-and-sending/record-and-share.md),
+[Share an audio file](messages/recording-and-sending/share-an-audio-file.md).
 
 ## Conversations
 
-- 📺 [Creating a conversation with a phone number](https://youtube.com/shorts/pfFHs5EqYZ8)
-  — see
-  [Start with a phone number or email](conversations/creating/start-with-a-phone-number-or-email.md).
-- 📺 [Managing longer messages](https://www.youtube.com/watch?v=czgaLFoWe00) — see
-  [Conversation history settings](conversations/access-and-sharing/conversation-history-settings.md).
-- 📺 [Turning off AI summaries](https://www.youtube.com/watch?v=NPeqJzK8vCU)
-- 📺 [Clearing notify settings](https://www.youtube.com/watch?v=ign41BKfS5E) — see
-  [Clearing notified messages](messages/playback/clearing-notified-messages.md).
+<!-- videos:
+pfFHs5EqYZ8 | Creating a conversation with a phone number
+czgaLFoWe00 | Managing longer messages
+NPeqJzK8vCU | Turning off AI summaries
+ign41BKfS5E | Clearing notify settings
+-->
+
+<div class="videoStrip">
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=pfFHs5EqYZ8"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/pfFHs5EqYZ8.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Creating a conversation with a phone number</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=czgaLFoWe00"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/czgaLFoWe00.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Managing longer messages</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=NPeqJzK8vCU"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/NPeqJzK8vCU.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Turning off AI summaries</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=ign41BKfS5E"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/ign41BKfS5E.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Clearing notify settings</span>
+  </a>
+</div>
+
+<!-- /videos -->
+
+Read instead:
+[Start with a phone number or email](conversations/creating/start-with-a-phone-number-or-email.md),
+[Conversation history settings](conversations/access-and-sharing/conversation-history-settings.md),
+[Clearing notified messages](messages/playback/clearing-notified-messages.md).
 
 ## Voice and AI
 
 Turning what you say into documents, summaries, and workflows.
 
-<!-- playlist:voice-ai:start -->
+<!-- videos: PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF -->
 
 <div class="videoStrip">
   <a class="videoStrip__item" href="https://www.youtube.com/watch?v=DOJY08MJuP8"
@@ -207,18 +275,15 @@ Turning what you say into documents, summaries, and workflows.
   </a>
 </div>
 
-<!-- playlist:voice-ai:end -->
+<!-- /videos -->
 
-- 📺 [Catching up with AI](https://www.youtube.com/watch?v=q2v4J9obJlk) — see
-  [Catch up with AI](ai/catch-up-with-ai.md).
-- 📺 [Connecting company knowledge to Carbon Voice](https://www.youtube.com/watch?v=kxpbtK68RwM)
-  — see [ChatGPT](integrations/mcp/chatgpt.md).
-
-[Open the Voice + AI playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF)
+Read instead: [Catch up with AI](ai/catch-up-with-ai.md),
+[ChatGPT](integrations/mcp/chatgpt.md), or
+[open the Voice + AI playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF).
 
 ## Automating with Zapier
 
-<!-- playlist:zapier:start -->
+<!-- videos: PLM_p2mhoTkcA0Zb-S1Mta0jdf0tHZ2mEF -->
 
 <div class="videoStrip">
   <a class="videoStrip__item" href="https://www.youtube.com/watch?v=tcTwbg75sbY"
@@ -233,16 +298,48 @@ Turning what you say into documents, summaries, and workflows.
   </a>
 </div>
 
-<!-- playlist:zapier:end -->
+<!-- /videos -->
 
-See [Zapier](integrations/zapier.md) and
+Read instead: [Zapier](integrations/zapier.md),
 [Automate workflows](integrations/automate-workflows.md), or
 [open the Zapier playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcA0Zb-S1Mta0jdf0tHZ2mEF).
 
 ## On your phone
 
-- 📺 [iPhone widgets](https://youtube.com/shorts/2o-fajim-wI) — see
-  [iPhone widgets](account-and-settings/iphone-widgets.md).
+<!-- videos:
+2o-fajim-wI | Setting up iPhone home screen widgets
+b85KPjYR8tQ | Recording a voice memo from the home screen
+Tqtt8bT31pY | Starting a voice memo from iOS Shortcuts
+urx2uBXdyLI | Recording voice memos on Apple Watch
+-->
+
+<div class="videoStrip">
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=2o-fajim-wI"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/2o-fajim-wI.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Setting up iPhone home screen widgets</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=b85KPjYR8tQ"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/b85KPjYR8tQ.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Recording a voice memo from the home screen</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=Tqtt8bT31pY"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/Tqtt8bT31pY.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Starting a voice memo from iOS Shortcuts</span>
+  </a>
+  <a class="videoStrip__item" href="https://www.youtube.com/watch?v=urx2uBXdyLI"
+     target="_blank" rel="noopener noreferrer">
+    <img src="/img/videos/urx2uBXdyLI.jpg" alt="" loading="lazy" width="320" height="180" />
+    <span>Recording voice memos on Apple Watch</span>
+  </a>
+</div>
+
+<!-- /videos -->
+
+Read instead: [iPhone widgets](account-and-settings/iphone-widgets.md),
+[Apple Watch](account-and-settings/apple-watch.md).
 
 ## More from Carbon Voice
 
