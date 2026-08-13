@@ -112,6 +112,27 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    // Search, built into the site at compile time. Deliberately not Algolia
+    // DocSearch: this keeps the help center self-contained, with no external
+    // service, no crawler to wait on, and no request leaving the reader's
+    // browser when they type.
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        indexBlog: true,
+        docsRouteBasePath: '/',
+        // Both the on-disk directory and the route: announcements live in
+        // whats-new/, not the plugin's default blog/.
+        blogDir: 'whats-new',
+        blogRouteBasePath: '/whats-new',
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+      },
+    ],
+  ],
+
   themeConfig: {
     metadata: [
       {name: 'author', content: 'Phonon X, Inc.'},
@@ -176,6 +197,8 @@ const config: Config = {
           title: 'Carbon Voice',
           items: [
             {label: 'About Carbon Voice', href: PRODUCT_URL},
+            {label: 'Download the app', href: `${PRODUCT_URL}/download`},
+            {label: 'Human support', href: 'https://cv.chat/support'},
             {label: 'Developer Portal', href: 'https://developer.carbonvoice.app'},
           ],
         },
