@@ -2,6 +2,7 @@
 title: Catch-up, AI Actions on multiple messages, and more
 description: Summarize a busy conversation with Catch-up, run AI Actions across several messages at once, raise your phone to your ear to listen, and name your voice memos.
 date: 2024-11-08
+authors: [carbonvoice]
 tags: [release, ai, playback, voice-memos, conversations]
 ---
 

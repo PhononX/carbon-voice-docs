@@ -2,6 +2,7 @@
 title: Find people by username
 description: You can now be found by your Carbon Voice username, so anyone can reach you by typing @yourname.
 date: 2025-05-23
+authors: [carbonvoice]
 tags: [release, account]
 ---
 

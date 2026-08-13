@@ -2,6 +2,7 @@
 title: Nine ways to be more productive with AI Actions
 description: Nine things our team turns voice into with AI Actions — CRM updates, to-do lists, presentation outlines, email drafts, bug reports, reviews, and posts.
 date: 2024-09-20
+authors: [carbonvoice]
 tags: [ai, integrations, zapier]
 ---
 

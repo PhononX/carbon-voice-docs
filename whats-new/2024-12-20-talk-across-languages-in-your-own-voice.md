@@ -2,6 +2,7 @@
 title: Talk across languages in your own voice
 description: Global Voice translates your messages automatically and plays them back to recipients in your own cloned voice.
 date: 2024-12-20
+authors: [carbonvoice]
 tags: [release, ai, translation, voice-cloning]
 ---
 

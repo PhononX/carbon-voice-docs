@@ -2,6 +2,7 @@
 title: Trigger Zapier workflows with voice memos
 description: Recording a voice memo can now start a Zapier workflow, with optional filtering by the folder you recorded into.
 date: 2025-02-21
+authors: [carbonvoice]
 tags: [release, integrations, zapier, voice-memos]
 ---
 

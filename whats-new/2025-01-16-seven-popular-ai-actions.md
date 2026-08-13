@@ -2,6 +2,7 @@
 title: Seven popular AI Actions
 description: The seven most-used AI Actions based on real usage data — what each one is good for, and how it works.
 date: 2025-01-16
+authors: [carbonvoice]
 tags: [ai]
 ---
 

@@ -2,6 +2,7 @@
 title: Make your text messages sound like you
 description: Clone your voice so the text messages you send play back in your own voice instead of a default text-to-speech one.
 date: 2025-11-04
+authors: [carbonvoice]
 tags: [release, ai, voice-cloning]
 ---
 

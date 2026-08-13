@@ -2,6 +2,7 @@
 title: Stop scheduling, start reminding
 description: Reminders post a scheduled message into a conversation automatically, so recurring updates like the daily stand-up happen without a calendar invite.
 date: 2026-03-24
+authors: [carbonvoice]
 tags: [release, conversations, reminders]
 ---
 

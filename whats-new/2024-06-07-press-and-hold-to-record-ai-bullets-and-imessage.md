@@ -2,6 +2,7 @@
 title: Press and hold to record, AI Bullets, and an iMessage app
 description: Press and hold the mic to record, turn long voice messages into bullet points with AI Bullets, and send Carbon Voice memos straight from iMessage.
 date: 2024-06-07
+authors: [carbonvoice]
 tags: [release, ai, recording, ios]
 ---
 

@@ -2,6 +2,7 @@
 title: Connect ChatGPT to Carbon Voice
 description: Connect Carbon Voice to ChatGPT and ask it to turn your voice memos and conversations into blog posts, plans, and structured documentation.
 date: 2025-10-27
+authors: [carbonvoice]
 tags: [release, integrations, mcp, ai]
 ---
 

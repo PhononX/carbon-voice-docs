@@ -2,6 +2,7 @@
 title: Connect your AI assistants with the MCP server
 description: Claude, Cursor, and other MCP clients can now read and analyze your Carbon Voice conversations and voice memos directly — no copy-pasting or exporting.
 date: 2025-08-05
+authors: [carbonvoice]
 tags: [release, integrations, mcp, ai]
 ---
 

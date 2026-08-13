@@ -2,6 +2,7 @@
 title: Read status, one-tap AI summaries, and Distracted Mode
 description: A large release adding read and listen receipts, one-tap AI summaries, expandable transcripts, in-line playback, and a Distracted Mode player built for multitasking.
 date: 2024-02-07
+authors: [carbonvoice]
 tags: [release, ai, playback, transcripts]
 ---
 
