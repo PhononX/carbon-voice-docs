@@ -1,50 +1,357 @@
 /**
  * Carbon Voice Help — site styling.
  *
- * This stays deliberately close to stock Docusaurus. Branding is applied by
- * overriding the Infima CSS variables below, so a future visual pass should
- * mostly mean changing these values rather than writing new components.
+ * The palette and typography here are taken from the Carbon Voice product site
+ * (https://getcarbon.app) so the help center reads as part of the same product:
+ * Wix Madefor Text, the indigo/violet brand ramp, and the deep #0E0434 ink used
+ * for headings in light mode and for the page background in dark mode.
+ *
+ * Branding is applied by overriding Infima's CSS variables wherever possible,
+ * so a future visual pass should mostly mean changing token values in the two
+ * blocks at the top rather than writing new component styles.
  */
 
+/* Self-hosted so the help center makes no third-party font requests. Only the
+   subsets a reader actually needs are downloaded (each @font-face carries a
+   unicode-range). */
+@import '@fontsource-variable/wix-madefor-text/index.css';
+
 :root {
-  /* Placeholder brand color — Docusaurus green until Carbon Voice brand values
-     are supplied. Replace this ramp and the dark-mode ramp below to rebrand. */
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* ---- Brand palette (sampled from getcarbon.app) ------------------------ */
+  --cv-violet-900: #0e0434; /* deep indigo — headings, dark surfaces */
+  --cv-violet-800: #261073;
+  --cv-violet-700: #4330b8;
+  --cv-violet-600: #5e4cce; /* primary */
+  --cv-violet-300: #baa9ff;
+  --cv-violet-200: #dbd2ff;
+  --cv-violet-100: #f2efff;
 
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --cv-ink: #26262e; /* body copy */
+  --cv-ink-muted: #5d5e64;
+  --cv-ink-subtle: #a1a2ab;
+  --cv-line: #ededf3;
+  --cv-line-strong: #d9d9e1;
+  --cv-surface: #f6f6fb;
 
-  /* Help-center reading comfort: a slightly roomier line height and a content
-     column that does not run the full width of a large display. */
+  /* ---- Infima: primary ramp --------------------------------------------- */
+  --ifm-color-primary: var(--cv-violet-600);
+  --ifm-color-primary-dark: #4b37c7;
+  --ifm-color-primary-darker: #4634bc;
+  --ifm-color-primary-darkest: #3a2a9b;
+  --ifm-color-primary-light: #7262d4;
+  --ifm-color-primary-lighter: #7c6dd7;
+  --ifm-color-primary-lightest: #9a8fe0;
+
+  /* Informational callouts pick up the brand violet; the remaining semantic
+     colors (success, warning, danger) stay conventional on purpose. */
+  --ifm-color-info: var(--cv-violet-600);
+
+  /* ---- Infima: neutral ramp ---------------------------------------------- */
+  --ifm-color-emphasis-0: #ffffff;
+  --ifm-color-emphasis-100: var(--cv-surface);
+  --ifm-color-emphasis-200: var(--cv-line);
+  --ifm-color-emphasis-300: var(--cv-line-strong);
+  --ifm-color-emphasis-400: #c3c4cf;
+  --ifm-color-emphasis-500: var(--cv-ink-subtle);
+  --ifm-color-emphasis-600: #80828a;
+  --ifm-color-emphasis-700: var(--cv-ink-muted);
+  --ifm-color-emphasis-800: #3c3d45;
+  --ifm-color-emphasis-900: var(--cv-ink);
+  --ifm-color-emphasis-1000: var(--cv-violet-900);
+
+  --ifm-color-content: var(--cv-ink);
+  --ifm-color-content-secondary: var(--cv-ink-muted);
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+
+  /* ---- Typography --------------------------------------------------------- */
+  --ifm-font-family-base: 'Wix Madefor Text Variable', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
+    Consolas, 'Liberation Mono', monospace;
+
+  /* The product site sets headings at weight 500 on a 1.1em line height. The
+     help center loosens the leading slightly: docs headings wrap more often
+     than marketing ones. */
+  --ifm-heading-font-weight: 500;
+  --ifm-heading-line-height: 1.2;
+  --ifm-heading-color: var(--cv-violet-900);
+  --ifm-heading-margin-top: 2.25rem;
+  --ifm-heading-margin-bottom: 0.85rem;
+
+  /* Baseline scale. Docusaurus scales headings up again inside `.markdown`
+     (48 / 32 / 24), which is close to the product site's own display sizes, so
+     that is left alone. */
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 1.75rem;
+  --ifm-h3-font-size: 1.3125rem;
+  --ifm-h4-font-size: 1.0625rem;
+  --ifm-h5-font-size: 0.9375rem;
+  --ifm-h6-font-size: 0.875rem;
+
+  /* Help-center reading comfort: a roomier line height, and a content column
+     that does not run the full width of a large display (see `.markdown`). */
   --ifm-line-height-base: 1.7;
-  --ifm-heading-font-weight: 600;
+  --ifm-paragraph-margin-bottom: 1.15rem;
+  --ifm-code-font-size: 90%;
+
+  /* ---- Shape -------------------------------------------------------------- */
+  --ifm-global-radius: 0.625rem;
+  --ifm-button-border-radius: 999px;
+  --ifm-alert-border-radius: var(--ifm-global-radius);
+  --ifm-alert-border-left-width: 4px;
+
+  /* ---- Components --------------------------------------------------------- */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-darkest);
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: inset 0 -1px 0 var(--cv-line);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary);
+
+  --ifm-menu-color: var(--cv-ink-muted);
+  --ifm-menu-color-active: var(--cv-violet-700);
+  --ifm-menu-color-background-active: var(--cv-violet-100);
+  --ifm-menu-color-background-hover: var(--cv-surface);
+
+  --ifm-code-background: var(--cv-violet-100);
+  --ifm-code-border-radius: 0.375rem;
+  --ifm-blockquote-color: var(--cv-ink-muted);
+  --ifm-blockquote-border-color: var(--ifm-color-primary);
+  --ifm-table-head-background: var(--cv-surface);
+  --ifm-table-border-color: var(--cv-line);
+  --ifm-table-stripe-background: var(--cv-surface);
+  --ifm-toc-border-color: var(--cv-line);
+  --ifm-hr-border-color: var(--cv-line);
+
+  --docusaurus-highlighted-code-line-bg: rgba(94, 76, 206, 0.14);
 }
 
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+/* Infima declares its dark values on `html[data-theme='dark']`, so the token
+   block below has to match that specificity to win — a bare
+   `[data-theme='dark']` would silently lose on backgrounds and the neutral
+   ramp. Component rules further down are ordinary selectors and do not need it. */
+html[data-theme='dark'] {
+  --ifm-color-primary: var(--cv-violet-300);
+  --ifm-color-primary-dark: #987eff;
+  --ifm-color-primary-darker: #8769ff;
+  --ifm-color-primary-darkest: #542aff;
+  --ifm-color-primary-light: #dcd3ff;
+  --ifm-color-primary-lighter: #ede9ff;
+  --ifm-color-primary-lightest: #f5f2ff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-info: var(--cv-violet-300);
+
+  /* The product site's dark sections sit on #0E0434, so the neutral ramp is
+     tinted toward indigo rather than gray. */
+  --ifm-color-emphasis-0: #0b0329;
+  --ifm-color-emphasis-100: #140742;
+  --ifm-color-emphasis-200: #1f0f56;
+  --ifm-color-emphasis-300: #2e1a70;
+  --ifm-color-emphasis-400: #443094;
+  --ifm-color-emphasis-500: #6d5cae;
+  --ifm-color-emphasis-600: #8d80c2;
+  --ifm-color-emphasis-700: #ada3d4;
+  --ifm-color-emphasis-800: #cdc6e6;
+  --ifm-color-emphasis-900: #e9e5f5;
+  --ifm-color-emphasis-1000: #ffffff;
+
+  --ifm-color-content: #e6e3f2;
+  --ifm-color-content-secondary: #ada3d4;
+  --ifm-background-color: var(--cv-violet-900);
+  --ifm-background-surface-color: #17093f;
+
+  --ifm-heading-color: #ffffff;
+
+  --ifm-navbar-background-color: var(--cv-violet-900);
+  --ifm-navbar-shadow: inset 0 -1px 0 #2e1a70;
+
+  --ifm-menu-color: #ada3d4;
+  --ifm-menu-color-active: var(--cv-violet-200);
+  --ifm-menu-color-background-active: rgba(186, 169, 255, 0.14);
+  --ifm-menu-color-background-hover: rgba(186, 169, 255, 0.08);
+
+  --ifm-code-background: rgba(186, 169, 255, 0.14);
+  --ifm-blockquote-color: #cdc6e6;
+  --ifm-table-head-background: #17093f;
+  --ifm-table-border-color: #2e1a70;
+  --ifm-table-stripe-background: rgba(186, 169, 255, 0.05);
+  --ifm-toc-border-color: #2e1a70;
+  --ifm-hr-border-color: #2e1a70;
+
+  --ifm-hover-overlay: rgba(186, 169, 255, 0.08);
+  --ifm-scrollbar-track-background-color: #17093f;
+  --ifm-scrollbar-thumb-background-color: #3b2585;
+  --ifm-scrollbar-thumb-hover-background-color: #4d34a6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(186, 169, 255, 0.16);
 }
+
+/* Match the crispness of the product site's type rendering. */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--cv-violet-200);
+  color: var(--cv-violet-900);
+}
+
+[data-theme='dark'] ::selection {
+  background-color: rgba(186, 169, 255, 0.32);
+  color: #ffffff;
+}
+
+/* ---- Headings ------------------------------------------------------------- */
+
+/* Display sizes on the product site are set tight; the optical correction only
+   matters on the larger headings. */
+h1,
+h2 {
+  letter-spacing: -0.02em;
+}
+
+h3,
+h4 {
+  letter-spacing: -0.01em;
+}
+
+/* Section headings within an article get a hairline rule, which makes long
+   troubleshooting and settings pages scannable. */
+.markdown > h2 {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* ...except when an h2 opens the article, where the rule would just double up
+   on the title. */
+.markdown > h1 + h2 {
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* ---- Prose ---------------------------------------------------------------- */
 
 /* Keep prose readable on wide screens without a custom layout component. */
 .markdown {
   max-width: 46rem;
 }
 
+.markdown a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--cv-violet-200);
+}
+
+.markdown a:hover {
+  text-decoration-color: currentcolor;
+}
+
+[data-theme='dark'] .markdown a {
+  text-decoration-color: rgba(186, 169, 255, 0.4);
+}
+
 /* The placeholder convention used throughout the docs is a plain Markdown
    blockquote, so it renders on GitHub too. Give it a little emphasis here. */
 .markdown blockquote {
-  border-left-color: var(--ifm-color-primary);
+  background-color: var(--cv-violet-100);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+  padding: 0.85rem 1.25rem;
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background-color: rgba(186, 169, 255, 0.08);
+}
+
+/* Most screenshots in docs/ are transparent WebP exported against white, so
+   they need a plate of their own to stay legible in dark mode. */
+.markdown img {
+  background-color: #ffffff;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.markdown table thead tr {
+  border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+/* Inline code reads as a tinted chip rather than a bordered box, which is how
+   inline emphasis is handled on the product site. */
+.markdown code {
+  border: 0;
+  padding: 0.15rem 0.35rem;
+}
+
+/* ---- Chrome --------------------------------------------------------------- */
+
+.navbar__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.menu__link {
+  border-radius: 0.5rem;
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+.table-of-contents__link--active,
+.table-of-contents__link--active code {
+  font-weight: 600;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background-color: var(--cv-violet-100);
+  color: var(--cv-violet-700);
+}
+
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
+  background-color: rgba(186, 169, 255, 0.14);
+  color: var(--cv-violet-200);
+}
+
+/* Previous/next cards: brand the hover state rather than leaving it gray. */
+.pagination-nav__link {
+  border-color: var(--ifm-color-emphasis-200);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  background-color: var(--cv-violet-100);
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  background-color: rgba(186, 169, 255, 0.08);
+}
+
+.pagination-nav__sublabel {
+  color: var(--ifm-color-content-secondary);
+}
+
+/* The footer is the deep indigo of the product site's footer in both color
+   modes, so it overrides Infima's own `footer--dark` palette. */
+.footer--dark {
+  --ifm-footer-background-color: var(--cv-violet-900);
+  --ifm-footer-color: #cdc6e6;
+  --ifm-footer-link-color: #cdc6e6;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-footer-title-color: #ffffff;
+
+  border-top: 1px solid var(--cv-violet-800);
+}
+
+.footer__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.footer__copyright {
+  color: #8d80c2;
+  font-size: 0.875rem;
 }

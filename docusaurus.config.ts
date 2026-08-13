@@ -33,6 +33,19 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // Tints browser UI (mobile address bar, PWA chrome) to match the site
+  // background in each color mode: white in light, the brand indigo in dark.
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#ffffff'},
+    },
+    {
+      tagName: 'meta',
+      attributes: {name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#0E0434'},
+    },
+  ],
+
   markdown: {
     // `.md` files are parsed as CommonMark rather than MDX, so the canonical
     // content stays portable: what renders here also renders on GitHub and in
@@ -135,7 +148,9 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'light',
+      // Dark in both color modes, like the footer on getcarbon.app. The exact
+      // palette is set on `.footer--dark` in src/css/custom.css.
+      style: 'dark',
       links: [
         {
           title: 'Documentation',
