@@ -293,24 +293,91 @@ h4 {
 }
 
 .cardGrid li {
-  background-color: var(--ifm-background-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--cv-card-tint, var(--ifm-color-emphasis-100));
+  border: 1px solid transparent;
   border-radius: var(--ifm-global-radius);
-  color: var(--ifm-color-content-secondary);
+  color: var(--cv-ink-muted);
   font-size: 0.9375rem;
   line-height: 1.55;
-  padding: 1rem 1.15rem;
+  padding: 1.15rem 1.25rem;
   position: relative;
-  transition: border-color 150ms ease, background-color 150ms ease;
+  transition: transform 150ms ease, box-shadow 150ms ease;
 }
 
 .cardGrid li:hover {
-  background-color: var(--cv-violet-100);
-  border-color: var(--ifm-color-primary);
+  box-shadow: 0 6px 20px rgb(14 4 52 / 12%);
+  transform: translateY(-2px);
+}
+
+/* The pastels are the accent set from getcarbon.app, assigned per position.
+   Position is safe to key on here in a way it would not be for the icons:
+   reordering the cards reshuffles the colours without making any of them
+   wrong. A seventh card falls back to the neutral surface above. */
+.cardGrid li:nth-child(1) {
+  --cv-card-tint: #f2efff; /* pale lavender */
+}
+
+.cardGrid li:nth-child(2) {
+  --cv-card-tint: #ffefa9; /* butter */
+}
+
+.cardGrid li:nth-child(3) {
+  --cv-card-tint: #ffccb3; /* peach */
+}
+
+.cardGrid li:nth-child(4) {
+  --cv-card-tint: #dbd2ff; /* periwinkle */
+}
+
+.cardGrid li:nth-child(5) {
+  --cv-card-tint: #ffcfde; /* pink, tinted from #FF9FBC */
+}
+
+.cardGrid li:nth-child(6) {
+  --cv-card-tint: #f0d9ff; /* orchid, tinted from #CF66FF */
+}
+
+/* On the indigo background a pastel at full strength would glare, so the same
+   hues are laid over it at low alpha: the colour identity survives, the
+   contrast stays on the dark theme's terms. */
+[data-theme='dark'] .cardGrid li {
+  color: var(--ifm-color-content-secondary);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(1) {
+  --cv-card-tint: rgb(186 169 255 / 15%);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(2) {
+  --cv-card-tint: rgb(255 239 169 / 20%);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(3) {
+  --cv-card-tint: rgb(255 204 179 / 20%);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(4) {
+  --cv-card-tint: rgb(219 210 255 / 17%);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(5) {
+  --cv-card-tint: rgb(255 159 188 / 19%);
+}
+
+[data-theme='dark'] .cardGrid li:nth-child(6) {
+  --cv-card-tint: rgb(207 102 255 / 20%);
 }
 
 [data-theme='dark'] .cardGrid li:hover {
-  background-color: rgba(186, 169, 255, 0.08);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 35%);
+}
+
+/* Sits above the title, the way an icon does on a card. */
+.cardIcon {
+  display: block;
+  font-size: 1.375rem;
+  line-height: 1;
+  margin-bottom: 0.55rem;
 }
 
 .cardGrid li strong {
@@ -335,13 +402,20 @@ h4 {
   position: absolute;
 }
 
+/* The tints are light in both themes, so card text keeps the light theme's ink
+   rather than following the page. */
+.cardGrid li strong,
+[data-theme='dark'] .cardGrid li strong {
+  color: var(--cv-violet-900);
+}
+
+[data-theme='dark'] .cardGrid li strong {
+  color: #ffffff;
+}
+
 .markdown .cardGrid a {
   color: inherit;
   text-decoration: none;
-}
-
-.markdown .cardGrid li:hover a {
-  color: var(--ifm-link-color);
 }
 
 /* YouTube embeds on the Video guides page. The wrapper holds the 16:9 box so
