@@ -35,7 +35,7 @@ summary with action items, or anything else:
 2. Tap **Select** to choose multiple messages.
 3. Choose your AI Magic prompt.
 
-<!-- image: ai-magic-multiple.png — screenshot to re-export from Notion -->
+![AI Magic menu for selected messages](/img/ai/ai-magic-multiple.webp)
 
 ## Finding past results
 

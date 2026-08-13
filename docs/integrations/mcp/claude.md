@@ -22,7 +22,7 @@ complete the connection.
 6. Log into your Carbon Voice account when prompted. This links Claude to your messages
    and conversations.
 
-<!-- image: claude-connectors.png — screenshot to re-export from Notion -->
+![Claude Settings Connectors panel](/img/integrations/claude-connectors.webp)
 
 ## Local installation
 

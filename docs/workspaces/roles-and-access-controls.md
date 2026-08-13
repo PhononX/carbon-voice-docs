@@ -11,7 +11,7 @@ people in.
 
 ## Assigning a role
 
-<!-- image: workspace-roles.png — screenshot to re-export from Notion -->
+![Member, Admin, and Remove role options for a workspace member](/img/workspaces/workspace-roles.webp)
 
 1. Tap your profile picture on Home and go to **Spaces** from the main menu.
 2. Choose a workspace where you are an admin or the owner.
@@ -21,7 +21,7 @@ people in.
 
 ## Controlling who can invite people
 
-<!-- image: admin-controls.png — screenshot to re-export from Notion -->
+![Workspace admin control for who can invite members](/img/workspaces/admin-controls.webp)
 
 1. Go to the **Spaces** tab from Home.
 2. Choose a workspace where you are an admin or the owner.

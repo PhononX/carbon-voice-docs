@@ -32,7 +32,7 @@ and Catch-up summarizes the discussion, with links to play the source messages.
 You can also tap the **"…"** and select **Mark as Read** to clear the new messages in
 the conversation.
 
-<!-- image: catch-up-summary.png — screenshot to re-export from Notion -->
+![AI catch-up summary of a conversation's message history](/img/ai/catch-up-summary.webp)
 
 📺 [Watch: catching up with AI](https://www.youtube.com/watch?v=q2v4J9obJlk)
 
