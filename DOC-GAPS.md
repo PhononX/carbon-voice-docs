@@ -434,24 +434,81 @@ way the content is moving:
 | **Your AI tools reach into Carbon Voice** | AI assistants & MCP | Claude, ChatGPT, Cursor, Windsurf, Obsidian, tips — promoted out of Integrations |
 | **AI lives in Carbon Voice as a participant** | Agents | Agent accounts, connecting a platform (Hermes, OpenClaw, Claude Code…), agents in conversations, agents on speed dial |
 
-Two notes on the split:
+One note on the catalogue: **the agent platform list is server-driven** — the app fetches it
+from a remote endpoint with per-platform setup steps
+(`http_remote_agent_integration_data_source.dart`, `AgentIntegration` with `live` /
+`comingSoon` status). Document the in-app "Pick your platform" flow; don't hard-code a list
+that will drift.
 
-- **Voice cloning, TTS and Global Voice belong together and apart.** They're AI that
-  *speaks*, not AI that *understands*, and they currently sit oddly beside summarization.
-  Group them as "Voice & language" inside the AI section.
-- **The agent platform catalogue is server-driven** — the app fetches it from a remote
-  endpoint with per-platform setup steps (`http_remote_agent_integration_data_source.dart`,
-  `AgentIntegration` with `live` / `comingSoon` status). Document the in-app "Pick your
-  platform" flow; don't hard-code a list that will drift.
+### 4.2 File by the reader's question, not the technology underneath
 
-**The highest-value new page: "Turn a discussion into notes."** A note-taker records a
-meeting you had; Carbon Voice gives you the notes without the meeting. That story chains
-five undocumented features into one arc — async meeting → full transcript → catch-up summary
-→ action items → AI action output → share or export — and it lands against the comparison
-readers already have in their heads (Otter, Granola, Fireflies). It's a positioning page
-that doubles as the entry point for async meetings, action items and AI outputs.
+The docs already get this right once, and the precedent should govern everything else.
+**Transcription is as AI-powered as anything in the product — and it lives under Messages →
+Transcripts.** Nobody filed it under AI, because the reader's question is "how do I read what
+was said?", not "what can AI do?" That's the correct test, and it's already load-bearing.
 
-### 4.2 Quick capture — name the section for the job, not the platform
+Applying it consistently, the **AI** section should hold only the places where someone
+*deliberately invokes* AI and gets something back. Everything else goes where the job lives.
+
+| Feature | Reader's question | Home |
+|---|---|---|
+| Transcripts | "How do I read what was said?" | Messages *(already correct)* |
+| TTS voice, premium engine, voice cloning | "How do I sound to people?" | **Voice & language** |
+| Global Voice, auto-translate, language list | "How do we talk across languages?" | **Voice & language** |
+| Summaries, catch-up, AI Chat, AI actions | "What can AI do with this?" | AI |
+| Action items | Created by AI, but lived with as a to-do list | Notebook, with a pointer from AI |
+
+**Voice & language earns its own top-level section, not a corner of AI or Settings.** Three
+reasons. It's *set once and then invisible* — there's no invoke-and-receive moment, so filing
+it beside summaries mismatches the whole experience, and it wrongly implies AI credits and a
+button to press. Its content is currently **fragmented across three pages in two sections** —
+`ai/voice-cloning.md`, `ai/auto-translation.md` and `account-and-settings/typed-message-voice.md`
+— all describing one settings screen. And it **spans messages, voice memos and CarbonLink**
+(a shared memo offers translation, and the reply comes back in the sender's voice), so it
+can't sit inside Messages either.
+
+The two halves stay in one section rather than splitting across Messages and Settings,
+because they're coupled — your cloned voice is what speaks the translated message, and that
+coupling is the selling point. If a new top-level entry is unwelcome, the fallback is a
+"Voice & language" group under Messages; what shouldn't happen is leaving it under AI.
+
+### 4.3 Meeting Notes — the workflow deserves a section, not a page
+
+**It's a category people search by name.** "AI meeting notes" is the query; a section can own
+it, a paragraph inside the AI section can't. **It gives homeless features a home.** Async
+meetings, action items, AI Outputs history, engagement stats and reminders, whole-discussion
+transcripts and retros are all undocumented and all fit here naturally — async meetings
+especially, which have no good home today: "a conversation type with a reply deadline" is a
+definition, not the reason anyone would run one. And **it states the differentiator in the nav
+itself**: a note-taker records the meeting you had; this section is about the meeting not
+happening.
+
+**On the name:** use **"Meeting Notes"** in the sidebar and let the section index page carry
+the AI framing in its `title` and `description`. Leading the nav with "AI Meeting Notes"
+fights Otter, Granola and Fireflies on their terms, when the whole point is that you skipped
+the part they're recording — but the frontmatter still needs to capture the query people
+actually type. Docusaurus lets those differ; use that.
+
+**Suggested contents** — a sequence, since the reader is following a workflow rather than
+browsing features:
+
+- **Why there's no meeting** — the concept. Async discussion instead of a scheduled call;
+  everyone contributes, and it's transcribed as it happens.
+- **Run an async meeting** — create it, set the reply deadline, kick-off, reminders,
+  engagement stats, what happens when it ends. *Homed here, not under Conversations.*
+- **Get the notes** — catch-up summary, whole-discussion transcript, multi-select → AI action.
+- **Action items** — what AI extracted, and working through them.
+- **Share the notes** — AI Outputs, export, forward into another conversation, or push to
+  Notion / Docs via a webhook or Zapier.
+- **Retros** — the templated instance of the whole pattern, and already built.
+
+**The rule that stops it duplicating: the section owns the workflow; feature sections own the
+mechanics.** Meeting Notes pages are sequenced narrative that link out to the feature page at
+each step — so "Get the notes" explains what you end up with and links to catch-up in AI,
+rather than restating how catch-up works. Async meetings are the one exception: no other
+section wants them, so they live here.
+
+### 4.4 Quick capture — name the section for the job, not the platform
 
 Desktop global hotkeys and iOS widgets look like different topics but answer the same
 question: *get to the thing fast without opening the app.* A section named for that job
@@ -475,7 +532,7 @@ and player/recorder flows. That App Clip is the mechanism behind the CarbonLink 
 people can listen and reply "without downloading an app" — worth saying out loud on the
 CarbonLink pages.
 
-### 4.3 Integrations: sort by how much you have to build
+### 4.5 Integrations: sort by how much you have to build
 
 The current section mixes a no-code tool, an AI protocol and a REST API at the same level.
 Readers self-select by effort, so tier by effort — and note that the middle tier, the one
@@ -492,7 +549,7 @@ test case: if it's reached over MCP it belongs in AI assistants beside Claude an
 it's a sync or export path it belongs in tier 1. Same tool, different page, depending on
 which set of steps someone has to carry out — worth confirming which before it gets written.
 
-### 4.4 The proposed sidebar
+### 4.6 The proposed sidebar
 
 New in bold. Desktop stays a *single page* rather than a mirrored tree — it's the same app,
 so document the delta, not a parallel universe.
@@ -500,22 +557,26 @@ so document the delta, not a parallel universe.
 | Section | Change |
 |---|---|
 | Getting Started | Add **Carbon Voice on desktop** — layout, navigation map, sheet-vs-sidebar, inline recording |
-| Conversations | Add **async meetings** and **Business conversations** as types; expand filtering |
+| **Meeting Notes** | **New.** Why there's no meeting · run an async meeting · get the notes · action items · share them · retros |
+| Conversations | Add **Business conversations** as a type; expand filtering. Async meetings move to Meeting Notes |
 | Messages | Add threads, Listen Later, typed messages, mentions, reply privately |
 | Voice Memos | Largely as-is |
+| **Voice & language** | **New.** Consolidates three scattered pages: how you sound (TTS, premium engine, cloning) and talking across languages (Global Voice, auto-translate) |
 | **Quick capture** | **New.** Desktop hotkeys · Speed Dial · menu bar · widgets · Siri · share extension · iMessage · Apple Watch |
-| AI | Reframed: summaries & catch-up · AI Chat · action items · **turn a discussion into notes** · AI actions · voice & language |
+| AI | Narrowed to AI you invoke: summaries & catch-up · AI Chat · AI actions · AI Outputs |
 | **Agents** | **New.** What an agent is · create one · connect a platform · agents in conversations · agents on speed dial |
 | **AI assistants & MCP** | **Promoted** out of Integrations. Add **what your assistant can actually do** — the MCP tool surface, in plain language |
 | Workspaces | Largely as-is |
-| Integrations | Retiered per 4.3; gains the whole account-plumbing tier |
+| Integrations | Retiered per 4.5; gains the whole account-plumbing tier |
 | Account & Settings | Add Appearance, Language, Recording & Playback; fix Directory Services |
 | Troubleshooting | Largely as-is |
 
-That's four AI-adjacent top-level entries (AI, Agents, AI assistants, plus AI inside Quick
-capture via agent speed dials). If that reads as too many in the rail, the fallback is one
-**AI** parent with three children — but keep the three groups distinct whichever nesting
-wins, because the reader's question differs in each.
+Three AI-named top-level entries — AI, Agents, AI assistants — down from four once Voice &
+language moves out. If that still reads as too many in the rail, the fallback is one **AI**
+parent with three children; keep the groups distinct whichever nesting wins, because the
+reader's question differs in each. **Meeting Notes sits second, right after Getting Started**:
+it's the "what is this actually for" story, and it's the section most likely to be someone's
+first landing page from search.
 
 ---
 
@@ -527,7 +588,8 @@ wins, because the reader's question differs in each.
    notified/unread model across five pages.
 3. **Land the new structure before writing into it** — agree §4 first. Six new pages written
    into today's taxonomy is six pages that get moved again.
-4. **Fill the new sections** — Desktop (§3), Agents (2.1), Action Items (2.2), AI Chat (2.3),
-   async meetings (2.4), Speed Dial and shortcuts (2.5), the account-plumbing tier (2.6), and
-   "turn a discussion into notes" (4.1).
+4. **Fill the new sections** — Meeting Notes (4.3) first: it's the highest-intent landing page
+   and it absorbs async meetings (2.4) and action items (2.2) on the way. Then Desktop (§3),
+   Agents (2.1), AI Chat (2.3), Quick capture (4.4), the account-plumbing tier (2.6), and the
+   Voice & language consolidation (4.2).
 5. **Backfill** — §2.7 onwards, and restart `whats-new/` from 2025-08.
