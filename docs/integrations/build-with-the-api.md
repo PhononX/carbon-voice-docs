@@ -18,7 +18,8 @@ separately on the developer portal.
   an AI response being generated.
 - **OAuth applications** — authorize your app to act on behalf of a Carbon Voice user.
 - **Agent identities** — give an AI agent its own presence, so it can take part in
-  conversations like a person.
+  conversations like a person. Most of this is now self-serve in the app — see
+  [AI Agents](../ai-agents/index.md).
 - **Personal access tokens** — authenticate as yourself for scripts and personal
   automations.
 

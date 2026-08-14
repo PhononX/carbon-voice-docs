@@ -14,3 +14,7 @@ memos. The server URL is `https://mcp.carbonvoice.app`.
 - [Connecting ChatGPT](chatgpt.md)
 - [Connecting Cursor](cursor.md)
 - [Connecting Windsurf](windsurf.md)
+
+That's your assistant reading *from* Carbon Voice. For an AI that lives *in* Carbon Voice
+as a participant — with its own account, conversations and voice — see
+[AI Agents](../../ai-agents/index.md).

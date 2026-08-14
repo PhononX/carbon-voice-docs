@@ -40,6 +40,8 @@ Prefer to watch? Start with the [video guides](videos.md).
 - **[Messages](messages/index.md)** — recording, sending, listening, and transcripts.
 - **[Voice Memos](voice-memos/index.md)** — your own recordings, organized and shared.
 - **[AI](ai/index.md)** — summaries, catch-up, transformation, and translation.
+- **[AI Agents](ai-agents/index.md)** — give an AI agent its own account and talk to it
+  like a teammate.
 - **[Workspaces](workspaces/index.md)** — setting up and running a workspace for your
   team.
 - **[Account & Settings](account-and-settings/index.md)** — profile, notifications,

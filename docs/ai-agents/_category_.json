@@ -1,0 +1,8 @@
+{
+  "label": "AI Agents",
+  "position": 5.5,
+  "customProps": {
+    "description": "Give an AI agent its own account, and talk to it like a teammate."
+  },
+  "className": "navIcon navIcon--bot"
+}
