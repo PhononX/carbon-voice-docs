@@ -1,6 +1,6 @@
 ---
 title: Connect your agent
-description: Link an agent's Carbon Voice account to the tool it actually runs on, using a setup guide, an access token, and a webhook.
+description: Link an agent's Carbon Voice account to the agent platform you're connecting to, using a setup guide, an access token, and a webhook.
 sidebar_position: 2
 ---
 
@@ -56,7 +56,8 @@ message posted to the agent, so your agent knows when to respond.
 ## Finishing later
 
 An agent that isn't connected yet still appears in your list and still holds its tokens and
-webhooks. Nothing is lost by stopping halfway and coming back.
+webhooks, so nothing is lost by stopping halfway and coming back. It just won't respond to
+anything until you finish.
 
 ## Related
 

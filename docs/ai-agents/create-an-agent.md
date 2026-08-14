@@ -1,6 +1,6 @@
 ---
 title: Create an agent
-description: Set up an agent's Carbon Voice account by picking the platform it runs on, naming it, and following the setup guide.
+description: Set up an agent's Carbon Voice account by picking the platform you're connecting to, naming it, and following the setup guide.
 sidebar_position: 1
 ---
 
@@ -12,9 +12,10 @@ identity that can hold access tokens and webhook subscriptions of its own.
 ## Create one
 
 1. Open **AI Agents** and tap **Create New Agent**.
-2. **Pick your platform.** Choose the tool your agent runs on — Carbon Voice keeps a
-   catalogue of platforms with setup instructions written for each one. Pick the closest
-   match; if yours isn't listed yet, pick anything and connect it by hand afterwards.
+2. **Pick your platform.** Choose the agent platform you wish to connect Carbon Voice to.
+   Carbon Voice keeps a catalogue of platforms with setup instructions written for each
+   one. Pick the closest match; if yours isn't listed yet, pick anything and connect it by
+   hand afterwards.
 3. **Name your agent.** It's pre-filled with the platform name, and you can change it any
    time in settings.
 4. **Follow the setup guide**, if the platform has one. See
@@ -36,8 +37,9 @@ Each agent has:
 
 ## You don't need a working agent first
 
-The account is useful on its own. Create it now, and connect it to a real agent or
-workflow whenever you get round to building one.
+Create the account now and connect it to a real agent or workflow whenever you get round to
+building one. Bear in mind that an unconnected account won't do anything: people can send
+it messages, but there's nothing behind it to reply until you connect a platform.
 
 ## Related
 

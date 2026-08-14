@@ -26,8 +26,9 @@ conversation.
 3. **Talk to your agent.** Once connected, it behaves like any other member of the team.
    See [Talk to your agent](talk-to-your-agent.md).
 
-If you haven't built an agent yet, you can still do step 1 and come back. The account works
-fine on its own until you're ready to connect something to it.
+If you haven't built an agent yet, you can still do step 1 and come back. Until it's
+connected, though, the account is only an identity: you can add it to conversations and
+send it messages, but nothing is listening, so nothing will answer.
 
 ## Where to find them
 
