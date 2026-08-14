@@ -21,6 +21,8 @@ by the time you sit down.
 or build it with the steps below. Step 2 only improves the formatting — skip it if
 you're on a free Zapier plan.
 
+![The finished three-step Zap: Carbon Voice, Formatter, then Gmail](/img/integrations/automate-workflows/gmail-todo-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -32,6 +34,8 @@ you're on a free Zapier plan.
 **Configure**
 
 - **System Prompt ID** — To-do List
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to To-do List](/img/integrations/automate-workflows/gmail-todo-trigger.webp)
 
 ### Step 2 — Format the date
 
@@ -47,6 +51,8 @@ Used in the subject line, so each email is identifiable at a glance.
 - **Transform** — Format
 - **Input** — the **Messages Message Created At** field from step 1
 - **To Format** — `MMM DD YYYY` (Jan 22 2006)
+
+![Formatter by Zapier formatting the message's created-at date](/img/integrations/automate-workflows/gmail-todo-format-date.webp)
 
 ### Step 3 — Send the email
 
@@ -66,6 +72,8 @@ Used in the subject line, so each email is identifiable at a glance.
 ```html
 <br><b>Message Link: </b> <"Messages Message Link:" from Step 1>
 ```
+
+![Gmail's Send Email step, with the to-do list HTML as the body](/img/integrations/automate-workflows/gmail-todo-send-email.webp)
 
 ## Variations
 

@@ -21,6 +21,8 @@ it came from.
 [Start from the Zap template](https://zapier.com/apps/carbon-voice/integrations/todoist/255565085/create-tasks-in-todoist-when-new-to-do-list-ai-prompt-responses-are-generated-on-carbon-voice),
 or build it with the steps below.
 
+![The finished three-step Zap: Carbon Voice, Looping by Zapier, then Todoist](/img/integrations/automate-workflows/todoist-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -32,6 +34,8 @@ or build it with the steps below.
 **Configure**
 
 - **System Prompt ID** — To-do List
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to To-do List](/img/integrations/automate-workflows/todoist-trigger.webp)
 
 ### Step 2 — Loop over the list items
 
@@ -51,6 +55,8 @@ once per item.
 - **Loop iteration counter start** — 1
 - **Maximum number of Loop iterations** — 500
 
+![Looping by Zapier splitting the to-do list into one line item per task](/img/integrations/automate-workflows/todoist-loop.webp)
+
 ### Step 3 — Create the task
 
 **Setup**
@@ -65,6 +71,8 @@ once per item.
 - **Note** — `Created with Carbon Voice + Zapier.` followed by the **Message Link** field
   from step 1
 - **Priority** — 1
+
+![Todoist's Create Task step, with the title mapped to the looped to-do item](/img/integrations/automate-workflows/todoist-create-task.webp)
 
 ## Variations
 

@@ -34,6 +34,8 @@ skip them if you're on a free Zapier plan.
 
 - **System Prompt ID** — Professional Email
 
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Professional Email](/img/integrations/automate-workflows/gdoc-email-trigger.webp)
+
 ### Step 2 — Format the date
 
 Turns the message timestamp into something readable, for use in step 4.
@@ -49,6 +51,8 @@ Turns the message timestamp into something readable, for use in step 4.
 - **Input** — the **Messages Message Created At** field from step 1
 - **To Format** — `MMM DD YYYY` (Jan 22 2006)
 
+![Formatter by Zapier formatting the message's created-at date](/img/integrations/automate-workflows/gdoc-email-format-date.webp)
+
 ### Step 3 — Convert the draft to HTML
 
 Google Docs handles HTML better than Markdown, so the body is converted before it's
@@ -63,6 +67,8 @@ appended.
 
 - **Transform** — Convert Markdown to HTML
 - **Input** — the **Ai Responses Responses Markdown** field from step 1
+
+![Formatter by Zapier converting the draft from Markdown to HTML](/img/integrations/automate-workflows/gdoc-email-format-text.webp)
 
 ### Step 4 — Append the draft to the document
 
@@ -87,6 +93,8 @@ appended.
 <br>Link to message:<"Messages
 Message Link" from Step 1>
 ```
+
+![Google Docs' Append Text to Document step, with the pasted HTML block](/img/integrations/automate-workflows/gdoc-email-append.webp)
 
 ## Variations
 

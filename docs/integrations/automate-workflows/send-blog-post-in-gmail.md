@@ -20,6 +20,8 @@ read it later, forward it, or paste it wherever the post is going.
 [Start from the Zap template](https://zapier.com/apps/carbon-voice/integrations/gmail/255562712/get-gmail-emails-with-blog-posts-generated-by-carbon-voice),
 or build the two steps below. Two steps means it runs on a free Zapier plan.
 
+![The finished two-step Zap: Carbon Voice, then Gmail](/img/integrations/automate-workflows/gmail-blog-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -31,6 +33,8 @@ or build the two steps below. Two steps means it runs on a free Zapier plan.
 **Configure**
 
 - **System Prompt ID** — Blog Post
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Blog Post](/img/integrations/automate-workflows/gmail-blog-trigger.webp)
 
 ### Step 2 — Send the email
 
@@ -64,6 +68,8 @@ or build the two steps below. Two steps means it runs on a free Zapier plan.
 <H4>Blog Post</H4>
 <"Ai Responses Responses Html" from Step 1>
 ```
+
+![Gmail's Send Email step, with the HTML body pasted in](/img/integrations/automate-workflows/gmail-blog-send-email.webp)
 
 ## Variations
 

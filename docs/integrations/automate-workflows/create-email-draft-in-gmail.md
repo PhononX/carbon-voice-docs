@@ -32,6 +32,8 @@ and Zapier fills in both steps for you. To build it by hand, use the two steps b
 
 - **System Prompt ID** — Professional Email
 
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Professional Email](/img/integrations/automate-workflows/gmail-email-trigger.webp)
+
 ### Step 2 — Create the draft in Gmail
 
 **Setup**
@@ -44,6 +46,8 @@ and Zapier fills in both steps for you. To build it by hand, use the two steps b
 - **Subject** — the **Ai Responses Responses Json Subject** field from step 1
 - **Body type** — Plain
 - **Body** — the **Ai Responses Responses Json Content** field from step 1
+
+![Gmail's Create Draft step, with Subject and Body mapped to fields from the AI response](/img/integrations/automate-workflows/gmail-email-create-draft.webp)
 
 That's the whole workflow: two steps, so it runs on a free Zapier plan.
 

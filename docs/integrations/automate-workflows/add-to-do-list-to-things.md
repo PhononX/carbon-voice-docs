@@ -20,7 +20,9 @@ own to-do, with a link back to the recording it came from.
 ## Build the Zap
 
 [Start from the Zap template](https://zapier.com/apps/carbon-voice/integrations/things/255563115/create-to-dos-in-things-when-new-to-do-ai-responses-are-generated-in-carbon-voice),
-or build it with the steps below.
+or build it with the steps below. It's the same Zap as the
+[Todoist version](add-to-do-list-to-todoist.md) apart from the last step, so use that
+guide's screenshots if you want to see each step configured.
 
 ### Step 1 — Trigger on the AI result
 

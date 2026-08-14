@@ -25,6 +25,8 @@ Steps 1 and 2 are the workflow. Steps 3 to 7 attach the Jira link back to the or
 Carbon Voice message, which needs a paid Zapier plan — see
 [Link the issue back to the message](#link-the-issue-back-to-the-message).
 
+![The finished Zap: the trigger, Jira, then a path split that links the issue back](/img/integrations/automate-workflows/jira-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -36,6 +38,8 @@ Carbon Voice message, which needs a paid Zapier plan — see
 **Configure**
 
 - **System Prompt ID** — Bug Report
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Bug Report](/img/integrations/automate-workflows/jira-trigger.webp)
 
 ### Step 2 — Create the issue in Jira
 
@@ -67,6 +71,10 @@ Link to original message: <"Messages Message Link" from Step 1>
 DONE BY CARBON VOICE
 ```
 
+![Jira's Create Issue step, with the project, issue type and assignee set](/img/integrations/automate-workflows/jira-create-issue.webp)
+
+![The rest of the same form: the description, environment, reporter and summary](/img/integrations/automate-workflows/jira-create-issue-fields.webp)
+
 Stop here and the workflow is complete — and short enough to run on a free Zapier plan.
 
 ## Link the issue back to the message
@@ -92,6 +100,8 @@ conversation with the link attached.
 - **Only continue if** — the **Messages Message Type** field from step 1 **(Text)
   Contains** `voicememo`
 
+![Path A's custom rule: continue only when the message type contains voicememo](/img/integrations/automate-workflows/jira-path-a-conditions.webp)
+
 ### Step 5 — Path A: attach the Jira link to the voice memo
 
 **Setup**
@@ -104,9 +114,13 @@ conversation with the link attached.
 - **Link Attachment URL** — the **Issue Url** field from step 2
 - **Message ID** — the **Messages Message ID** field from step 1
 
+![Carbon Voice's Add Link Attachments to Message step, with the Jira issue URL](/img/integrations/automate-workflows/jira-path-a-attach-link.webp)
+
 ### Step 6 — Fallback path conditions
 
 - **Choose the type of rules to use for this path branch** — Fallback
+
+![The fallback branch, which runs when Path A's rule doesn't match](/img/integrations/automate-workflows/jira-fallback-conditions.webp)
 
 ### Step 7 — Fallback: forward the message with the link attached
 
@@ -122,6 +136,8 @@ conversation with the link attached.
 - **Message ID** — the **Messages Message ID** field from step 1
 - **Message Text** — `Bug created in Jira from Carbon Voice + Zapier`
 - **Link Attachment URL** — the **Issue Url** field from step 2
+
+![Carbon Voice's Send Message to Conversation step, forwarding the message with the issue link](/img/integrations/automate-workflows/jira-fallback-forward.webp)
 
 ## Variations
 

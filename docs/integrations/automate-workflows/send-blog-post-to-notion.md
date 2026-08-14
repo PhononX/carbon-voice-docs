@@ -21,6 +21,8 @@ and filled in with the summary, body, hashtags and pull quotes.
 or build it with the steps below. Step 2 only improves the formatting — skip it if
 you're on a free Zapier plan.
 
+![The finished three-step Zap: Carbon Voice, Formatter, then Notion](/img/integrations/automate-workflows/notion-blog-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -32,6 +34,8 @@ you're on a free Zapier plan.
 **Configure**
 
 - **System Prompt ID** — Blog Post
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Blog Post](/img/integrations/automate-workflows/notion-blog-trigger.webp)
 
 ### Step 2 — Format the date
 
@@ -45,6 +49,8 @@ you're on a free Zapier plan.
 - **Transform** — Format
 - **Input** — the **Messages Message Created At** field from step 1
 - **To Format** — `MMM DD YYYY` (Jan 22 2006)
+
+![Formatter by Zapier formatting the message's created-at date](/img/integrations/automate-workflows/notion-blog-format-date.webp)
 
 ### Step 3 — Create the Notion page
 
@@ -72,6 +78,8 @@ Hashtags: <"Ai Response Responses Json Hashtags" from Step 1>
 
 Pull Quotes: <"Ai Response Responses Json Pull Quotes" from Step 1>
 ```
+
+![Notion's Create Page step, with the title and content mapped to the AI response](/img/integrations/automate-workflows/notion-blog-create-page.webp)
 
 ## Variations
 

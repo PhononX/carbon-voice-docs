@@ -38,41 +38,22 @@ through a customer conversation can update the CRM.
 
 ## Set up a workflow
 
-Each guide below builds one workflow end to end, in Zapier. They're grouped by the
-[AI action](../../ai/transform-with-ai-actions.md) that produces the content — pick the
-one whose output you want, then the app you want it to land in.
+Each guide below builds one workflow end to end, with a screenshot of every step. Find
+the row whose [AI action](../../ai/transform-with-ai-actions.md) produces the content you
+want and whose destination is the app you want it in. All of them run on Zapier.
 
-### Professional Email
-
-- [Create an email draft in Gmail](create-email-draft-in-gmail.md) — the draft is
-  waiting in Gmail, subject line and all.
-- [Add an email draft to a Google Doc](add-email-draft-to-google-doc.md) — each draft is
-  appended to a running document, dated and linked back to the message.
-
-### Blog Post
-
-- [Add a blog post to a Google Doc](add-blog-post-to-google-doc.md) — title, summary,
-  body, hashtags and pull quotes, appended to a document you choose.
-- [Send a blog post to Notion](send-blog-post-to-notion.md) — each draft becomes a new
-  page under a parent page.
-- [Send a blog post to yourself in Gmail](send-blog-post-in-gmail.md) — the draft
-  arrives as an email you can forward or edit.
-
-### To-do List
-
-- [Send your to-do list in Gmail](send-to-do-list-in-gmail.md) — the whole list, emailed
-  to you as one message.
-- [Add tasks from a to-do list to Todoist](add-to-do-list-to-todoist.md) — one Todoist
-  task per item.
-- [Add tasks from a to-do list to Things](add-to-do-list-to-things.md) — one Things
-  to-do per item.
-
-### Bug Report
-
-- [Send a bug report to Jira](send-bug-report-to-jira.md) — steps to reproduce, actual
-  and expected results, filed as an issue.
-- [Send a bug report to Asana](send-bug-report-to-asana.md) — the same report, as a task
-  in your project.
+| Workflow | AI action | Lands in | What you get |
+|---|---|---|---|
+| [Create an email draft in Gmail](create-email-draft-in-gmail.md) | Professional Email | Gmail | A draft waiting in Gmail, subject line and all |
+| [Add an email draft to a Google Doc](add-email-draft-to-google-doc.md) | Professional Email | Google Docs | Each draft appended to a running document, dated and linked back |
+| [Add a blog post to a Google Doc](add-blog-post-to-google-doc.md) | Blog Post | Google Docs | Title, summary, body, hashtags and pull quotes in a document you choose |
+| [Send a blog post to Notion](send-blog-post-to-notion.md) | Blog Post | Notion | A new page per draft, under a parent page |
+| [Send a blog post to yourself in Gmail](send-blog-post-in-gmail.md) | Blog Post | Gmail | The draft as an email you can forward or edit |
+| [Send your to-do list in Gmail](send-to-do-list-in-gmail.md) | To-do List | Gmail | The whole list, emailed to you as one message |
+| [Add tasks from a to-do list to Todoist](add-to-do-list-to-todoist.md) | To-do List | Todoist | One Todoist task per item |
+| [Add tasks from a to-do list to Things](add-to-do-list-to-things.md) | To-do List | Things | One Things to-do per item |
+| [Send a bug report to Jira](send-bug-report-to-jira.md) | Bug Report | Jira | Steps to reproduce, actual and expected results, filed as an issue |
+| [Send a bug report to Asana](send-bug-report-to-asana.md) | Bug Report | Asana | The same report, as a task in your project |
 
 ## What every workflow has in common
 

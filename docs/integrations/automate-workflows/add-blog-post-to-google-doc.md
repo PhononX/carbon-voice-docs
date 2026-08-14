@@ -22,6 +22,8 @@ already use for drafts.
 or build it with the steps below. Steps 2 and 3 only improve the formatting — skip them
 if you're on a free Zapier plan.
 
+![The finished four-step Zap: Carbon Voice, two Formatter steps, then Google Docs](/img/integrations/automate-workflows/gdoc-blog-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -33,6 +35,8 @@ if you're on a free Zapier plan.
 **Configure**
 
 - **System Prompt ID** — Blog Post
+
+![The Carbon Voice trigger in Zapier, with System Prompt ID set to Blog Post](/img/integrations/automate-workflows/gdoc-blog-trigger.webp)
 
 ### Step 2 — Format the date
 
@@ -47,6 +51,8 @@ if you're on a free Zapier plan.
 - **Input** — the **Messages Message Created At** field from step 1
 - **To Format** — `MMM DD YYYY` (Jan 22 2006)
 
+![Formatter by Zapier formatting the message's created-at date](/img/integrations/automate-workflows/gdoc-blog-format-date.webp)
+
 ### Step 3 — Convert the body to HTML
 
 **Setup**
@@ -58,6 +64,8 @@ if you're on a free Zapier plan.
 
 - **Transform** — Convert Markdown to HTML
 - **Input** — the **Ai Responses Responses Json Body** field from step 1
+
+![Formatter by Zapier converting the post body from Markdown to HTML](/img/integrations/automate-workflows/gdoc-blog-format-text.webp)
 
 ### Step 4 — Append the post to the document
 
@@ -94,6 +102,8 @@ if you're on a free Zapier plan.
 <br/> <b>Pull Quotes:</b> " <"Ai Response Responses Json Pull Quotes" output from Step 1> "
 </p>
 ```
+
+![Google Docs' Append Text to Document step, with the pasted HTML block](/img/integrations/automate-workflows/gdoc-blog-append.webp)
 
 ## Variations
 

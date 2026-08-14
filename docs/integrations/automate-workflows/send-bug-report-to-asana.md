@@ -25,6 +25,8 @@ Steps 1 and 2 are the workflow. Steps 3 to 8 attach the Asana link back to the o
 Carbon Voice message, which needs a paid Zapier plan — see
 [Link the task back to the message](#link-the-task-back-to-the-message).
 
+![The finished Zap: the trigger, Asana, then a path split that links the task back](/img/integrations/automate-workflows/asana-zap-overview.webp)
+
 ### Step 1 — Trigger on the AI result
 
 **Setup**
@@ -66,6 +68,8 @@ Created from Carbon Voice message sent by: <"Messages Creator Full Name" from St
 DONE BY CARBON VOICE
 ```
 
+![Asana's Create Task step, with the name and description mapped to the AI response](/img/integrations/automate-workflows/asana-create-task-fields.webp)
+
 Stop here and the workflow is complete — and short enough to run on a free Zapier plan.
 
 ## Link the task back to the message
@@ -91,6 +95,8 @@ conversation with the link attached.
 - **Only continue if** — the **Messages Message Type** field from step 1 **(Text)
   Contains** `voicememo`
 
+![Path A's custom rule: continue only when the message type contains voicememo](/img/integrations/automate-workflows/asana-path-a-conditions.webp)
+
 ### Step 5 — Path A: attach the Asana link to the voice memo
 
 **Setup**
@@ -103,9 +109,13 @@ conversation with the link attached.
 - **Link Attachment URL** — the **Permalink Url** field from step 2
 - **Message ID** — the **Messages Message ID** field from step 1
 
+![Carbon Voice's Add Link Attachments to Message step, with the Asana task URL](/img/integrations/automate-workflows/asana-path-a-attach-link.webp)
+
 ### Step 6 — Fallback path conditions
 
 - **Choose the type of rules to use for this path branch** — Fallback
+
+![The fallback branch, which runs when Path A's rule doesn't match](/img/integrations/automate-workflows/asana-fallback-conditions.webp)
 
 ### Step 7 — Fallback: forward the message back to the conversation
 
@@ -121,6 +131,8 @@ conversation with the link attached.
 - **Message ID** — the **Messages Message ID** field from step 1
 - **Message Text** — `Bug created in Asana from Carbon Voice + Zapier`
 
+![Carbon Voice's Send Message to Conversation step, forwarding the original message](/img/integrations/automate-workflows/asana-fallback-forward.webp)
+
 ### Step 8 — Add the Asana link to the forwarded message
 
 **Setup**
@@ -133,6 +145,8 @@ conversation with the link attached.
 - **Link Attachment URL** — the **Permalink Url** field from step 2
 - **Message ID** — the **Messages Message ID** field from **step 7**, the forwarded
   message
+
+![The Asana task URL attached to the forwarded message](/img/integrations/automate-workflows/asana-fallback-attach-link.webp)
 
 ## Variations
 
