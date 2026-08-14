@@ -40,5 +40,14 @@ fetch tools truncate it.
 All of these are regenerated from `docs/` on every build, so they never drift from the
 pages above. Links inside them are absolute, so they can be followed from anywhere.
 
+Every rendered page also names its Markdown twin in the `<head>`, as
+`<link rel="alternate" type="text/markdown">`, so a crawler that arrives on a page
+without having read this one can still find it.
+
+One thing this site cannot offer: it is published on GitHub Pages, which serves static
+files and cannot set response headers or vary a response by `Accept`. So there is no
+`Link:` header advertising the twin, and no `Accept: text/markdown` content
+negotiation — appending `.md` is how you ask for Markdown here.
+
 Building against the Carbon Voice API is documented separately at
 [developer.carbonvoice.app](https://developer.carbonvoice.app).

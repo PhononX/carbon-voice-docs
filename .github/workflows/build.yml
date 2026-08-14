@@ -60,3 +60,30 @@ jobs:
                      | sed -E 's#^$#/#' | sort -u)
           test "$missing" -eq 0 || exit 1
           echo "All discovery files present, every page has a Markdown twin."
+
+      - name: Check every page advertises a twin that exists
+        run: |
+          set -e
+          # The check above proves the twins were written. This one proves the
+          # pages point at them: src/theme/DocItem/Layout adds the <link> by
+          # wrapping a theme component, so a Docusaurus upgrade that moves that
+          # component drops the tag from all 126 pages and breaks nothing loudly.
+          #
+          # It asserts the href resolves rather than counting tags, because
+          # counting passes at 126/126 while every section landing page points at
+          # `/ai/.md` — the trailing slash that markdownRoute() exists to strip.
+          expected=$(find docs -name '*.md' -o -name '*.mdx' | wc -l)
+          grep -rho 'type="text/markdown" href="[^"]*"' build --include='*.html' \
+            | sed -E 's/.*href="([^"]*)".*/\1/' | sort -u > advertised.txt
+          found=$(wc -l < advertised.txt)
+          test "$found" -eq "$expected" || {
+            echo "Expected $expected pages advertising a Markdown twin, found $found"
+            exit 1
+          }
+          missing=0
+          while read -r href; do
+            test -f "build${href}" || { echo "Advertised but not built: $href"; missing=1; }
+          done < advertised.txt
+          rm -f advertised.txt
+          test "$missing" -eq 0 || exit 1
+          echo "$found pages advertise a Markdown twin, and all of them exist."
