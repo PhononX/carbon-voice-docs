@@ -16,12 +16,12 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
 
 <div class="cardGrid">
 
+- <span class="cardIcon">🧭</span> **[Take a tour of the app](a-tour-of-the-app.md)**<br />
+  What each part of the home screen does.
 - <span class="cardIcon">🎙️</span> **[Record your first voice message](messages/recording-and-sending/record-a-voice-message.md)**<br />
   Hold the button, talk, send.
 - <span class="cardIcon">💬</span> **[Start a conversation with someone](conversations/creating/start-with-a-phone-number-or-email.md)**<br />
   Reach anyone with a phone number or email, whether or not they have the app.
-- <span class="cardIcon">🧭</span> **[Find your way around the app](a-tour-of-the-app.md)**<br />
-  What each part of the home screen does.
 - <span class="cardIcon">✨</span> **[Catch up on what you missed](ai/catch-up-with-ai.md)**<br />
   Let AI summarize everything said while you were away.
 - <span class="cardIcon">👥</span> **[Set up a workspace for your team](workspaces/create-a-workspace.md)**<br />
