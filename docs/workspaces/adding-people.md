@@ -8,8 +8,8 @@ sidebar_position: 3
 
 You can add someone directly, or share a link they can use to join.
 
-1. From the Home screen, tap your profile picture to open the Profile Menu — top left on
-   mobile, bottom of the navigation sidebar on desktop.
+1. From the Home screen, tap your profile picture to open the Profile Menu. It's at the top
+   left on mobile, and at the bottom of the navigation sidebar on desktop.
 2. Select **Spaces** to see your list of workspaces.
 3. Tap the **gear icon** on the right side of the workspace you want to invite to.
 4. Tap **Add People**.
@@ -27,7 +27,7 @@ contact list.
 
 ![Workspace invite link](/img/workspaces/workspace-invite-link.webp)
 
-A link can be shared directly, posted on an intranet, or put on a website — whoever
+A link can be shared directly, posted on an intranet, or put on a website, and whoever
 receives it can tap it to join the workspace. Two settings control how it behaves:
 
 - **Link expiration** — how long the link stays valid.

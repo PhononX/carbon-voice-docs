@@ -1,6 +1,6 @@
 ---
 title: Listen-only conversations
-description: Post updates that others can hear without being able to reply — for broadcasts, private updates, and podcast-style sharing.
+description: Post updates that others can hear without being able to reply, for broadcasts, private updates, and podcast-style sharing.
 sidebar_position: 3
 ---
 
@@ -35,7 +35,7 @@ others can hear, without them being able to reply or post back.
 
 **Can listeners reply?** No. Only speakers can post in a listen-only conversation.
 
-**Can I change it back to a normal conversation?** Yes — toggle the setting off in
+**Can I change it back to a normal conversation?** Yes. Toggle the setting off in
 Conversation Settings. That changes what new members get; anyone already set to listener
 stays a listener until you change their role.
 

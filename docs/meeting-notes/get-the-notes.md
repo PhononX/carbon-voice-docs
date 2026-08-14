@@ -6,8 +6,8 @@ sidebar_position: 3
 
 # Get the notes
 
-The discussion is already written down — every message was transcribed as it was sent. What
-follows is choosing the shape you want it in.
+The discussion is already written down, because every message was transcribed as it was
+sent. What follows is choosing the shape you want it in.
 
 ## The summary
 
@@ -23,7 +23,7 @@ See [Catch up with AI](../ai/catch-up-with-ai.md).
 For the complete record rather than a summary:
 
 1. Press and hold any message in the conversation.
-2. Tap **Select**, and choose the messages you want — or all of them.
+2. Tap **Select**, and choose the messages you want, or all of them.
 3. Tap **Get Transcript**.
 
 Copy the result to your clipboard, or share it into another app.
@@ -42,7 +42,7 @@ the **summarize icon** at the top right of the conversation:
 
 The same multi-select works for AI actions. Select the messages and choose an AI Magic
 prompt to turn the discussion into a meeting summary with action items, a presentation
-outline, an email, a plan — whatever the next step needs.
+outline, an email, a plan, or whatever the next step needs.
 
 See [Transform voice memos and messages with AI](../ai/transform-with-ai-actions.md).
 

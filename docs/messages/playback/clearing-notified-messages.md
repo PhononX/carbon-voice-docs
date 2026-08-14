@@ -14,7 +14,7 @@ it clear automatically as you read.
 **Press and hold the conversation card** on Home and tap **Mark all Read**. The option only
 appears when the conversation actually has unread messages.
 
-Marking a conversation read preserves listen status — it drops the attention flag without
+Marking a conversation read preserves listen status. It drops the attention flag without
 pretending you've heard anything.
 
 ![Clear notifications conversation](/img/messages/clear-notifications-conversation.webp)
@@ -22,7 +22,7 @@ pretending you've heard anything.
 ## On a single message
 
 - **Tap the button underneath the message** in a conversation. It reads **Mark as Read**
-  when the message is unread, and **Mark as Unread** once it isn't — the same button toggles
+  when the message is unread, and **Mark as Unread** once it isn't. The same button toggles
   both ways.
 - **Press and hold** the message and tap **Mark as Unread** to flag one you've already read.
 - **Play the message.** Listening through it clears the flag on its own.
@@ -37,9 +37,9 @@ pretending you've heard anything.
 
 You can have messages mark themselves read as you read through a conversation.
 
-Open your **Profile Menu** — your profile picture, top left of Home on mobile or bottom of
-the navigation sidebar on desktop — then go to **Settings → Conversation History** and
-choose your automatic timing.
+Open your **Profile Menu**, which is your profile picture at the top left of Home on mobile
+or the bottom of the navigation sidebar on desktop. Then go to **Settings → Conversation
+History** and choose your automatic timing.
 
 ## Related
 

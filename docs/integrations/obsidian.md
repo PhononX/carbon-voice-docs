@@ -7,7 +7,7 @@ sidebar_position: 4
 # Obsidian
 
 The **Carbon Voice Sync** community plugin pulls your conversations and voice memos into an
-Obsidian vault as Markdown notes — so everything you've said lives alongside everything
+Obsidian vault as Markdown notes, so everything you've said lives alongside everything
 you've written.
 
 It's a one-way sync: Carbon Voice into Obsidian. Nothing you write in the vault comes back.
@@ -23,7 +23,8 @@ It's a one-way sync: Carbon Voice into Obsidian. Nothing you write in the vault 
 ## Setting it up
 
 1. **Create a personal access token.** In Carbon Voice, go to **Profile Menu → Integrations
-   → Integration Credentials → Manage tokens** and create one. Copy it — it's only shown
+   → Integration Credentials → Manage tokens** and create one. Copy it, because it's only
+   shown
    once. See [Integration credentials](integration-credentials.md).
 2. **Install the plugin.** In Obsidian, go to **Settings → Community plugins**, browse for
    **Carbon Voice Sync**, and install it.

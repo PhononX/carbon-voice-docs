@@ -34,13 +34,13 @@ added, so a long discussion doesn't dump twenty items on you unannounced.
 
 ## Sharing them
 
-Tap **Share Action Items** to send the list out of Carbon Voice — into a message, an email,
+Tap **Share Action Items** to send the list out of Carbon Voice, into a message, an email,
 or your task tracker.
 
 ## Offline
 
 Action items work offline. Anything you tick, add or edit while disconnected is queued and
-applied when you're back — you'll see a note saying so rather than losing the change.
+applied when you're back. You'll see a note saying so rather than losing the change.
 
 ## Related
 

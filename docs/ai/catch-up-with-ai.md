@@ -11,7 +11,7 @@ of what you missed.
 
 ## The quick way
 
-Swipe from right to left on a conversation — from Home or in your conversation list —
+Swipe from right to left on a conversation, either from Home or in your conversation list,
 and Catch-up summarizes the discussion, with links to play the source messages.
 
 ![Catch up with ai](/img/ai/catch-up-with-ai.webp)

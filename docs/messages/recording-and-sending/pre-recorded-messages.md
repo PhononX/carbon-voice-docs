@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Saved voice memos
 
-A saved voice memo is a recording you've kept for future use — useful for support replies,
+A saved voice memo is a recording you've kept for future use, handy for support replies,
 pitches, acknowledgments, and anything else you find yourself saying more than once.
 
 > These were previously called **pre-recorded messages**.

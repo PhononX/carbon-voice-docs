@@ -39,7 +39,7 @@ Any agent can be wired up without a guide. There are two pieces.
 ### 1. An access token
 
 In the agent's settings, open **Manage tokens** and tap **Create token**. Give it a name
-you'll recognise later — the tool it's for is a good choice.
+you'll recognise later. The tool it's for is a good choice.
 
 - Tokens are created with **read and write permissions** and **expire after one year**.
 - **Copy the token as soon as it's created.** It isn't shown again.
@@ -50,8 +50,8 @@ Your tool uses that token to act as the agent.
 ### 2. A webhook subscription
 
 In the agent's settings, open **Webhook subscriptions** and tap **Create webhook**. Give
-Carbon Voice the URL your tool listens on, and it will send events there — a new message
-posted to the agent, for example — so your agent knows when to respond.
+Carbon Voice the URL your tool listens on, and it will send events there, such as a new
+message posted to the agent, so your agent knows when to respond.
 
 ## Finishing later
 

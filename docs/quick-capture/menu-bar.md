@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # The menu bar app
 
-On macOS, Carbon Voice lives in the menu bar as well as in its own window — so recording and
+On macOS, Carbon Voice lives in the menu bar as well as in its own window, so recording and
 playback are available from the top of the screen whatever else you're doing.
 
 From the menu bar you can:
@@ -18,8 +18,8 @@ From the menu bar you can:
 It follows your appearance setting, so it matches the rest of the app in light and dark
 mode.
 
-> This is macOS only, and comes with the desktop app —
-> [download it here](https://www.getcarbon.app/download) if you've been using Carbon Voice
+> This is macOS only, and comes with the desktop app.
+> [Download it here](https://www.getcarbon.app/download) if you've been using Carbon Voice
 > in a browser.
 
 ## Related

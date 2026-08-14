@@ -18,7 +18,7 @@ phone.
 
 ## While you're in it
 
-- Tap **"..."** for detailed message information — engagement status and
+- Tap **"..."** for detailed message information, including engagement status and
   transcriptions.
 - Flag messages as **Follow-up** to find them again later.
 

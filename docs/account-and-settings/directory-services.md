@@ -14,8 +14,8 @@ place.
 
 ## Adding a contact method
 
-1. Tap your **profile picture** to open the Profile Menu — top left of Home on mobile,
-   bottom of the navigation sidebar on desktop.
+1. Tap your **profile picture** to open the Profile Menu. It's at the top left of Home on
+   mobile, and at the bottom of the navigation sidebar on desktop.
 2. Tap **Linked Emails & Phone Numbers**.
 3. Choose **Add email address** or **Add phone number**.
 4. Enter it, and verify if prompted.

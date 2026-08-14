@@ -10,7 +10,7 @@ Voice memos are meant to be shared. You can share:
 
 - A simple URL link to the audio.
 - The raw transcript.
-- AI-processed results — summaries, to-do lists, and so on.
+- AI-processed results, such as summaries and to-do lists.
 - The memo directly into another Carbon Voice conversation.
 
 To share, tap the three dots in the voice memo details, or press and hold the memo in

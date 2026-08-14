@@ -7,7 +7,7 @@ sidebar_position: 5
 # Playlists and labels
 
 Label messages to manage follow-up and find them again later. Putting a label on a
-message can add it to a playlist, which shows at the top of your home screen — or you
+message can add it to a playlist, which shows at the top of your home screen, or you
 can label a message simply to find it in Notebook.
 
 ## Add a label

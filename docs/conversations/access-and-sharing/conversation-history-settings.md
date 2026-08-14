@@ -36,7 +36,8 @@ To turn AI summaries off across all conversations:
 
 ## Clearing unread messages automatically
 
-You can decide how and when unread messages clear from your conversation feed — manually
+You can decide how and when unread messages clear from your conversation feed, either
+manually
 for more control, or automatically to keep the feed tidy.
 
 1. Go to **Profile Menu → Settings → Conversation History**.

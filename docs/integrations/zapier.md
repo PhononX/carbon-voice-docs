@@ -48,7 +48,7 @@ triggers, actions, or AI transformations, send [feedback](https://cv.chat/feedba
 
 ## Other automation platforms
 
-Carbon Voice works the same way with **n8n** and similar tools — create a personal access
+Carbon Voice works the same way with **n8n** and similar tools. Create a personal access
 token, point the workflow at the API, and trigger on the same events. See
 [Integration credentials](integration-credentials.md) for the token, and
 [Build with the Carbon Voice API](build-with-the-api.md) for the endpoints.

@@ -24,7 +24,7 @@ Translation**.
 ## Why they belong together
 
 Cloning and translation are the same feature from two directions. Clone your voice, and a
-message translated into Spanish is still spoken in *your* voice — so a colleague hears you
+message translated into Spanish is still spoken in *your* voice, so a colleague hears you
 speaking their language, rather than a robot reading your words.
 
 ## Related

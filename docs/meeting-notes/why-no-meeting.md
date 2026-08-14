@@ -24,7 +24,7 @@ answer instead of the first thing that came to mind.
 discussion without anyone taking a call at 11pm.
 
 **The record writes itself.** Every message is transcribed as it's sent, so there's nothing
-to write up afterwards — the notes are a byproduct of having the conversation at all.
+to write up afterwards. The notes are a byproduct of having the conversation at all.
 
 ## What it's good for
 
@@ -37,7 +37,7 @@ to write up afterwards — the notes are a byproduct of having the conversation 
 ## What it isn't good for
 
 Something genuinely urgent, or a conversation that needs to end with everyone in the room
-agreeing right now. Async is a better default, not a total replacement — and for the
+agreeing right now. Async is a better default, not a total replacement. And for the
 in-between case, people who happen to be around when you're speaking can listen and reply
 live. See [Real-time conversations](../messages/recording-and-sending/real-time-conversations.md).
 

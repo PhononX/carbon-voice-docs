@@ -1,6 +1,6 @@
 ---
 title: Auto-translation and Global Voice
-description: Talk across languages — messages are translated so everyone can follow in their own language, in your voice.
+description: Talk across languages, with messages translated so everyone can follow in their own language, in your voice.
 sidebar_position: 3
 ---
 
@@ -14,7 +14,7 @@ translated when needed, and everyone follows along in the language they prefer.
 
 ## Getting started
 
-1. Set your languages — everyone should do this.
+1. Set your languages. Everyone should do this.
 2. Turn on **Auto-Translate** in settings.
 3. Clone your voice (optional).
 
@@ -29,7 +29,7 @@ enabled.
 ![Global voice languages](/img/ai/global-voice-languages.webp)
 
 Ordering your languages tells the system your preferences. A message that arrives in
-any language on your list isn't translated, wherever it sits in the order — you'll hear
+any language on your list isn't translated, wherever it sits in the order, so you'll hear
 or read it as it was recorded.
 
 ## How translation decides what to translate
@@ -42,8 +42,8 @@ Take a conversation where User A speaks English and has Translate enabled, along
 people speaking English, Italian, and Spanish:
 
 - User A's English messages are translated into Italian and Spanish for the others.
-- Italian and Spanish messages are translated into English for User A — and anyone else
-  who reads English benefits.
+- Italian and Spanish messages are translated into English for User A, and anyone else who
+  reads English benefits.
 - Nothing is translated between Italian and Spanish, because neither of those users has
   Translate enabled.
 
@@ -63,20 +63,20 @@ the original.
 
 By default a translated message is read in a text-to-speech voice that changes with the
 language. With [voice cloning](voice-cloning.md) set up, translations use your voice
-where possible — though some languages still fall back to the standard voice.
+where possible, though some languages still fall back to the standard voice.
 
 ## Sharing a translated voice memo
 
 1. Record a voice memo.
 2. Share a link to it.
 3. If the recipient speaks another language, they're asked whether to translate it.
-4. They hear the translated message in your voice — and if they reply, you hear their
+4. They hear the translated message in your voice, and if they reply, you hear their
    message in their voice, translated back into your language.
 
 ## Known limitations
 
 AI translation isn't perfect. Very short inputs like emoji or bare numbers may get
-described rather than translated — 👍 becoming "thumbs up," for instance. If something
+described rather than translated, with 👍 becoming "thumbs up," for instance. If something
 reads oddly, ask for clarification.
 
 ## Getting Global Voice for your team

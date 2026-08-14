@@ -1,6 +1,6 @@
 ---
 title: Integrations
-description: Connect Carbon Voice to the tools you already use — with no code, with a token, or with the API.
+description: Connect Carbon Voice to the tools you already use, with no code, with a token, or with the API.
 sidebar_position: 8
 ---
 

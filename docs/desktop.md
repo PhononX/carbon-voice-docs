@@ -8,7 +8,7 @@ sidebar_class_name: navIcon navIcon--keyboard
 # Carbon Voice on desktop
 
 Carbon Voice runs on macOS and Windows as well as on your phone and in a browser. It's the
-same app and the same account — but on a wide screen it lays itself out differently, and a
+same app and the same account, but on a wide screen it lays itself out differently, and a
 few things live somewhere else as a result.
 
 [Download it](https://www.getcarbon.app/download) if you haven't yet.
@@ -57,8 +57,9 @@ Once a panel has focus, the arrow keys move through it and **Enter** opens what'
 
 ## Global shortcuts, from anywhere
 
-On macOS there's a second set that works even when Carbon Voice isn't the app you're in —
-record a message without switching windows, or send to a conversation from a keystroke.
+On macOS there's a second set that works even when Carbon Voice isn't the app you're in, so
+you can record a message without switching windows, or send to a conversation from a
+keystroke.
 That's covered separately in [Quick capture](quick-capture/index.md).
 
 ## Related

@@ -1,6 +1,6 @@
 ---
 title: Transform voice memos and messages with AI
-description: Turn what you said into a first draft — an email, a to-do list, a summary with action items, and more.
+description: Turn what you said into a first draft, whether that's an email, a to-do list, or a summary with action items.
 sidebar_position: 4
 ---
 

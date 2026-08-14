@@ -16,7 +16,7 @@ Assistants decide when to look in Carbon Voice based on hints in what you type. 
 
 ## Finding a person
 
-A name is usually enough — "what did Sara say about…". If the assistant struggles, give
+A name is usually enough, as in "what did Sara say about…". If the assistant struggles, give
 it an email address instead, or the name of a conversation the person is in.
 
 ## Finding conversations

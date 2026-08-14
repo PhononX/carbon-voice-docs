@@ -18,7 +18,7 @@ Ask "what did we decide about pricing?" and it goes looking.
 to all your conversations and voice memos. On desktop, it's in the sidebar.
 
 **Inside one conversation.** Open a conversation, tap the **summarize icon** at the top
-right, and choose **AI Chat** — the answers are then drawn from that conversation only.
+right, and choose **AI Chat**. The answers are then drawn from that conversation only.
 On desktop, use the dedicated **AI Chats** button in the conversation's app bar.
 
 Scope it to a conversation when you know where the answer lives; use the global chat when

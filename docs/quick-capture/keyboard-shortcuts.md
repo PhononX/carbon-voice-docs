@@ -6,8 +6,8 @@ sidebar_position: 1
 
 # Keyboard shortcuts
 
-On macOS, Carbon Voice registers **global** shortcuts — they work whatever app you're in,
-so you can capture a thought without breaking out of what you were doing.
+On macOS, Carbon Voice registers **global** shortcuts. They work whatever app you're in, so
+you can capture a thought without breaking out of what you were doing.
 
 Set them up in **Profile Menu → Settings → Keyboard Shortcuts**.
 
@@ -25,7 +25,8 @@ shortcut can be reset to its default.
 
 ## While recording
 
-The recording panel has the same controls as the app — pause, restart, delete, send. You
+The recording panel has the same controls as the app, including pause, restart, delete and
+send. You
 can also **hold the spacebar** to record and release to stop.
 
 ## Other settings on this screen

@@ -21,8 +21,8 @@ itself when the time is up.
 
 ## Record a kick-off
 
-The first message sets up the discussion — what you want people to weigh in on and what a
-useful answer looks like. Tap **Record Kick-off** to record it.
+The first message sets up the discussion. Say what you want people to weigh in on, and
+what a useful answer looks like. Tap **Record Kick-off** to record it.
 
 A good kick-off is a specific question. "Thoughts on the roadmap?" gets you silence;
 "Which of these three things should we cut, and why?" gets you a decision.
@@ -47,7 +47,7 @@ that clears them after a set number of days. See
 
 ## Joining one
 
-Historical messages appear as **unheard and unread** when you join an async meeting — so
+Historical messages appear as **unheard and unread** when you join an async meeting, so
 the whole discussion so far is queued up for you, rather than quietly marked as seen. This
 is different from joining an ordinary conversation, where earlier messages appear unheard
 but already read.

@@ -6,9 +6,9 @@ sidebar_position: 2
 
 # Conversations
 
-All your conversations show up in the **Conversations** tab — the first icon in the
-navigation bar on mobile, the top icon in the sidebar on desktop — sorted with the most
-recent on top.
+All your conversations show up in the **Conversations** tab, the first icon in the
+navigation bar on mobile and the top icon in the sidebar on desktop. They're sorted with
+the most recent on top.
 
 - **[Creating conversations](creating/index.md)** — direct messages, named
   conversations, and who is in them.

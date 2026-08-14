@@ -1,6 +1,6 @@
 ---
 title: Talk to your agent
-description: Once an agent is connected, message it the way you message anyone else — including from a keyboard shortcut.
+description: Once an agent is connected, message it the way you message anyone else, including from a keyboard shortcut.
 sidebar_position: 3
 ---
 
@@ -11,7 +11,7 @@ it replies in the conversation, and everything is transcribed on both sides.
 
 ## Start a conversation
 
-Start a conversation with an agent the way you'd start one with a person — search for its
+Start a conversation with an agent the way you'd start one with a person. Search for its
 username, or create a conversation and add it. You can also open the agent from **AI
 Agents** and see **My Conversations with @agent** to jump back into one you already have.
 
@@ -27,7 +27,7 @@ Agents** and see **My Conversations with @agent** to jump back into one you alre
 ## Put it on speed dial
 
 On macOS, an agent can be bound to one of your ten **Speed Dial** slots, so you can reach
-it with a keystroke from anywhere — without opening Carbon Voice at all.
+it with a keystroke from anywhere, without opening Carbon Voice at all.
 
 1. Go to **Settings → Keyboard Shortcuts**.
 2. In **Speed Dial Shortcuts**, pick a slot and choose **Agent** as the destination.

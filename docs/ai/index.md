@@ -6,7 +6,7 @@ sidebar_position: 5
 
 # Summaries & AI Actions
 
-Point AI at something you've already said, and get it back in a more useful shape — as a
+Point AI at something you've already said, and get it back in a more useful shape: as a
 summary, as bullet points, or as a first draft of whatever you needed to write.
 
 - [One-tap AI summaries](one-tap-summaries.md)

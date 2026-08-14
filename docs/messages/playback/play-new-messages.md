@@ -27,7 +27,7 @@ attention.
 Messages play in conversation order, with threaded groups played together, so the
 context holds together while you listen.
 
-You can skip forwards or backwards during playback, or reply as you go — useful when
+You can skip forwards or backwards during playback, or reply as you go. That's useful when
 you're walking, driving, or moving between meetings.
 
 ## Related

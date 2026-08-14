@@ -1,13 +1,13 @@
 ---
 title: Getting your content to an AI
-description: Two ways to put your Carbon Voice conversations within reach of an AI assistant — live over MCP, or synced into a vault you own.
+description: Two ways to put your Carbon Voice conversations within reach of an AI assistant, live over MCP or synced into a vault you own.
 sidebar_position: 0.5
 ---
 
 # Getting your content to an AI
 
 An AI is only as personalized as the context it can reach. Most of anyone's best thinking
-happens in conversation — which is exactly the material that normally never gets written
+happens in conversation, which is exactly the material that normally never gets written
 down. Carbon Voice captures it as a byproduct of communicating, which makes it unusually
 good raw material for an assistant that's meant to know you.
 
@@ -38,7 +38,7 @@ memos into an Obsidian vault as Markdown.
 This is the "second brain" pattern: capture by voice in Carbon Voice, sync into the vault,
 then point an assistant at the vault so it answers with fuller context of you.
 
-What lands in the vault matters here — it's transcripts, AI summaries, and participant and
+What lands in the vault matters here. It's transcripts, AI summaries, and participant and
 workspace links, not just audio. That's what makes it answerable later.
 
 ## Which one
@@ -46,7 +46,7 @@ workspace links, not just audio. That's what makes it answerable later.
 Use **MCP** when you want live answers about recent conversations inside an assistant you
 already talk to.
 
-Use the **vault** when you're building something durable — a knowledge base you'll annotate
+Use the **vault** when you're building something durable, a knowledge base you'll annotate
 and link, that outlives any one AI tool.
 
 They aren't exclusive. Plenty of people run both.

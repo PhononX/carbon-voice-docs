@@ -7,7 +7,7 @@ sidebar_position: 2
 # Get your personal CarbonLink
 
 A personal CarbonLink lets people send you voice messages that you can listen and
-respond to whenever suits you — and they can reply whenever suits them, without
+respond to whenever suits you, and they can reply whenever suits them, without
 downloading an app.
 
 Add it to your email signature, your link-in-bio page, a business card, or anywhere
@@ -29,7 +29,7 @@ Once you have it, add it wherever you share your contact details.
 
 A **business CarbonLink** is available for company use rather than an individual's. Claiming
 one walks you through choosing the business name and uploading a logo, and the result works
-the same way — a link and QR code customers can use to send you voice messages.
+the same way, with a link and QR code customers can use to send you voice messages.
 
 You'll find it in the same place as your personal link: open the **Profile Menu**, tap the
 **QR code icon**, and choose to claim a business link.

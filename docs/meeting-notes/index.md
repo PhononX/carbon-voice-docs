@@ -10,8 +10,8 @@ sidebar_position: 0
 A meeting note-taker records a meeting you already had. It still costs everyone the hour,
 still needs a time that suits eight calendars, and still leaves the quiet people quiet.
 
-Carbon Voice comes at it from the other end. Have the discussion **asynchronously** —
-everyone speaks when it suits them — and you get the notes as a byproduct, because every
+Carbon Voice comes at it from the other end. Have the discussion **asynchronously**, so
+everyone speaks when it suits them, and you get the notes as a byproduct, because every
 message was transcribed the moment it was said.
 
 ## What you end up with

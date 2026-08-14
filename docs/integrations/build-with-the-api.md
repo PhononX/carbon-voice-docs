@@ -1,13 +1,13 @@
 ---
 title: Build with the Carbon Voice API
-description: Where to go to integrate your own application with Carbon Voice — API reference, OAuth, and webhooks.
+description: Where to go to integrate your own application with Carbon Voice, covering the API reference, OAuth, and webhooks.
 sidebar_position: 5
 ---
 
 # Build with the Carbon Voice API
 
 Anything you set up inside Carbon Voice is documented in this help center. Building
-*against* Carbon Voice — writing code that reads or posts data — is documented
+*against* Carbon Voice, meaning writing code that reads or posts data, is documented
 separately on the developer portal.
 
 ## What's possible
@@ -18,10 +18,10 @@ separately on the developer portal.
   an AI response being generated.
 - **OAuth applications** — authorize your app to act on behalf of a Carbon Voice user.
 - **Agent identities** — give an AI agent its own presence, so it can take part in
-  conversations like a person. Most of this is now self-serve in the app — see
+  conversations like a person. Most of this is now self-serve in the app. See
   [AI Agents](../ai-agents/index.md).
 - **Personal access tokens** — authenticate as yourself for scripts and personal
-  automations. Create these in the app — see
+  automations. Create these in the app. See
   [Integration credentials](integration-credentials.md).
 
 ## Where to go

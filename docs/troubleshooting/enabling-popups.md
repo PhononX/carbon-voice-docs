@@ -1,6 +1,6 @@
 ---
 title: Enabling pop-ups so you can log in on the web
-description: Web login needs pop-ups allowed — how to enable them on desktop and iOS.
+description: Web login needs pop-ups allowed. Here is how to enable them on desktop and iOS.
 sidebar_position: 4
 ---
 

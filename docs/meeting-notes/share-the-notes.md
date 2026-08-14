@@ -1,6 +1,6 @@
 ---
 title: Share the notes
-description: Send the write-up wherever your team keeps decisions — another conversation, your notes app, or an automated workflow.
+description: Send the write-up wherever your team keeps decisions, whether that's another conversation, your notes app, or an automated workflow.
 sidebar_position: 5
 ---
 
@@ -11,7 +11,8 @@ A write-up nobody reads is the same as no write-up. These are the ways out of Ca
 ## Into another conversation
 
 **Forward** the summary or the key messages into the conversation where the decision
-matters — a team channel, a stakeholder thread. Recipients can listen even if they weren't
+matters, like a team channel or a stakeholder thread. Recipients can listen even if they
+weren't
 in the original discussion, and a link back to the source is included so they can see the
 context.
 
@@ -25,7 +26,7 @@ result is also kept in **Notebook → AI Outputs**, so you can come back for it 
 ## Into your notes app
 
 The **Obsidian sync plugin** pulls conversations and voice memos into an Obsidian vault as
-Markdown — transcripts, AI summaries, and participant links included. If your team keeps
+Markdown, with transcripts, AI summaries, and participant links included. If your team keeps
 decisions in a knowledge base rather than a chat tool, this is the path.
 
 See [Obsidian](../integrations/obsidian.md).

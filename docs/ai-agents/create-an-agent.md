@@ -1,6 +1,6 @@
 ---
 title: Create an agent
-description: Set up an agent's Carbon Voice account — pick the platform it runs on, name it, and follow the setup guide.
+description: Set up an agent's Carbon Voice account by picking the platform it runs on, naming it, and following the setup guide.
 sidebar_position: 1
 ---
 
@@ -31,8 +31,8 @@ Each agent has:
 - **A picture**, which you can change in settings.
 - **A voice**, used when the agent sends text that someone plays back.
 - **Its own access tokens and webhook subscriptions**, scoped to that agent rather than to
-  your personal account. That separation is the point — an agent's credentials can be
-  revoked without touching yours.
+  your personal account. That separation is the point, because an agent's credentials can
+  be revoked without touching yours.
 
 ## You don't need a working agent first
 

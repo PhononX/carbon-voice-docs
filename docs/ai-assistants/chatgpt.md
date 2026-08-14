@@ -15,7 +15,7 @@ memos from inside ChatGPT. Connecting takes a few clicks and no technical setup.
 
 1. Hit **+** and select **Add Sources**.
 2. Tap **Sources**, then scroll down to **Connect More**. This takes you to **Apps and
-   Connections** — also reachable from your ChatGPT account settings.
+   Connections**, which is also reachable from your ChatGPT account settings.
 3. Scroll to **Advanced Settings**, expand it, and turn on **Developer Mode**.
 4. Go back, and you'll see a **Create** button in the top right. Tap it.
 5. In the pop-up:

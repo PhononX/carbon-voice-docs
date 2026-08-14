@@ -18,8 +18,8 @@ The first time you use it, Cursor walks you through OAuth2 authentication.
 
 ## Local installation
 
-Only needed if you specifically want to run the MCP server locally — the remote server
-is the preferred route.
+Only needed if you specifically want to run the MCP server locally. The remote server is
+the preferred route.
 
 You'll need a **Carbon Voice API key** from
 [developer.carbonvoice.app](https://developer.carbonvoice.app), and **npx**, which comes

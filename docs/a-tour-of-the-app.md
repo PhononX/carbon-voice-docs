@@ -1,6 +1,6 @@
 ---
 title: A tour of the app
-description: Find your way around Home in Carbon Voice — playlists, quick send, conversations, and search.
+description: Find your way around Home in Carbon Voice, covering playlists, quick send, conversations, and search.
 sidebar_position: 1.2
 sidebar_class_name: navIcon navIcon--compass
 ---
@@ -35,7 +35,7 @@ listen and reply to your messages and conversations.
 ## Search
 
 Use **Search** in the upper right corner to find the conversation or contact you want
-to send a message to — or simply swipe down from the top of the page.
+to send a message to, or simply swipe down from the top of the page.
 
 ## Catching up quickly
 

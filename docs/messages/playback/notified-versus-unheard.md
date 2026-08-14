@@ -1,6 +1,6 @@
 ---
 title: Unread messages versus unheard messages
-description: Every message has two separate states — how much of it you've heard, and whether it still wants your attention.
+description: Every message has two separate states, how much of it you've heard and whether it still wants your attention.
 sidebar_position: 3
 ---
 
@@ -13,7 +13,7 @@ attributes:
 - **Heard status** — how much of a message you've listened to.
 - **Unread** — whether the message still wants your attention.
 
-> You'll occasionally see the word **notified** in the app — in **Settings → Conversation
+> You'll occasionally see the word **notified** in the app, in **Settings → Conversation
 > History**, and as **Notified Cleared** in engagement details. It means the same thing as
 > unread; it's the original name for the attention flag.
 
@@ -26,7 +26,7 @@ flags, indicating that action or acknowledgment is needed from you.
   your conversations.
 - The flag clears automatically when you play through the message.
 - Your own messages don't arrive unread.
-- You can mark messages read and unread by hand — see
+- You can mark messages read and unread by hand. See
   [Marking messages read and unread](clearing-notified-messages.md).
 
 ### Playing your unread messages

@@ -1,6 +1,6 @@
 ---
 title: Quick Capture
-description: Record and send without opening Carbon Voice — keyboard shortcuts, speed dial, widgets, Siri, and your watch.
+description: Record and send without opening Carbon Voice, using keyboard shortcuts, speed dial, widgets, Siri, and your watch.
 sidebar_position: 0
 ---
 
