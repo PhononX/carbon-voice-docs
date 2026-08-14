@@ -18,6 +18,8 @@ every transcript in a conversation at once.
 
 This is most useful for lengthier discussions when you would rather read than listen.
 
+![The expanding arrows on a message card revealing its full transcript](/img/whats-new/expand-full-transcript.webp)
+
 ## Related
 
 - [Get message transcripts](get-message-transcripts.md)

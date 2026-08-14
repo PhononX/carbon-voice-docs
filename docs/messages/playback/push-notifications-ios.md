@@ -26,6 +26,8 @@ conversation.
 > On most devices only the first 30 seconds of a message plays in notification preview
 > before the screen shuts off. Press volume up or down to extend this.
 
+![A message preview on the lock screen](/img/whats-new/push-notification-preview.webp)
+
 ## If you're not getting notifications
 
 Two things need to be true: Carbon Voice has to be set to send them, and iOS has to be

@@ -33,6 +33,8 @@ pretending you've heard anything.
 > the swipe for a voice reply), or right to left for **message info** (hold it for
 > **Listen Later**).
 
+![Long-swiping a message to label it Listen Later](/img/whats-new/listen-later.webp)
+
 ## Clearing automatically
 
 You can have messages mark themselves read as you read through a conversation.

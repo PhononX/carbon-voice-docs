@@ -20,6 +20,8 @@ how much you want to see:
 Either way you get a summarized version of every message longer than 100 characters.
 Choosing the same option again turns summaries back off.
 
+![A conversation with an AI summary shown on each message](/img/whats-new/ai-summaries-default.webp)
+
 ## Reading the full message
 
 If something catches your interest, switch to **AI + Message**, or tap the expanding arrows

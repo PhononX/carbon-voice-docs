@@ -14,6 +14,8 @@ You can share a link to a voice memo that lets someone listen to it and reply.
 
 📺 [Watch: sharing a voice memo link](https://www.youtube.com/watch?v=rk3YgSnx4vU)
 
+![A shareable link copied automatically after recording a voice memo](/img/whats-new/faster-voice-memo-sharing.webp)
+
 ## Related
 
 - [Sharing voice memos](sharing-voice-memos.md)

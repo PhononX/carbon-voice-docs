@@ -16,6 +16,10 @@ Make sure you're on the latest version to use it.
 
 📺 [Watch: Carbon Voice on Apple Watch](https://youtu.be/urx2uBXdyLI)
 
+![Recording a voice memo on an Apple Watch](/img/whats-new/apple-watch.webp)
+
+![Sharing options for a memo recorded on the Watch](/img/whats-new/apple-watch-share.webp)
+
 ## Related
 
 - [iPhone home screen widgets](iphone-widgets.md)

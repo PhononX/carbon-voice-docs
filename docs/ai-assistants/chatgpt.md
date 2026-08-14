@@ -29,6 +29,8 @@ memos from inside ChatGPT. Connecting takes a few clicks and no technical setup.
 To use it, mention `@carbon voice` in a conversation.
 📺 [Watch: using ChatGPT with Carbon Voice](https://youtu.be/OR728zFpP6Q)
 
+![ChatGPT answering a question using Carbon Voice conversations](/img/whats-new/chatgpt-connection.webp)
+
 ## For ChatGPT workspace admins
 
 To enable access across a workspace, see

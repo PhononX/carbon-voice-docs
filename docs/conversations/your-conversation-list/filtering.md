@@ -14,6 +14,8 @@ Tap a filter chip above your conversation list to narrow it down:
 
 Tap **More filters** for further options, including filtering by workspace.
 
+![The conversation list filtered down to what needs attention](/img/whats-new/catch-up-filter.webp)
+
 ## Related
 
 - [Your conversation list](index.md)

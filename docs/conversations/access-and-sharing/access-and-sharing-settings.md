@@ -41,6 +41,8 @@ Beyond access and sharing, the same screen holds:
 > On desktop, conversation settings open as a panel beside the conversation rather than as
 > a sheet. Tapping the conversation name again closes it.
 
+![The Move Conversation option in the conversation menu](/img/whats-new/move-conversation.webp)
+
 ## Related
 
 - [Managing access and adding people](managing-access.md)

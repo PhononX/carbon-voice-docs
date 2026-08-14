@@ -22,6 +22,8 @@ phone.
   transcriptions.
 - Flag messages as **Follow-up** to find them again later.
 
+![Applying a follow-up label from the Distracted Mode player](/img/whats-new/follow-up-label-distracted-mode.webp)
+
 ## Getting out
 
 - Tap the **"x"** to exit and stop playing the message, or

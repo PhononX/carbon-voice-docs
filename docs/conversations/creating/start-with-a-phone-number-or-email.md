@@ -20,6 +20,8 @@ number, even if they don't use Carbon Voice yet.
 
 📺 [Watch: creating a conversation with a phone number](https://youtube.com/shorts/pfFHs5EqYZ8)
 
+![A Carbon Voice message as it arrives in an email inbox](/img/whats-new/voice-message-as-email.webp)
+
 ## Related
 
 - [Types of conversations](types-of-conversations.md) — the difference between direct

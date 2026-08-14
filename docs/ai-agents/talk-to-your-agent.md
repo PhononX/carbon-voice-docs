@@ -24,6 +24,8 @@ Agents** and see **My Conversations with @agent** to jump back into one you alre
   whole team can reach it in one place.
 - **Attachments**, so you can hand it a file to work on.
 
+![Tagging a person or an agent in a conversation](/img/whats-new/tag-people-and-agents.webp)
+
 ## Put it on speed dial
 
 On macOS, an agent can be bound to one of your ten **Speed Dial** slots, so you can reach

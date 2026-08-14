@@ -37,6 +37,8 @@ summary with action items, or anything else:
 
 ![AI Magic menu for selected messages](/img/ai/ai-magic-multiple.webp)
 
+![The AI Actions picker showing the available prompts](/img/whats-new/popular-ai-actions.webp)
+
 ## Finding past results
 
 To see previous AI Magic results across a conversation, open **AI Chat** from the

@@ -16,6 +16,8 @@ list.
 3. Tap the **"..."** in the upper right corner.
 4. Select **New Conversation +**.
 
+![Creating a new conversation from an existing conversation's member list](/img/whats-new/new-conversation-same-members.webp)
+
 ## Related
 
 - [Create a named conversation](create-a-named-conversation.md)

@@ -42,6 +42,8 @@ phone-sized browser window.
 - **AI Chat has its own button** in the conversation's app bar, rather than living in the
   summarize menu.
 
+![Selecting part of a transcript on desktop](/img/whats-new/select-transcript-desktop.webp)
+
 ## Keyboard shortcuts
 
 | Shortcut | Does |
