@@ -251,7 +251,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Help',
         },
         {to: '/whats-new', label: "What's New", position: 'left'},
         // The right side is for finding an answer, so it holds only search and
@@ -273,7 +273,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Help',
           items: [
             {label: 'Record your first message', to: '/messages/recording-and-sending/record-a-voice-message'},
             {label: 'AI', to: '/ai'},
