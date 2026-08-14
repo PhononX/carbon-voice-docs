@@ -49,14 +49,34 @@ jobs:
           # Every page listed in llms.txt must have a Markdown twin. This is the
           # promise llms.txt makes to agents — that appending .md to any page URL
           # works — and it broke silently the last time it was only prose.
+          routes=$(grep -oE '\(https://help\.carbonvoice\.app(/[^)]*)?\)' build/llms.txt \
+                     | grep -vE '/llms(-full)?\.txt|/llms/' \
+                     | sed -E 's#\(https://help\.carbonvoice\.app##; s#\)##' \
+                     | sed -E 's#^$#/#' | sort -u)
+          count=$(printf '%s\n' "$routes" | grep -c . || true)
+          twins=$(find build -name '*.md' | wc -l)
+          echo "llms.txt lists $count pages; $twins Markdown twins on disk."
+          # An extraction that matched nothing would leave the loop below with no
+          # iterations and report success, so no pages at all is its own failure.
+          if [ "$count" -eq 0 ]; then
+            echo "No page routes found in llms.txt — this check is not covering anything."
+            exit 1
+          fi
+
+          # The loop runs first because it names the offending page; the counts
+          # only say that something is off.
           missing=0
           while read -r route; do
             candidate="build${route%/}.md"
             [ "$route" = "/" ] && candidate="build/index.md"
             test -f "$candidate" || { echo "No Markdown twin for $route"; missing=1; }
-          done < <(grep -oE '\(https://help\.carbonvoice\.app(/[^)]*)?\)' build/llms.txt \
-                     | grep -vE '/llms(-full)?\.txt|/llms/' \
-                     | sed -E 's#\(https://help\.carbonvoice\.app##; s#\)##' \
-                     | sed -E 's#^$#/#' | sort -u)
+          done <<< "$routes"
           test "$missing" -eq 0 || exit 1
+
+          # Every listed page has a twin. The reverse should hold too: a twin with
+          # no entry in llms.txt is a page agents cannot discover.
+          if [ "$count" -ne "$twins" ]; then
+            echo "$twins twins exist for $count listed pages — some are unlisted."
+            exit 1
+          fi
           echo "All discovery files present, every page has a Markdown twin."
