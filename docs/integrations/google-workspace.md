@@ -33,9 +33,30 @@ The Slides add-on turns a **Presentation Outline** into a draft deck.
 3. Open the [Slides add-on](https://www.getcarbon.app/google-add-on/slides) and turn that
    outline into slides, with suggested visuals.
 
-## Gmail and Docs
+## Google Docs
 
-There are add-ons for Gmail and Docs as well. They're listed with the others at
+The Docs add-on brings voice into a document two ways:
+
+- **Insert a voice memo transcription** straight into what you're writing.
+- **Preview Carbon Voice links as smart chips**, so a link in a doc shows its context
+  instead of sitting there as a URL.
+
+## Gmail
+
+The Gmail add-on covers the email side:
+
+- **Attach a voice memo link** to an email.
+- **Pull the text out of a memo** to use in the message.
+- **Preview the AI actions** you've run on a memo, so you can drop the output in.
+
+## Installing them
+
+- **Sheets, Slides and Docs** come as one listing:
+  [Carbon Voice for Editors](https://workspace.google.com/marketplace/app/carbon_voice_for_editors/393337891493).
+- **Gmail** is separate:
+  [Carbon Voice](https://workspace.google.com/marketplace/app/carbon_voice/65829775758).
+
+All of them are listed at
 [getcarbon.app/google-add-on](https://www.getcarbon.app/google-add-on).
 
 ## Related

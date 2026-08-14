@@ -61,6 +61,10 @@ have. It has two halves:
 You can also filter the conversation list to **Unread**, or tap the play area on an
 individual conversation card to play just that conversation's unread messages.
 
+The playlist doubles as a way to clear the backlog without listening to it. Each
+conversation in the queue can be **marked read from that screen**, so you can work down the
+whole list in one place rather than opening each conversation.
+
 See [Play new messages](play-new-messages.md).
 
 ## Heard status

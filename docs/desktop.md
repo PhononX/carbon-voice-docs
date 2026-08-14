@@ -18,16 +18,19 @@ layout in two places:
 Either way it's the same app and the same account as on your phone. What changes is the
 layout, and a few things live somewhere else as a result.
 
-![A conversation open in Carbon Voice on desktop](/img/whats-new/select-transcript-desktop.webp)
+![Carbon Voice on desktop, showing the navigation sidebar, the conversation list, and an open conversation](/img/getting-started/carbon-voice-desktop.webp)
 
 ## The wide-screen layout
 
 On a window wider than about 1100 pixels you get three panels side by side:
 
-1. **The navigation sidebar** — icons for each part of the app.
+1. **The navigation sidebar** — icons for each part of the app, with your profile picture
+   at the bottom.
 2. **The list panel** — the contents of whatever you've selected: your conversations, your
-   voice memos, your notebook.
+   voice memos, your notebook. Your unread count sits at the top of it.
 3. **The main panel** — the conversation or item you're working in.
+
+Search runs across the top, and **⌘K** puts your cursor in it from anywhere.
 
 Narrow the window and it falls back to the mobile layout, which is also what you get on a
 phone-sized browser window. So the same browser gives you either layout depending on how
@@ -49,6 +52,10 @@ wide you've made it.
 - **Recording happens in place** in the main panel, instead of taking over the screen.
 - **AI Chat has its own button** in the conversation's app bar, rather than living in the
   summarize menu.
+- **You can select part of a transcript** and copy just that, which is useful for pulling a
+  quote or an action item out of a message.
+
+![Selecting part of a transcript on desktop](/img/whats-new/select-transcript-desktop.webp)
 
 ## Keyboard shortcuts
 

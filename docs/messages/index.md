@@ -19,6 +19,7 @@ one automatically, so every message is both audio and text.
 - [Attachments](attachments.md)
 - [Editing text messages](editing-text-messages.md)
 - [Tagging people and agents](mentions.md)
+- [Threads](threads.md)
 - [Quick reactions with emoji](quick-reactions.md)
 - [Message information](message-information.md)
 - [See if someone has read or listened](read-receipts.md)
