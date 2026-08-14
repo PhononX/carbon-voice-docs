@@ -18,13 +18,17 @@ AI found in that discussion. Tap **Find Action Items** to scan again after new m
 **Across everything.** Open **Notebook → Action Items** for every action item you have, from
 every conversation.
 
+![Action items for a conversation, with AI suggestions above the to-do list](/img/whats-new/action-items.webp)
+
 When AI spots new ones, you'll see an **AI found new action items** banner in the
 conversation.
 
 ## Working through them
 
 - **Tick one off** to mark it done, and untick to put it back.
-- **Add your own** with the **"+"** — you don't have to wait for AI to find something.
+- **Assign one** to a person, and give it a **due date**.
+- **Sort by due date**, filter by assignee, or **Show Completed** to see what's done.
+- **Add your own** with the **"+"**, since you don't have to wait for AI to find something.
 - **Edit** the wording if the extracted version isn't quite right.
 - **Move** an item to a different conversation.
 - **Delete** anything that isn't real.

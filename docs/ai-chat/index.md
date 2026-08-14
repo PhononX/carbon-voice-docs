@@ -12,6 +12,8 @@ searches across what you've stored and answers.
 
 Ask "what did we decide about pricing?" and it goes looking.
 
+![AI Chat answering a question, with the conversation it's drawing on shown at the top](/img/whats-new/ai-chat.webp)
+
 ## Two places to use it
 
 **Across everything.** Tap the AI button in the bottom navigation bar to open a chat scoped

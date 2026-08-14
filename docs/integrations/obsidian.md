@@ -12,6 +12,8 @@ you've written.
 
 It's a one-way sync: Carbon Voice into Obsidian. Nothing you write in the vault comes back.
 
+![An Obsidian vault with Carbon Voice conversations, people, and voice memos synced into it](/img/whats-new/obsidian-sync.webp)
+
 ## What lands in the vault
 
 - **Conversations, with their transcripts.**

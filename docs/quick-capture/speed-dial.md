@@ -31,6 +31,8 @@ an individual slot its own combination.
 Press **⌥&#96;** (Option and backtick) to see all ten slots in a floating panel, with what
 each is pointing at. Useful when you've set up more than you can remember.
 
+![The Option and backtick keys](/img/whats-new/agent-speed-dial.webp)
+
 ## Actions on a slot
 
 Each slot can also **Configure Action**, a webhook fired when you send to that slot, so a

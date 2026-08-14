@@ -16,6 +16,8 @@ identity that can hold access tokens and webhook subscriptions of its own.
    Carbon Voice keeps a catalogue of platforms with setup instructions written for each
    one. Pick the closest match; if yours isn't listed yet, pick anything and connect it by
    hand afterwards.
+
+   ![The platform catalogue, listing agent platforms with a setup guide for each](/img/whats-new/connect-agent.webp)
 3. **Name your agent.** It's pre-filled with the platform name, and you can change it any
    time in settings.
 4. **Follow the setup guide**, if the platform has one. See
