@@ -145,10 +145,17 @@ serves from memory rather than from `build/`. To try search locally, use `npm ru
 build && npm run serve`.
 
 Re-run `npm install` after pulling, not just on first setup. When a pull brings in a
-new dependency, the build fails with a resolve error pointing at the file that
-imports it rather than at the missing package — for example, a change to
-`src/css/custom.css` reporting `Can't resolve '@fontsource-variable/wix-madefor-text'`
-means the webfont package has not been installed yet.
+new dependency, the build fails without naming the missing package as the cause. It
+shows up two ways:
+
+- **A resolve error pointing at the file that imports it.** A change to
+  `src/css/custom.css` reporting `Can't resolve '@fontsource-variable/wix-madefor-text'`
+  means the webfont package has not been installed yet.
+- **`Unable to build website for locale en`, caused by `Docusaurus was unable to
+  resolve the "…" plugin`.** A plugin added to `docusaurus.config.ts` is in
+  `package.json` but not yet in your `node_modules`.
+
+Both are fixed by `npm install`. Neither means the branch is broken.
 
 ## Repository layout
 
