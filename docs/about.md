@@ -28,13 +28,17 @@ smallest one that covers the question — the complete file is large enough that
 fetch tools truncate it.
 
 - **One page** — append `.md` to any page URL. This page is at
-  [`/about.md`](pathname:///about.md).
+  [`/about.md`](pathname:///about.md), and it works for the
+  [What's New](/whats-new) announcements too.
 - **One section** — [`/llms/workspaces.txt`](pathname:///llms/workspaces.txt) and one
   per section besides, each listed in `llms.txt`.
 - [`/llms.txt`](pathname:///llms.txt) — an index of every page with its description,
   and of the section bundles.
-- [`/llms-full.txt`](pathname:///llms-full.txt) — the full text in one file, around
-  200 KB.
+- [`/llms-full.txt`](pathname:///llms-full.txt) — every help article in one file,
+  around 200 KB. The announcements are not in it: they are dated rather than
+  evergreen, and adding them would push a file that some fetch tools already
+  truncate further past the limit. They have their own bundle at
+  [`/llms/whats-new.txt`](pathname:///llms/whats-new.txt).
 - [`/sitemap.xml`](pathname:///sitemap.xml) — every canonical URL on this site.
 
 All of these are regenerated from `docs/` on every build, so they never drift from the

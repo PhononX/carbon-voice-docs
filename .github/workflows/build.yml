@@ -43,7 +43,8 @@ jobs:
           done
           # One section bundle and one per-page twin, as samples: both are written
           # by the same loops, so a break in either shows up here.
-          for f in build/llms/workspaces.txt build/workspaces/create-a-workspace.md build/index.md; do
+          for f in build/llms/workspaces.txt build/llms/whats-new.txt \
+                   build/workspaces/create-a-workspace.md build/index.md; do
             test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
           done
           # Every page listed in llms.txt must have a Markdown twin. This is the
@@ -72,7 +73,7 @@ jobs:
           # It asserts the href resolves rather than counting tags, because
           # counting passes at 126/126 while every section landing page points at
           # `/ai/.md` — the trailing slash that markdownRoute() exists to strip.
-          expected=$(find docs -name '*.md' -o -name '*.mdx' | wc -l)
+          expected=$(find docs whats-new -name '*.md' -o -name '*.mdx' | wc -l)
           grep -rho 'type="text/markdown" href="[^"]*"' build --include='*.html' \
             | sed -E 's/.*href="([^"]*)".*/\1/' | sort -u > advertised.txt
           found=$(wc -l < advertised.txt)
