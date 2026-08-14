@@ -59,5 +59,5 @@ transcribed, it can be summarized, and it can be turned into
 
 ## Related
 
-- [Automate workflows](automate-workflows.md)
+- [Automate workflows](automate-workflows/index.md)
 - [Meeting Notes](../meeting-notes/index.md)

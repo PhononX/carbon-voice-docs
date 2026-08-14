@@ -546,7 +546,7 @@ that's missing entirely, is the bridge that makes the other two usable.
 
 | Tier | Holds | State |
 |---|---|---|
-| **1 · No code — push**<br>"when X happens, do Y elsewhere" | Zapier, n8n, and the trigger patterns (label a message, post into a named conversation) | Zapier documented; n8n absent; per-workflow steps still a placeholder |
+| **1 · No code — push**<br>"when X happens, do Y elsewhere" | Zapier, n8n, and the trigger patterns (label a message, post into a named conversation) | Zapier documented, with a per-workflow guide for each of the ten recipes; n8n absent |
 | **1 · No code — pull**<br>"keep my content where I already read" | The **Obsidian sync plugin**; any future sync or export path | **Entirely absent** |
 | **2 · Your account's plumbing** | The in-app Integrations panel: credentials and personal access tokens, webhooks and Automations, Connected Apps | **Entirely absent** |
 | **3 · Build on it** | Developer portal, OAuth apps, agent identities | Documented as a pointer |

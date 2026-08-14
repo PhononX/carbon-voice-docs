@@ -40,7 +40,7 @@ Labels and conversations can trigger workflows, so the write-up files itself:
 - Add a **Bug Report** label and get a Jira issue.
 - Add a **CRM Update** label and get a note in Salesforce or Pipedrive.
 
-See [Automate workflows](../integrations/automate-workflows.md) and
+See [Automate workflows](../integrations/automate-workflows/index.md) and
 [Zapier](../integrations/zapier.md).
 
 ## Related

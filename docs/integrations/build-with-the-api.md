@@ -33,11 +33,11 @@ Questions go to [devsupport@phononx.com](mailto:devsupport@phononx.com).
 
 ## If you'd rather not write code
 
-Most integrations don't need any. See [Automate workflows](automate-workflows.md) and
+Most integrations don't need any. See [Automate workflows](automate-workflows/index.md) and
 [Zapier](zapier.md), which connect Carbon Voice to thousands of apps without code, or the
 [AI assistant guides](../ai-assistants/index.md) for connecting Claude or ChatGPT.
 
 ## Related
 
-- [Automate workflows](automate-workflows.md)
+- [Automate workflows](automate-workflows/index.md)
 - [Using and sharing your CarbonLink](using-your-carbonlink.md)

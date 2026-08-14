@@ -17,7 +17,7 @@ When something happens in Carbon Voice, make something happen elsewhere.
   retros with a slash command.
 - [Google Workspace](google-workspace.md) — import into Sheets, build a deck in Slides.
 - [Zapier](zapier.md) — thousands of apps, no code.
-- [Automate workflows](automate-workflows.md) — the patterns people build, and what
+- [Automate workflows](automate-workflows/index.md) — the patterns people build, and what
   triggers them.
 
 ## No code — bring your content in

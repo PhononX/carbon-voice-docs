@@ -54,8 +54,10 @@ The current list of supported triggers and actions is on
 
 ## Setting one up
 
-> **Placeholder.** The step-by-step instructions for each workflow live in a Notion
-> database that hasn't been ported yet.
+[Automate workflows](automate-workflows/index.md) has a step-by-step guide for each
+workflow — email drafts into Gmail or Google Docs, blog posts into Google Docs or Notion,
+to-do lists into Todoist or Things, bug reports into Jira or Asana. Most start from a Zap
+template, and each lists the fields to map.
 
 Running into trouble? [Message support](https://cv.chat/support). To request new
 triggers, actions, or AI transformations, send [feedback](https://cv.chat/feedback).
@@ -69,5 +71,5 @@ token, point the workflow at the API, and trigger on the same events. See
 
 ## Related
 
-- [Automate workflows](automate-workflows.md)
+- [Automate workflows](automate-workflows/index.md)
 - [Playlists and labels](../conversations/your-conversation-list/playlists-and-labels.md)

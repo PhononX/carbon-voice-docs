@@ -1,0 +1,7 @@
+{
+  "label": "Automate workflows",
+  "position": 1,
+  "customProps": {
+    "description": "Step-by-step recipes for turning an AI action's output into a task, a draft, or a ticket."
+  }
+}

@@ -301,7 +301,7 @@ Read instead: [Catch up with AI](ai/catch-up-with-ai.md),
 <!-- /videos -->
 
 Read instead: [Zapier](integrations/zapier.md),
-[Automate workflows](integrations/automate-workflows.md), or
+[Automate workflows](integrations/automate-workflows/index.md), or
 [open the Zapier playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcA0Zb-S1Mta0jdf0tHZ2mEF).
 
 ## On your phone
