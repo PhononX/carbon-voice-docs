@@ -41,4 +41,22 @@ jobs:
           for f in build/llms.txt build/llms-full.txt build/sitemap.xml build/robots.txt build/CNAME; do
             test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
           done
-          echo "All discovery files present."
+          # One section bundle and one per-page twin, as samples: both are written
+          # by the same loops, so a break in either shows up here.
+          for f in build/llms/workspaces.txt build/workspaces/create-a-workspace.md build/index.md; do
+            test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
+          done
+          # Every page listed in llms.txt must have a Markdown twin. This is the
+          # promise llms.txt makes to agents — that appending .md to any page URL
+          # works — and it broke silently the last time it was only prose.
+          missing=0
+          while read -r route; do
+            candidate="build${route%/}.md"
+            [ "$route" = "/" ] && candidate="build/index.md"
+            test -f "$candidate" || { echo "No Markdown twin for $route"; missing=1; }
+          done < <(grep -oE '\(https://help\.carbonvoice\.app(/[^)]*)?\)' build/llms.txt \
+                     | grep -vE '/llms(-full)?\.txt|/llms/' \
+                     | sed -E 's#\(https://help\.carbonvoice\.app##; s#\)##' \
+                     | sed -E 's#^$#/#' | sort -u)
+          test "$missing" -eq 0 || exit 1
+          echo "All discovery files present, every page has a Markdown twin."

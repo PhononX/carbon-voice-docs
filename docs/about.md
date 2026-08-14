@@ -23,14 +23,22 @@ page. A sentence is plenty.
 
 ## For AI agents
 
-Machine-readable entry points to this documentation:
+Machine-readable entry points to this documentation, smallest first. Prefer the
+smallest one that covers the question — the complete file is large enough that many
+fetch tools truncate it.
 
-- [`/llms.txt`](pathname:///llms.txt) — an index of every page with its description.
-- [`/llms-full.txt`](pathname:///llms-full.txt) — the full text in one file.
+- **One page** — append `.md` to any page URL. This page is at
+  [`/about.md`](pathname:///about.md).
+- **One section** — [`/llms/workspaces.txt`](pathname:///llms/workspaces.txt) and one
+  per section besides, each listed in `llms.txt`.
+- [`/llms.txt`](pathname:///llms.txt) — an index of every page with its description,
+  and of the section bundles.
+- [`/llms-full.txt`](pathname:///llms-full.txt) — the full text in one file, around
+  200 KB.
 - [`/sitemap.xml`](pathname:///sitemap.xml) — every canonical URL on this site.
 
-Both `llms.txt` files are regenerated from `docs/` on every build, so they never drift
-from the pages above.
+All of these are regenerated from `docs/` on every build, so they never drift from the
+pages above. Links inside them are absolute, so they can be followed from anywhere.
 
 Building against the Carbon Voice API is documented separately at
 [developer.carbonvoice.app](https://developer.carbonvoice.app).

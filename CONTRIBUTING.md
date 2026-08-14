@@ -170,7 +170,9 @@ carbon-voice-docs/
 │   ├── apple-touch-icon.png  180x180, for iOS home-screen bookmarks
 │   └── img/                  logo marks, favicon, social card, screenshots
 ├── scripts/
-│   ├── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
+│   ├── generate-llms-txt.mjs generates the agent-facing files from docs/:
+│   │                         llms.txt, llms-full.txt, llms/<section>.txt,
+│   │                         and a .md twin per page (all gitignored)
 │   └── fetch-video-playlists.mjs  refreshes the strips in docs/videos.md
 ├── .github/workflows/        build (PRs) and deploy (main)
 ├── docusaurus.config.ts
@@ -186,9 +188,12 @@ decisions behind that:
 | --- | --- |
 | Public repository of plain Markdown | Agents can fetch raw source without rendering or scraping HTML. |
 | CommonMark rather than MDX | Content stays parseable by any Markdown tool. |
-| `llms.txt` | A short index of every page with its description, following the [llms.txt convention](https://llmstxt.org/). Points agents at the important sections and states that this is canonical. |
-| `llms-full.txt` | The entire documentation in one file, for agents that would rather make one request than fifty. |
-| Both generated, never hand-maintained | `scripts/generate-llms-txt.mjs` builds them from `docs/` at build time, so they cannot drift. They are gitignored for that reason. |
+| `llms.txt` | A short index of every page with its description, following the [llms.txt convention](https://llmstxt.org/). Points agents at the important sections, lists the section bundles with their sizes, and states that this is canonical. |
+| Per-page Markdown | Every page is served as Markdown at its own URL plus `.md` — `/workspaces/okta-scim.md`. An agent that has a link never has to fetch more than the one page it wants. |
+| Section bundles | `/llms/<section>.txt`, one per sidebar section, 3–41 KB each. The middle granularity: "read everything about Workspaces" in one request. |
+| `llms-full.txt` | The entire documentation in one file, for agents that would rather make one request than fifty. Around 200 KB, which is more than some fetch tools return in one go — so its header names the smaller files, and a truncated read has somewhere to go. |
+| All generated, never hand-maintained | `scripts/generate-llms-txt.mjs` builds all four from `docs/` at build time, so they cannot drift. They are gitignored for that reason. `build.yml` asserts that every page listed in `llms.txt` has a Markdown twin. |
+| Absolute links in generated output | The docs use relative links like `(catch-up-with-ai.md)`, which resolve against the file's own directory. That is meaningless in `llms-full.txt` and wrong in a per-page twin, where the depth shifts, so the generator rewrites them to absolute site URLs. |
 | `sitemap.xml` | Generated for every page. |
 | `robots.txt` | Allows all crawlers, points at the sitemap, names the machine-readable entry points. |
 | Canonical URLs | Every page emits `<link rel="canonical">`, so copies point back here. |
