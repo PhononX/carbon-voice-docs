@@ -1,13 +1,21 @@
 #!/usr/bin/env node
 /**
  * Generates the agent-facing entry points to this documentation from the
- * canonical Markdown in docs/:
+ * canonical Markdown in docs/, at three granularities so an agent can fetch the
+ * smallest thing that answers its question:
  *
- *   static/llms.txt       an index of every page, grouped by category
- *   static/llms-full.txt  the complete text of the documentation in one file
+ *   static/llms.txt          an index of every page, grouped by category
+ *   static/<route>.md        one page, as Markdown, at its own URL plus `.md`
+ *   static/llms/<section>.txt  one section, whole
+ *   static/llms-full.txt     the complete text of the documentation
  *
- * Both are generated, never hand-edited, and are written into static/ so
- * Docusaurus copies them to the site root. `npm run build` runs this first.
+ * The three coarser files exist because the complete one is around 200 KB, and
+ * agent fetch tools routinely truncate well below that — which loses the
+ * sections that sort last and, worse, gives no hint that anything was missed.
+ * Every layer names the layer below it, so a truncated read has somewhere to go.
+ *
+ * All of it is generated, never hand-edited, and written into static/ so
+ * Docusaurus copies it to the site root. `npm run build` runs this first.
  */
 
 import {promises as fs} from 'node:fs';
@@ -65,6 +73,80 @@ function routeFor(relPath, frontmatter) {
   return route === '' ? '/' : `/${route}`;
 }
 
+/**
+ * The docs are written for the site, so a few pages carry markup that only
+ * means something once rendered. This strips the two cases that cost real size
+ * or leak tooling, and deliberately leaves everything else alone: a general HTML
+ * scrubber would risk mangling content to save a handful of bytes.
+ */
+function cleanForAgents(body) {
+  return (
+    body
+      // Video strips: a grid of thumbnails, each carrying an image path, link
+      // target, rel and pixel dimensions. On docs/videos.md that markup is 17 KB
+      // — 8% of the complete file — and none of it survives as meaning. The
+      // titles and the YouTube links do, so they become a plain list.
+      .replace(/<div class="videoStrip">([\s\S]*?)<\/div>\s*/g, (_match, inner) => {
+        const items = [
+          ...inner.matchAll(
+            /<a[^>]*href="([^"]+)"[\s\S]*?<span>([\s\S]*?)<\/span>/g,
+          ),
+        ].map(([, href, title]) => `- [${decodeEntities(title.trim())}](${href})`);
+        return items.length ? `${items.join('\n')}\n\n` : '';
+      })
+      // Directives read by scripts/fetch-video-playlists.mjs, which regenerates
+      // the strips above. Internal plumbing, not content.
+      .replace(/<!--\s*videos:[\s\S]*?-->\s*/g, '')
+      .replace(/<!--\s*\/videos\s*-->\s*/g, '')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim()
+  );
+}
+
+function decodeEntities(text) {
+  const named = {amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' '};
+  return text.replace(/&(#\d+|#x[\da-f]+|[a-z]+);/gi, (match, entity) => {
+    if (entity.startsWith('#x') || entity.startsWith('#X')) {
+      return String.fromCodePoint(parseInt(entity.slice(2), 16));
+    }
+    if (entity.startsWith('#')) {
+      return String.fromCodePoint(Number(entity.slice(1)));
+    }
+    return named[entity.toLowerCase()] ?? match;
+  });
+}
+
+/**
+ * Rewrites the docs' relative Markdown links to absolute site URLs.
+ *
+ * In docs/ a link like `(catch-up-with-ai.md)` resolves against the file's own
+ * directory, which is right for the repository and for Docusaurus. It is wrong
+ * everywhere these generated files are read: in llms-full.txt there is no
+ * containing directory at all, and in a per-page `.md` twin the depth shifts —
+ * `/ai.md` sits at the root, so a link meant for `/ai/catch-up-with-ai` would
+ * resolve to `/catch-up-with-ai`. Absolute URLs are unambiguous in all three.
+ *
+ * A target that resolves to no known page is left untouched rather than guessed
+ * at; Docusaurus already fails the build on a broken Markdown link, so this only
+ * fires for links it deliberately allows.
+ */
+function absolutizeLinks(body, page, routeByRel) {
+  const dir = path.posix.dirname(page.rel);
+  return body.replace(
+    /\]\((?!https?:|\/\/|\/|#|mailto:|pathname:)([^)\s#]+\.mdx?)(#[^)\s]*)?\)/g,
+    (match, target, hash = '') => {
+      const rel = path.posix.normalize(path.posix.join(dir, target));
+      const route = routeByRel.get(rel);
+      return route ? `](${SITE_URL}${route}${hash})` : match;
+    },
+  );
+}
+
+/** The URL a page's Markdown twin is served at: /ai -> /ai.md, / -> /index.md */
+function markdownRoute(route) {
+  return route === '/' ? '/index.md' : `${route}.md`;
+}
+
 async function collect() {
   const pages = [];
 
@@ -109,36 +191,84 @@ async function collect() {
   return {pages, categories};
 }
 
-function buildIndex({pages, categories}) {
-  const lines = [
-    '# Carbon Voice Help',
-    '',
-    `> ${SUMMARY}`,
-    '',
-    'Every page below is also available as raw Markdown: replace the site origin with',
-    `\`${RAW_URL}/docs\` and append \`.md\`. The complete text of this documentation in a`,
-    `single file is at ${SITE_URL}/llms-full.txt.`,
-    '',
-  ];
+/**
+ * Groups the pages the way llms.txt already presents them: the pages that sit at
+ * the root of docs/ first, then each category in sidebar order. One group is one
+ * section bundle.
+ */
+function sectionsOf({pages, categories}) {
+  const sections = [];
 
   const root = pages.filter((p) => !p.categoryDir);
   if (root.length) {
-    lines.push('## Overview', '');
-    for (const page of root) {
-      lines.push(`- [${page.title}](${SITE_URL}${page.route})${page.description ? `: ${page.description}` : ''}`);
-    }
-    lines.push('');
+    sections.push({slug: 'overview', label: 'Overview', description: '', pages: root});
   }
 
   for (const [dirName, category] of [...categories.entries()].sort(
     (a, b) => a[1].position - b[1].position,
   )) {
-    lines.push(`## ${category.label}`, '');
-    if (category.description) {
-      lines.push(category.description, '');
+    sections.push({
+      slug: dirName,
+      label: category.label,
+      description: category.description,
+      pages: pages.filter((p) => p.categoryDir === dirName),
+    });
+  }
+
+  return sections;
+}
+
+/** `- [Title](url): description`, the one line each page gets in an index. */
+function pageEntry(page) {
+  return `- [${page.title}](${SITE_URL}${page.route})${
+    page.description ? `: ${page.description}` : ''
+  }`;
+}
+
+/** A page's text, prefixed with where it came from and what it may be used for. */
+function pageBody(page) {
+  return [
+    `URL: ${SITE_URL}${page.route}`,
+    `Source: ${RAW_URL}/docs/${page.rel}`,
+    '',
+    page.text,
+  ].join('\n');
+}
+
+function approxKb(text) {
+  return `${Math.max(1, Math.round(Buffer.byteLength(text, 'utf8') / 1024))} KB`;
+}
+
+function buildIndex({pages}, sections, sizes) {
+  const lines = [
+    '# Carbon Voice Help',
+    '',
+    `> ${SUMMARY}`,
+    '',
+    'Four ways to read this documentation, coarsest last. Prefer the smallest one that',
+    'covers your question — the complete file is large enough that many fetch tools',
+    'truncate it silently.',
+    '',
+    `- One page: append \`.md\` to any page URL below, e.g. ${SITE_URL}/workspaces/create-a-workspace.md`,
+    '- One section: the `.txt` bundle listed under each heading below',
+    `- Everything: ${SITE_URL}/llms-full.txt (${sizes.full}, ${pages.length} pages)`,
+    `- Canonical Markdown, with history: ${REPO_URL}`,
+    '',
+  ];
+
+  for (const section of sections) {
+    lines.push(`## ${section.label}`, '');
+    if (section.description) {
+      lines.push(section.description, '');
     }
-    for (const page of pages.filter((p) => p.categoryDir === dirName)) {
-      lines.push(`- [${page.title}](${SITE_URL}${page.route})${page.description ? `: ${page.description}` : ''}`);
+    lines.push(
+      `Whole section: ${SITE_URL}/llms/${section.slug}.txt (${sizes.sections.get(section.slug)}, ${
+        section.pages.length
+      } ${section.pages.length === 1 ? 'page' : 'pages'})`,
+      '',
+    );
+    for (const page of section.pages) {
+      lines.push(pageEntry(page));
     }
     lines.push('');
   }
@@ -146,7 +276,38 @@ function buildIndex({pages, categories}) {
   return `${lines.join('\n').trimEnd()}\n`;
 }
 
-function buildFull({pages}) {
+/** One section, whole: every page in it, in sidebar order. */
+function buildSection(section, {pages}) {
+  const parts = [
+    `# Carbon Voice Help — ${section.label}`,
+    '',
+    `> ${section.description || SUMMARY}`,
+    '',
+    `Site: ${SITE_URL}`,
+    `Index of every section: ${SITE_URL}/llms.txt`,
+    `Complete documentation: ${SITE_URL}/llms-full.txt (all ${pages.length} pages)`,
+    'License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)',
+    '',
+    `This file is the ${section.label} section of the Carbon Voice help center: ${
+      section.pages.length
+    } ${section.pages.length === 1 ? 'page' : 'pages'}, in the same order as the site`,
+    'navigation. Each page is also available on its own — append `.md` to its URL.',
+    '',
+  ];
+
+  for (const page of section.pages) {
+    parts.push('---', '', pageBody(page), '');
+  }
+
+  return `${parts.join('\n').trimEnd()}\n`;
+}
+
+/** One page, as the Markdown twin served at its own URL plus `.md`. */
+function buildPage(page) {
+  return `${pageBody(page)}\n`;
+}
+
+function buildFull({pages}, sections) {
   const parts = [
     '# Carbon Voice Help — full documentation',
     '',
@@ -156,31 +317,62 @@ function buildFull({pages}) {
     `Source: ${REPO_URL}`,
     'License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)',
     '',
-    'This file is generated from the Markdown in docs/. Each section below is one page,',
-    'in the same order as the site navigation.',
+    `This file holds all ${pages.length} pages, in the same order as the site navigation.`,
+    'It is around 200 KB, which is more than some fetch tools will return in one request.',
+    'If your copy ends mid-page, nothing here is missing from the site — read the smaller',
+    'files instead, each of which is a complete document on its own:',
+    '',
+    `  Index of every page:  ${SITE_URL}/llms.txt`,
+    '  One section:          ' +
+      sections.map((section) => `${SITE_URL}/llms/${section.slug}.txt`).join('\n                        '),
+    '  One page:             any page URL with `.md` appended',
     '',
   ];
 
   for (const page of pages) {
-    parts.push(
-      '---',
-      '',
-      `URL: ${SITE_URL}${page.route}`,
-      `Source: ${RAW_URL}/docs/${page.rel}`,
-      '',
-      page.body,
-      '',
-    );
+    parts.push('---', '', pageBody(page), '');
   }
 
   return `${parts.join('\n').trimEnd()}\n`;
 }
 
 const collected = await collect();
+const {pages} = collected;
+
+// Resolve links only once every route is known, then reuse the cleaned text for
+// every output: the per-page twins, the section bundles and the complete file all
+// carry identical prose, so an agent that switches between them sees no drift.
+const routeByRel = new Map(pages.map((page) => [page.rel, page.route]));
+for (const page of pages) {
+  page.text = absolutizeLinks(cleanForAgents(page.body), page, routeByRel);
+}
+
+const sections = sectionsOf(collected);
+
 await fs.mkdir(OUT_DIR, {recursive: true});
-await fs.writeFile(path.join(OUT_DIR, 'llms.txt'), buildIndex(collected), 'utf8');
-await fs.writeFile(path.join(OUT_DIR, 'llms-full.txt'), buildFull(collected), 'utf8');
+await fs.mkdir(path.join(OUT_DIR, 'llms'), {recursive: true});
+
+// Section bundles first: llms.txt quotes their sizes.
+const sizes = {sections: new Map(), full: ''};
+for (const section of sections) {
+  const text = buildSection(section, collected);
+  sizes.sections.set(section.slug, approxKb(text));
+  await fs.writeFile(path.join(OUT_DIR, 'llms', `${section.slug}.txt`), text, 'utf8');
+}
+
+const full = buildFull(collected, sections);
+sizes.full = approxKb(full);
+await fs.writeFile(path.join(OUT_DIR, 'llms-full.txt'), full, 'utf8');
+await fs.writeFile(path.join(OUT_DIR, 'llms.txt'), buildIndex(collected, sections, sizes), 'utf8');
+
+// Per-page twins, each at the page's own route plus `.md`.
+for (const page of pages) {
+  const target = path.join(OUT_DIR, markdownRoute(page.route).replace(/^\//, ''));
+  await fs.mkdir(path.dirname(target), {recursive: true});
+  await fs.writeFile(target, buildPage(page), 'utf8');
+}
 
 console.log(
-  `Generated static/llms.txt and static/llms-full.txt from ${collected.pages.length} pages.`,
+  `Generated llms.txt, llms-full.txt (${sizes.full}), ${sections.length} section bundles ` +
+    `and ${pages.length} per-page .md files from ${pages.length} pages.`,
 );

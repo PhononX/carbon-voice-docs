@@ -15,7 +15,11 @@ const PRODUCT_URL = 'https://getcarbon.app';
 const config: Config = {
   title: 'Carbon Voice Help',
   tagline: 'Documentation for Carbon Voice — voice messaging for your whole team, people and agents alike.',
-  favicon: 'img/logo.svg',
+  // The raster fallback, which is also what anything requesting the conventional
+  // /favicon.ico gets: Safari ignores SVG icons, and so do a fair number of
+  // crawlers, feed readers and link unfurlers. The SVG version — sharper, and
+  // color-adaptive — is offered alongside it in headTags below.
+  favicon: 'favicon.ico',
 
   url: SITE_URL,
   baseUrl: '/',
@@ -35,6 +39,22 @@ const config: Config = {
   },
 
   headTags: [
+    // Icons. `favicon` above emits the .ico; these two cover the cases it does
+    // not. Browsers that understand `type="image/svg+xml"` prefer the vector,
+    // which stays sharp on hidpi tab strips and swaps the mark to the lighter
+    // violet in dark mode; the rest fall back to the .ico.
+    {
+      tagName: 'link',
+      attributes: {rel: 'icon', type: 'image/svg+xml', href: '/img/favicon.svg'},
+    },
+    // Home-screen bookmarks on iOS. Without this, Safari saves a screenshot of
+    // the page instead of the mark. 180x180 is the largest size iOS asks for,
+    // and it is on a white ground on purpose: iOS composites the icon onto its
+    // own tile, where transparency comes out black.
+    {
+      tagName: 'link',
+      attributes: {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
+    },
     // Tints browser UI (mobile address bar, PWA chrome) to match the site
     // background in each color mode: white in light, the brand indigo in dark.
     {
@@ -220,7 +240,26 @@ const config: Config = {
       },
       {property: 'og:site_name', content: 'Carbon Voice Help'},
       {property: 'og:type', content: 'website'},
-      {name: 'twitter:card', content: 'summary'},
+      // `summary_large_image`, not `summary`: the card above is a 1200x630
+      // landscape image, and `summary` renders it as a small square thumbnail —
+      // cropped to the middle of the artwork, which cuts the wordmark off.
+      {name: 'twitter:card', content: 'summary_large_image'},
+      // Dimensions stated up front so scrapers that render a preview before
+      // they have finished downloading the image (Facebook's first pass,
+      // LinkedIn, iMessage) lay out the card instead of dropping it.
+      {property: 'og:image:width', content: '1200'},
+      {property: 'og:image:height', content: '630'},
+      {property: 'og:image:type', content: 'image/png'},
+      {property: 'og:image:alt', content: 'Carbon Voice Help & Support — everything you need to know.'},
+      {name: 'twitter:image:alt', content: 'Carbon Voice Help & Support — everything you need to know.'},
+      // The brand mark, distinct from og:image above: og:image is the 1200x630
+      // card a link unfurls into, this is the square logo that identifies the
+      // publisher. Not part of the Open Graph spec — the unfurlers that matter
+      // read og:image — but brand-detection and answer-engine crawlers do look
+      // for it, and it restates in plain metadata what the Organization JSON-LD
+      // already says for anything that will not parse JSON-LD. Raster on
+      // purpose: those simpler consumers tend not to rasterize an SVG.
+      {property: 'og:logo', content: `${SITE_URL}/img/logo-512.png`},
     ],
     colorMode: {
       defaultMode: 'light',

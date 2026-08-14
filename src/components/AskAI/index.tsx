@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {useLocation} from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {Collapsible, useCollapsible} from '@docusaurus/theme-common';
 import clsx from 'clsx';
 
 import ClaudeIcon from './icons/claude.svg';
@@ -19,6 +20,12 @@ import PerplexityIcon from './icons/perplexity.svg';
  * model remembers about Carbon Voice.
  *
  * Nothing is sent anywhere until the reader picks an assistant.
+ *
+ * Two renderings, picked by the `mobile` prop the theme passes: a click-to-open
+ * dropdown in the desktop navbar, and a collapsible section in the mobile
+ * sidebar. Both are required. Below 996px the navbar collapses to a hamburger
+ * and Infima hides every `.navbar__item`, so the desktop markup is not merely
+ * cramped on a phone — it is `display: none`, in the drawer as well as the bar.
  */
 
 type Assistant = {
@@ -76,8 +83,13 @@ function SparkleIcon(): React.JSX.Element {
   );
 }
 
-export default function AskAI(): React.JSX.Element {
+function useEncodedPrompt(): string {
   const {siteConfig} = useDocusaurusContext();
+  return encodeURIComponent(buildPrompt(siteConfig.url));
+}
+
+function AskAIDesktop(): React.JSX.Element {
+  const encodedPrompt = useEncodedPrompt();
   const {pathname} = useLocation();
   const [open, setOpen] = useState(false);
   const container = useRef<HTMLDivElement>(null);
@@ -110,8 +122,6 @@ export default function AskAI(): React.JSX.Element {
 
   // Close when navigating, so the menu does not linger over the next page.
   useEffect(close, [pathname, close]);
-
-  const encodedPrompt = encodeURIComponent(buildPrompt(siteConfig.url));
 
   return (
     <div
@@ -156,4 +166,78 @@ export default function AskAI(): React.JSX.Element {
       </ul>
     </div>
   );
+}
+
+/**
+ * The mobile sidebar rendering: a collapsible section, built from the same
+ * `menu__*` classes and `Collapsible` the theme uses for its own dropdown items
+ * and sidebar categories, so it behaves like every other row in the drawer.
+ *
+ * `onClick` is supplied by the theme's mobile primary menu and closes the
+ * drawer. Assistant links open in a new tab, so without it the reader comes
+ * back to a help center still covered by an open sidebar.
+ */
+function AskAIMobile({onClick}: {onClick?: () => void}): React.JSX.Element {
+  const encodedPrompt = useEncodedPrompt();
+  // Always starts closed: this is an action rather than a place, so it never
+  // holds the current page the way a nav category can.
+  const {collapsed, toggleCollapsed} = useCollapsible({initialState: true});
+
+  return (
+    <li
+      className={clsx('menu__list-item', {
+        'menu__list-item--collapsed': collapsed,
+      })}>
+      <button
+        type="button"
+        aria-expanded={!collapsed}
+        className="clean-btn menu__link menu__link--sublist menu__link--sublist-caret askAI__mobileToggle"
+        onClick={toggleCollapsed}>
+        <SparkleIcon />
+        {/* The label takes the slack so the caret lands on the right edge, the
+            way the sidebar's own categories do. It cannot be left to the
+            caret's `margin-left: auto`, which the theme overrides globally
+            from DocSidebarItem/Category/styles.module.css. */}
+        <span className="askAI__mobileLabel">Ask AI</span>
+      </button>
+      <Collapsible lazy as="ul" className="menu__list" collapsed={collapsed}>
+        <li className="askAI__intro askAI__intro--mobile">
+          Ask a question about these docs in:
+        </li>
+        {ASSISTANTS.map((assistant) => (
+          <li className="menu__list-item" key={assistant.name}>
+            <a
+              className="menu__link askAI__link"
+              href={assistant.href(encodedPrompt)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onClick}>
+              <assistant.Icon className="askAI__vendorIcon" aria-hidden="true" />
+              {assistant.name}
+            </a>
+          </li>
+        ))}
+      </Collapsible>
+    </li>
+  );
+}
+
+type AskAIProps = {
+  /** Set by the theme when rendering into the mobile sidebar. */
+  readonly mobile?: boolean;
+  /** Supplied by the mobile sidebar to close the drawer. */
+  readonly onClick?: () => void;
+  /**
+   * Comes from the item's `position` in docusaurus.config. Destructured and
+   * dropped rather than ignored, so it cannot reach the DOM as an attribute.
+   */
+  readonly position?: string;
+};
+
+export default function AskAI({
+  mobile = false,
+  onClick,
+  position: _position,
+}: AskAIProps): React.JSX.Element {
+  return mobile ? <AskAIMobile onClick={onClick} /> : <AskAIDesktop />;
 }

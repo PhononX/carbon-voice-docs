@@ -166,9 +166,13 @@ carbon-voice-docs/
 ├── static/                   copied verbatim to the site root
 │   ├── robots.txt
 │   ├── CNAME                 custom domain for GitHub Pages
-│   └── img/                  logo marks, social card, screenshots
+│   ├── favicon.ico           tab icon, 16/32/48 (Safari and older clients)
+│   ├── apple-touch-icon.png  180x180, for iOS home-screen bookmarks
+│   └── img/                  logo marks, favicon, social card, screenshots
 ├── scripts/
-│   ├── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
+│   ├── generate-llms-txt.mjs generates the agent-facing files from docs/:
+│   │                         llms.txt, llms-full.txt, llms/<section>.txt,
+│   │                         and a .md twin per page (all gitignored)
 │   └── fetch-video-playlists.mjs  refreshes the strips in docs/videos.md
 ├── .github/workflows/        build (PRs) and deploy (main)
 ├── docusaurus.config.ts
@@ -184,14 +188,19 @@ decisions behind that:
 | --- | --- |
 | Public repository of plain Markdown | Agents can fetch raw source without rendering or scraping HTML. |
 | CommonMark rather than MDX | Content stays parseable by any Markdown tool. |
-| `llms.txt` | A short index of every page with its description, following the [llms.txt convention](https://llmstxt.org/). Points agents at the important sections and states that this is canonical. |
-| `llms-full.txt` | The entire documentation in one file, for agents that would rather make one request than fifty. |
-| Both generated, never hand-maintained | `scripts/generate-llms-txt.mjs` builds them from `docs/` at build time, so they cannot drift. They are gitignored for that reason. |
+| `llms.txt` | A short index of every page with its description, following the [llms.txt convention](https://llmstxt.org/). Points agents at the important sections, lists the section bundles with their sizes, and states that this is canonical. |
+| Per-page Markdown | Every page is served as Markdown at its own URL plus `.md` — `/workspaces/okta-scim.md`. An agent that has a link never has to fetch more than the one page it wants. |
+| Section bundles | `/llms/<section>.txt`, one per sidebar section, 3–41 KB each. The middle granularity: "read everything about Workspaces" in one request. |
+| `llms-full.txt` | The entire documentation in one file, for agents that would rather make one request than fifty. Around 200 KB, which is more than some fetch tools return in one go — so its header names the smaller files, and a truncated read has somewhere to go. |
+| All generated, never hand-maintained | `scripts/generate-llms-txt.mjs` builds all four from `docs/` at build time, so they cannot drift. They are gitignored for that reason. `build.yml` asserts that every page listed in `llms.txt` has a Markdown twin. |
+| Absolute links in generated output | The docs use relative links like `(catch-up-with-ai.md)`, which resolve against the file's own directory. That is meaningless in `llms-full.txt` and wrong in a per-page twin, where the depth shifts, so the generator rewrites them to absolute site URLs. |
 | `sitemap.xml` | Generated for every page. |
 | `robots.txt` | Allows all crawlers, points at the sitemap, names the machine-readable entry points. |
 | Canonical URLs | Every page emits `<link rel="canonical">`, so copies point back here. |
 | Structured data | Every page carries `Organization` and `WebSite` JSON-LD (`headTags` in the config), and the theme emits `BreadcrumbList` JSON-LD per page. Search and answer engines use these to attribute the content. |
-| Social card | `themeConfig.image` sets a default Open Graph / Twitter card, so shared links unfurl with a branded preview. |
+| Social card | `themeConfig.image` sets a default Open Graph / Twitter card, so shared links unfurl with a branded preview. It is declared `summary_large_image` with its dimensions stated, so unfurlers render the full 1200x630 artwork rather than a square crop. Any page can override it with an `image` frontmatter field. |
+| Site icons | `favicon.ico` for Safari and clients that fetch the conventional path, `img/favicon.svg` for browsers that prefer a vector, and `apple-touch-icon.png` for iOS bookmarks. All three carry the same mark as `img/logo.svg`. |
+| Brand mark in metadata | `og:logo` points at `img/logo-512.png`, a raster copy of the mark. It is not an Open Graph standard property and unfurlers ignore it, but brand-detection and answer-engine crawlers read it, and it restates the publisher logo from the `Organization` JSON-LD for anything that will not parse JSON-LD. |
 | Descriptive frontmatter | One `description` feeds the meta description, Open Graph tags, and `llms.txt`. |
 | Semantic filenames | `/ai/ai-summaries` is legible to a model and stable to link to. |
 
