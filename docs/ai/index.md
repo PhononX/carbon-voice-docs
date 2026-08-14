@@ -13,6 +13,7 @@ summary, as bullet points, or as a first draft of whatever you needed to write.
 - [Catch up with AI](catch-up-with-ai.md)
 - [Auto bulleted summaries](auto-bulleted-summaries.md)
 - [Transform voice memos and messages with AI](transform-with-ai-actions.md)
+- [Create your own AI prompts](custom-prompts.md)
 
 ## Related
 

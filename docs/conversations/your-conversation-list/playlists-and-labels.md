@@ -17,6 +17,13 @@ apply.
 
 ![Labels](/img/conversations/labels.webp)
 
+## Labels as a trigger
+
+Because press and hold sets a label in a couple of taps, labelling doubles as a manual
+trigger you control: label a message **Bug Report** and a Jira issue can be created, label
+it **CRM Update** and a note lands in Salesforce. See
+[Zapier](../../integrations/zapier.md).
+
 ## Manage labels and playlists
 
 To control which labels create playlists, or to add new ones, go to **Notebook →

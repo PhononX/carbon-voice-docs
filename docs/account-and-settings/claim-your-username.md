@@ -24,6 +24,15 @@ Claiming a username makes you easier to find in Carbon Voice, and gives you a
 - **A personal CarbonLink** — a link others can use to start a voice conversation with
   you, leave messages asynchronously, and reach you without scheduling a meeting.
 
+## How someone finds you with it
+
+1. They tap the **+** in Carbon Voice.
+2. They type your username, like `@travis`.
+
+That's the whole flow, which is what makes it worth claiming one. They can also still reach
+you by your registered email or phone number, by your CarbonLink URL like `cv.chat/travis`,
+or by replying to a voice memo you shared.
+
 ## Related
 
 - [Get your personal CarbonLink](personal-carbonlink.md)

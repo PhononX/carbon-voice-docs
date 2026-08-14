@@ -16,3 +16,4 @@ the most recent on top.
   filtering, and labeling without opening a conversation.
 - **[Access & sharing](access-and-sharing/index.md)** — who can join, sharing links,
   and history settings.
+- **[Reminders](reminders.md)** — a scheduled prompt that replaces a standing meeting.

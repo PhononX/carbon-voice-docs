@@ -14,23 +14,32 @@ Ask "what did we decide about pricing?" and it goes looking.
 
 ![AI Chat answering a question, with the conversation it's drawing on shown at the top](/img/whats-new/ai-chat.webp)
 
-## Two places to use it
+## Where you open it sets what it can see
 
-**Across everything.** Tap the AI button in the bottom navigation bar to open a chat scoped
-to all your conversations and voice memos. On desktop, it's in the sidebar.
+AI Chat answers from a scope, and the scope is decided by where you started the chat.
 
-**Inside one conversation.** Open a conversation, tap the **summarize icon** at the top
-right, and choose **AI Chat**. The answers are then drawn from that conversation only.
-On desktop, use the dedicated **AI Chats** button in the conversation's app bar.
+| Started from | Answers from | Where the history lives |
+|---|---|---|
+| **Home** | Everything in the workspace | Global AI Chat |
+| **A conversation** | That conversation only | With that conversation |
+| **A voice memo** | That memo only | Global AI Chat |
+| **A multi-select** | Only the messages you picked | Global AI Chat |
 
-Scope it to a conversation when you know where the answer lives; use the global chat when
-you don't.
+So scope it tightly when you know where the answer lives, and start from Home when you
+don't. To ask about a particular run of messages, press and hold one, tap **Select**, choose
+the rest, and open AI Chat from there.
+
+On mobile, open a conversation's chat from the **summarize icon** at the top right. On
+desktop, use the dedicated **AI Chats** button in the app bar.
+
+> **A chat belongs to one workspace**, fixed when it starts. Start a new chat to ask about a
+> different workspace.
 
 ## Choosing a workspace
 
 The global chat works within one workspace at a time, so answers don't mix your personal
 recordings with a client's. Pick the workspace at the top of the chat; your choice is
-remembered.
+remembered for new chats.
 
 ## Saved prompts
 

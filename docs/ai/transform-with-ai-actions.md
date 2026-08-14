@@ -39,6 +39,28 @@ summary with action items, or anything else:
 
 ![The AI Actions picker showing the available prompts](/img/whats-new/popular-ai-actions.webp)
 
+## The ones people use most
+
+There are more than 40 built-in actions. These are the ones that get used the most, and
+what each actually does:
+
+| Action | Good for | What it does |
+|---|---|---|
+| **Bulleted Summary** | A long message that arrived while you were busy | Pulls out the points and drops the filler |
+| **Catch-up** | Seeing what you missed in an active conversation | Summarizes across several messages, with takeaways and action items |
+| **Improve Structure** | A rambling brainstorm | Regroups related ideas so it flows |
+| **Clean-up Transcript** | Something you'll paste elsewhere | Fixes grammar and removes filler, keeping your phrasing |
+| **To-do List** | Follow-ups captured on the move | Finds the actionable parts and orders them |
+| **Presentation Outline** | Talking through a deck | Slide titles, key points, and suggested visuals |
+| **Professional Email** | A rough sense of what to say | A clear, sendable draft |
+| **LinkedIn Post** | An insight that arrived away from your desk | A structured post with hashtag suggestions |
+| **Brainstorm More Ideas** | Being stuck | Reads the discussion and suggests directions to build on |
+
+That last one is worth singling out: it generates new ideas rather than reformatting the
+ones you had.
+
+If none of them fits, [write your own prompt](custom-prompts.md).
+
 ## Finding past results
 
 To see previous AI Magic results across a conversation, open **AI Chat** from the

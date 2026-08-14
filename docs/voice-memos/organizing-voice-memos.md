@@ -8,6 +8,11 @@ sidebar_position: 1
 
 Labels and folders help you find a memo again without scrolling through a long list.
 
+## Names
+
+AI gives each memo a title automatically, so a long list stays scannable. Very short memos
+don't get one. Tap a title to rename it yourself.
+
 ## Labels
 
 Labels keep track of important memos, and labeled memos show up in your feed for quick
@@ -21,6 +26,8 @@ AI actions also appear in your list, so you can see which AI tools you've used a
 your memos.
 
 ## Folders
+
+> Folders need a paid plan.
 
 Folders sort memos by workspace.
 

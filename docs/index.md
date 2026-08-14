@@ -39,6 +39,7 @@ Prefer to watch? Start with the [video guides](videos.md).
   list, and controlling access.
 - **[Messages](messages/index.md)** — recording, sending, listening, and transcripts.
 - **[Voice Memos](voice-memos/index.md)** — your own recordings, organized and shared.
+- **[Search](searching.md)** — find a message by what was said in it.
 - **[Meeting Notes](meeting-notes/index.md)** — skip the meeting, discuss it async, and
   let AI write it up.
 - **[Voice & Language](voice-and-language/index.md)** — how your messages sound, and

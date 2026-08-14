@@ -33,6 +33,11 @@ automatically. You can also type one in by hand.
 - For an existing conversation, go to **Conversation Settings** and tap **Media, Links
   and Docs**.
 
+## On the web
+
+The web app supports attachments too. You can attach and send images, video and files such
+as a PDF, and download anything someone else attached.
+
 ## Related
 
 - [Message information](message-information.md)

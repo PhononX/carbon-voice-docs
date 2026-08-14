@@ -16,6 +16,11 @@ on.
 - [Linked Emails & Phone Numbers](directory-services.md)
 - [Enabling phone contacts](enabling-phone-contacts.md)
 
+## How it looks and sounds
+
+- [Appearance](appearance.md)
+- [Recording & playback settings](recording-and-playback.md)
+
 ## Notifications
 
 - [Manage notification settings](notification-settings.md)

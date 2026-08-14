@@ -15,6 +15,12 @@ To react to a message with an emoji:
 
 ![The list of people who reacted to a message](/img/whats-new/who-reacted.webp)
 
+You aren't limited to a fixed set: **more than 1,400 emoji** are available.
+
+## Seeing who reacted
+
+Press and hold a reaction to see everyone who used it. On desktop, right-click it.
+
 ## Related
 
 - [Message information](message-information.md)

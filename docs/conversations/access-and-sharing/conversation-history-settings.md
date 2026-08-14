@@ -34,6 +34,20 @@ To turn AI summaries off across all conversations:
 
 📺 [Watch: turning off AI summaries](https://www.youtube.com/watch?v=NPeqJzK8vCU)
 
+## What tapping a message does
+
+It used to be easy to start playback by accident. You can now choose what tapping a message
+card does, under **Message Tap Action**:
+
+- **Play Message** — tapping a text or audio message plays it.
+- **Open Message** — tapping opens message details instead. Text messages can be played from
+  inside, and **Play All** still catches you up on everything unread.
+- **Do Nothing** — tapping the body does nothing. Swipe right to left to open the message,
+  or use the play button.
+
+Audio messages carry a **play button in the lower left** whichever option you choose, so
+there's always somewhere deliberate to tap.
+
 ## Clearing unread messages automatically
 
 You can decide how and when unread messages clear from your conversation feed, either

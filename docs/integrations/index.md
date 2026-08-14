@@ -15,6 +15,7 @@ When something happens in Carbon Voice, make something happen elsewhere.
 
 - [Slack](slack.md) — send, listen and reply from Slack, and start async meetings and
   retros with a slash command.
+- [Google Workspace](google-workspace.md) — import into Sheets, build a deck in Slides.
 - [Zapier](zapier.md) — thousands of apps, no code.
 - [Automate workflows](automate-workflows.md) — the patterns people build, and what
   triggers them.
