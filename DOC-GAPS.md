@@ -6,9 +6,9 @@ Flutter app as it stands on `develop`.
 > **Status.** Section 1 has been applied, and the structure in section 4 has been built:
 > Meeting Notes, Voice & Language, Quick Capture, AI Chat, AI Agents and AI Assistants are
 > live sections, Integrations is retiered, and there is a desktop page. Section 2's
-> remaining coverage gaps are still open. Note that `main` reorganized several pages after
-> this audit was written, so some file paths below no longer resolve even where the finding
-> still holds.
+> remaining coverage gaps are still open, as is all of section 5. Note that `main`
+> reorganized several pages after this audit was written, so some file paths below no longer
+> resolve even where the finding still holds.
 
 Two categories, as asked:
 
@@ -645,7 +645,130 @@ first landing page from search.
 
 ---
 
-## 5. Suggested priority
+## 5. What the What's New archive knows that the docs don't
+
+All 41 announcements read end to end. They are the best source in the repository for how a
+feature actually works, because they were written to explain a thing to someone who had
+never seen it, and they carry the screenshots to match.
+
+Roughly 35 things are explained there and nowhere in the help center. Grouped by where they
+would go.
+
+### 5.1 A whole undocumented family: the app integrations
+
+Nothing in `integrations/` mentions any of these.
+
+| Feature | What the announcement says | Post |
+|---|---|---|
+| **Slack app** | Notifications for new messages; preview, read, reply and adjust permissions on a Carbon Voice message inside Slack; `/cv` to start discussions and async meetings from Slack; auto-post messages and AI summaries into channels | 2024-11-07 |
+| **Google Sheets add-on** | Import memos and messages into a sheet, by conversation and date range, up to 30 days | 2024-11-07 |
+| **Google Slides add-on** | Turn a Presentation Outline AI result into a draft deck with visual suggestions | 2024-12-02 |
+| **Google Apps for Gmail and Docs** | Listed as shipped | 2025-01-27 |
+| **Embedding a voice message** | Embed a memo and its transcript on a website, blog or Notion page; embed code from message details | 2026-07-31 |
+
+### 5.2 Zapier is documented, but not its actual surface
+
+`zapier.md` describes what Zapier is and links out for the trigger list. The announcements
+name the triggers: **a new message in a conversation**, **a new AI result**, **a new label
+on a message**, and **a new voice memo** — the last optionally **filtered by folder**, so a
+memo recorded into "Email drafts" runs a different workflow from one recorded into "Blog
+post ideas" (2025-02-21). A **custom AI prompt** can also be a trigger, by selecting
+**User** as the type (2025-10-01).
+
+### 5.3 AI Actions have a catalogue, and you can write your own
+
+- **40+ built-in prompts**, and the seven most-used are documented in detail in 2025-01-16:
+  Bulleted Summary, the summary group (Catch-up, Improve Structure, Clean-up Transcript),
+  To-do List, Presentation Outline, Professional Email, LinkedIn Post, and Brainstorm More
+  Ideas — each with what it's for and what it actually does to your text.
+- **Custom prompts** (2025-10-01): tap the AI Action icon, tap **+** on the bottom row,
+  give it a title and a prompt. It then works on any message or selection, and can drive a
+  Zapier workflow.
+
+`transform-with-ai-actions.md` explains the mechanism but names none of the prompts.
+
+### 5.4 AI Chat's scope rules are richer than documented
+
+The new AI Chat page covers global and per-conversation. 2025-10-27 documents four scopes,
+and where each one's history lives:
+
+- **From a conversation** — that conversation only; its history stays with it.
+- **From a voice memo** — that memo only; history goes to global AI Chat.
+- **From a multi-select** — only the messages you picked.
+- **From Home** — everything in the workspace.
+
+It also states the constraint the page should carry: **a chat is fixed to one workspace when
+it starts**.
+
+### 5.5 Messages and conversations
+
+| Gap | Detail | Post |
+|---|---|---|
+| **Message Tap Action** | Choose what tapping a card does: **Play Message**, **Open Message**, or **Do Nothing**. Settings → Conversation History. Plus the play button in the lower left of audio cards | 2025-03-11 |
+| **Editing text messages** | Press and hold → **Edit Text Message**. The edit updates both the transcript **and the audio playback** | 2024-03-13 |
+| **Convert a DM into a named conversation** | Conversation Settings → Members → **Convert DM into Named Conversation**. Preserves history for people who join later | 2024-11-08 |
+| **Navigating a busy conversation** | A smart navigation arrow jumps to the oldest unread message and back to the newest; arrows at the top step through one at a time | 2024-02-07 |
+| **Quick labels** | Press and hold any message to set a label, which also fires Zapier workflows | 2025-06-25 |
+| **Search syntax** | Space-separated words for several terms, quotes for an exact phrase. Search inside one conversation via its name, then the search icon | 2025-06-25 |
+| **Threads** | Swipe left to right on a message to reply as a thread | 2024-05-24 |
+| **Marking conversations read in bulk** | Clear the unread list without opening each conversation | 2026-07-31 |
+| **Tagging** | Tagging a person sends an extra push and inbox notification. **Some agents must be tagged in a group conversation before they engage** | 2026-06-04 |
+
+### 5.6 Voice memos
+
+- **AI names them automatically**, and you can tap a title to rename. Very short memos get
+  no title (2024-11-08).
+- **The ready screen** after recording offers one-tap send, copy transcript, and AI
+  transform (2025-03-07).
+- **A shareable link is copied to your clipboard automatically**, with customizable text
+  (2026-07-31).
+- **Folders are a paid-plan feature** — `organizing-voice-memos.md` documents folders
+  without saying so (2025-03-07).
+
+### 5.7 Recording and playback settings
+
+Neither of these is documented, and both live in settings the help center never describes.
+
+- **Raise your phone to your ear** to play unread messages privately, pausing when you lower
+  it. Settings → Recording & Playback (2024-11-08).
+- **Press and hold to record**, and a preference to turn off single-tap recording if it
+  causes accidental recordings. Settings → Recording (2024-06-07).
+
+### 5.8 Everything else
+
+- **Find people by username** — someone taps **+**, types `@yourname`, done (2025-05-23).
+- **Dark mode** — follows the phone, or set it yourself (2026-07-31).
+- **Reactions** — over 1,400 emoji, and press and hold a reaction (right-click on desktop)
+  to see who reacted (2026-07-31).
+- **Reminders** — a scheduled message posted into a conversation on a cadence, with six
+  worked templates for stand-ups, 1:1s, kickoffs, week reviews and client check-ins
+  (2026-03-24).
+- **Web attachments** — images, video and files on the web app, including download
+  (2025-12-23).
+- **The async podcast** — a genuinely novel use of the product, with two published examples
+  (2025-12-15). A use-case page, not a feature page.
+- **Getting help** — Profile Menu → Help → **Support**, and → **Feedback**. Referenced in
+  several posts; the docs only ever link to an external support URL.
+
+### 5.9 Use this archive as the source when writing these up
+
+Two things make it better than working from the code, which is how the sections so far were
+written:
+
+- **It explains why a feature exists**, usually from the feedback that prompted it. The
+  read/unread line exists because "messages didn't seem to clear notifications
+  consistently"; the Message Tap Action exists because "it was too easy to start playback by
+  accident". That framing is what a help page needs and what source code never contains.
+- **It carries matching screenshots**, already in the repository.
+
+Two cautions. Announcements describe the app **on the day they were published**, so an older
+post may show a superseded flow — the 2024 posts still say "Play Notified" and put the AI
+button in the top right. And a few images are captioned wrongly, so check the picture
+against the page before placing it.
+
+---
+
+## 6. Suggested priority
 
 1. **Fix the wrong instructions first** — 1.1 (profile menu, 8 pages), 1.5 (AI controls,
    4 pages), 1.7 (Directory Services), 1.9 (pre-recorded messages). These actively misdirect.
@@ -658,4 +781,8 @@ first landing page from search.
    **credentials page** (2.6), which a shipped integration already depends on (4.5). Then
    Desktop (§3), Agents (2.1), AI Chat (2.3), Quick capture (4.4), Obsidian sync with its
    routing page (4.6), and the Voice & language consolidation (4.2).
-5. **Backfill** — §2.7 onwards, and restart `whats-new/` from 2025-08.
+5. **Backfill from the announcements** — §5 lists roughly 35 features explained in
+   `whats-new/` and nowhere in the help center, with the post to source each from. The
+   integrations family (§5.1) is the largest single hole: Slack, Google Sheets, Google
+   Slides and embedding have no coverage at all.
+6. **Backfill the rest** — §2.7 onwards, and restart `whats-new/` from 2026-07.
