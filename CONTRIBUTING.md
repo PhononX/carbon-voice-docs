@@ -166,7 +166,9 @@ carbon-voice-docs/
 ├── static/                   copied verbatim to the site root
 │   ├── robots.txt
 │   ├── CNAME                 custom domain for GitHub Pages
-│   └── img/                  logo marks, social card, screenshots
+│   ├── favicon.ico           tab icon, 16/32/48 (Safari and older clients)
+│   ├── apple-touch-icon.png  180x180, for iOS home-screen bookmarks
+│   └── img/                  logo marks, favicon, social card, screenshots
 ├── scripts/
 │   ├── generate-llms-txt.mjs generates llms.txt and llms-full.txt from docs/
 │   └── fetch-video-playlists.mjs  refreshes the strips in docs/videos.md
@@ -191,7 +193,8 @@ decisions behind that:
 | `robots.txt` | Allows all crawlers, points at the sitemap, names the machine-readable entry points. |
 | Canonical URLs | Every page emits `<link rel="canonical">`, so copies point back here. |
 | Structured data | Every page carries `Organization` and `WebSite` JSON-LD (`headTags` in the config), and the theme emits `BreadcrumbList` JSON-LD per page. Search and answer engines use these to attribute the content. |
-| Social card | `themeConfig.image` sets a default Open Graph / Twitter card, so shared links unfurl with a branded preview. |
+| Social card | `themeConfig.image` sets a default Open Graph / Twitter card, so shared links unfurl with a branded preview. It is declared `summary_large_image` with its dimensions stated, so unfurlers render the full 1200x630 artwork rather than a square crop. Any page can override it with an `image` frontmatter field. |
+| Site icons | `favicon.ico` for Safari and clients that fetch the conventional path, `img/favicon.svg` for browsers that prefer a vector, and `apple-touch-icon.png` for iOS bookmarks. All three carry the same mark as `img/logo.svg`. |
 | Descriptive frontmatter | One `description` feeds the meta description, Open Graph tags, and `llms.txt`. |
 | Semantic filenames | `/ai/ai-summaries` is legible to a model and stable to link to. |
 
