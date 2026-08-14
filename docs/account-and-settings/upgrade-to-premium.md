@@ -17,7 +17,8 @@ pool of AI credits.
 
 ### In the app
 
-1. Go to the profile menu in the lower right.
+1. Open the **Profile Menu** — your profile picture, top left of Home on mobile or bottom
+   of the navigation sidebar on desktop.
 2. Tap the plan at the top — it will say **Starter** or **Standard Trial**.
 3. In the plan details, tap the plan again to reach the upgrade options.
 

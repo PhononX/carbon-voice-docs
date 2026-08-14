@@ -21,7 +21,7 @@ translated when needed, and everyone follows along in the language they prefer.
 ## Set your languages
 
 1. Go to **Profile Menu → Settings**.
-2. Tap **Global Voice** and scroll down to languages.
+2. Tap **Global Voice - TTS & Translation** and scroll down to languages.
 
 Anyone can add their languages, whether or not they have Carbon Voice Translate
 enabled.

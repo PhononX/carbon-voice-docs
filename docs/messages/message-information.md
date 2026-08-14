@@ -34,8 +34,9 @@ playback, and copy or share the text.
 
 ![Transcript actions](/img/messages/transcript-actions.webp)
 
-**Message actions** — download the message, save it as a pre-recorded message, or
-delete it. The last two are available on your own messages only.
+**Message actions** — download the message, save it as a
+[voice memo](recording-and-sending/pre-recorded-messages.md) to reuse, or delete it. The
+last two are available on your own messages only.
 
 ## Related
 

@@ -6,8 +6,9 @@ sidebar_position: 3
 
 # Manage notification settings
 
-1. Tap the **Profile Menu** at the bottom of the Home screen.
-2. Go to **Settings → Notifications**.
+1. Tap your **profile picture** to open the Profile Menu — top left of Home on mobile,
+   bottom of the navigation sidebar on desktop.
+2. Go to **Settings → Notification Settings**.
 3. Choose how you want to be notified in each situation:
    - General notifications
    - Message and conversation notifications
@@ -18,4 +19,4 @@ sidebar_position: 3
 
 - [Listen and reply from push notifications (iOS)](../messages/playback/push-notifications-ios.md)
   — including what to check if notifications aren't arriving.
-- [Clearing and setting notified messages](../messages/playback/clearing-notified-messages.md)
+- [Marking messages read and unread](../messages/playback/clearing-notified-messages.md)

@@ -19,8 +19,8 @@ can hear you speaking their language in your own voice.
 
 ## Setting it up
 
-Go to **Settings** and select **Global Voice** or **Text to Speech**, then choose from
-the drop-down.
+Open your **Profile Menu**, go to **Settings → Global Voice - TTS & Translation**, then
+choose from the drop-down under **Text-to-Speech**.
 
 ## Related
 

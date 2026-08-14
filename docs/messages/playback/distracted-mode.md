@@ -12,8 +12,8 @@ phone.
 
 ## Getting into distracted mode
 
-- **From Home.** Tap **Play Notified** on any conversation card to catch up in
-  distracted mode.
+- **From Home.** Tap the play area on any conversation card to catch up in distracted
+  mode. It shows the conversation's unread count.
 - **Inside a conversation.** Tap the distracted mode icon at the top.
 
 ## While you're in it

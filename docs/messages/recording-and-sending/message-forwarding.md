@@ -26,12 +26,11 @@ shown so they can jump to the original message and see its context.
 ## Sending it as a new message instead
 
 You can also send one of your own messages somewhere else as a brand new message,
-without saving it as a
-[pre-recorded message](pre-recorded-messages.md) first. When forwarding your own
-message, choose **Use my audio as new message instead**. It's sent with the original
+without saving it as a [saved voice memo](pre-recorded-messages.md) first. When forwarding
+your own message, choose **Use my audio as new message instead**. It's sent with the original
 audio and text, but without a link back to where it was first sent.
 
-Pre-recorded messages are still the better choice for something you send often.
+A saved voice memo is still the better choice for something you send often.
 
 ![Send as new message](/img/messages/send-as-new-message.webp)
 
@@ -42,4 +41,4 @@ know how your messages are being shared.
 
 ## Related
 
-- [Pre-recorded messages](pre-recorded-messages.md)
+- [Saved voice memos](pre-recorded-messages.md)

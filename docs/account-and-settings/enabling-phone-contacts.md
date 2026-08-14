@@ -17,4 +17,4 @@ You can connect with your existing contacts who are already on Carbon Voice.
 ## Related
 
 - [Start a conversation with a phone number or email](../conversations/creating/start-with-a-phone-number-or-email.md)
-- [Directory Services — manage your contact methods](directory-services.md)
+- [Linked Emails & Phone Numbers](directory-services.md)

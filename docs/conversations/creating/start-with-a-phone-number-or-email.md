@@ -25,3 +25,5 @@ number — even if they don't use Carbon Voice yet.
 - [Types of conversations](types-of-conversations.md) — the difference between direct
   messages and named conversations.
 - [Account & Settings](../../account-and-settings/index.md) — enabling phone contacts.
+- [Linked Emails & Phone Numbers](../../account-and-settings/directory-services.md) — so
+  people can reach you at any of your addresses or numbers.

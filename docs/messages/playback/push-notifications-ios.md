@@ -33,7 +33,7 @@ set to show them.
 
 ### In Carbon Voice
 
-1. Go to **Settings** in the top-left menu.
+1. Open your **Profile Menu** and go to **Settings**.
 2. Tap **Notification Settings**.
 3. Make sure **Push Notifications** is on.
 
@@ -53,4 +53,4 @@ Apple's own guidance on notification settings is
 
 ## Related
 
-- [Notified messages versus unheard messages](notified-versus-unheard.md)
+- [Unread messages versus unheard messages](notified-versus-unheard.md)

@@ -55,4 +55,4 @@ both tells you who is caught up, and how.
 
 ## Related
 
-- [Notified messages versus unheard messages](playback/notified-versus-unheard.md)
+- [Unread messages versus unheard messages](playback/notified-versus-unheard.md)

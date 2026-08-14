@@ -19,12 +19,13 @@ If the conversation still doesn't appear, the message was most likely sent to an
 address or phone number that isn't registered to your Carbon Voice account.
 
 1. From inside the app, go to **Home**.
-2. Tap your **profile picture**.
-3. Go to **Settings → Directory Services**.
+2. Tap your **profile picture** to open the Profile Menu — top left on mobile, bottom of
+   the navigation sidebar on desktop.
+3. Tap **Linked Emails & Phone Numbers**.
 4. Add the email addresses or phone numbers people might use to reach you.
 
 ![Directory services](/img/troubleshooting/directory-services.webp)
 
 ## Related
 
-- [Directory Services — manage your contact methods](../account-and-settings/directory-services.md)
+- [Linked Emails & Phone Numbers](../account-and-settings/directory-services.md)

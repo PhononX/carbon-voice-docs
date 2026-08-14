@@ -30,7 +30,8 @@ choosing these settings. See
 
 ## For an existing workspace
 
-1. Go to your **Profile Menu** in the bottom-right corner.
+1. Open your **Profile Menu** — your profile picture, top left of Home on mobile or bottom
+   of the navigation sidebar on desktop.
 2. Tap **Spaces**, then the **gear icon** to the right of your workspace.
 3. In Workspace Settings, tap **Admin Controls**.
 4. Select **Workspace Discovery**.

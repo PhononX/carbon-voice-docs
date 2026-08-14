@@ -11,7 +11,7 @@ one automatically, so every message is both audio and text.
 
 - **[Recording & sending](recording-and-sending/index.md)** — making a message and
   getting it where it needs to go.
-- **[Listening](playback/index.md)** — playback, notified messages, and catching up.
+- **[Listening](playback/index.md)** — playback, unread messages, and catching up.
 - **[Transcripts](transcripts/index.md)** — reading and copying what was said.
 
 ## On any message

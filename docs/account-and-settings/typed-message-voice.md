@@ -17,8 +17,9 @@ rather than read it. You can personalize how that sounds:
 
 ## Changing the setting
 
-1. Tap your profile menu — your profile picture at the bottom right.
-2. Select **Global Voice**.
+1. Tap your profile picture to open the Profile Menu — top left of Home on mobile, bottom
+   of the navigation sidebar on desktop.
+2. Go to **Settings → Global Voice - TTS & Translation**.
 3. Under **Text-to-Speech**, choose how your typed messages should sound.
 
 Your preference applies to new messages you send after making the change.

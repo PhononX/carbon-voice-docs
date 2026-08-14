@@ -11,7 +11,8 @@ Claiming a username makes you easier to find in Carbon Voice, and gives you a
 
 ## Claiming it
 
-1. **Tap your profile picture** in the bottom navigation bar to open the profile menu.
+1. **Tap your profile picture** to open the Profile Menu — top left of Home on mobile,
+   bottom of the navigation sidebar on desktop.
 2. **Tap "Claim Your Username"** at the top of the menu.
 3. **Choose a username** — something unique and memorable. Once saved, it becomes part
    of your CarbonLink, for example `https://cv.chat/yourusername`.
@@ -26,3 +27,4 @@ Claiming a username makes you easier to find in Carbon Voice, and gives you a
 ## Related
 
 - [Get your personal CarbonLink](personal-carbonlink.md)
+- [Linked Emails & Phone Numbers](directory-services.md)

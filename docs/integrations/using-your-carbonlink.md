@@ -15,7 +15,8 @@ claiming one in the first place.
 
 1. Log into the mobile app, or the web app at
    [carbonvoice.app](https://carbonvoice.app).
-2. Tap your profile icon at the bottom right of Home.
+2. Tap your profile icon — top left of Home on mobile, bottom of the navigation sidebar
+   on desktop.
 3. Tap the **QR code icon** in the top right.
 
 From there you can:

@@ -13,7 +13,7 @@ on.
 
 - [Claim your username](claim-your-username.md)
 - [Get your personal CarbonLink](personal-carbonlink.md)
-- [Directory Services — manage your contact methods](directory-services.md)
+- [Linked Emails & Phone Numbers](directory-services.md)
 - [Enabling phone contacts](enabling-phone-contacts.md)
 
 ## Notifications

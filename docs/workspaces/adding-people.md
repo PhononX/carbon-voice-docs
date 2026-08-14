@@ -8,8 +8,8 @@ sidebar_position: 3
 
 You can add someone directly, or share a link they can use to join.
 
-1. From the Home screen, tap your profile picture in the bottom right corner to open
-   the profile menu.
+1. From the Home screen, tap your profile picture to open the Profile Menu — top left on
+   mobile, bottom of the navigation sidebar on desktop.
 2. Select **Spaces** to see your list of workspaces.
 3. Tap the **gear icon** on the right side of the workspace you want to invite to.
 4. Tap **Add People**.

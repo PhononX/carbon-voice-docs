@@ -39,8 +39,9 @@ summary with action items, or anything else:
 
 ## Finding past results
 
-To see previous AI Magic results across a conversation, tap the **AI Magic icon** in
-the bottom right of the conversation screen for the message AI history.
+To see previous AI Magic results across a conversation, open **AI Chat** from the
+**summarize icon** at the top right. Every AI result you've generated anywhere in the app is
+also collected in **Notebook → AI Outputs**.
 
 ## Related
 

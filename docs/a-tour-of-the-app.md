@@ -14,13 +14,14 @@ listen and reply to your messages and conversations.
 
 ## Home has three main sections
 
-1. **Playlists** — tap to start listening to all of your notified messages, or create a
-   custom playlist to listen the way you want.
+1. **New messages** — a button above your conversation list showing how many unread
+   messages you have. Tap the play button to listen to all of them; tap the button to its
+   right to open them as a playlist first. Custom playlists you create appear here too.
 2. **Quick send** — send messages to your favorite conversations and contacts with a
    single tap.
 3. **Conversations** — sorted by most recent interaction. Conversation cards let you
-   quickly find recent conversations to send a message, listen to notified messages, or
-   open the full conversation.
+   quickly find recent conversations to send a message, listen to unread messages, or open
+   the full conversation.
 
 ## Sending a message from Home
 
@@ -38,7 +39,7 @@ to send a message to — or simply swipe down from the top of the page.
 
 ## Catching up quickly
 
-- **Catch up on unheard messages.** Tap the play button on any conversation card, or
-  inside any conversation.
+- **Catch up on unread messages.** Tap the play button above your conversation list to
+  play everything, or the play area on a single conversation card for just that one.
 - **Catch up with AI.** Swipe right to left on any conversation card to get a summary
   of the unheard messages in that conversation.

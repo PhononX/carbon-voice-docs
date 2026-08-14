@@ -19,7 +19,7 @@ attention.
 
 ## Inside a conversation
 
-1. Open the conversation with notified messages.
+1. Open the conversation with unread messages.
 2. Tap the purple **Play** button in the bottom left corner.
 
 ## What to expect
@@ -32,5 +32,5 @@ you're walking, driving, or moving between meetings.
 
 ## Related
 
-- [Notified messages versus unheard messages](notified-versus-unheard.md)
+- [Unread messages versus unheard messages](notified-versus-unheard.md)
 - [Playback speed](playback-speed.md)

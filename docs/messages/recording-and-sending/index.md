@@ -7,7 +7,7 @@ sidebar_position: 0
 # Recording & sending
 
 - [Record and share](record-and-share.md)
-- [Pre-recorded messages](pre-recorded-messages.md)
+- [Saved voice memos](pre-recorded-messages.md)
 - [Message forwarding](message-forwarding.md)
 - [Personal notes while you listen](personal-notes.md)
 - [Share an audio file to Carbon Voice](share-an-audio-file.md)

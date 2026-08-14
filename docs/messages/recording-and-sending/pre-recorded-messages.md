@@ -1,34 +1,36 @@
 ---
-title: Pre-recorded messages
+title: Saved voice memos
 description: Save messages you send often and reuse them, instead of recording the same thing again.
 sidebar_position: 4
 ---
 
-# Pre-recorded messages
+# Saved voice memos
 
-Pre-recorded messages are messages you've saved for future use — useful for support
-replies, pitches, acknowledgments, and anything else you find yourself saying more than
-once.
+A saved voice memo is a recording you've kept for future use — useful for support replies,
+pitches, acknowledgments, and anything else you find yourself saying more than once.
+
+> These were previously called **pre-recorded messages**.
 
 ## Why use them
 
 - **Respond quickly.** Reply to a thread or send a top-level message instantly.
 - **Stop repeating yourself.** If you keep sending the same response, save it once.
 
-## Create a pre-recorded message
+## Save one
 
-Go to **Profile Menu → Pre-recorded messages** and tap the **"+"** to record a new one.
+Record a voice memo as usual, and it's kept in **Voice Memos** ready to reuse. To save a
+message you've already sent into a conversation, open **Message Info**, scroll down, and
+tap **Save as Voice Memo**.
 
-## Use a pre-recorded message
+## Use one
 
-- **Reply with one.** Press and hold on a message card, then **More → Pre-recorded
-  reply**.
-- **Send a new one.** Go to **Home → Profile Menu → Pre-recorded messages**, select the
-  message, and tap **Send to Conversation**.
-- **Save an existing message.** Open **Message Details**, scroll down, and tap **Save as
-  Pre-recorded**.
+- **Reply with one.** Press and hold on a message card, then **More → Reply with saved
+  voice memo**.
+- **Send a new one.** Open **Voice Memos**, find the memo, and share or send it into a
+  conversation.
 
 ## Related
 
-- [Message forwarding](message-forwarding.md) — for sending one of your messages
-  somewhere else without saving it first.
+- [Voice Memos](../../voice-memos/index.md) — where your saved memos live.
+- [Message forwarding](message-forwarding.md) — for sending one of your messages somewhere
+  else without saving it first.
