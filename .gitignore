@@ -22,3 +22,7 @@ yarn-error.log*
 # Generated agent-discovery files (see scripts/generate-llms-txt.mjs)
 /static/llms.txt
 /static/llms-full.txt
+/static/llms/
+# The per-page Markdown twins, written to mirror each page's route. The canonical
+# Markdown lives in docs/; static/ holds no hand-written .md of its own.
+/static/**/*.md

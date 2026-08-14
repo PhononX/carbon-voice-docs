@@ -697,11 +697,32 @@ h4 {
   padding: 0.25rem 0.5rem 0.5rem;
 }
 
-/* In the mobile navbar the item is stacked into the sidebar menu rather than
-   floated, so the pill would look stranded next to the plain menu links. */
-.navbar-sidebar .askAI__button {
-  border: 0;
-  padding: 0.375rem 0.75rem;
+/* The mobile sidebar rendering (AskAIMobile). It borrows the theme's own
+   `menu__link` styling so the row matches Help and What's New above it; these
+   rules only correct for the toggle being a <button> rather than an <a>, which
+   browsers left-pad, centre and set in their own font. */
+.askAI__mobileToggle {
+  cursor: pointer;
+  font: inherit;
+  gap: 0.5em;
+  text-align: left;
+  width: 100%;
+}
+
+.askAI__mobileLabel {
+  flex: 1;
+}
+
+/* Set in the brand violet, matching the sparkle in the desktop pill. The theme
+   colours the caret separately, via --ifm-menu-link-sublist-icon-filter. */
+.askAI__mobileToggle .askAI__icon {
+  color: var(--ifm-color-primary);
+}
+
+/* The intro line is not a menu row, so it opts out of the row padding the
+   surrounding .menu__list establishes. */
+.askAI__intro--mobile {
+  padding: 0.25rem 0 0.5rem var(--ifm-menu-link-padding-horizontal);
 }
 
 .menu__link--active {
