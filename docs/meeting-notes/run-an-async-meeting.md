@@ -12,7 +12,8 @@ itself when the time is up.
 
 ## Create one
 
-1. Tap the **"+"** on Home and choose **Async Meeting**. On desktop, press **⌘N**.
+1. Tap the **"+"** on Home and choose **Async Meeting**. On desktop, press **⌘N**. From
+   Slack, type `/cv meeting` — see [Slack](../integrations/slack.md).
 2. **Name the meeting** and choose the workspace it belongs to.
 3. **Add people** — by name, email address, or phone number.
 4. **Set the reply deadline.** Choose from **Urgent**, **Later today**, **Tomorrow

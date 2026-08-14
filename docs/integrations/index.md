@@ -13,6 +13,8 @@ to build.
 
 When something happens in Carbon Voice, make something happen elsewhere.
 
+- [Slack](slack.md) — send, listen and reply from Slack, and start async meetings and
+  retros with a slash command.
 - [Zapier](zapier.md) — thousands of apps, no code.
 - [Automate workflows](automate-workflows.md) — the patterns people build, and what
   triggers them.
