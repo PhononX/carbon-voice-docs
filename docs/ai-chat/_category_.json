@@ -1,0 +1,8 @@
+{
+  "label": "AI Chat",
+  "position": 5.2,
+  "customProps": {
+    "description": "Ask questions about anything you've stored in Carbon Voice."
+  },
+  "className": "navIcon navIcon--bot-message-square"
+}

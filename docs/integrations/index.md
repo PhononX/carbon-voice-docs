@@ -1,20 +1,45 @@
 ---
 title: Integrations
-description: Connect Carbon Voice to your other tools and AI assistants.
+description: Connect Carbon Voice to the tools you already use — with no code, with a token, or with the API.
 sidebar_position: 8
 ---
 
 # Integrations
 
-Carbon Voice connects to the tools you already use, and to AI assistants that can work
-with your conversations and voice memos.
+Carbon Voice connects to the rest of your stack. How you do it depends on how much you want
+to build.
 
-- **[AI assistants (MCP)](mcp/index.md)** — Claude, ChatGPT, Cursor, and Windsurf.
-- [Automate workflows](automate-workflows.md)
-- [Zapier](zapier.md)
+## No code — send events out
+
+When something happens in Carbon Voice, make something happen elsewhere.
+
+- [Zapier](zapier.md) — thousands of apps, no code.
+- [Automate workflows](automate-workflows.md) — the patterns people build, and what
+  triggers them.
+
+## No code — bring your content in
+
+Keep your Carbon Voice content where you already read and write.
+
+- [Obsidian](obsidian.md) — sync conversations and voice memos into your vault as Markdown.
+
+## Your account's plumbing
+
+The credentials and hooks the other tiers run on.
+
+- [Integration credentials](integration-credentials.md) — access tokens and connected apps.
+
+## Build on it
+
+- [Build with the Carbon Voice API](build-with-the-api.md) — the developer portal, OAuth
+  apps, and webhooks.
+
+## Also here
+
 - [Using and sharing your CarbonLink](using-your-carbonlink.md)
-- [Build with the Carbon Voice API](build-with-the-api.md)
 
-Anything you set up inside Carbon Voice is documented here. Building against the Carbon
-Voice API — endpoints, OAuth, webhook payloads — is documented at
-[developer.carbonvoice.app](https://developer.carbonvoice.app).
+## Related
+
+- **[AI Assistants & MCP](../ai-assistants/index.md)** — connecting Claude, ChatGPT, Cursor
+  or Windsurf to your content.
+- **[AI Agents](../ai-agents/index.md)** — giving an AI its own Carbon Voice account.

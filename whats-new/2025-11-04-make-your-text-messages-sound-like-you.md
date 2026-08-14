@@ -37,4 +37,4 @@ Voice.
 - With voice cloning off, it falls back to the standard text-to-speech voice you selected.
 - You can delete your voice profile at any time from Global Voice.
 
-See [Voice cloning](/ai/voice-cloning) for the full documentation.
+See [Voice cloning](/voice-and-language/voice-cloning) for the full documentation.

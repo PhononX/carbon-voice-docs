@@ -21,7 +21,8 @@ separately on the developer portal.
   conversations like a person. Most of this is now self-serve in the app — see
   [AI Agents](../ai-agents/index.md).
 - **Personal access tokens** — authenticate as yourself for scripts and personal
-  automations.
+  automations. Create these in the app — see
+  [Integration credentials](integration-credentials.md).
 
 ## Where to go
 
@@ -33,8 +34,8 @@ Questions go to [devsupport@phononx.com](mailto:devsupport@phononx.com).
 ## If you'd rather not write code
 
 Most integrations don't need any. See [Automate workflows](automate-workflows.md) and
-[Zapier](zapier.md), which connect Carbon Voice to thousands of apps without code, or
-the [MCP guides](mcp/tips-and-tricks.md) for connecting an AI assistant.
+[Zapier](zapier.md), which connect Carbon Voice to thousands of apps without code, or the
+[AI assistant guides](../ai-assistants/index.md) for connecting Claude or ChatGPT.
 
 ## Related
 

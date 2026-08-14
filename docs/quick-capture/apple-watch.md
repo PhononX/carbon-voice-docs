@@ -1,7 +1,7 @@
 ---
 title: Apple Watch app
 description: Record a voice memo from your wrist, even offline, and have it sync to your phone.
-sidebar_position: 9
+sidebar_position: 6
 ---
 
 # Apple Watch app

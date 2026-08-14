@@ -21,15 +21,17 @@ on.
 - [Manage notification settings](notification-settings.md)
 - [Notification inbox](inbox.md)
 
-## Voice and plan
+## Plan
 
-- [Personalize the voice for messages you type](typed-message-voice.md)
 - [Upgrade to premium](upgrade-to-premium.md)
+
+For how your messages sound and translation, see
+[Voice & Language](../voice-and-language/index.md).
 
 ## Devices
 
-- [Apple Watch app](apple-watch.md)
-- [iPhone home screen widgets](iphone-widgets.md)
+Widgets, your watch, and the shortcuts that let you send without opening the app are in
+[Quick Capture](../quick-capture/index.md).
 
 ## Leaving
 

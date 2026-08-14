@@ -578,6 +578,22 @@ h4 {
   --nav-icon: url('/img/nav/audio-lines.svg');
 }
 
+.navIcon--notebook-pen {
+  --nav-icon: url('/img/nav/notebook-pen.svg');
+}
+
+.navIcon--keyboard {
+  --nav-icon: url('/img/nav/keyboard.svg');
+}
+
+.navIcon--languages {
+  --nav-icon: url('/img/nav/languages.svg');
+}
+
+.navIcon--bot-message-square {
+  --nav-icon: url('/img/nav/bot-message-square.svg');
+}
+
 .navIcon--bot {
   --nav-icon: url('/img/nav/bot.svg');
 }

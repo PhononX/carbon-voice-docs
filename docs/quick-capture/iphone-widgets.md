@@ -1,7 +1,7 @@
 ---
 title: iPhone home screen widgets
 description: Add the Recents or Quick Sends widget to your iPhone home screen for faster access to conversations.
-sidebar_position: 10
+sidebar_position: 4
 ---
 
 # iPhone home screen widgets
@@ -33,4 +33,5 @@ Shows a list of your favorite conversations. Tapping deep links into the convers
 ## Related
 
 - [Quick Send](../conversations/your-conversation-list/quick-send.md)
+- [Siri, sharing, and iMessage](ios-shortcuts.md)
 - [Apple Watch app](apple-watch.md)

@@ -3,6 +3,13 @@
 A comparison of the published help center (`docs/`, 94 pages) against the Carbon Voice
 Flutter app as it stands on `develop`.
 
+> **Status.** Section 1 has been applied, and the structure in section 4 has been built:
+> Meeting Notes, Voice & Language, Quick Capture, AI Chat, AI Agents and AI Assistants are
+> live sections, Integrations is retiered, and there is a desktop page. Section 2's
+> remaining coverage gaps are still open. Note that `main` reorganized several pages after
+> this audit was written, so some file paths below no longer resolve even where the finding
+> still holds.
+
 Two categories, as asked:
 
 1. **[Accuracy gaps](#1-accuracy-gaps)** — pages that describe the app as it used to be.

@@ -1,7 +1,7 @@
 ---
 title: Personalize the voice for messages you type
 description: Choose how your typed messages sound when someone listens to them.
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Personalize the voice for messages you type
@@ -33,5 +33,5 @@ Your preference applies to new messages you send after making the change.
 
 ## Related
 
-- [Voice cloning and text-to-speech](../ai/voice-cloning.md)
-- [Auto-translation and Global Voice](../ai/auto-translation.md)
+- [Voice cloning and text-to-speech](voice-cloning.md)
+- [Auto-translation and Global Voice](auto-translation.md)

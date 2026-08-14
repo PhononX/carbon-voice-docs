@@ -45,7 +45,8 @@ platform.
 > been ported yet. Each workflow will get its own page here.
 
 For a direct integration rather than an automation platform, there's an API — see
-[Build with the Carbon Voice API](build-with-the-api.md).
+[Build with the Carbon Voice API](build-with-the-api.md). Either way you'll need a token:
+see [Integration credentials](integration-credentials.md).
 
 ## Related
 

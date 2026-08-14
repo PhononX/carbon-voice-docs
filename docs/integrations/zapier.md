@@ -46,6 +46,13 @@ The current list of supported triggers and actions is on
 Running into trouble? [Message support](https://cv.chat/support). To request new
 triggers, actions, or AI transformations, send [feedback](https://cv.chat/feedback).
 
+## Other automation platforms
+
+Carbon Voice works the same way with **n8n** and similar tools — create a personal access
+token, point the workflow at the API, and trigger on the same events. See
+[Integration credentials](integration-credentials.md) for the token, and
+[Build with the Carbon Voice API](build-with-the-api.md) for the endpoints.
+
 ## Related
 
 - [Automate workflows](automate-workflows.md)

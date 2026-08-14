@@ -1,7 +1,7 @@
 ---
 title: Auto-translation and Global Voice
 description: Talk across languages — messages are translated so everyone can follow in their own language, in your voice.
-sidebar_position: 6
+sidebar_position: 3
 ---
 
 # Auto-translation and Global Voice

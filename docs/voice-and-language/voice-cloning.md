@@ -1,7 +1,7 @@
 ---
 title: Voice cloning and text-to-speech
 description: Choose how your typed messages sound to the people who listen to them, including in your own cloned voice.
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 # Voice cloning and text-to-speech
@@ -24,4 +24,5 @@ choose from the drop-down under **Text-to-Speech**.
 
 ## Related
 
-- [Auto-translation](auto-translation.md)
+- [Auto-translation and Global Voice](auto-translation.md)
+- [Personalize the voice for messages you type](typed-message-voice.md)

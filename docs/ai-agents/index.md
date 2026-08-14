@@ -43,6 +43,6 @@ navigation sidebar. Agents you've created are listed under **Personal Agents**.
 
 ## Related
 
-- [AI assistants (MCP)](../integrations/mcp/index.md) — the other direction: letting Claude
+- [AI Assistants & MCP](../ai-assistants/index.md) — the other direction: letting Claude
   or ChatGPT read your Carbon Voice content.
 - [Build with the Carbon Voice API](../integrations/build-with-the-api.md)

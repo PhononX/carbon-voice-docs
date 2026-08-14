@@ -1,0 +1,8 @@
+{
+  "label": "Voice & Language",
+  "position": 4.5,
+  "customProps": {
+    "description": "How your messages sound, and talking across languages."
+  },
+  "className": "navIcon navIcon--languages"
+}
