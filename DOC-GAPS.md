@@ -534,10 +534,9 @@ neither appears in the help center or in §2 above. `ios/Siri/IntentHandler.swif
 `INSendMessageIntent` and `INSearchForMessagesIntent`; `ios/MessageExtension/` is a full
 iMessage app with its own conversation list.
 
-Also undocumented: an **App Clip** (`ios/AppClip/`) with CarbonLink, discussion, magic-link
-and player/recorder flows. That App Clip is the mechanism behind the CarbonLink promise that
-people can listen and reply "without downloading an app" — worth saying out loud on the
-CarbonLink pages.
+> The `ios/AppClip/` target is present in the repository but is **not shipped or enabled**,
+> so it is deliberately absent from this proposal and from the published docs. Don't
+> document it until it ships.
 
 ### 4.5 Integrations: sort by how much you have to build
 
