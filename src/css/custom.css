@@ -697,32 +697,64 @@ h4 {
   padding: 0.25rem 0.5rem 0.5rem;
 }
 
-/* The mobile sidebar rendering (AskAIMobile). It borrows the theme's own
-   `menu__link` styling so the row matches Help and What's New above it; these
-   rules only correct for the toggle being a <button> rather than an <a>, which
-   browsers left-pad, centre and set in their own font. */
-.askAI__mobileToggle {
-  cursor: pointer;
-  font: inherit;
-  gap: 0.5em;
-  text-align: left;
-  width: 100%;
+/* Ask AI stays in the bar on a phone, beside search, rather than moving into
+   the hamburger drawer: the drawer is the list of places to go, and this is a
+   question to ask about the page already open. Two theme behaviours stand in
+   the way once the navbar collapses. */
+@media (max-width: 996px) {
+  /* Infima hides every `.navbar__item` at this width, since the items it knows
+     about have moved into the drawer. The child combinator out-specifies that
+     without an `!important`. */
+  .navbar__items--right > .askAI {
+    display: inline-flex;
+    /* Ask AI is the last thing on the row once the colour-mode toggle moves
+       into the drawer, so it takes the edge alignment Infima reserves for the
+       last child — which that hidden toggle is holding. */
+    padding-right: 0;
+  }
+
+  /* Search is lifted out of the flow and pinned to the navbar's right edge
+     (theme-classic Navbar/Search/styles.module.css), which would leave it
+     sitting on top of Ask AI. Back in the flow, the two lay themselves out
+     side by side, spaced by the navbar item padding they already carry. */
+  .navbar__items--right > [class*='navbarSearchContainer'] {
+    position: static;
+  }
+
+  /* Back in the flow, search sits within the width the open hamburger drawer
+     covers, and the search plugin puts `z-index: 1` on its magnifier — enough
+     to paint over a drawer that ships with `z-index: auto`. The drawer covers
+     the bar, so it says so. */
+  .navbar-sidebar {
+    z-index: 1;
+  }
 }
 
-.askAI__mobileLabel {
-  flex: 1;
-}
+/* At 576px the search plugin collapses its input to the magnifier alone. Ask AI
+   follows, down to its sparkle, so the pair still reads as two of a kind and
+   the title beside them keeps its room. The name survives in `aria-label`. */
+@media (max-width: 576px) {
+  .askAI__label {
+    display: none;
+  }
 
-/* Set in the brand violet, matching the sparkle in the desktop pill. The theme
-   colours the caret separately, via --ifm-menu-link-sublist-icon-filter. */
-.askAI__mobileToggle .askAI__icon {
-  color: var(--ifm-color-primary);
-}
+  /* The 2rem square is the collapsed search input's, so the two sit as a pair
+     of equal circles rather than a circle beside a smaller lozenge. */
+  .askAI__button {
+    height: 2rem;
+    justify-content: center;
+    padding: 0;
+    width: 2rem;
+  }
 
-/* The intro line is not a menu row, so it opts out of the row padding the
-   surrounding .menu__list establishes. */
-.askAI__intro--mobile {
-  padding: 0.25rem 0 0.5rem var(--ifm-menu-link-padding-horizontal);
+  /* Tapping search expands the input from 2rem to 9rem, and at this width the
+     row cannot hold that alongside the title — which is the one thing on it
+     that is not a control, and names a page still open behind the results. So
+     it gives up its place for as long as the input is open. Where `:has` is
+     unsupported the title truncates instead, which is only untidy. */
+  .navbar__inner:has(.navbar__search-input:focus) .navbar__title {
+    display: none;
+  }
 }
 
 .menu__link--active {
