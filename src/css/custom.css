@@ -784,3 +784,21 @@ h4 {
   color: #8d80c2;
   font-size: 0.875rem;
 }
+
+/* Removed from the visual page while staying in the document, for text meant to
+   be read by something parsing the HTML rather than by a person looking at it.
+   `display: none` and `visibility: hidden` would not do: both are widely
+   treated as "not content" and skipped. The clip-rect dance is the long-standing
+   way to keep the text in the flow at zero size instead. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
