@@ -1,7 +1,7 @@
 ---
 title: Managing an agent
 description: Change an agent's name, picture and voice, review its details, and retire it when it's done.
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Managing an agent

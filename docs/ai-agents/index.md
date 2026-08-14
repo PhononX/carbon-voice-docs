@@ -32,18 +32,13 @@ works fine on its own until you're ready to connect something to it.
 ## Where to find them
 
 Open **AI Agents** from the profile menu, or — on desktop — the robot icon in the
-navigation sidebar. You'll see two groups:
-
-- **Personal Agents** — agents you've created.
-- **[Easy Voice Agents](easy-voice-agents.md)** — ready-made agents for talking to popular
-  tools, with setup handled for you.
+navigation sidebar. Agents you've created are listed under **Personal Agents**.
 
 ## In this section
 
 - [Create an agent](create-an-agent.md)
 - [Connect your agent](connect-your-agent.md)
 - [Talk to your agent](talk-to-your-agent.md)
-- [Easy Voice Agents](easy-voice-agents.md)
 - [Managing an agent](managing-an-agent.md)
 
 ## Related
