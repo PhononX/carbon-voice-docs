@@ -2,6 +2,7 @@
 title: Editing text messages
 description: You can now edit a text message you've already sent, and the edit updates both the transcript and the audio playback.
 date: 2024-03-13
+authors: [carbonvoice]
 tags: [release, messages]
 ---
 

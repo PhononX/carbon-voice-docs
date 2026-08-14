@@ -2,6 +2,7 @@
 title: Carbon Voice for Mac is here
 description: A desktop app with global keyboard shortcuts, so you can record and share a voice message from anywhere on your Mac.
 date: 2026-05-12
+authors: [carbonvoice]
 tags: [desktop, mac, release]
 ---
 

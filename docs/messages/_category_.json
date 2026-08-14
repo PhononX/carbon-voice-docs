@@ -1,5 +1,8 @@
 {
   "label": "Messages",
   "position": 3,
-  "customProps": {"description": "Recording, listening, transcripts, and message actions."}
+  "customProps": {
+    "description": "Recording, listening, transcripts, and message actions."
+  },
+  "className": "navIcon navIcon--message-circle"
 }

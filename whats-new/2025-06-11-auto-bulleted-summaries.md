@@ -2,6 +2,7 @@
 title: Auto bulleted summaries
 description: Flip one switch and every message in a conversation displays as a clean bulleted summary — a fast way to catch up on a long thread.
 date: 2025-06-11
+authors: [carbonvoice]
 tags: [release, ai, transcripts]
 ---
 

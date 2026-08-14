@@ -34,9 +34,9 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // Tints browser UI (mobile address bar, PWA chrome) to match the site
-  // background in each color mode: white in light, the brand indigo in dark.
   headTags: [
+    // Tints browser UI (mobile address bar, PWA chrome) to match the site
+    // background in each color mode: white in light, the brand indigo in dark.
     {
       tagName: 'meta',
       attributes: {name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#ffffff'},
@@ -44,6 +44,43 @@ const config: Config = {
     {
       tagName: 'meta',
       attributes: {name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#0E0434'},
+    },
+    // Schema.org structured data, emitted into every page's <head> as JSON-LD.
+    // This names the publisher and the site so search and answer engines can
+    // attribute the content. Per-page BreadcrumbList markup is already emitted
+    // by the theme's breadcrumbs component, so it is not repeated here.
+    //
+    // Site-wide identity: who publishes this documentation.
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Phonon X, Inc.',
+        url: 'https://phononx.com',
+        logo: `${SITE_URL}/img/logo.svg`,
+        sameAs: [PRODUCT_URL, 'https://github.com/PhononX'],
+      }),
+    },
+    // The site itself: name, canonical origin, language, publisher, and the
+    // licence the content is offered under.
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Carbon Voice Help',
+        url: SITE_URL,
+        inLanguage: 'en',
+        license: 'https://creativecommons.org/licenses/by/4.0/',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Phonon X, Inc.',
+          url: 'https://phononx.com',
+        },
+      }),
     },
   ],
 
@@ -134,6 +171,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Default social-card image for link unfurls (Open Graph + Twitter). Pages
+    // may override it with an `image` frontmatter field; announcements in
+    // whats-new/ can point at their own screenshot.
+    image: 'img/social-card.png',
     metadata: [
       {name: 'author', content: 'Phonon X, Inc.'},
       {
@@ -197,7 +238,7 @@ const config: Config = {
         {
           title: 'Documentation',
           items: [
-            {label: 'Getting Started', to: '/getting-started'},
+            {label: 'Record your first message', to: '/messages/recording-and-sending/record-a-voice-message'},
             {label: 'AI', to: '/ai'},
             {label: 'Troubleshooting', to: '/troubleshooting'},
           ],

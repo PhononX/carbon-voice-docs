@@ -2,6 +2,7 @@
 title: Control what tapping a message does
 description: A new Message Tap Action setting, a play button on audio message cards, and a bigger tap area on Show More — all to stop playback starting by accident.
 date: 2025-03-11
+authors: [carbonvoice]
 tags: [release, playback, settings]
 ---
 

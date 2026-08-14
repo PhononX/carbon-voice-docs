@@ -2,6 +2,7 @@
 title: Smarter message tracking
 description: A What's New line that works like other messaging apps, Listen Later for messages you can't get to yet, and pre-recorded messages folded into voice memos.
 date: 2026-03-23
+authors: [carbonvoice]
 tags: [release, playback, voice-memos, performance]
 ---
 

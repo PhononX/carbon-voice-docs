@@ -1,5 +1,8 @@
 {
   "label": "Conversations",
   "position": 2,
-  "customProps": {"description": "How conversations work in Carbon Voice."}
+  "customProps": {
+    "description": "How conversations work in Carbon Voice."
+  },
+  "className": "navIcon navIcon--messages-square"
 }

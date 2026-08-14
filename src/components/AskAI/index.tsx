@@ -3,6 +3,11 @@ import {useLocation} from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx';
 
+import ClaudeIcon from './icons/claude.svg';
+import GeminiIcon from './icons/gemini.svg';
+import OpenAIIcon from './icons/openai.svg';
+import PerplexityIcon from './icons/perplexity.svg';
+
 /**
  * "Ask AI" — a navbar dropdown that hands the reader's question to the
  * assistant of their choice, framed against this site's content.
@@ -18,6 +23,7 @@ import clsx from 'clsx';
 
 type Assistant = {
   readonly name: string;
+  readonly Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   readonly href: (encodedPrompt: string) => string;
 };
 
@@ -25,26 +31,33 @@ type Assistant = {
 // pre-filling, the link still opens that assistant with an empty composer, so
 // the failure is mild.
 const ASSISTANTS: readonly Assistant[] = [
-  {name: 'Claude', href: (q) => `https://claude.ai/new?q=${q}`},
-  {name: 'ChatGPT', href: (q) => `https://chatgpt.com/?q=${q}`},
-  {name: 'Gemini', href: (q) => `https://gemini.google.com/app?q=${q}`},
-  {name: 'Perplexity', href: (q) => `https://www.perplexity.ai/search?q=${q}`},
+  {name: 'Claude', Icon: ClaudeIcon, href: (q) => `https://claude.ai/new?q=${q}`},
+  {name: 'ChatGPT', Icon: OpenAIIcon, href: (q) => `https://chatgpt.com/?q=${q}`},
+  {
+    name: 'Gemini',
+    Icon: GeminiIcon,
+    href: (q) => `https://gemini.google.com/app?q=${q}`,
+  },
+  {
+    name: 'Perplexity',
+    Icon: PerplexityIcon,
+    href: (q) => `https://www.perplexity.ai/search?q=${q}`,
+  },
 ];
 
-function buildPrompt(siteUrl: string, pathname: string): string {
-  const lines = [
-    `Read ${siteUrl}/llms-full.txt — the complete Carbon Voice help center — and`,
-    'answer using only what it says. Cite the page each answer comes from.',
-  ];
-
-  // On an article, name it: most questions are about the page in front of the
-  // reader, and the full text stays available for everything else.
-  if (pathname && pathname !== '/') {
-    lines.push(`I am reading ${siteUrl}${pathname}.`);
-  }
-
-  lines.push('', 'My question: ');
-  return lines.join(' ').replace(/ {2,}/g, ' ');
+/**
+ * Deliberately says nothing about the page the reader is on. Someone opens
+ * this menu because the page in front of them did not answer their question,
+ * so that page is more likely to be the wrong context than the right one —
+ * naming it would bias the answer toward it, and invite the assistant to read
+ * that one page instead of the whole help center.
+ */
+function buildPrompt(siteUrl: string): string {
+  return (
+    `Read ${siteUrl}/llms-full.txt — the complete Carbon Voice help center — ` +
+    'and answer my questions about Carbon Voice using only what it says. Cite ' +
+    'the page each answer comes from.\n\nMy question: '
+  );
 }
 
 function SparkleIcon(): React.JSX.Element {
@@ -98,9 +111,7 @@ export default function AskAI(): React.JSX.Element {
   // Close when navigating, so the menu does not linger over the next page.
   useEffect(close, [pathname, close]);
 
-  const encodedPrompt = encodeURIComponent(
-    buildPrompt(siteConfig.url, pathname),
-  );
+  const encodedPrompt = encodeURIComponent(buildPrompt(siteConfig.url));
 
   return (
     <div
@@ -128,12 +139,16 @@ export default function AskAI(): React.JSX.Element {
         {ASSISTANTS.map((assistant) => (
           <li key={assistant.name} role="none">
             <a
-              className="dropdown__link"
+              className="dropdown__link askAI__link"
               role="menuitem"
               href={assistant.href(encodedPrompt)}
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}>
+              {/* Inlined rather than loaded as an image so the OpenAI mark can
+                  follow the menu's text colour; the label already names the
+                  service, so the mark is decorative to a screen reader. */}
+              <assistant.Icon className="askAI__vendorIcon" aria-hidden="true" />
               {assistant.name}
             </a>
           </li>

@@ -4,6 +4,7 @@ description: The official help center for Carbon Voice — voice messaging for y
 slug: /
 sidebar_position: 0
 sidebar_label: Home
+sidebar_class_name: navIcon navIcon--house
 ---
 
 # Carbon Voice Help
@@ -13,25 +14,27 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
 
 ## Start here
 
-- **[Record your first voice message](getting-started/record-a-voice-message.md)** —
-  hold the button, talk, send.
-- **[Start a conversation with someone](conversations/creating/start-with-a-phone-number-or-email.md)**
-  — reach anyone with a phone number or email, whether or not they have the app.
-- **[Find your way around the app](getting-started/a-tour-of-the-app.md)** — what each
-  part of the home screen does.
-- **[Catch up on what you missed](ai/catch-up-with-ai.md)** — let AI summarize
-  everything said while you were away.
-- **[Set up a workspace for your team](workspaces/create-a-workspace.md)** — bring
-  everyone into one place.
-- **[Connect Carbon Voice to your AI assistant](integrations/mcp/index.md)** — Claude,
-  ChatGPT, Cursor, and Windsurf.
+<div class="cardGrid">
+
+- <span class="cardIcon">🧭</span> **[Take a tour of the app](a-tour-of-the-app.md)**<br />
+  What each part of the home screen does.
+- <span class="cardIcon">🎙️</span> **[Record your first voice message](messages/recording-and-sending/record-a-voice-message.md)**<br />
+  Hold the button, talk, send.
+- <span class="cardIcon">💬</span> **[Start a conversation with someone](conversations/creating/start-with-a-phone-number-or-email.md)**<br />
+  Reach anyone with a phone number or email, whether or not they have the app.
+- <span class="cardIcon">✨</span> **[Catch up on what you missed](ai/catch-up-with-ai.md)**<br />
+  Let AI summarize everything said while you were away.
+- <span class="cardIcon">👥</span> **[Set up a workspace for your team](workspaces/create-a-workspace.md)**<br />
+  Bring everyone into one place.
+- <span class="cardIcon">🤖</span> **[Connect Carbon Voice to your AI assistant](integrations/mcp/index.md)**<br />
+  Claude, ChatGPT, Cursor, and Windsurf.
+
+</div>
 
 Prefer to watch? Start with the [video guides](videos.md).
 
 ## Browse by topic
 
-- **[Getting Started](getting-started/index.md)** — record your first message and find
-  your way around the app.
 - **[Conversations](conversations/index.md)** — creating conversations, organizing your
   list, and controlling access.
 - **[Messages](messages/index.md)** — recording, sending, listening, and transcripts.

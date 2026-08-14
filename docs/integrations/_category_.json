@@ -1,1 +1,8 @@
-{"label":"Integrations","position":8,"customProps":{"description":"Connecting Carbon Voice to your other tools and AI assistants."}}
+{
+  "label": "Integrations",
+  "position": 8,
+  "customProps": {
+    "description": "Connecting Carbon Voice to your other tools and AI assistants."
+  },
+  "className": "navIcon navIcon--plug"
+}

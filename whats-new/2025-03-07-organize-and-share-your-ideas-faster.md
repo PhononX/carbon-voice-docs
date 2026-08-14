@@ -2,6 +2,7 @@
 title: Organize and share your ideas faster
 description: A better voice memo ready screen with one-tap sharing, plus labels and folders for keeping memos organized.
 date: 2025-03-07
+authors: [carbonvoice]
 tags: [release, voice-memos, sharing]
 ---
 

@@ -1,1 +1,8 @@
-{"label":"AI","position":5,"customProps":{"description":"Summaries, catch-up, transformation, cloning, and translation."}}
+{
+  "label": "AI",
+  "position": 5,
+  "customProps": {
+    "description": "Summaries, catch-up, transformation, cloning, and translation."
+  },
+  "className": "navIcon navIcon--sparkles"
+}

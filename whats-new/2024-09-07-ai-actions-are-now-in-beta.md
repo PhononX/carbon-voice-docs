@@ -2,6 +2,7 @@
 title: AI Actions are now in beta
 description: Turn any voice memo or message into an email, to-do list, blog post, or bug report — and with Zapier support, send the result anywhere.
 date: 2024-09-07
+authors: [carbonvoice]
 tags: [release, ai, integrations, zapier]
 ---
 

@@ -2,6 +2,7 @@
 title: A whole new Carbon Voice app
 description: A redesigned conversation view that reads like a familiar chat window, plus a faster way to turn a discussion into a first-draft document.
 date: 2025-05-01
+authors: [carbonvoice]
 tags: [release, conversations, ai]
 ---
 

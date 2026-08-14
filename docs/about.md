@@ -3,6 +3,7 @@ title: About this documentation
 description: How the Carbon Voice help center is published, licensed, and read by machines.
 sidebar_position: 99
 sidebar_label: About this documentation
+sidebar_class_name: navIcon navIcon--info
 ---
 
 # About this documentation

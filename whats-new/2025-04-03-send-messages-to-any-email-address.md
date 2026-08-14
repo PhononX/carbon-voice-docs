@@ -2,6 +2,7 @@
 title: Send messages to any email address
 description: Voice messages sent to an email address now lead with the full transcript, a clearer play button, and a one-click reply.
 date: 2025-04-03
+authors: [carbonvoice]
 tags: [release, sharing, messages]
 ---
 

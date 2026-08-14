@@ -2,6 +2,7 @@
 title: Build a presentation by talking
 description: A Google Slides add-on turns the Presentation Outline AI Action into a draft deck, complete with visual suggestions.
 date: 2024-12-02
+authors: [carbonvoice]
 tags: [release, integrations, ai]
 ---
 

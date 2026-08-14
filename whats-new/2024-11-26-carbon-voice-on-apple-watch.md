@@ -2,6 +2,7 @@
 title: Carbon Voice on Apple Watch
 description: Record a voice memo from your wrist with a single tap, even offline, and it syncs to your phone ready for AI Actions and sharing.
 date: 2024-11-26
+authors: [carbonvoice]
 tags: [release, apple-watch, voice-memos]
 ---
 

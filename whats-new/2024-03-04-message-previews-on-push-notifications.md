@@ -2,6 +2,7 @@
 title: Message previews on push notifications
 description: Push notifications now show a short preview of the message, whether it's voice or text, plus an AI summary for longer messages.
 date: 2024-03-04
+authors: [carbonvoice]
 tags: [release, notifications, ai]
 ---
 

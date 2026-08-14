@@ -2,6 +2,7 @@
 title: The first async podcast
 description: Ari Meisel interviewed Axon CEO Rick Smith across 30 days inside a Carbon Voice conversation, and shared the raw result rather than editing it into a linear episode.
 date: 2025-12-15
+authors: [carbonvoice]
 tags: [community]
 ---
 

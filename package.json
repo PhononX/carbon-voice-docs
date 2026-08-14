@@ -10,6 +10,7 @@
     "prebuild": "npm run generate:llms",
     "build": "docusaurus build",
     "generate:llms": "node scripts/generate-llms-txt.mjs",
+    "fetch:videos": "node scripts/fetch-video-playlists.mjs",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",

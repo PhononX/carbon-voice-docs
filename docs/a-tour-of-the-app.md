@@ -1,7 +1,8 @@
 ---
 title: A tour of the app
 description: Find your way around Home in Carbon Voice — playlists, quick send, conversations, and search.
-sidebar_position: 3
+sidebar_position: 1.2
+sidebar_class_name: navIcon navIcon--compass
 ---
 
 # A tour of the app

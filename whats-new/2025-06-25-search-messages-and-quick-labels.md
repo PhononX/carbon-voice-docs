@@ -2,6 +2,7 @@
 title: Search messages and quick labels
 description: Search the transcript of every message to find what was said, and set a label on any message by pressing and holding it.
 date: 2025-06-25
+authors: [carbonvoice]
 tags: [release, search, labels]
 ---
 

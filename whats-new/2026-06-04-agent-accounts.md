@@ -2,6 +2,7 @@
 title: Your team has a new type of member
 description: Introducing agent accounts — talk to your AI agents the same way you talk to teammates, with desktop speed dial and tagging.
 date: 2026-06-04
+authors: [carbonvoice]
 tags: [release, agents, desktop]
 ---
 
