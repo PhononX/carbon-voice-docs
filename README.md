@@ -28,12 +28,26 @@ without running anything:
 
 | Folder | What's in it |
 | --- | --- |
-| [`docs/getting-started/`](docs/getting-started/) | Installing the app, first message |
-| [`docs/conversations/`](docs/conversations/) | Creating conversations, access, sharing |
-| [`docs/messages/`](docs/messages/) | Recording, listening, transcripts |
-| [`docs/ai/`](docs/ai/) | Summaries, catch-up, translation |
-| [`docs/integrations/`](docs/integrations/) | Zapier, MCP clients, access tokens |
+| [`docs/conversations/`](docs/conversations/) | Creating conversations, organizing your list, who can take part |
+| [`docs/messages/`](docs/messages/) | Recording, sending, listening, transcripts |
+| [`docs/voice-memos/`](docs/voice-memos/) | Capturing, organizing, and sharing your own recordings |
+| [`docs/meeting-notes/`](docs/meeting-notes/) | Replacing a meeting with an async discussion, then turning it into notes |
+| [`docs/voice-and-language/`](docs/voice-and-language/) | Typed-message voice, voice cloning, talking across languages |
+| [`docs/quick-capture/`](docs/quick-capture/) | Recording without opening the app: shortcuts, widgets, Siri, watch |
+| [`docs/ai/`](docs/ai/) | Summaries, catch-up, AI Actions, custom prompts |
+| [`docs/ai-chat/`](docs/ai-chat/) | Asking questions across everything you've stored |
+| [`docs/ai-agents/`](docs/ai-agents/) | Giving an AI agent its own Carbon Voice account |
+| [`docs/ai-assistants/`](docs/ai-assistants/) | Connecting Claude, ChatGPT, and other MCP clients |
+| [`docs/workspaces/`](docs/workspaces/) | Setting up a workspace and managing access |
+| [`docs/account-and-settings/`](docs/account-and-settings/) | Profile, notifications, devices, plan |
+| [`docs/integrations/`](docs/integrations/) | Slack, Google Workspace, Zapier, Obsidian, the API |
 | [`docs/troubleshooting/`](docs/troubleshooting/) | When something isn't working |
+
+A handful of pages sit loose at the top of [`docs/`](docs/) rather than in a
+section — the [home page](docs/index.md), [a tour of the app](docs/a-tour-of-the-app.md),
+[desktop](docs/desktop.md), [search](docs/searching.md), [videos](docs/videos.md), and
+[about this documentation](docs/about.md). Product announcements are dated, so they live
+apart from the evergreen articles, in [`whats-new/`](whats-new/).
 
 ## Working on the docs
 
