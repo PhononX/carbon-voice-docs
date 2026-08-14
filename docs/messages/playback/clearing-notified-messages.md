@@ -17,8 +17,6 @@ appears when the conversation actually has unread messages.
 Marking a conversation read preserves listen status. It drops the attention flag without
 pretending you've heard anything.
 
-![Clear notifications conversation](/img/messages/clear-notifications-conversation.webp)
-
 ## On a single message
 
 - **Tap the button underneath the message** in a conversation. It reads **Mark as Read**
@@ -26,8 +24,6 @@ pretending you've heard anything.
   both ways.
 - **Press and hold** the message and tap **Mark as Unread** to flag one you've already read.
 - **Play the message.** Listening through it clears the flag on its own.
-
-![Swipe to clear notify](/img/messages/swipe-to-clear-notify.webp)
 
 > Swiping a message doesn't change its read state. Swipe left to right to **reply** (hold
 > the swipe for a voice reply), or right to left for **message info** (hold it for

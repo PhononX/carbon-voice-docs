@@ -39,8 +39,6 @@ have. It has two halves:
 - **Tap the button to its right** to open them as a playlist first, so you can see what's
   queued and jump around.
 
-![Notified playlist](/img/messages/notified-playlist.webp)
-
 You can also filter the conversation list to **Unread**, or tap the play area on an
 individual conversation card to play just that conversation's unread messages.
 
