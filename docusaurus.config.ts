@@ -252,6 +252,14 @@ const config: Config = {
       {property: 'og:image:type', content: 'image/png'},
       {property: 'og:image:alt', content: 'Carbon Voice Help & Support — everything you need to know.'},
       {name: 'twitter:image:alt', content: 'Carbon Voice Help & Support — everything you need to know.'},
+      // The brand mark, distinct from og:image above: og:image is the 1200x630
+      // card a link unfurls into, this is the square logo that identifies the
+      // publisher. Not part of the Open Graph spec — the unfurlers that matter
+      // read og:image — but brand-detection and answer-engine crawlers do look
+      // for it, and it restates in plain metadata what the Organization JSON-LD
+      // already says for anything that will not parse JSON-LD. Raster on
+      // purpose: those simpler consumers tend not to rasterize an SVG.
+      {property: 'og:logo', content: `${SITE_URL}/img/logo-512.png`},
     ],
     colorMode: {
       defaultMode: 'light',
