@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" width="880" height="660" role="img"
+     aria-labelledby="t d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">The Carbon Voice Home screen</title>
+  <desc id="d">A labelled diagram of Home on mobile: your profile picture at the top left, search at the top right, Quick Sends, the new-messages button above the conversation list, the conversation list itself, and the bottom bar holding Conversations, Notebook, the record button, Inbox and AI Chat.</desc>
+
+  <style>
+    .phone   { fill: #FFFFFF; stroke: #CFC9DD; stroke-width: 2; }
+    .screen  { fill: #FAF9FC; }
+    .chip    { fill: #EDE8FB; }
+    .accent  { fill: #5B3FD1; }
+    .accent2 { fill: #B29CFF; }
+    .card    { fill: #FFFFFF; stroke: #E4E0EC; stroke-width: 1.5; }
+    .muted   { fill: #CFC9DD; }
+    .lbl     { font-size: 13px; fill: #17141F; font-weight: 600; }
+    .sub     { font-size: 11.5px; fill: #6B6480; }
+    .ui      { font-size: 10.5px; fill: #4A4458; font-weight: 600; }
+    .lead    { stroke: #5B3FD1; stroke-width: 1.5; fill: none; }
+    .dot     { fill: #5B3FD1; }
+    @media (prefers-color-scheme: dark) {
+      .phone   { fill: #1B1824; stroke: #423B54; }
+      .screen  { fill: #131119; }
+      .chip    { fill: #2A2340; }
+      .accent  { fill: #B29CFF; }
+      .accent2 { fill: #5B3FD1; }
+      .card    { fill: #1B1824; stroke: #2E293B; }
+      .muted   { fill: #423B54; }
+      .lbl     { fill: #ECE9F3; }
+      .sub     { fill: #A79FBC; }
+      .ui      { fill: #B4ADC4; }
+      .lead    { stroke: #B29CFF; }
+      .dot     { fill: #B29CFF; }
+    }
+  </style>
+
+  <!-- ───────── phone ───────── -->
+  <rect class="phone" x="300" y="24" width="280" height="612" rx="34"/>
+  <rect class="screen" x="310" y="34" width="260" height="592" rx="26"/>
+
+  <!-- top bar: avatar left, search right -->
+  <circle class="accent" cx="336" cy="70" r="13"/>
+  <circle class="muted" cx="527" cy="70" r="11"/>
+  <path d="M523 70a4 4 0 1 1 8 0 4 4 0 0 1-8 0m7 3 3 3" stroke="#FAF9FC" stroke-width="1.6" fill="none"/>
+  <circle class="muted" cx="497" cy="70" r="11"/>
+
+  <!-- quick sends -->
+  <text class="ui" x="326" y="106">Quick Sends</text>
+  <g>
+    <rect class="chip" x="326" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="378" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="430" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="482" y="114" width="46" height="46" rx="12"/>
+    <circle class="accent" cx="366" cy="154" r="8"/>
+    <circle class="accent" cx="418" cy="154" r="8"/>
+  </g>
+
+  <!-- new messages button -->
+  <rect class="card" x="326" y="180" width="150" height="30" rx="15"/>
+  <path d="M340 189v12l10-6z" class="accent"/>
+  <text class="ui" x="356" y="199">4 New Messages</text>
+  <rect class="card" x="484" y="180" width="30" height="30" rx="15"/>
+  <path d="M494 200l10-10m0 0h-7m7 0v7" class="lead"/>
+
+  <!-- conversation cards -->
+  <g>
+    <rect class="card" x="326" y="224" width="188" height="52" rx="12"/>
+    <rect class="chip" x="334" y="232" width="36" height="36" rx="9"/>
+    <rect class="muted" x="378" y="240" width="76" height="6" rx="3"/>
+    <rect class="muted" x="378" y="254" width="104" height="5" rx="2.5"/>
+    <rect class="accent" x="470" y="238" width="36" height="24" rx="12"/>
+    <path d="M481 245v10l8-5z" fill="#FFFFFF"/>
+
+    <rect class="card" x="326" y="284" width="188" height="52" rx="12"/>
+    <rect class="chip" x="334" y="292" width="36" height="36" rx="9"/>
+    <rect class="muted" x="378" y="300" width="92" height="6" rx="3"/>
+    <rect class="muted" x="378" y="314" width="70" height="5" rx="2.5"/>
+
+    <rect class="card" x="326" y="344" width="188" height="52" rx="12"/>
+    <rect class="chip" x="334" y="352" width="36" height="36" rx="9"/>
+    <rect class="muted" x="378" y="360" width="80" height="6" rx="3"/>
+    <rect class="muted" x="378" y="374" width="98" height="5" rx="2.5"/>
+    <rect class="accent" x="470" y="358" width="36" height="24" rx="12"/>
+    <path d="M481 365v10l8-5z" fill="#FFFFFF"/>
+
+    <rect class="card" x="326" y="404" width="188" height="52" rx="12"/>
+    <rect class="chip" x="334" y="412" width="36" height="36" rx="9"/>
+    <rect class="muted" x="378" y="420" width="86" height="6" rx="3"/>
+    <rect class="muted" x="378" y="434" width="64" height="5" rx="2.5"/>
+  </g>
+
+  <!-- create button -->
+  <circle class="card" cx="500" cy="500" r="19"/>
+  <path d="M500 492v16m-8-8h16" class="lead" stroke-width="2"/>
+
+  <!-- bottom bar -->
+  <rect class="card" x="322" y="548" width="76" height="44" rx="22"/>
+  <circle class="accent" cx="344" cy="570" r="8"/>
+  <circle class="muted" cx="376" cy="570" r="8"/>
+
+  <circle class="accent" cx="440" cy="570" r="26"/>
+  <rect x="435" y="560" width="10" height="14" rx="5" fill="#FFFFFF"/>
+  <path d="M432 573a8 8 0 0 0 16 0" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+
+  <rect class="card" x="482" y="548" width="76" height="44" rx="22"/>
+  <circle class="muted" cx="504" cy="570" r="8"/>
+  <circle class="accent2" cx="536" cy="570" r="8"/>
+
+  <!-- ───────── labels: left ───────── -->
+  <g>
+    <text class="lbl" x="20" y="66">Your profile picture</text>
+    <text class="sub" x="20" y="82">Opens the Profile Menu, with</text>
+    <text class="sub" x="20" y="96">settings, spaces and agents</text>
+    <path class="lead" d="M186 70h130"/><circle class="dot" cx="318" cy="70" r="3"/>
+
+    <text class="lbl" x="20" y="150">Quick Sends</text>
+    <text class="sub" x="20" y="166">Favourite conversations. Tap the</text>
+    <text class="sub" x="20" y="180">mic to record straight into one</text>
+    <path class="lead" d="M170 145h140"/><circle class="dot" cx="312" cy="145" r="3"/>
+
+    <text class="lbl" x="20" y="246">Your conversations</text>
+    <text class="sub" x="20" y="262">Most recent first. Swipe right to</text>
+    <text class="sub" x="20" y="276">record, left for an AI catch-up</text>
+    <path class="lead" d="M170 250h140"/><circle class="dot" cx="312" cy="250" r="3"/>
+
+    <text class="lbl" x="20" y="366">Play this conversation</text>
+    <text class="sub" x="20" y="382">Plays just its unread messages</text>
+    <path class="lead" d="M170 370h134"/><circle class="dot" cx="306" cy="370" r="3"/>
+  </g>
+
+  <!-- ───────── labels: right ───────── -->
+  <g>
+    <text class="lbl" x="600" y="66">Search</text>
+    <text class="sub" x="600" y="82">Finds a message by what was</text>
+    <text class="sub" x="600" y="96">said in it. Or pull down on Home</text>
+    <path class="lead" d="M564 70h30"/><circle class="dot" cx="596" cy="70" r="3"/>
+
+    <text class="lbl" x="600" y="186">New messages</text>
+    <text class="sub" x="600" y="202">Play everything unread, or use</text>
+    <text class="sub" x="600" y="216">the arrow to open it as a playlist</text>
+    <path class="lead" d="M520 195h74"/><circle class="dot" cx="596" cy="195" r="3"/>
+
+    <text class="lbl" x="600" y="496">Create</text>
+    <text class="sub" x="600" y="512">A message, a named conversation,</text>
+    <text class="sub" x="600" y="526">or an async meeting</text>
+    <path class="lead" d="M524 500h70"/><circle class="dot" cx="596" cy="500" r="3"/>
+
+    <text class="lbl" x="600" y="576">Record</text>
+    <text class="sub" x="600" y="592">Hold to record a voice memo</text>
+    <path class="lead" d="M470 580h124"/><circle class="dot" cx="596" cy="580" r="3"/>
+  </g>
+
+  <!-- bottom bar callouts -->
+  <text class="sub" x="322" y="616">Conversations · Notebook</text>
+  <text class="sub" x="482" y="616">Inbox · AI Chat</text>
+</svg>

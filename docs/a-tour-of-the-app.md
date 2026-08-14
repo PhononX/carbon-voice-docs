@@ -10,7 +10,7 @@ sidebar_class_name: navIcon navIcon--compass
 Home is a launchpad to the rest of the app. It also makes it as easy as possible to
 listen and reply to your messages and conversations.
 
-![The Carbon Voice Home screen](/img/getting-started/home-screen.webp)
+![A labelled diagram of the Carbon Voice Home screen](/img/getting-started/home-screen-diagram.svg)
 
 ## Home has three main sections
 

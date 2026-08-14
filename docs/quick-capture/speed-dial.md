@@ -26,12 +26,17 @@ Shortcuts**.
 Change the base modifier once, at the top of the table, and every slot follows it. Or give
 an individual slot its own combination.
 
+![Speed dial slots bound to Claude Code, Tasklet, Hermes, n8n and OpenClaw](/img/whats-new/speed-dial-list.webp)
+
 ## The floating panel
 
 Press **⌥&#96;** (Option and backtick) to see all ten slots in a floating panel, with what
 each is pointing at. Useful when you've set up more than you can remember.
 
-![The Option and backtick keys](/img/whats-new/agent-speed-dial.webp)
+![The floating speed dial panel, showing each slot and what it points at](/img/whats-new/speed-dial-panel.webp)
+
+The panel also carries **Voice Memo** and **New Message** at the foot, for when you want
+neither of your ten destinations.
 
 ## Actions on a slot
 

@@ -40,6 +40,10 @@ When a message is too long to play right now, long-swipe it from right to left t
 
 ![Long-swiping a message to label it Listen Later](/img/whats-new/listen-later.webp)
 
+A message you've flagged carries a **Listen Later** chip, so it's obvious in the feed.
+
+![A message labelled Listen Later](/img/messages/listen-later-message.webp)
+
 An indicator at the top of the conversation shows when you have messages saved for later.
 Tap it to get arrows for moving between them.
 

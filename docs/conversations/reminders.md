@@ -13,6 +13,8 @@ having to start it.
 This is what replaces the standing meeting. Cancelling a meeting is easy; the hard part is
 that the calendar invite was the nudge. A reminder is the nudge.
 
+![A reminder posting the morning stand-up prompt into a conversation](/img/conversations/reminder-standup.webp)
+
 ## Setting one up
 
 - **In a new conversation** — tap **Reminders** at the top of the conversation information

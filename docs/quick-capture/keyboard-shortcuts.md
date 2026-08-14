@@ -19,6 +19,8 @@ Set them up in **Profile Menu → Settings → Keyboard Shortcuts**.
 | **⌥C** | **Quick Send** — send a Carbon Voice message from anywhere |
 | **⌥&#96;** | **Speed Dial Panel** — open the floating panel with all ten destination slots |
 
+![The Option and V keys](/img/whats-new/option-v.webp)
+
 ![The Quick Send panel, with a search field, favourite destinations, and a message box](/img/whats-new/mac-desktop.webp)
 
 Each one can be changed: pick from the presets, or choose **Record shortcut…** and press
