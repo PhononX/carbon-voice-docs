@@ -9,6 +9,10 @@ sidebar_position: 5
 You can clear the unread flag by hand, put it back on something you want to revisit, or have
 it clear automatically as you read.
 
+Inside a conversation, the dividing line between read and unread does most of this for you.
+It moves as you go, so messages mark themselves read without you doing anything. See
+[the new-messages line](notified-versus-unheard.md#the-new-messages-line).
+
 ## On a whole conversation
 
 **Press and hold the conversation card** on Home and tap **Mark all Read**. The option only
@@ -28,6 +32,21 @@ pretending you've heard anything.
 > Swiping a message doesn't change its read state. Swipe left to right to **reply** (hold
 > the swipe for a voice reply), or right to left for **message info** (hold it for
 > **Listen Later**).
+
+## Listen Later
+
+When a message is too long to play right now, long-swipe it from right to left to label it
+**Listen Later**.
+
+![Long-swiping a message to label it Listen Later](/img/whats-new/listen-later.webp)
+
+An indicator at the top of the conversation shows when you have messages saved for later.
+Tap it to get arrows for moving between them.
+
+![The Listen Later indicator at the top of a conversation](/img/whats-new/listen-later-indicator.webp)
+
+You can also filter your conversation list to **Listen Later** to find every conversation
+holding one. See [Filtering your conversation list](../../conversations/your-conversation-list/filtering.md).
 
 ![Long-swiping a message to label it Listen Later](/img/whats-new/listen-later.webp)
 

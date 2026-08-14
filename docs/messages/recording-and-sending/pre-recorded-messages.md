@@ -18,9 +18,13 @@ pitches, acknowledgments, and anything else you find yourself saying more than o
 
 ## Save one
 
-Record a voice memo as usual, and it's kept in **Voice Memos** ready to reuse. To save a
-message you've already sent into a conversation, open **Message Info**, scroll down, and
-tap **Save as Voice Memo**.
+Record a voice memo as usual, and it's kept in **Voice Memos** ready to reuse. To keep a
+message you've already sent into a conversation, open **Message Info**, scroll down, and tap
+**Save to Voice Memo**.
+
+> **If you used pre-recorded messages**, they're still there, in a folder inside Voice Memos.
+> Zapier workflows that send one keep working, though it's worth pointing them at the voice
+> memo message ID instead.
 
 ## Use one
 

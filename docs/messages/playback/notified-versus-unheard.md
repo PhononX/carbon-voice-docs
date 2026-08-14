@@ -17,6 +17,25 @@ attributes:
 > History**, and as **Notified Cleared** in engagement details. It means the same thing as
 > unread; it's the original name for the attention flag.
 
+## The new-messages line
+
+Inside a conversation, read and unread are separated by a single line. Everything above it
+you've read; everything below it is new.
+
+Open a conversation and it scrolls to that line, so you start where you left off rather than
+at the bottom. When you leave, the line moves on its own, based on what you actually saw.
+
+![A conversation with a line marking where the new messages start](/img/whats-new/whats-new-line.webp)
+
+The line carries two buttons:
+
+- **The unread count** plays everything below the line. The line moves down as it finishes.
+- **Catch-up** summarizes what's new without playing it. See
+  [Catch up with AI](../../ai/catch-up-with-ai.md).
+
+To move the line back, press and hold a message and choose **Mark as Unread**. Everything
+from that message down becomes unread again.
+
 ## Unread messages
 
 Unread messages are seeking your attention, most often because they're new. They act as
