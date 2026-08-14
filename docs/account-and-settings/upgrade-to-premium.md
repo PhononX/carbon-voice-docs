@@ -1,6 +1,6 @@
 ---
 title: Upgrade to premium
-description: Unlock more recording time, organization features, and AI credits — for yourself or your whole team.
+description: Unlock more recording time, organization features, and AI credits, for yourself or your whole team.
 sidebar_position: 6
 ---
 
@@ -17,8 +17,9 @@ pool of AI credits.
 
 ### In the app
 
-1. Go to the profile menu in the lower right.
-2. Tap the plan at the top — it will say **Starter** or **Standard Trial**.
+1. Open the **Profile Menu**, which is your profile picture at the top left of Home on
+   mobile, or the bottom of the navigation sidebar on desktop.
+2. Tap the plan at the top. It will say **Starter** or **Standard Trial**.
 3. In the plan details, tap the plan again to reach the upgrade options.
 
 ### On the web

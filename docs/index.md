@@ -26,7 +26,7 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
   Let AI summarize everything said while you were away.
 - <span class="cardIcon">👥</span> **[Set up a workspace for your team](workspaces/create-a-workspace.md)**<br />
   Bring everyone into one place.
-- <span class="cardIcon">🤖</span> **[Connect Carbon Voice to your AI assistant](integrations/mcp/index.md)**<br />
+- <span class="cardIcon">🤖</span> **[Connect Carbon Voice to your AI assistant](ai-assistants/index.md)**<br />
   Claude, ChatGPT, Cursor, and Windsurf.
 
 </div>
@@ -39,7 +39,19 @@ Prefer to watch? Start with the [video guides](videos.md).
   list, and controlling access.
 - **[Messages](messages/index.md)** — recording, sending, listening, and transcripts.
 - **[Voice Memos](voice-memos/index.md)** — your own recordings, organized and shared.
-- **[AI](ai/index.md)** — summaries, catch-up, transformation, and translation.
+- **[Search](searching.md)** — find a message by what was said in it.
+- **[Meeting Notes](meeting-notes/index.md)** — skip the meeting, discuss it async, and
+  let AI write it up.
+- **[Voice & Language](voice-and-language/index.md)** — how your messages sound, and
+  talking across languages.
+- **[Quick Capture](quick-capture/index.md)** — shortcuts, widgets, and your watch.
+- **[Summaries & AI Actions](ai/index.md)** — summarize a discussion or reshape it into
+  something else.
+- **[AI Chat](ai-chat/index.md)** — ask questions across everything you've stored.
+- **[AI Agents](ai-agents/index.md)** — give an AI agent its own account and talk to it
+  like a teammate.
+- **[AI Assistants & MCP](ai-assistants/index.md)** — Claude, ChatGPT, Cursor, and
+  Windsurf.
 - **[Workspaces](workspaces/index.md)** — setting up and running a workspace for your
   team.
 - **[Account & Settings](account-and-settings/index.md)** — profile, notifications,

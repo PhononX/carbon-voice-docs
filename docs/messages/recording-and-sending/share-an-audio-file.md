@@ -1,6 +1,6 @@
 ---
 title: Share an audio file to Carbon Voice
-description: Send a recording made in another app — like Voice Memos — into a Carbon Voice conversation.
+description: Send a recording made in another app, like Voice Memos, into a Carbon Voice conversation.
 sidebar_position: 7
 ---
 
@@ -23,4 +23,4 @@ it, you can share the finished audio file into Carbon Voice.
 ## Related
 
 - [How to record a voice message](../../messages/recording-and-sending/record-a-voice-message.md)
-- [Pre-recorded messages](pre-recorded-messages.md)
+- [Saved voice memos](pre-recorded-messages.md)

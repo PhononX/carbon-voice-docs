@@ -7,7 +7,7 @@ sidebar_position: 3
 # Start a conversation with a phone number or email
 
 You can start a conversation with anyone using just their email address or phone
-number — even if they don't use Carbon Voice yet.
+number, even if they don't use Carbon Voice yet.
 
 1. From the Home screen, tap the **"+"** icon at the bottom and choose **New
    Conversation**.
@@ -20,8 +20,12 @@ number — even if they don't use Carbon Voice yet.
 
 📺 [Watch: creating a conversation with a phone number](https://youtube.com/shorts/pfFHs5EqYZ8)
 
+![A Carbon Voice message as it arrives in an email inbox](/img/whats-new/voice-message-as-email.webp)
+
 ## Related
 
 - [Types of conversations](types-of-conversations.md) — the difference between direct
   messages and named conversations.
 - [Account & Settings](../../account-and-settings/index.md) — enabling phone contacts.
+- [Linked Emails & Phone Numbers](../../account-and-settings/directory-services.md) — so
+  people can reach you at any of your addresses or numbers.

@@ -1,6 +1,6 @@
 ---
 title: A tour of the app
-description: Find your way around Home in Carbon Voice — playlists, quick send, conversations, and search.
+description: Find your way around Home in Carbon Voice, covering playlists, quick send, conversations, and search.
 sidebar_position: 1.2
 sidebar_class_name: navIcon navIcon--compass
 ---
@@ -10,17 +10,18 @@ sidebar_class_name: navIcon navIcon--compass
 Home is a launchpad to the rest of the app. It also makes it as easy as possible to
 listen and reply to your messages and conversations.
 
-![The Carbon Voice Home screen](/img/getting-started/home-screen.webp)
+![A labelled diagram of the Carbon Voice Home screen](/img/getting-started/home-screen-diagram.svg)
 
 ## Home has three main sections
 
-1. **Playlists** — tap to start listening to all of your notified messages, or create a
-   custom playlist to listen the way you want.
+1. **New messages** — a button above your conversation list showing how many unread
+   messages you have. Tap the play button to listen to all of them; tap the button to its
+   right to open them as a playlist first. Custom playlists you create appear here too.
 2. **Quick send** — send messages to your favorite conversations and contacts with a
    single tap.
 3. **Conversations** — sorted by most recent interaction. Conversation cards let you
-   quickly find recent conversations to send a message, listen to notified messages, or
-   open the full conversation.
+   quickly find recent conversations to send a message, listen to unread messages, or open
+   the full conversation.
 
 ## Sending a message from Home
 
@@ -34,11 +35,11 @@ listen and reply to your messages and conversations.
 ## Search
 
 Use **Search** in the upper right corner to find the conversation or contact you want
-to send a message to — or simply swipe down from the top of the page.
+to send a message to, or simply swipe down from the top of the page.
 
 ## Catching up quickly
 
-- **Catch up on unheard messages.** Tap the play button on any conversation card, or
-  inside any conversation.
+- **Catch up on unread messages.** Tap the play button above your conversation list to
+  play everything, or the play area on a single conversation card for just that one.
 - **Catch up with AI.** Swipe right to left on any conversation card to get a summary
   of the unheard messages in that conversation.

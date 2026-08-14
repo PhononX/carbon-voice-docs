@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Create a workspace for your team
 
-A team workspace helps a team collaborate in Carbon Voice — fewer meetings, faster
+A team workspace helps a team collaborate in Carbon Voice, with fewer meetings, faster
 decisions, less time lost. A workspace gives you:
 
 - A directory for finding team members and shared conversations.
@@ -34,7 +34,7 @@ See [Connect a domain to your workspace](connect-a-domain.md).
 
 ## 3. Add team members
 
-Enter email addresses for your team — you can paste a comma-separated list. They'll get
+Enter email addresses for your team, and you can paste a comma-separated list. They'll get
 an email letting them know they've been added, with links to download the app. You can
 also generate a link and share it yourself.
 
@@ -53,7 +53,7 @@ instead.
 
 ## Provisioning via SCIM
 
-Enterprise teams can provision people through SCIM — see
+Enterprise teams can provision people through SCIM. See
 [Okta user provisioning with SCIM](okta-scim.md), or reach out through **Profile Menu →
 Help → Get Support**.
 

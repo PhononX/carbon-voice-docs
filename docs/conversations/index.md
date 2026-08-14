@@ -6,8 +6,9 @@ sidebar_position: 2
 
 # Conversations
 
-All your conversations show up in the Chat tab, on the far left of the navigation bar,
-sorted with the most recent on top.
+All your conversations show up in the **Conversations** tab, the first icon in the
+navigation bar on mobile and the top icon in the sidebar on desktop. They're sorted with
+the most recent on top.
 
 - **[Creating conversations](creating/index.md)** — direct messages, named
   conversations, and who is in them.
@@ -15,3 +16,4 @@ sorted with the most recent on top.
   filtering, and labeling without opening a conversation.
 - **[Access & sharing](access-and-sharing/index.md)** — who can join, sharing links,
   and history settings.
+- **[Reminders](reminders.md)** — a scheduled prompt that replaces a standing meeting.

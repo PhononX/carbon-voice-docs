@@ -13,11 +13,11 @@ actions you can take.
 
 Run an AI action right away to summarize your message, generate bullet points, draft an
 email, create a presentation outline, and more. AI actions turn raw voice notes into
-polished outputs — see [AI](../../ai/index.md).
+polished outputs. See [AI](../../ai/index.md).
 
 ## 2. View the transcript
 
-A transcript is generated automatically. Tap to view, read, or edit it — useful when
+A transcript is generated automatically. Tap to view, read, or edit it. That's useful when
 you want to refine the message or repurpose it. See
 [Messages](../../messages/index.md).
 

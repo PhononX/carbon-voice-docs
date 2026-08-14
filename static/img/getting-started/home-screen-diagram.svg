@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700" role="img"
+     aria-labelledby="t d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">The Carbon Voice Home screen</title>
+  <desc id="d">A labelled diagram of Home on mobile: the Profile Menu at the top left, Search and audio routing at the top right, Quick Sends, the new-messages button and filter above the conversation list, the conversation list with a play button on each card, the New Message button, and the bottom bar holding Conversations, Notebook, the record button, Inbox and AI Chat.</desc>
+
+  <style>
+    .phone   { fill: #FFFFFF; stroke: #CFC9DD; stroke-width: 2; }
+    .screen  { fill: #FAF9FC; }
+    .chip    { fill: #EDE8FB; }
+    .accent  { fill: #5B3FD1; }
+    .accent2 { fill: #B29CFF; }
+    .card    { fill: #FFFFFF; stroke: #E4E0EC; stroke-width: 1.5; }
+    .muted   { fill: #CFC9DD; }
+    .stroked { stroke: #6B6480; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .stroked-on { stroke: #5B3FD1; stroke-width: 1.7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .onaccent { stroke: #FFFFFF; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .onacc-fill { fill: #FFFFFF; }
+    .lbl     { font-size: 13px; fill: #17141F; font-weight: 600; }
+    .sub     { font-size: 11.5px; fill: #6B6480; }
+    .ui      { font-size: 10.5px; fill: #4A4458; font-weight: 600; }
+    .tiny    { font-size: 9.5px; fill: #857D99; font-weight: 600; }
+    .lead    { stroke: #5B3FD1; stroke-width: 1.5; fill: none; }
+    .dot     { fill: #5B3FD1; }
+    @media (prefers-color-scheme: dark) {
+      .phone   { fill: #1B1824; stroke: #423B54; }
+      .screen  { fill: #131119; }
+      .chip    { fill: #2A2340; }
+      .accent  { fill: #B29CFF; }
+      .accent2 { fill: #5B3FD1; }
+      .card    { fill: #1B1824; stroke: #2E293B; }
+      .muted   { fill: #423B54; }
+      .stroked { stroke: #A79FBC; }
+      .stroked-on { stroke: #B29CFF; }
+      .onaccent { stroke: #17141F; }
+      .onacc-fill { fill: #17141F; }
+      .lbl     { fill: #ECE9F3; }
+      .sub     { fill: #A79FBC; }
+      .ui      { fill: #B4ADC4; }
+      .tiny    { fill: #857D99; }
+      .lead    { stroke: #B29CFF; }
+      .dot     { fill: #B29CFF; }
+    }
+  </style>
+
+  <!-- ───────────────── phone ───────────────── -->
+  <rect class="phone" x="340" y="24" width="280" height="612" rx="34"/>
+  <rect class="screen" x="350" y="34" width="260" height="592" rx="26"/>
+
+  <!-- top bar -->
+  <circle class="accent" cx="376" cy="70" r="13"/>
+  <!-- search -->
+  <circle class="card" cx="552" cy="70" r="13"/>
+  <g class="stroked"><circle cx="550" cy="68" r="4.6"/><path d="M553.4 71.4 556.5 74.5"/></g>
+  <!-- audio routing -->
+  <circle class="card" cx="586" cy="70" r="13"/>
+  <g class="stroked"><path d="M583 67 579.5 67v6h3.5l4 3.5v-13z"/><path d="M589.5 66.5a4.5 4.5 0 0 1 0 7"/></g>
+
+  <!-- quick sends -->
+  <text class="ui" x="366" y="106">Quick Sends</text>
+  <g>
+    <rect class="chip" x="366" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="418" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="470" y="114" width="46" height="46" rx="12"/>
+    <rect class="chip" x="522" y="114" width="46" height="46" rx="12"/>
+    <g><circle class="accent" cx="406" cy="154" r="8"/>
+      <rect class="onacc-fill" x="404.7" y="149.6" width="2.6" height="5.2" rx="1.3"/>
+      <rect class="onacc-fill" x="402.8" y="156.4" width="6.4" height="1.3" rx="0.65"/></g>
+    <g><circle class="accent" cx="458" cy="154" r="8"/>
+      <rect class="onacc-fill" x="456.7" y="149.6" width="2.6" height="5.2" rx="1.3"/>
+      <rect class="onacc-fill" x="454.8" y="156.4" width="6.4" height="1.3" rx="0.65"/></g>
+  </g>
+
+  <!-- new messages + filter -->
+  <rect class="card" x="366" y="180" width="140" height="30" rx="15"/>
+  <path d="M380 189v12l10-6z" class="accent"/>
+  <text class="ui" x="396" y="199">4 New Messages</text>
+  <rect class="card" x="512" y="180" width="30" height="30" rx="15"/>
+  <path class="stroked-on" d="M522 200l10-10m0 0h-7m7 0v7"/>
+  <rect class="card" x="560" y="180" width="30" height="30" rx="15"/>
+  <g class="stroked"><path d="M569 190h12M571 195h8M573 200h4"/></g>
+
+  <!-- conversation cards, running to the right edge -->
+  <g>
+    <rect class="card" x="366" y="224" width="228" height="52" rx="12"/>
+    <rect class="chip" x="374" y="232" width="36" height="36" rx="9"/>
+    <rect class="muted" x="418" y="240" width="76" height="6" rx="3"/>
+    <rect class="muted" x="418" y="254" width="112" height="5" rx="2.5"/>
+    <rect class="accent" x="548" y="238" width="38" height="24" rx="12"/>
+    <path class="onacc-fill" d="M560 245v10l8-5z"/>
+
+    <rect class="card" x="366" y="284" width="228" height="52" rx="12"/>
+    <rect class="chip" x="374" y="292" width="36" height="36" rx="9"/>
+    <rect class="muted" x="418" y="300" width="96" height="6" rx="3"/>
+    <rect class="muted" x="418" y="314" width="74" height="5" rx="2.5"/>
+
+    <rect class="card" x="366" y="344" width="228" height="52" rx="12"/>
+    <rect class="chip" x="374" y="352" width="36" height="36" rx="9"/>
+    <rect class="muted" x="418" y="360" width="84" height="6" rx="3"/>
+    <rect class="muted" x="418" y="374" width="106" height="5" rx="2.5"/>
+    <rect class="accent" x="548" y="358" width="38" height="24" rx="12"/>
+    <path class="onacc-fill" d="M560 365v10l8-5z"/>
+
+    <rect class="card" x="366" y="404" width="228" height="52" rx="12"/>
+    <rect class="chip" x="374" y="412" width="36" height="36" rx="9"/>
+    <rect class="muted" x="418" y="420" width="90" height="6" rx="3"/>
+    <rect class="muted" x="418" y="434" width="68" height="5" rx="2.5"/>
+  </g>
+
+  <!-- new message button, over to the right -->
+  <circle class="card" cx="576" cy="496" r="19"/>
+  <path class="stroked-on" d="M576 488v16m-8-8h16" stroke-width="2"/>
+
+  <!-- ───────── bottom bar ───────── -->
+  <rect class="card" x="362" y="548" width="76" height="44" rx="22"/>
+  <!-- conversations -->
+  <g class="stroked-on"><path d="M378 564h13a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-7l-4 3.5V574h-2a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2z"/></g>
+  <!-- notebook -->
+  <g class="stroked"><path d="M411 562h11a1.5 1.5 0 0 1 1.5 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-11z"/><path d="M411 562v16M408 566h3M408 570h3M408 574h3"/></g>
+
+  <!-- record -->
+  <circle class="accent" cx="480" cy="570" r="26"/>
+  <rect class="onacc-fill" x="475" y="559" width="10" height="15" rx="5"/>
+  <path class="onaccent" d="M471 572a9 9 0 0 0 18 0M480 581v4"/>
+
+  <rect class="card" x="522" y="548" width="76" height="44" rx="22"/>
+  <!-- inbox -->
+  <g class="stroked"><path d="M538 563h12v9h-4.5a2 2 0 0 1-3 0H538z"/><path d="M538 572v5h12v-5"/></g>
+  <!-- ai chat -->
+  <g class="stroked-on"><path d="M576 561.5l1.7 4.3 4.3 1.7-4.3 1.7-1.7 4.3-1.7-4.3-4.3-1.7 4.3-1.7z"/><path d="M583.5 573.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></g>
+
+  <text class="tiny" x="400" y="610" text-anchor="middle">Chats · Notebook</text>
+  <text class="tiny" x="560" y="610" text-anchor="middle">Inbox · AI Chat</text>
+
+  <!-- ───────────────── labels: left ───────────────── -->
+  <g>
+    <text class="lbl" x="20" y="66">Profile Menu</text>
+    <text class="sub" x="20" y="82">Access Settings, Spaces, and Agents</text>
+    <path class="lead" d="M228 70h128"/><circle class="dot" cx="358" cy="70" r="3"/>
+
+    <text class="lbl" x="20" y="140">Quick Sends</text>
+    <text class="sub" x="20" y="156">Favorite conversations. Tap the mic</text>
+    <text class="sub" x="20" y="170">to record straight into one</text>
+    <path class="lead" d="M228 137h132"/><circle class="dot" cx="362" cy="137" r="3"/>
+
+    <text class="lbl" x="20" y="197">New messages</text>
+    <text class="sub" x="20" y="213">Plays everything unread. The arrow</text>
+    <text class="sub" x="20" y="227">opens it as a playlist instead</text>
+    <path class="lead" d="M180 192h180"/><circle class="dot" cx="362" cy="192" r="3"/>
+
+    <text class="lbl" x="20" y="262">Your conversations</text>
+    <text class="sub" x="20" y="278">Most recent first. Swipe right to</text>
+    <text class="sub" x="20" y="292">record, left for an AI catch-up</text>
+    <path class="lead" d="M200 256h160"/><circle class="dot" cx="362" cy="256" r="3"/>
+  </g>
+
+  <!-- ───────────────── labels: right ───────────────── -->
+  <g>
+    <text class="lbl" x="654" y="44">Search</text>
+    <text class="sub" x="654" y="60">Finds a message by what was said</text>
+    <text class="sub" x="654" y="74">in it. Or pull down on Home</text>
+    <path class="lead" d="M648 46 566 60"/><circle class="dot" cx="562" cy="61" r="3"/>
+
+    <text class="lbl" x="654" y="106">Audio routing</text>
+    <text class="sub" x="654" y="122">Choose where playback comes out</text>
+    <path class="lead" d="M648 108 592 84"/><circle class="dot" cx="589" cy="82" r="3"/>
+
+    <text class="lbl" x="654" y="192">Filter</text>
+    <text class="sub" x="654" y="208">Narrow the list to unread, listen</text>
+    <text class="sub" x="654" y="222">later, or a conversation type</text>
+    <path class="lead" d="M648 195h-52"/><circle class="dot" cx="594" cy="195" r="3"/>
+
+    <text class="lbl" x="654" y="366">Play this conversation</text>
+    <text class="sub" x="654" y="382">Plays just its unread messages</text>
+    <path class="lead" d="M648 369h-46"/><circle class="dot" cx="599" cy="369" r="3"/>
+
+    <text class="lbl" x="654" y="492">New Message</text>
+    <text class="sub" x="654" y="508">A message, a named conversation,</text>
+    <text class="sub" x="654" y="522">or an async meeting</text>
+    <path class="lead" d="M648 495h-46"/><circle class="dot" cx="599" cy="495" r="3"/>
+  </g>
+
+  <!-- record, called out below the phone -->
+  <path class="lead" d="M480 600v52"/><circle class="dot" cx="480" cy="655" r="3"/>
+  <text class="lbl" x="510" y="662">Record</text>
+  <text class="sub" x="510" y="678">Hold to record a voice memo</text>
+</svg>

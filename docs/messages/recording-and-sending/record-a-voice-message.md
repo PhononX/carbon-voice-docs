@@ -12,7 +12,7 @@ capturing a quick idea or sharing a thoughtful message with your team.
 ## 1. Start a recording
 
 - Tap the **big purple Record button** at the center of the bottom bar.
-- Once you tap, the timer starts — you're now recording.
+- Once you tap, the timer starts, and you're now recording.
 - This button is available across most of the app, so you can record from almost
   anywhere.
 

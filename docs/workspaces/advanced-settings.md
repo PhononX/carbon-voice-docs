@@ -7,7 +7,7 @@ sidebar_position: 5
 # Advanced workspace settings
 
 Premium workspaces can be configured to help make sure conversations and messages that
-belong in your workspace end up there — and stay only as long as your policies allow.
+belong in your workspace end up there, and stay only as long as your policies allow.
 
 For help setting these up, reach out at [support](https://cv.chat/support) in the app.
 

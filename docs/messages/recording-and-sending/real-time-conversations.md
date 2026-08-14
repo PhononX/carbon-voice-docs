@@ -1,6 +1,6 @@
 ---
 title: Real-time conversations
-description: When people are around while you're speaking, they can listen and reply live — and catch up later if they aren't.
+description: When people are around while you're speaking, they can listen and reply live, and catch up later if they aren't.
 sidebar_position: 9
 ---
 

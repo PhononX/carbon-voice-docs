@@ -149,6 +149,43 @@ const config: Config = {
     ],
   ],
 
+  // Pages that have moved. The site has been public and indexed, so every
+  // relocated URL keeps working rather than 404ing. Add a pair here whenever a
+  // doc changes path.
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // Voice cloning, translation and TTS left AI / Account for their own
+          // Voice & Language section.
+          {from: '/ai/voice-cloning', to: '/voice-and-language/voice-cloning'},
+          {from: '/ai/auto-translation', to: '/voice-and-language/auto-translation'},
+          {
+            from: '/account-and-settings/typed-message-voice',
+            to: '/voice-and-language/typed-message-voice',
+          },
+          // Widgets and the watch moved into Quick Capture.
+          {from: '/account-and-settings/apple-watch', to: '/quick-capture/apple-watch'},
+          {
+            from: '/account-and-settings/iphone-widgets',
+            to: '/quick-capture/iphone-widgets',
+          },
+          // The MCP guides were promoted out of Integrations.
+          {from: '/integrations/mcp', to: '/ai-assistants'},
+          {from: '/integrations/mcp/claude', to: '/ai-assistants/claude'},
+          {from: '/integrations/mcp/chatgpt', to: '/ai-assistants/chatgpt'},
+          {from: '/integrations/mcp/cursor', to: '/ai-assistants/cursor'},
+          {from: '/integrations/mcp/windsurf', to: '/ai-assistants/windsurf'},
+          {
+            from: '/integrations/mcp/tips-and-tricks',
+            to: '/ai-assistants/tips-and-tricks',
+          },
+        ],
+      },
+    ],
+  ],
+
   themes: [
     // Search, built into the site at compile time. Deliberately not Algolia
     // DocSearch: this keeps the help center self-contained, with no external
@@ -214,7 +251,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Help',
         },
         {to: '/whats-new', label: "What's New", position: 'left'},
         // The right side is for finding an answer, so it holds only search and
@@ -236,7 +273,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Help',
           items: [
             {label: 'Record your first message', to: '/messages/recording-and-sending/record-a-voice-message'},
             {label: 'AI', to: '/ai'},

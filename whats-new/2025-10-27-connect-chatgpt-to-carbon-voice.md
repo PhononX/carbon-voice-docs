@@ -42,8 +42,8 @@ Type `@carbon` in the input field to ask about information from Carbon Voice. A 
 
 ## Works with other AI agents
 
-Using Claude, Cursor, or something else? See the [MCP documentation](/integrations/mcp) for
+Using Claude, Cursor, or something else? See the [MCP documentation](/ai-assistants) for
 setup. And with the [3.0 preview](./2025-10-27-previewing-carbon-voice-3-0.md) you can chat
 with AI about a conversation without leaving Carbon Voice at all.
 
-See [ChatGPT](/integrations/mcp/chatgpt) for the full documentation.
+See [ChatGPT](/ai-assistants/chatgpt) for the full documentation.

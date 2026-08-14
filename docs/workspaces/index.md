@@ -6,8 +6,8 @@ sidebar_position: 6
 
 # Workspaces
 
-A workspace groups your team, their conversations, and the settings that apply to them
-— with a directory to find people, access control over conversations, central billing,
+A workspace groups your team, their conversations, and the settings that apply to them,
+with a directory to find people, access control over conversations, central billing,
 and retention policies.
 
 - [Create a workspace for your team](create-a-workspace.md)

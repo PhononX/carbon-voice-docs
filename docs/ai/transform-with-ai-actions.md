@@ -1,6 +1,6 @@
 ---
 title: Transform voice memos and messages with AI
-description: Turn what you said into a first draft — an email, a to-do list, a summary with action items, and more.
+description: Turn what you said into a first draft, whether that's an email, a to-do list, or a summary with action items.
 sidebar_position: 4
 ---
 
@@ -37,10 +37,35 @@ summary with action items, or anything else:
 
 ![AI Magic menu for selected messages](/img/ai/ai-magic-multiple.webp)
 
+![The AI Actions picker showing the available prompts](/img/whats-new/popular-ai-actions.webp)
+
+## The ones people use most
+
+There are more than 40 built-in actions. These are the ones that get used the most, and
+what each actually does:
+
+| Action | Good for | What it does |
+|---|---|---|
+| **Bulleted Summary** | A long message that arrived while you were busy | Pulls out the points and drops the filler |
+| **Catch-up** | Seeing what you missed in an active conversation | Summarizes across several messages, with takeaways and action items |
+| **Improve Structure** | A rambling brainstorm | Regroups related ideas so it flows |
+| **Clean-up Transcript** | Something you'll paste elsewhere | Fixes grammar and removes filler, keeping your phrasing |
+| **To-do List** | Follow-ups captured on the move | Finds the actionable parts and orders them |
+| **Presentation Outline** | Talking through a deck | Slide titles, key points, and suggested visuals |
+| **Professional Email** | A rough sense of what to say | A clear, sendable draft |
+| **LinkedIn Post** | An insight that arrived away from your desk | A structured post with hashtag suggestions |
+| **Brainstorm More Ideas** | Being stuck | Reads the discussion and suggests directions to build on |
+
+That last one is worth singling out: it generates new ideas rather than reformatting the
+ones you had.
+
+If none of them fits, [write your own prompt](custom-prompts.md).
+
 ## Finding past results
 
-To see previous AI Magic results across a conversation, tap the **AI Magic icon** in
-the bottom right of the conversation screen for the message AI history.
+To see previous AI Magic results across a conversation, open **AI Chat** from the
+**summarize icon** at the top right. Every AI result you've generated anywhere in the app is
+also collected in **Notebook → AI Outputs**.
 
 ## Related
 

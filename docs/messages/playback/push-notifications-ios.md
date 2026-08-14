@@ -26,6 +26,8 @@ conversation.
 > On most devices only the first 30 seconds of a message plays in notification preview
 > before the screen shuts off. Press volume up or down to extend this.
 
+![A message preview on the lock screen](/img/whats-new/push-notification-preview.webp)
+
 ## If you're not getting notifications
 
 Two things need to be true: Carbon Voice has to be set to send them, and iOS has to be
@@ -33,7 +35,7 @@ set to show them.
 
 ### In Carbon Voice
 
-1. Go to **Settings** in the top-left menu.
+1. Open your **Profile Menu** and go to **Settings**.
 2. Tap **Notification Settings**.
 3. Make sure **Push Notifications** is on.
 
@@ -53,4 +55,4 @@ Apple's own guidance on notification settings is
 
 ## Related
 
-- [Notified messages versus unheard messages](notified-versus-unheard.md)
+- [Unread messages versus unheard messages](notified-versus-unheard.md)

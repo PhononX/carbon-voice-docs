@@ -11,7 +11,7 @@ of what you missed.
 
 ## The quick way
 
-Swipe from right to left on a conversation — from Home or in your conversation list —
+Swipe from right to left on a conversation, either from Home or in your conversation list,
 and Catch-up summarizes the discussion, with links to play the source messages.
 
 ![Catch up with ai](/img/ai/catch-up-with-ai.webp)
@@ -19,8 +19,8 @@ and Catch-up summarizes the discussion, with links to play the source messages.
 ## The full catch-up summary
 
 1. **Open the conversation** you want to catch up on.
-2. **Tap the AI Magic icon** at the bottom right of the screen, next to the microphone,
-   to reach **Message AI History**.
+2. **Open AI Chat.** Tap the **summarize icon** at the top right and choose **AI Chat** —
+   on desktop, use the dedicated **AI Chats** button in the app bar instead.
 3. **Select Create Catch-Up Summary.** This covers new messages from the last 24 hours.
 4. **Wait a few seconds** for the summary, which gives you a high-level overview
    including:

@@ -6,10 +6,15 @@ sidebar_position: 6
 
 # Filtering your conversation list
 
-Tap the filter button to quickly narrow your list to conversations with unread
-messages.
+Tap a filter chip above your conversation list to narrow it down:
 
-Tap the **+** for more filtering options, to narrow the conversation list further.
+- **Unread** — conversations with messages still wanting your attention.
+- **Listen Later** — conversations holding messages you flagged to come back to.
+- **Direct**, **Named**, **Async Meeting**, **Customer** — filter by conversation type.
+
+Tap **More filters** for further options, including filtering by workspace.
+
+![The conversation list filtered down to what needs attention](/img/whats-new/catch-up-filter.webp)
 
 ## Related
 

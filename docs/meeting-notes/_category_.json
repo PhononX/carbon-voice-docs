@@ -1,0 +1,8 @@
+{
+  "label": "Meeting Notes",
+  "position": 4.2,
+  "customProps": {
+    "description": "Skip the meeting, have the discussion async, and let AI write it up."
+  },
+  "className": "navIcon navIcon--notebook-pen"
+}

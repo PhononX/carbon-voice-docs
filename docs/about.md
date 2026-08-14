@@ -14,12 +14,12 @@ repository under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4
 so you are free to quote, translate, and reuse it with attribution.
 
 Every article is plain Markdown, so the whole help center is readable in the
-repository without running anything — the file layout under `docs/` matches the site's
+repository without running anything, and the file layout under `docs/` matches the site's
 URLs.
 
 Found something wrong?
 [Open an issue](https://github.com/PhononX/carbon-voice-docs/issues) and tell us which
-page — a sentence is plenty.
+page. A sentence is plenty.
 
 ## For AI agents
 

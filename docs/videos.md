@@ -1,6 +1,6 @@
 ---
 title: Video guides
-description: Watch Carbon Voice walkthroughs — recording, conversations, AI, automation, and settings.
+description: Watch Carbon Voice walkthroughs covering recording, conversations, AI, automation, and settings.
 sidebar_position: 1.5
 sidebar_label: Video guides
 sidebar_class_name: navIcon navIcon--circle-play
@@ -278,7 +278,7 @@ Turning what you say into documents, summaries, and workflows.
 <!-- /videos -->
 
 Read instead: [Catch up with AI](ai/catch-up-with-ai.md),
-[ChatGPT](integrations/mcp/chatgpt.md), or
+[ChatGPT](ai-assistants/chatgpt.md), or
 [open the Voice + AI playlist on YouTube](https://www.youtube.com/playlist?list=PLM_p2mhoTkcBCm-ZCVO_TjzBfg7kxnbQF).
 
 ## Automating with Zapier
@@ -338,8 +338,8 @@ urx2uBXdyLI | Recording voice memos on Apple Watch
 
 <!-- /videos -->
 
-Read instead: [iPhone widgets](account-and-settings/iphone-widgets.md),
-[Apple Watch](account-and-settings/apple-watch.md).
+Read instead: [iPhone widgets](quick-capture/iphone-widgets.md),
+[Apple Watch](quick-capture/apple-watch.md).
 
 ## More from Carbon Voice
 

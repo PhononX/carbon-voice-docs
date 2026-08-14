@@ -33,4 +33,4 @@ Things worth trying:
 This is a step toward what we're building for: every conversation becoming insight, action,
 and relationship intelligence, effortlessly, from your pocket.
 
-See the [MCP documentation](/integrations/mcp) to get set up.
+See the [MCP documentation](/ai-assistants) to get set up.

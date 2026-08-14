@@ -24,5 +24,5 @@ This applies when you have the Basic or Premium TTS engine selected and either:
 - your messages are translated and voice cloning isn't enabled.
 
 On a paid plan, the same settings let you set up
-[voice cloning](/ai/voice-cloning), so typed and translated messages you send are heard in
+[voice cloning](/voice-and-language/voice-cloning), so typed and translated messages you send are heard in
 your own voice.

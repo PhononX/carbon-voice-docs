@@ -1,6 +1,6 @@
 ---
 title: Record and share
-description: The two ways to record in Carbon Voice — a voice memo you share by link, or a message in a conversation.
+description: The two ways to record in Carbon Voice, a voice memo you share by link or a message in a conversation.
 sidebar_position: 1
 ---
 

@@ -10,7 +10,7 @@ If you no longer want to use Carbon Voice, you can delete your account at any ti
 
 ## From the app
 
-1. Tap your profile picture — bottom left on desktop, top left on mobile.
+1. Tap your profile picture, at the bottom left on desktop or the top left on mobile.
 2. Select **Help** from the menu.
 3. Tap **Additional Resources**.
 4. Choose **Delete My Account**.

@@ -21,7 +21,7 @@ useful for catching up on longer conversations.
 ## Turning it on
 
 1. Open any conversation.
-2. Tap the **bulleted summary icon** at the top right, next to the AI toggle.
+2. Tap the **summarize icon** at the top right and choose **Bulleted Summary**.
 
 Messages then appear as bullet points as you scroll. New messages over 10 words or 50
 characters are summarized automatically.

@@ -1,0 +1,8 @@
+{
+  "label": "Quick Capture",
+  "position": 4.8,
+  "customProps": {
+    "description": "Send a message without opening the app — shortcuts, widgets, and your watch."
+  },
+  "className": "navIcon navIcon--keyboard"
+}

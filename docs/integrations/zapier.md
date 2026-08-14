@@ -35,6 +35,20 @@ Two things are worth knowing when building one:
   form. Google Docs does better with text converted to HTML, while a to-do app usually
   prefers a looped JSON response.
 
+## What can start a workflow
+
+Carbon Voice offers four triggers:
+
+- **A new message** posted in a conversation.
+- **A new AI result**, so an AI action's output can go straight somewhere else.
+- **A new label** on a message, which makes press-and-hold labelling a manual trigger you
+  control. See [Playlists and labels](../conversations/your-conversation-list/playlists-and-labels.md).
+- **A new voice memo**, optionally **filtered by folder** — so a memo recorded into "Email
+  drafts" runs a different workflow from one recorded into "Blog post ideas".
+
+A [custom AI prompt](../ai/custom-prompts.md) can be a trigger too: choose **User** as the
+type and your own prompts appear in the list.
+
 The current list of supported triggers and actions is on
 [Zapier](https://zapier.com/apps/carbon-voice/integrations#triggers-and-actions).
 
@@ -45,6 +59,13 @@ The current list of supported triggers and actions is on
 
 Running into trouble? [Message support](https://cv.chat/support). To request new
 triggers, actions, or AI transformations, send [feedback](https://cv.chat/feedback).
+
+## Other automation platforms
+
+Carbon Voice works the same way with **n8n** and similar tools. Create a personal access
+token, point the workflow at the API, and trigger on the same events. See
+[Integration credentials](integration-credentials.md) for the token, and
+[Build with the Carbon Voice API](build-with-the-api.md) for the endpoints.
 
 ## Related
 

@@ -56,7 +56,7 @@ workspace and conversation access intact:
 1. Add the new email address in Okta.
 2. Have the user add that same address to their Carbon Voice account. Depending on your
    Okta configuration they may already have been removed from the workspace and lost
-   sight of their conversations — that's expected at this stage.
+   sight of their conversations. That's expected at this stage.
 3. With both addresses on the account, provisioning either one restores access to the
    workspace and its conversations.
 4. If you remove the old address from provisioning and access disappears, remove the

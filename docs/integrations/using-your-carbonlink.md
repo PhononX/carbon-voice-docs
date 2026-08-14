@@ -7,7 +7,7 @@ sidebar_position: 3
 # Using and sharing your CarbonLink
 
 Your CarbonLink lets people send you a voice message instead of scheduling a call. This
-page covers editing it and putting it to use — see
+page covers editing it and putting it to use. See
 [Get your personal CarbonLink](../account-and-settings/personal-carbonlink.md) for
 claiming one in the first place.
 
@@ -15,7 +15,8 @@ claiming one in the first place.
 
 1. Log into the mobile app, or the web app at
    [carbonvoice.app](https://carbonvoice.app).
-2. Tap your profile icon at the bottom right of Home.
+2. Tap your profile icon, at the top left of Home on mobile or the bottom of the
+   navigation sidebar on desktop.
 3. Tap the **QR code icon** in the top right.
 
 From there you can:
@@ -26,15 +27,15 @@ From there you can:
 
 To share, tap the QR code image and choose where to send it, or tap the URL to copy it.
 
-> Apply your settings before sharing — they change both the URL and the QR code.
+> Apply your settings before sharing, because they change both the URL and the QR code.
 
 ## Where to use it
 
 The three most common places:
 
 1. In outreach, as an alternative to finding time on a calendar.
-2. Anywhere you already share contact details — an email signature, an auto-responder,
-   a social profile.
+2. Anywhere you already share contact details, such as an email signature, an
+   auto-responder, or a social profile.
 3. On your website, so customers can talk to you without phoning or writing an email.
 
 Other ideas people use:
@@ -49,7 +50,7 @@ Other ideas people use:
 
 It helps to explain the benefit to whoever you're sending it to:
 
-- It's less intrusive than a phone call — they can talk when they're ready.
+- It's less intrusive than a phone call, because they can talk when they're ready.
 - It saves them time, with no hold music and no phone tag.
 - It's more personal than a text or email, while being as easy as a call.
 - They hear back faster, because neither of you is waiting for calendars to align.

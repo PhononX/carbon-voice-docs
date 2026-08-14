@@ -53,5 +53,5 @@ Global Voice consumes AI credits, and every plan includes enough for typical mon
 
 Not on a premium plan? You can still try Global Voice on a free trial.
 
-See [Auto-translation](/ai/auto-translation) and [Voice cloning](/ai/voice-cloning) for the
+See [Auto-translation](/voice-and-language/auto-translation) and [Voice cloning](/voice-and-language/voice-cloning) for the
 full documentation.

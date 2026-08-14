@@ -1,0 +1,8 @@
+{
+  "label": "AI Assistants & MCP",
+  "position": 5.4,
+  "customProps": {
+    "description": "Let Claude, ChatGPT, or your editor work with your Carbon Voice content."
+  },
+  "className": "navIcon navIcon--sparkles"
+}

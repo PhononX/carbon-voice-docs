@@ -19,7 +19,7 @@ attention.
 
 ## Inside a conversation
 
-1. Open the conversation with notified messages.
+1. Open the conversation with unread messages.
 2. Tap the purple **Play** button in the bottom left corner.
 
 ## What to expect
@@ -27,10 +27,10 @@ attention.
 Messages play in conversation order, with threaded groups played together, so the
 context holds together while you listen.
 
-You can skip forwards or backwards during playback, or reply as you go — useful when
+You can skip forwards or backwards during playback, or reply as you go. That's useful when
 you're walking, driving, or moving between meetings.
 
 ## Related
 
-- [Notified messages versus unheard messages](notified-versus-unheard.md)
+- [Unread messages versus unheard messages](notified-versus-unheard.md)
 - [Playback speed](playback-speed.md)

@@ -1,8 +1,8 @@
 {
-  "label": "AI",
+  "label": "Summaries & AI Actions",
   "position": 5,
   "customProps": {
-    "description": "Summaries, catch-up, transformation, cloning, and translation."
+    "description": "Summarize a discussion, catch up on what you missed, and reshape recordings into something you can use."
   },
   "className": "navIcon navIcon--sparkles"
 }

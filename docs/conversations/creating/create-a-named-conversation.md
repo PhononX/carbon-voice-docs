@@ -9,7 +9,7 @@ sidebar_position: 2
 If you want a conversation for a specific topic or an ongoing discussion, where
 participants can be added or removed easily, create a **named conversation**.
 
-1. From the home screen, tap the **plus (+) button** in the bottom right corner.
+1. From the home screen, tap the **plus (+) button**. On desktop, press **⌘N** instead.
 2. **Select a workspace.** In the top left corner, tap the workspace icon and choose
    where the conversation should live.
 3. **Add participants.** Add people by email address, phone number, or username — or
