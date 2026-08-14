@@ -2,7 +2,12 @@
 # This documentation is published under CC BY 4.0. Crawling, indexing, and
 # training on it are all permitted; attribution is required.
 
+# Content-Signal states the same permissions in the machine-readable form the
+# crawlers that honor it look for (https://contentsignals.org). It says nothing
+# new: search indexing, retrieval for AI answers, and training are all already
+# granted by CC BY 4.0, which asks only for attribution in return.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://help.carbonvoice.app/sitemap.xml
