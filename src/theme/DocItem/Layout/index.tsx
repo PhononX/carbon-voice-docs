@@ -5,6 +5,7 @@ import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Layout from '@theme-original/DocItem/Layout';
 import type LayoutType from '@theme/DocItem/Layout';
 import type {WrapperProps} from '@docusaurus/types';
+import {twinUrl} from '@site/src/twinUrl';
 
 /**
  * Wraps the doc page layout to point at the page's Markdown twin — the same
@@ -30,22 +31,10 @@ import type {WrapperProps} from '@docusaurus/types';
 
 type Props = WrapperProps<typeof LayoutType>;
 
-/**
- * The twin's URL: /ai -> /ai.md, and the home page -> /index.md.
- *
- * A category's own index page has a permalink that ends in a slash — `/ai/`
- * for docs/ai/index.md — even with `trailingSlash: false`, so that has to come
- * off first or the URL comes out as `/ai/.md`.
- */
-function markdownRoute(permalink: string): string {
-  const route = permalink.replace(/\/+$/, '');
-  return route === '' ? '/index.md' : `${route}.md`;
-}
-
 export default function LayoutWrapper(props: Props): ReactNode {
   const {metadata} = useDoc();
   const {siteConfig} = useDocusaurusContext();
-  const route = markdownRoute(metadata.permalink);
+  const route = twinUrl(metadata.permalink);
 
   return (
     <>

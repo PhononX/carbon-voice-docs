@@ -24,6 +24,7 @@ import {fileURLToPath} from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
+const NEWS_DIR = path.join(ROOT, 'whats-new');
 const OUT_DIR = path.join(ROOT, 'static');
 
 const SITE_URL = 'https://help.carbonvoice.app';
@@ -98,6 +99,9 @@ function cleanForAgents(body) {
       // the strips above. Internal plumbing, not content.
       .replace(/<!--\s*videos:[\s\S]*?-->\s*/g, '')
       .replace(/<!--\s*\/videos\s*-->\s*/g, '')
+      // Where the blog list stops showing a post and starts showing "read more".
+      // Meaningful to Docusaurus, noise in a file being read whole.
+      .replace(/<!--\s*truncate\s*-->\s*/g, '')
       .replace(/\n{3,}/g, '\n\n')
       .trim()
   );
@@ -117,29 +121,37 @@ function decodeEntities(text) {
 }
 
 /**
- * Rewrites the docs' relative Markdown links to absolute site URLs.
+ * Rewrites every link that depends on where the file sits into an absolute site
+ * URL. Two kinds need it, and both appear in the sources:
  *
- * In docs/ a link like `(catch-up-with-ai.md)` resolves against the file's own
- * directory, which is right for the repository and for Docusaurus. It is wrong
- * everywhere these generated files are read: in llms-full.txt there is no
- * containing directory at all, and in a per-page `.md` twin the depth shifts —
- * `/ai.md` sits at the root, so a link meant for `/ai/catch-up-with-ai` would
- * resolve to `/catch-up-with-ai`. Absolute URLs are unambiguous in all three.
+ *   - Relative Markdown links, which the help articles use. In docs/ a link like
+ *     `(catch-up-with-ai.md)` resolves against the file's own directory, which
+ *     is right for the repository and for Docusaurus. It is wrong everywhere
+ *     these generated files are read: in llms-full.txt there is no containing
+ *     directory at all, and in a per-page `.md` twin the depth shifts — `/ai.md`
+ *     sits at the root, so a link meant for `/ai/catch-up-with-ai` would resolve
+ *     to `/catch-up-with-ai`.
+ *   - Root-relative links, which the announcements use for cross-links into the
+ *     help articles (`/ai-assistants`) and which every page uses for images
+ *     (`/img/...`). These need an origin: a file handed to an agent as text has
+ *     no document base for a leading `/` to resolve against.
  *
- * A target that resolves to no known page is left untouched rather than guessed
- * at; Docusaurus already fails the build on a broken Markdown link, so this only
- * fires for links it deliberately allows.
+ * A relative target that resolves to no known page is left untouched rather than
+ * guessed at; Docusaurus already fails the build on a broken Markdown link, so
+ * this only fires for links it deliberately allows.
  */
-function absolutizeLinks(body, page, routeByRel) {
-  const dir = path.posix.dirname(page.rel);
-  return body.replace(
-    /\]\((?!https?:|\/\/|\/|#|mailto:|pathname:)([^)\s#]+\.mdx?)(#[^)\s]*)?\)/g,
-    (match, target, hash = '') => {
-      const rel = path.posix.normalize(path.posix.join(dir, target));
-      const route = routeByRel.get(rel);
-      return route ? `](${SITE_URL}${route}${hash})` : match;
-    },
-  );
+function absolutizeLinks(body, page, routeBySource) {
+  const dir = path.posix.dirname(page.sourceRel);
+  return body
+    .replace(
+      /\]\((?!https?:|\/\/|\/|#|mailto:|pathname:)([^)\s#]+\.mdx?)(#[^)\s]*)?\)/g,
+      (match, target, hash = '') => {
+        const source = path.posix.normalize(path.posix.join(dir, target));
+        const route = routeBySource.get(source);
+        return route ? `](${SITE_URL}${route}${hash})` : match;
+      },
+    )
+    .replace(/\]\((\/(?!\/)[^)\s]*)\)/g, `](${SITE_URL}$1)`);
 }
 
 /** The URL a page's Markdown twin is served at: /ai -> /ai.md, / -> /index.md */
@@ -163,6 +175,7 @@ async function collect() {
           rel,
           body,
           categoryDir: segments.length > 1 ? segments[0] : '',
+          sourceRel: `docs/${rel}`,
           title: data.title ?? path.basename(rel, path.extname(rel)),
           description: data.description ?? '',
           position: Number(data.sidebar_position ?? 999),
@@ -192,6 +205,56 @@ async function collect() {
 }
 
 /**
+ * The announcements in whats-new/, newest first, as the blog lists them.
+ *
+ * These are dated and superseded rather than evergreen, so they stay out of
+ * llms-full.txt — that file is the help articles, and it already runs close to
+ * what a fetch tool will return in one request. They get an index entry and a
+ * bundle of their own instead, which is the right shape for the question they
+ * answer: when did this ship, and what changed.
+ *
+ * Docusaurus builds each post's route from the filename, so this does the same:
+ * whats-new/2024-11-26-carbon-voice-on-apple-watch.md is served at
+ * /whats-new/2024/11/26/carbon-voice-on-apple-watch. No post overrides it with a
+ * `slug`, and this throws rather than guess if one ever does.
+ */
+async function collectAnnouncements() {
+  const posts = [];
+
+  for (const entry of await fs.readdir(NEWS_DIR, {withFileTypes: true})) {
+    if (!entry.isFile() || !/\.mdx?$/.test(entry.name)) continue;
+
+    const {data, body} = parseFrontmatter(
+      await fs.readFile(path.join(NEWS_DIR, entry.name), 'utf8'),
+    );
+    const named = /^(\d{4})-(\d{2})-(\d{2})-(.+)\.mdx?$/.exec(entry.name);
+    if (!named) {
+      throw new Error(`Announcement not named YYYY-MM-DD-slug.md: ${entry.name}`);
+    }
+    if (data.slug) {
+      throw new Error(
+        `Announcement ${entry.name} sets a slug; routeFor() below no longer matches Docusaurus.`,
+      );
+    }
+
+    const [, year, month, day, slug] = named;
+    posts.push({
+      rel: entry.name,
+      sourceRel: `whats-new/${entry.name}`,
+      body,
+      categoryDir: '',
+      title: data.title ?? slug,
+      description: data.description ?? '',
+      date: `${year}-${month}-${day}`,
+      route: `/whats-new/${year}/${month}/${day}/${slug}`,
+    });
+  }
+
+  posts.sort((a, b) => b.date.localeCompare(a.date));
+  return posts;
+}
+
+/**
  * Groups the pages the way llms.txt already presents them: the pages that sit at
  * the root of docs/ first, then each category in sidebar order. One group is one
  * section bundle.
@@ -201,7 +264,13 @@ function sectionsOf({pages, categories}) {
 
   const root = pages.filter((p) => !p.categoryDir);
   if (root.length) {
-    sections.push({slug: 'overview', label: 'Overview', description: '', pages: root});
+    sections.push({
+      slug: 'overview',
+      label: 'Overview',
+      description: '',
+      order: 'in the same order as the site navigation',
+      pages: root,
+    });
   }
 
   for (const [dirName, category] of [...categories.entries()].sort(
@@ -211,6 +280,7 @@ function sectionsOf({pages, categories}) {
       slug: dirName,
       label: category.label,
       description: category.description,
+      order: 'in the same order as the site navigation',
       pages: pages.filter((p) => p.categoryDir === dirName),
     });
   }
@@ -220,7 +290,8 @@ function sectionsOf({pages, categories}) {
 
 /** `- [Title](url): description`, the one line each page gets in an index. */
 function pageEntry(page) {
-  return `- [${page.title}](${SITE_URL}${page.route})${
+  const date = page.date ? ` (${page.date})` : '';
+  return `- [${page.title}](${SITE_URL}${page.route})${date}${
     page.description ? `: ${page.description}` : ''
   }`;
 }
@@ -229,7 +300,7 @@ function pageEntry(page) {
 function pageBody(page) {
   return [
     `URL: ${SITE_URL}${page.route}`,
-    `Source: ${RAW_URL}/docs/${page.rel}`,
+    `Source: ${RAW_URL}/${page.sourceRel}`,
     '',
     page.text,
   ].join('\n');
@@ -251,7 +322,9 @@ function buildIndex({pages}, sections, sizes) {
     '',
     `- One page: append \`.md\` to any page URL below, e.g. ${SITE_URL}/workspaces/create-a-workspace.md`,
     '- One section: the `.txt` bundle listed under each heading below',
-    `- Everything: ${SITE_URL}/llms-full.txt (${sizes.full}, ${pages.length} pages)`,
+    `- Every help article: ${SITE_URL}/llms-full.txt (${sizes.full}, ${pages.length} pages).`,
+    "  The What's New announcements are not in it — they are dated rather than evergreen,",
+    `  and have a bundle of their own at ${SITE_URL}/llms/whats-new.txt`,
     `- Canonical Markdown, with history: ${REPO_URL}`,
     '',
   ];
@@ -290,8 +363,8 @@ function buildSection(section, {pages}) {
     '',
     `This file is the ${section.label} section of the Carbon Voice help center: ${
       section.pages.length
-    } ${section.pages.length === 1 ? 'page' : 'pages'}, in the same order as the site`,
-    'navigation. Each page is also available on its own — append `.md` to its URL.',
+    } ${section.pages.length === 1 ? 'page' : 'pages'}, ${section.order}.`,
+    'Each page is also available on its own — append `.md` to its URL.',
     '',
   ];
 
@@ -338,16 +411,35 @@ function buildFull({pages}, sections) {
 
 const collected = await collect();
 const {pages} = collected;
+const announcements = await collectAnnouncements();
+
+// Every page that gets a Markdown twin: the help articles and the announcements
+// alike. llms-full.txt is deliberately not one of these — see
+// collectAnnouncements() for why the announcements stay out of it.
+const twinned = [...pages, ...announcements];
 
 // Resolve links only once every route is known, then reuse the cleaned text for
 // every output: the per-page twins, the section bundles and the complete file all
 // carry identical prose, so an agent that switches between them sees no drift.
-const routeByRel = new Map(pages.map((page) => [page.rel, page.route]));
-for (const page of pages) {
-  page.text = absolutizeLinks(cleanForAgents(page.body), page, routeByRel);
+// Keyed by path from the repository root, so a link out of whats-new/ and a link
+// out of docs/ cannot resolve to each other by accident.
+const routeBySource = new Map(twinned.map((page) => [page.sourceRel, page.route]));
+for (const page of twinned) {
+  page.text = absolutizeLinks(cleanForAgents(page.body), page, routeBySource);
 }
 
-const sections = sectionsOf(collected);
+const sections = [
+  ...sectionsOf(collected),
+  {
+    slug: 'whats-new',
+    label: "What's New",
+    description:
+      'Product updates and announcements, newest first. These are dated and superseded ' +
+      'over time, unlike the help articles above — check the date before relying on one.',
+    order: 'newest first',
+    pages: announcements,
+  },
+];
 
 await fs.mkdir(OUT_DIR, {recursive: true});
 await fs.mkdir(path.join(OUT_DIR, 'llms'), {recursive: true});
@@ -366,7 +458,7 @@ await fs.writeFile(path.join(OUT_DIR, 'llms-full.txt'), full, 'utf8');
 await fs.writeFile(path.join(OUT_DIR, 'llms.txt'), buildIndex(collected, sections, sizes), 'utf8');
 
 // Per-page twins, each at the page's own route plus `.md`.
-for (const page of pages) {
+for (const page of twinned) {
   const target = path.join(OUT_DIR, markdownRoute(page.route).replace(/^\//, ''));
   await fs.mkdir(path.dirname(target), {recursive: true});
   await fs.writeFile(target, buildPage(page), 'utf8');
@@ -374,5 +466,6 @@ for (const page of pages) {
 
 console.log(
   `Generated llms.txt, llms-full.txt (${sizes.full}), ${sections.length} section bundles ` +
-    `and ${pages.length} per-page .md files from ${pages.length} pages.`,
+    `and ${twinned.length} per-page .md files from ${pages.length} pages ` +
+    `and ${announcements.length} announcements.`,
 );
