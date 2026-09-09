@@ -33,7 +33,8 @@ type a message to you as well as record one. No app to download, no meeting to b
 Put your CarbonLink anywhere you want people to be able to reach you — your email
 signature, your website, your LinkedIn profile, or in place of your calendar link.
 
-[Claim your CarbonLink](https://cv.chat)
+[Message Travis via CarbonLink](https://cv.chat/travis) ·
+[Claim your CarbonLink](https://cv.chat/a/carbonlink)
 
 ## 🎙️ Shared voice memos: easier to hear, easier to answer
 
