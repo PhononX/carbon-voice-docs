@@ -1,10 +1,13 @@
 ---
-title: Connecting Windsurf
-description: Add the Carbon Voice MCP server to Windsurf.
+title: Connecting Devin
+description: Add the Carbon Voice MCP server to Devin, the editor formerly called Windsurf.
 sidebar_position: 5
 ---
 
-# Connecting Windsurf
+# Connecting Devin
+
+Devin is the editor formerly called Windsurf. Older versions still carry the Windsurf
+name, which is what the steps below use.
 
 The MCP server URL is `https://mcp.carbonvoice.app`.
 
@@ -16,5 +19,6 @@ The MCP server URL is `https://mcp.carbonvoice.app`.
 
 ## Related
 
+- [What your assistant can do](what-your-assistant-can-do.md)
 - [MCP tips and tricks](tips-and-tricks.md)
 - [More ways to connect](https://github.com/PhononX/cv-mcp-server)

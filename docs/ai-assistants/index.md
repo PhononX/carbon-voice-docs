@@ -16,7 +16,7 @@ memos. The server URL is `https://mcp.carbonvoice.app`.
 - [Connecting Claude](claude.md)
 - [Connecting ChatGPT](chatgpt.md)
 - [Connecting Cursor](cursor.md)
-- [Connecting Windsurf](windsurf.md)
+- [Connecting Devin](devin.md)
 
 Your assistant both reads from Carbon Voice and acts in it: alongside finding and
 summarizing, it can create voice memos, share links, and action items in your account.

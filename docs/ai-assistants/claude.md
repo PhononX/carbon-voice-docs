@@ -10,7 +10,19 @@ You can connect your Carbon Voice account to Claude in a few clicks, with no tec
 setup. You'll need to be logged into your Carbon Voice account in your browser to
 complete the connection.
 
-## Remote connection
+## From Claude's connector directory
+
+Carbon Voice is listed in Claude's connector directory, which is the quickest way in.
+
+1. Open [Carbon Voice in the directory](https://claude.ai/directory/carbon-voice), or find
+   it by browsing the connector directory from **Settings → Connectors** in Claude.
+2. Click **Connect**.
+3. Log into your Carbon Voice account when prompted. This links Claude to your messages
+   and conversations.
+
+## Adding it manually
+
+If your version of Claude doesn't show the directory, add the server by hand instead.
 
 1. Open Claude in your browser and go to **Settings → Connectors**.
 2. Click **Add custom connector**.
@@ -49,5 +61,6 @@ The exact configuration snippet and other connection methods are in the
 
 ## Related
 
+- [What your assistant can do](what-your-assistant-can-do.md)
 - [MCP tips and tricks](tips-and-tricks.md)
 - [Learn more about Carbon Voice MCP](https://www.getcarbon.app/mcp)

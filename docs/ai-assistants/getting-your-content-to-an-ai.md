@@ -19,14 +19,14 @@ Your assistant queries Carbon Voice at the moment you ask the question.
 
 - **Always current** — it sees what you said five minutes ago.
 - **Nothing is copied** anywhere new.
-- **Only works in MCP-capable clients** — Claude, ChatGPT, Cursor, Windsurf.
+- **Only works in MCP-capable clients** — Claude, ChatGPT, Cursor, Devin.
 
 It also goes the other way. As well as reading, an assistant can act in your account:
 create a voice memo, share a link, add or complete an action item. See
 [what your assistant can do](what-your-assistant-can-do.md).
 
 Set it up: [Connecting Claude](claude.md), [ChatGPT](chatgpt.md), [Cursor](cursor.md),
-[Windsurf](windsurf.md).
+[Devin](devin.md).
 
 ## Via a vault you own
 

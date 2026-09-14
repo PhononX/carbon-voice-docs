@@ -27,7 +27,7 @@ messaging for your whole team — people and agents alike. Async, transcribed, a
 - <span class="cardIcon">👥</span> **[Set up a workspace for your team](workspaces/create-a-workspace.md)**<br />
   Bring everyone into one place.
 - <span class="cardIcon">🤖</span> **[Connect Carbon Voice to your AI assistant](ai-assistants/index.md)**<br />
-  Claude, ChatGPT, Cursor, and Windsurf.
+  Claude, ChatGPT, Cursor, and Devin.
 
 </div>
 
@@ -51,7 +51,7 @@ Prefer to watch? Start with the [video guides](videos.md).
 - **[AI Agents](ai-agents/index.md)** — give an AI agent its own account and talk to it
   like a teammate.
 - **[AI Assistants & MCP](ai-assistants/index.md)** — Claude, ChatGPT, Cursor, and
-  Windsurf.
+  Devin.
 - **[Workspaces](workspaces/index.md)** — setting up and running a workspace for your
   team.
 - **[Account & Settings](account-and-settings/index.md)** — profile, notifications,
