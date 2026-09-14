@@ -44,5 +44,5 @@ The credentials and hooks the other tiers run on.
 ## Related
 
 - **[AI Assistants & MCP](../ai-assistants/index.md)** — connecting Claude, ChatGPT, Cursor
-  or Windsurf to your content.
+  or Devin to your content.
 - **[AI Agents](../ai-agents/index.md)** — giving an AI its own Carbon Voice account.

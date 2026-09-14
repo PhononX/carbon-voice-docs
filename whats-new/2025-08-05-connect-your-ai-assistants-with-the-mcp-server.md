@@ -16,6 +16,9 @@ copy-pasting, no exporting — just context.
 
 > At launch, Claude and Cursor are supported. ChatGPT support is coming, and Windsurf isn't
 > supported yet.
+>
+> **Update.** ChatGPT is supported now, and so is Devin, the editor formerly called
+> Windsurf. Setup for all four is in [AI Assistants & MCP](/ai-assistants).
 
 It turns your conversations into a lightweight knowledge base, which makes it much easier
 to reflect, recall, and act.

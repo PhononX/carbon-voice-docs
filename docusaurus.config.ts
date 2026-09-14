@@ -196,11 +196,13 @@ const config: Config = {
           {from: '/integrations/mcp/claude', to: '/ai-assistants/claude'},
           {from: '/integrations/mcp/chatgpt', to: '/ai-assistants/chatgpt'},
           {from: '/integrations/mcp/cursor', to: '/ai-assistants/cursor'},
-          {from: '/integrations/mcp/windsurf', to: '/ai-assistants/windsurf'},
+          {from: '/integrations/mcp/windsurf', to: '/ai-assistants/devin'},
           {
             from: '/integrations/mcp/tips-and-tricks',
             to: '/ai-assistants/tips-and-tricks',
           },
+          // Windsurf is now called Devin.
+          {from: '/ai-assistants/windsurf', to: '/ai-assistants/devin'},
         ],
       },
     ],

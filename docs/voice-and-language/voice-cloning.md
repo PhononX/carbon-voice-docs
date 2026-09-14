@@ -22,7 +22,14 @@ can hear you speaking their language in your own voice.
 Open your **Profile Menu**, go to **Settings → Global Voice - TTS & Translation**, then
 choose from the drop-down under **Text-to-Speech**.
 
+## From an AI assistant
+
+Claude and ChatGPT can create a voice memo from text you give them, spoken in whichever
+voice you've set here, and hand back a link to share. See
+[what your assistant can do](../ai-assistants/what-your-assistant-can-do.md).
+
 ## Related
 
 - [Auto-translation and Global Voice](auto-translation.md)
 - [Personalize the voice for messages you type](typed-message-voice.md)
+- [What your assistant can do](../ai-assistants/what-your-assistant-can-do.md)
