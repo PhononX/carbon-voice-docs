@@ -30,6 +30,13 @@ Conversation Link**.
 To make results tappable, tell the assistant to hyperlink message dates back to the
 message itself, using the format `https://carbonvoice.app/m/<message_id>`.
 
+## Asking it to do things
+
+An assistant can act in Carbon Voice as well as read from it, so say what you want done in
+the same sentence: "pull the action items out of my last standup and add them to my list,"
+or "turn this into a voice memo in my voice and give me a link." See
+[what your assistant can do](what-your-assistant-can-do.md).
+
 ## Prompts worth trying
 
 - "What topics have I covered with [person] in the last month?"
@@ -41,5 +48,6 @@ message itself, using the format `https://carbonvoice.app/m/<message_id>`.
 
 ## Related
 
+- [What your assistant can do](what-your-assistant-can-do.md)
 - [Connecting Claude](claude.md)
 - [Connecting ChatGPT](chatgpt.md)

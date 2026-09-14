@@ -41,6 +41,13 @@ added, so a long discussion doesn't dump twenty items on you unannounced.
 Tap **Share Action Items** to send the list out of Carbon Voice, into a message, an email,
 or your task tracker.
 
+## From an AI assistant
+
+If you've connected Claude or ChatGPT over MCP, you can work through action items from
+there too: pull them out of a voice memo or a conversation, ask what's still open, and mark
+things done. See
+[what your assistant can do](../ai-assistants/what-your-assistant-can-do.md).
+
 ## Offline
 
 Action items work offline. Anything you tick, add or edit while disconnected is queued and
@@ -50,3 +57,4 @@ applied when you're back. You'll see a note saying so rather than losing the cha
 
 - [Get the notes](get-the-notes.md)
 - [Share the notes](share-the-notes.md)
+- [What your assistant can do](../ai-assistants/what-your-assistant-can-do.md)
